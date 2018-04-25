@@ -22,6 +22,13 @@ function! spacevim#defer#gitgutter(timer) abort
   silent! GitGutterEnable
 endfunction
 
+" 350
+function! spacevim#defer#lsp(timer) abort
+  call s:lod('LanguageClient-neovim')
+endfunction
+
+
+
 " 400
 function! spacevim#defer#programming(timer) abort
   call s:lod('rainbow', 'vim-rooter', 'vim-polyglot')
