@@ -1,12 +1,15 @@
 scriptencoding utf-8
 
 let g:spacevim#plug#ale#linters = {
-            \ 'sh' : ['shellcheck'],
-            \ 'vim' : ['vint'],
-            \ 'html' : ['tidy'],
-            \ 'python' : ['flake8'],
-            \ 'markdown' : ['mdl'],
-            \ 'javascript' : ['eslint'],
+          \ 'sh' : ['shellcheck'],
+          \ 'vim' : ['vint'],
+          \ 'html' : ['tidy'],
+          \ 'css' : ['prettier'],
+          \ 'python' : ['flake8'],
+          \ 'markdown' : ['mdl'],
+          \ 'javascript.jsx' : ['eslint'],
+          \ 'javascript' : ['eslint'],
+          \ 'ruby' : ['rubocop'],
             \}
 
 if exists('emoji#for')

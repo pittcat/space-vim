@@ -1,12 +1,3 @@
-if g:spacevim_gui && !has('terminal')
-  " LeaderF {
-  nnoremap <Leader>ff :LeaderfFile ~<CR>
-  nnoremap <Leader>f? :LeaderfFile<CR>
-  nnoremap <Leader>fr :LeaderfMru<CR>
-  nnoremap <Leader>fl :LeaderfLine<CR>
-  nnoremap <Leader>fL :LeaderfLineAll<CR>
-  " }
-else
   " fzf.vim {
   let $LANG = 'en_US'
   " Customize fzf colors to match your color scheme
@@ -22,8 +13,15 @@ else
   nnoremap <Leader>w? :Windows<CR>
   nnoremap <Leader>f? :Files<CR>
 
-  nnoremap <Leader>ff :Files ~<CR>
   nnoremap <silent> <Leader>sf :call spacevim#plug#fzf#Session()<CR>
   nnoremap <leader>rg :Rg!<cr>
+
+  nnoremap <Leader>f? :Files ~<CR>
+  nnoremap <Leader>ff :Files $PWD/<CR>
+  nnoremap <Leader>fep :Files ~/MEGA/code/dotfiles<CR>
+  nnoremap <silent> <leader>ct :Tags<cr>
+  nnoremap <silent> <leader>fb :BTags<cr>
+  nnoremap <silent> <leader>ls :Lines<cr>
+  nnoremap <silent> <leader>fl :BLines<cr>
+
   " }
-endif

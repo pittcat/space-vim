@@ -8,10 +8,13 @@ scriptencoding utf-8
   let g:NERDTreeDirArrowCollapsible = "~"
   let g:NERDTreeIgnore = g:spacevim#plug#nerdtree#ignore
 
-  nnoremap <F4> :NERDTreeToggle<CR>
-  inoremap <F4> <ESC>:NERDTreeToggle<CR>
-  nnoremap <Leader>ft :NERDTreeToggle<CR>
-  nnoremap <Leader>fd :NERDTreeFind<CR>
+  nnoremap <silent> <F4> :NERDTreeToggle<CR>
+  inoremap <silent> <F4> <ESC>:NERDTreeToggle<CR>
+  nnoremap <silent> <Leader>ft :NERDTreeToggle<CR>
+  nnoremap <silent> <Leader>fd :NERDTreeFind<CR>
+  let NERDTreeChDirMode=1
+  noremap <silent> <leader>nc :NERDTreeCWD<cr>
+  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " }
 
 " nerdtree-git-plugin {

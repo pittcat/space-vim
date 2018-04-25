@@ -15,6 +15,9 @@ if g:spacevim_vim8 || g:spacevim_nvim
   nmap <Leader>en <Plug>(ale_next)
   nmap <Leader>ep <Plug>(ale_previous)
   nnoremap <Leader>ts :ALEToggle<CR>
+  nnoremap <silent> <leader>ed :ALEDetail<cr>
+  nnoremap <silent> <leader>ef :ALEFix<cr>
+
 
   " [DEPRECATED] Use ale#statusline#Count(buffer) instead
   " For a more fancy ale statusline

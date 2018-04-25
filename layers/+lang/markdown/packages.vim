@@ -5,4 +5,4 @@ else
 endif
 
 MP 'mzlogin/vim-markdown-toc',     { 'on': ['GenTocGFM', 'GenTocRedcarpet', 'GenTocGitLab', 'UpdateToc', 'RemoveToc'] }
-MP 'iamcco/markdown-preview.vim',  { 'on': ['MarkdownPreview'] }
+MP 'shime/vim-livedown',{'for':'markdown'}

@@ -13,6 +13,7 @@ scriptencoding utf-8
   " Mnemonic _i_nteractive
   nnoremap <silent> <Leader>gi :Git add -p %<CR>
   nnoremap <silent> <Leader>gg :SignifyToggle<CR>
+  nnoremap <leader>ga :Git! add .<cr>
   "}
 
   " vim-gitgutter {
@@ -27,3 +28,8 @@ scriptencoding utf-8
 
   nnoremap <silent> <Leader>tg :GitGutterToggle<CR>
 " }
+
+" {gv.vim
+  noremap <silent> <leader>cg :GV<cr>
+" }
+

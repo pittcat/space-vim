@@ -10,6 +10,12 @@
   let g:vim_markdown_toc_autofit = 1
 " }
 
-" markdown-preview.vim {
-  let g:mkdp_path_to_chrome = g:spacevim#plug#markdown#PathToChrome
-" }
+  "vim-livedown 
+  " {
+  let g:livedown_autorun = 0
+  nmap <silent> <leader>mdp :LivedownPreview<cr>
+  nmap <silent> <leader>mdt :LivedownToggle<cr>
+  " }
+
+
+

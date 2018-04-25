@@ -1,18 +1,18 @@
 " Only suitable for space-vim-dark theme, other themes are not guaranteed.
-let g:spacevim#plug#fzf#colors = {
-            \ 'fg':      ['fg', 'StatusLineNC'],
-            \ 'bg':      ['bg', 'Normal'],
-            \ 'hl':      ['fg', 'String'],
-            \ 'fg+':     ['fg', 'Number', 'Normal'],
-            \ 'bg+':     ['bg', 'StatusLine', 'Normal'],
-            \ 'hl+':     ['fg', 'Exception'],
-            \ 'info':    ['fg', 'Special'],
-            \ 'prompt':  ['fg', 'Function'],
-            \ 'pointer': ['fg', 'Error'],
-            \ 'marker':  ['fg', 'Error'],
-            \ 'spinner': ['fg', 'Statement'],
-            \ 'header':  ['fg', 'Number'],
-            \   }
+let g:spacevim#plug#fzf#colors = 
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
 
 let g:fzf_layout = { 'down': '~40%'  }
 

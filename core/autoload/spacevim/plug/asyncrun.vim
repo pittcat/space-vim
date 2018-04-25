@@ -9,6 +9,7 @@ function! spacevim#plug#asyncrun#CompileAndRun()
         \ 'rust'   : "rustc % -o %<; time ./%<",
         \ 'python' : "time python %",
         \ 'haskell': "ghc % -o %< && ./%<",
+        \ 'javascript': "time node %"
         \}
   let l:ft = &filetype
   if has_key(l:cmd, l:ft)

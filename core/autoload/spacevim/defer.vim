@@ -37,7 +37,7 @@ endfunction
 
 " 600
 function! spacevim#defer#motion(timer) abort
-  call s:lod('vim-sneak', 'vim-easymotion', 'incsearch-easymotion.vim')
+  call s:lod('vim-sneak', 'vim-easymotion')
 endfunction
 
 " 700
@@ -45,18 +45,29 @@ function! spacevim#defer#fzf(timer) abort
   call s:lod('fzf', 'fzf.vim')
 endfunction
 
+"750
+function! spacevim#defer#filemanage(timer) abort
+  call s:lod('undotree','vim-auto-save','vim-nerdtree-tabs','vim-signify','vim-eunuch','vim-gtfo')
+endfunction
+
 " 800
 function! spacevim#defer#fugitive(timer) abort
   call s:lod('vim-fugitive')
 endfunction
 
-" 1000
-function! spacevim#defer#ycm(timer) abort
-  call s:lod('YouCompleteMe')
+" 850
+function! spacevim#defer#copy_and_paste(timer) abort
+  call s:lod('fzf-neoyank','neoyank.vim','vim-system-copy','fzf-filemru','vim-paste-easy')
 endfunction
 
-function! spacevim#defer#unite(timer) abort
-  call s:lod('unite.vim')
+" 900
+function! spacevim#defer#operation_freestyle(timer) abort
+  call s:lod('vim-repeat','vim-expand-region','tabman.vim','BufOnly.vim','loremipsum','splitjoin.vim','vim-smooth-scroll','change-inside-surroundings.vim','linediff.vim','ctrlsf.vim')
+endfunction
+
+" 1400
+function! spacevim#defer#awesome_tools(timer) abort
+  call s:lod('nginx.vim','vim-table-mode','vim-lastplace','codi.vim','fcitx.vim','zeavim.vim','open-browser.vim','vim-gutentags')
 endfunction
 
 function! spacevim#defer#markdown(timer) abort
