@@ -23,6 +23,8 @@ augroup END
     nmap <M-j> <Plug>MoveLineDown
     nmap <M-k> <Plug>MoveLineUp
   endif
+  vmap <C-Down> <Plug>MoveBlockDown
+  vmap <C-Up> <Plug>MoveBlockUp
 " }
 
 " rainbow {
@@ -43,6 +45,45 @@ augroup END
   inoremap <F6> <ESC>:TagbarToggle<CR>
   nnoremap <Leader>tt :TagbarToggle<CR>
   let g:tagbar_sort = 0
+
+  if executable('ripper-tags')
+    let g:tagbar_type_ruby = {
+        \ 'kinds'      : ['m:modules',
+                        \ 'c:classes',
+                        \ 'C:constants',
+                        \ 'F:singleton methods',
+                        \ 'f:methods',
+                        \ 'a:aliases'],
+        \ 'kind2scope' : { 'c' : 'class',
+                         \ 'm' : 'class' },
+        \ 'scope2kind' : { 'class' : 'c' },
+        \ 'ctagsbin'   : 'ripper-tags',
+        \ 'ctagsargs'  : ['-f', '-']
+        \ }
+  endif
+  let g:tagbar_type_css = {
+  \ 'ctagstype' : 'Css',
+      \ 'kinds'     : [
+          \ 'c:classes',
+          \ 's:selectors',
+          \ 'i:identities'
+      \ ]
+  \ }
+  let g:tagbar_type_typescript = {
+    \ 'ctagstype': 'typescript',
+    \ 'kinds': [
+      \ 'c:classes',
+      \ 'n:modules',
+      \ 'f:functions',
+      \ 'v:variables',
+      \ 'v:varlambdas',
+      \ 'm:members',
+      \ 'i:interfaces',
+      \ 'e:enums',
+    \ ]
+  \ }
+
+
 " }
 
 " asyncrun.vim {
@@ -60,15 +101,11 @@ augroup END
   let g:indentLine_color_gui = '#4A9586'
   let g:indentLine_concealcursor='vc'      " default 'inc'
   let g:indentLine_fileTypeExclude = ['help', 'startify', 'vimfiler']
+  let g:indentLine_setColors = 1
+  let g:indentLine_char = '┆'
+  noremap <silent> <Leader>ti :IndentLinesToggle<cr>
 " }
 
-" vim-indent-guides {
-  let g:indent_guides_start_level = 2
-  let g:indent_guides_guide_size = 1
-  let g:indent_guides_enable_on_vim_startup = 1
-  let g:indent_guides_auto_colors = 0
-  nnoremap <Leader>ti :IndentGuidesToggle<CR>
-" }
 
 " vim-polyglot {
   " Reset errorformat to its default value for cooperating with asyncrun.vim
@@ -78,4 +115,5 @@ augroup END
 " vim-rooter {
   " To stop vim-rooter echoing the project directory
   let g:rooter_silent_chdir = 1
+  let g:rooter_change_directory_for_non_project_files = 'current'
 " }

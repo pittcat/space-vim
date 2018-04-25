@@ -24,6 +24,5 @@ MP 'junegunn/rainbow_parentheses.vim', { 'for': ['lisp', 'clojure', 'scheme'] }
 MP 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 
 MP 'Yggdroot/indentLine',             { 'on': 'IndentLinesToggle' }
-MP 'nathanaelkane/vim-indent-guides', { 'on': 'IndentGuidesToggle' }
 
 MP 'skywind3000/asyncrun.vim',        { 'on': ['AsyncRun!', 'AsyncRun'] }
