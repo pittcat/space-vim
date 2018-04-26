@@ -112,4 +112,6 @@ set foldmethod=manual
 "{save all buffers
 nnoremap <silent> <leader>fS :wa!<cr>
 "}
-"
+"{
+set mouse=a
+"}
