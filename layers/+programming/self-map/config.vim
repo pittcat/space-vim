@@ -37,7 +37,7 @@ nnoremap <silent> <F29> :vertical res -6<cr>
 " }
 "quickfix
 " {
-  function! s:Map_Qf_Behavior()
+  function! Map_Qf_Behavior()
     function! QFwinnr() 
        let i=1 
        while i <= winnr('$') 
