@@ -13,7 +13,7 @@ if g:spacevim_nvim || g:spacevim_vim8
 
   let g:UltiSnipsJumpForwardTrigger = '<C-j>'
   let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
-  let g:UltiSnipsExpandTrigger = "<C-e>"
+  let g:UltiSnipsExpandTrigger = "<C-z>"
   let g:ulti_expand_res = 0
   function! ExpandSnippetOrCarriageReturn()
       let snippet = UltiSnips#ExpandSnippet()
