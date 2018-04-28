@@ -3,7 +3,7 @@ if g:spacevim_timer
       \ 'branch': 'next',
       \ 'do': 'bash install.sh',
       \ }
-  call timer_start(350, 'spacevim#defer#lsp')
+  call timer_start(450, 'spacevim#defer#lsp')
 else
   MP 'autozimu/LanguageClient-neovim', {
       \ 'branch': 'next',
