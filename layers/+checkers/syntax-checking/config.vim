@@ -12,6 +12,9 @@ if g:spacevim_vim8 || g:spacevim_nvim
   let g:ale_echo_msg_error_str = g:spacevim#plug#ale#echo_msg_error_str
   let g:ale_echo_msg_warning_str = g:spacevim#plug#ale#echo_msg_warning_str
 
+  " language option
+  let g:ale_python_flake8_options = '--ignore=W,E501'         " python
+
   nmap <Leader>en <Plug>(ale_next)
   nmap <Leader>ep <Plug>(ale_previous)
   nnoremap <Leader>ts :ALEToggle<CR>
