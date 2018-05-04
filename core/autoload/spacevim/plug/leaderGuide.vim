@@ -79,7 +79,6 @@ let g:spacevim#plug#leaderGuide#lmap['s'] = {
 let g:spacevim#plug#leaderGuide#lmap['t'] = {
       \ 'name' : '+toggle',
       \ 'g' : ['GitGutterToggle', 'gitgutter'],
-      \ 'i' : ['IndentGuidesToggle', 'indent-guide'],
       \ 'p' : ['setlocal paste!', 'paste-mode'],
       \ 's' : ['SyntasticToggleMode', 'syntastic'],
       \ 't' : ['TagbarToggle', 'tagbar'],
