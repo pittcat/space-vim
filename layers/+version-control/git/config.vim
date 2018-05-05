@@ -30,6 +30,6 @@ scriptencoding utf-8
 " }
 
 " {gv.vim
-  noremap <silent> <leader>cg :GV<cr>
+  noremap <silent> <leader>gv :GV<cr>
 " }
 

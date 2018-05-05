@@ -58,7 +58,8 @@ nnoremap <silent> <F29> :vertical res -6<cr>
   nnoremap <silent> <F8> :call Map_Qf_Behavior()<cr>
 "}
 "{create new tab 
-nmap <leader>nb :edit 
+nmap <leader>nb :edit $PWD/
+nmap <leader>nB :edit 
 "}
 " {open .spacevim
 noremap <silent> <leader>fed :edit ~/.spacevim<cr>
@@ -114,4 +115,7 @@ nnoremap <silent> <leader>fS :wa!<cr>
 "}
 "{
 set mouse=a
+"}
+"{ generate title
+nnoremap <silent> <leader>gT :call spacevim#vim#auto#AddTitle()<cr>
 "}

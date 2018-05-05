@@ -12,7 +12,7 @@ scriptencoding utf-8
   inoremap <silent> <F4> <ESC>:NERDTreeToggle<CR>
   nnoremap <silent> <Leader>ft :NERDTreeToggle<CR>
   nnoremap <silent> <Leader>fd :NERDTreeFind<CR>
-  let NERDTreeChDirMode=1
+  let NERDTreeChDirMode=0
   noremap <silent> <leader>nc :NERDTreeCWD<cr>
   autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " }

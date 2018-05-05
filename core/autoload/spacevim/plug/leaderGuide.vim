@@ -131,3 +131,7 @@ let g:spacevim#plug#leaderGuide#lmap['x'] = {
       \ 'a' : ['call feedkeys("\<Plug>(EasyAlign)")', 'easy-align'],
       \ 'd' : ['StripWhitespace', 'delete-trailing-whitespace'],
       \ }
+
+
+
+
