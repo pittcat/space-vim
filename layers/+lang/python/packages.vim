@@ -1,7 +1,7 @@
 if g:spacevim_timer
   MP 'tmhedberg/SimpylFold',    { 'on': [] }
-  MP 'python-mode/python-mode', { 'on': [] }
+  MP 'hynek/vim-python-pep8-indent', { 'on': [] }
 else
   MP 'tmhedberg/SimpylFold',    { 'for': 'python' }
-  MP 'python-mode/python-mode', { 'for': 'python' }
+  MP 'hynek/vim-python-pep8-indent', { 'for': 'python' }
 endif

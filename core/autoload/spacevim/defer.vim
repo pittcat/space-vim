@@ -90,5 +90,5 @@ function! spacevim#defer#go(timer) abort
 endfunction
 
 function! spacevim#defer#python(timer) abort
-  call s:lod('python-mode', 'SimpylFold')
+  call s:lod('vim-python-pep8-indent','SimpylFold')
 endfunction
