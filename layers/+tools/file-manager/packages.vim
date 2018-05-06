@@ -1,5 +1,3 @@
-MP 'danro/rename.vim',               { 'on' : 'Rename' }
-
 " Refer to https://github.com/junegunn/dotfiles  vimrc
 MP 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 augroup loadNerdtree
