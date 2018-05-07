@@ -13,7 +13,7 @@ if g:spacevim_vim8 || g:spacevim_nvim
   let g:ale_echo_msg_warning_str = g:spacevim#plug#ale#echo_msg_warning_str
 
   " language option
-  let g:ale_python_flake8_options = '--ignore=W,E501,E231,,E235'         " python
+  let g:ale_python_flake8_options = '--ignore=W,E501,E231,E225'         " python
 
   nmap <Leader>en <Plug>(ale_next)
   nmap <Leader>ep <Plug>(ale_previous)
