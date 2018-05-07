@@ -6,27 +6,6 @@ augroup spacevimNewFile
   autocmd BufNewFile *.py,*.cpp,*.c,*.sh,*.java,*.pl call spacevim#vim#auto#AddTitle()
 augroup END
 
-" vim-move {
-  " vim-move config
-  " for terms that send Alt as Escape sequence
-  " see http://vim.wikia.com/wiki/Mapping_fast_keycodes_in_terminal_Vim
-  " for why the <F20> hack. Keeps Esc from waiting for other keys to exit visual
-  set <F20>=j
-  set <F21>=k
-  vmap <F20> <Plug>MoveBlockDown
-  vmap <F21> <Plug>MoveBlockUp
-  nmap <F20> <Plug>MoveLineDown
-  nmap <F21> <Plug>MoveLineUp
-  if g:spacevim_nvim
-    vmap <M-j> <Plug>MoveBlockDown
-    vmap <M-k> <Plug>MoveBlockUp
-    nmap <M-j> <Plug>MoveLineDown
-    nmap <M-k> <Plug>MoveLineUp
-  endif
-  vmap <C-Down> <Plug>MoveBlockDown
-  vmap <C-Up> <Plug>MoveBlockUp
-" }
-
 " rainbow {
   let g:rainbow_active = 1
   let g:rainbow_conf = g:spacevim#plug#rainbow#conf
@@ -61,14 +40,6 @@ augroup END
         \ 'ctagsargs'  : ['-f', '-']
         \ }
   endif
-  let g:tagbar_type_css = {
-  \ 'ctagstype' : 'Css',
-      \ 'kinds'     : [
-          \ 'c:classes',
-          \ 's:selectors',
-          \ 'i:identities'
-      \ ]
-  \ }
   let g:tagbar_type_typescript = {
     \ 'ctagstype': 'typescript',
     \ 'kinds': [

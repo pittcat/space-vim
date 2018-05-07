@@ -8,9 +8,6 @@
   "{BufOnly 
   nnoremap <leader>bD :BufOnly<cr>
   "}
-  "{vim-scripts/loremipsum
-  nnoremap <silent> <leader>gn :Loremipsum<cr>
-  "}
   "{codi.vim
   noremap <silent> <localleader>cd :Codi!!<cr>
   "}
@@ -41,9 +38,6 @@
   nmap <silent> <localleader>cf <Plug>CtrlSFCwordPath<cr>
     "}
     "
-    "{fzf neoyank
-  nnoremap <silent> <leader>fy :FZFNeoyank<cr>
-    "} 
    "{tweekmonster/fzf-filemru
   noremap <silent> <leader>fr :FilesMru<cr>
    "}

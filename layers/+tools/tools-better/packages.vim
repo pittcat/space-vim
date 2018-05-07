@@ -45,16 +45,6 @@
 
   call timer_start(750,'spacevim#defer#filemanage')
 
-
-  " copy pase and so on
-
-  "{fzf neoyank
-  MP 'justinhoward/fzf-neoyank'
-  MP 'Shougo/neoyank.vim'
-  "}
-  "{christoomey/vim-system-copy copy-paste-system cv cP
-  MP 'christoomey/vim-system-copy'
-  "}
   "{
   MP 'tweekmonster/fzf-filemru'
   "}
@@ -81,9 +71,6 @@
   MP 'vim-scripts/BufOnly.vim'
   "}
   "
-  "{vim-scripts/loremipsum
-  MP 'vim-scripts/loremipsum'
-  "}
   "
   "{AndrewRadev/splitjoin.vim
   MP 'AndrewRadev/splitjoin.vim'

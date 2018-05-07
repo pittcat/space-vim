@@ -64,7 +64,7 @@ endfunction
 
 " 850
 function! spacevim#defer#copy_and_paste(timer) abort
-  call s:lod('fzf-neoyank','neoyank.vim','vim-system-copy','fzf-filemru','vim-paste-easy')
+  call s:lod('fzf-filemru','vim-paste-easy')
 endfunction
 
 " 900

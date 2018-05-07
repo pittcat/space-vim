@@ -11,13 +11,6 @@ endif
 
 MP 'editorconfig/editorconfig-vim', { 'on': 'EditorConfigReload' }
 
-MP 'matze/vim-move', { 'on': [
-            \ '<Plug>MoveBlockDown',
-            \ '<Plug>MoveBlockUp',
-            \ '<Plug>MoveLineDown',
-            \ '<Plug>MoveLineUp',
-            \ ]}
-
 MP 'junegunn/rainbow_parentheses.vim', { 'for': ['lisp', 'clojure', 'scheme'] }
 
 " Need to disable airline extension for tagbar, see vim-airline issue 1313.

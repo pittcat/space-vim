@@ -4,6 +4,4 @@ if g:spacevim_nvim
 elseif g:spacevim_vim8
   MP 'maralla/completor.vim',{'do': 'cd pythonx/completers/javascript && npm install'}
   MP 'ferreum/completor-tmux'     "complete tmux
-else
-  MP 'Shougo/neocomplete.vim'
 endif

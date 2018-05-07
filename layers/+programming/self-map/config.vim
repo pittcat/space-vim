@@ -119,3 +119,6 @@ set mouse=a
 "{ generate title
 nnoremap <silent> <leader>gT :call spacevim#vim#auto#AddTitle()<cr>
 "}
+"{
+nnoremap <silent> <leader>BD :bd!
+"}
