@@ -16,7 +16,7 @@ if exists('emoji#for')
   let g:spacevim#plug#ale#sign_error = emoji#for('boom')
   let g:spacevim#plug#ale#sign_warning = emoji#for('small_orange_diamond')
 else
-  let g:spacevim#plug#ale#sign_error = '•'
+  let g:spacevim#plug#ale#sign_error = '✖'
   let g:spacevim#plug#ale#sign_warning = '•'
 endif
 
