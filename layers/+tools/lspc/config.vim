@@ -6,7 +6,7 @@ let g:LanguageClient_serverCommands = {
     \ 'javascript': ['javascript-typescript-stdio'],
     \ 'javascript.jsx': ['javascript-typescript-stdio'],
     \ 'typescript': ['javascript-typescript-stdio'],
-    \ 'go': ['go-langserver'] },
+    \ 'go': ['go-langserver'],
     \ }
 let g:LanguageClient_autoStart = 1
 let g:LanguageClient_loadSettings = 1
