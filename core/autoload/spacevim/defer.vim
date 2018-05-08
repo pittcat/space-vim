@@ -17,9 +17,8 @@ function! spacevim#defer#airline(timer) abort
 endfunction
 
 " 300
-function! spacevim#defer#gitgutter(timer) abort
-  call s:lod('vim-gitgutter')
-  silent! GitGutterEnable
+function! spacevim#defer#vimsignify(timer) abort
+  call s:lod('vim-signify')
 endfunction
 
 " 350

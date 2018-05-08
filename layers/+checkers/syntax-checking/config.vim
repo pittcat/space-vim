@@ -21,6 +21,8 @@ if g:spacevim_vim8 || g:spacevim_nvim
   nnoremap <silent> <leader>ed :ALEDetail<cr>
   nnoremap <silent> <leader>ef :ALEFix<cr>
 
+  "save startup
+  let g:ale_lint_on_enter=0
 
   " [DEPRECATED] Use ale#statusline#Count(buffer) instead
   " For a more fancy ale statusline

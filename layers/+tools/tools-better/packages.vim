@@ -30,10 +30,6 @@
   let NERDTreeShowBookmarks=1 " 显示书签列表
   "}
 
-  " gitfugitve的插件
-  " {
-  MP 'mhinz/vim-signify'
-  "}
   "{tpope/vim-eunuch'
   MP 'tpope/vim-eunuch'
   "}
