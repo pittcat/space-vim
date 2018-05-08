@@ -3,8 +3,17 @@
     noremap <leader>rn :Move 
     noremap <leader>cd :Mkdir 
   "}
- "
+  "{ 
+  "gcmt/wildfire.vim
+  let g:wildfire_objects = ["i'", 'i"', "i)", "i]", "i}", "ip", "it"]
+  nmap <localleader>s <Plug>(wildfire-quick-select)
+  cal wildfire#triggers#AddQs("<localleader>s", {
+        \ "*" : ["i)", "i]","i}",'i"',"i'"],
+        \ })
+  map <nop> <Plug>(wildfire-fuel)
+  vmap <nop> <Plug>(wildfire-water)
   "
+  "}
   "{BufOnly 
   nnoremap <leader>bD :BufOnly<cr>
   "}

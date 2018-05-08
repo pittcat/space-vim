@@ -13,7 +13,9 @@ if g:spacevim_vim8 || g:spacevim_nvim
   let g:ale_echo_msg_warning_str = g:spacevim#plug#ale#echo_msg_warning_str
 
   " language option
+  "{
   let g:ale_python_flake8_options = '--ignore=W,E501,E231,E225'         " python
+  "}
 
   nmap <Leader>en <Plug>(ale_next)
   nmap <Leader>ep <Plug>(ale_previous)
@@ -24,6 +26,13 @@ if g:spacevim_vim8 || g:spacevim_nvim
   "save startup
   let g:ale_lint_on_enter=0
 
+  " make quickfix display error
+  "{
+  let g:ale_set_loclist = 1
+  nnoremap <silent> <leader>el :lopen<cr>
+  nnoremap <silent> <leader>ec :lclose<cr>
+  "}
+
   " [DEPRECATED] Use ale#statusline#Count(buffer) instead
   " For a more fancy ale statusline
   function! ALEGetError()
@@ -32,7 +41,7 @@ if g:spacevim_vim8 || g:spacevim_nvim
   function! ALEGetWarning()
     return spacevim#plug#ale#ALEGetWarning()
   endfunction
-  " }
+  "}
 else
   " syntastic {
   let g:syntastic_python_checkers=['pyflakes']

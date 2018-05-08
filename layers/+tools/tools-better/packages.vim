@@ -55,9 +55,7 @@
   MP 'tpope/vim-repeat'
   "}
   "{expand region
-  MP 'terryma/vim-expand-region'
-  vmap V <Plug>(expand_region_expand)
-  vmap v <Plug>(expand_region_shrink)
+  MP 'gcmt/wildfire.vim'
   "}
   "{
   MP 'kien/tabman.vim'
