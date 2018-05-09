@@ -4,7 +4,10 @@ function! spacevim#vim#auto#AddTitle()
           \ '#include <stdio.h>'
           \ ],
         \ 'sh': [
-          \ '#!/usr/bin/env bash'
+          \ '#!/usr/bin/env sh'
+          \ ],
+        \ 'zsh': [
+          \ '#!/usr/bin/env zsh'
           \ ],
         \ 'cpp': [
           \ '#include <iostream>',

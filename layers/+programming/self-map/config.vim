@@ -52,7 +52,8 @@ nnoremap <silent> <F29> :vertical res -6<cr>
     if QFwinnr()
       exec 'cclose'
     else
-      exec 'copen 16'
+      let l:qf_height = float2nr(round(winheight('%') * 0.3))
+      exec 'copen l:qf_height'
     endif
   endfun
   nnoremap <silent> <F8> :call Map_Qf_Behavior()<cr>
@@ -65,11 +66,11 @@ nmap <leader>nB :edit
 noremap <silent> <leader>fed :edit ~/.spacevim<cr>
 " }
 " {vim qf
-  autocmd BufWinEnter quickfix nnoremap <silent> <buffer>
-              \   q :cclose<cr>:lclose<cr>
-  autocmd BufEnter * if (winnr('$') == 1 && &buftype ==# 'quickfix' ) |
-              \   bd|
-              \   q | endif
+autocmd BufWinEnter quickfix nnoremap <silent> <buffer>
+            \   q :cclose<cr>:lclose<cr>
+autocmd BufEnter * if (winnr('$') == 1 && &buftype ==# 'quickfix' ) |
+            \   bd|
+            \   q | endif
   " }
 
 " file and filename copy
@@ -121,4 +122,7 @@ nnoremap <silent> <leader>gT :call spacevim#vim#auto#AddTitle()<cr>
 "}
 "{
 nnoremap <silent> <leader>BD :bd!
+"}
+"{
+autocmd BufNewFile * :call spacevim#vim#auto#AddTitle()
 "}
