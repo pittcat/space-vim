@@ -59,9 +59,15 @@ function! spacevim#defer#python(timer) abort
 endfunction
 
 function! spacevim#defer#shell(timer) abort
-  call s:lod('chrisbra/vim-zsh')
+  call s:lod('vim-zsh')
 endfunction
 
+function! spacevim#defer#clang(timer) abort
+  call s:lod('vim-clang-format','vim-cpp-enhanced-highlight')
+endfunction
+function! spacevim#defer#javascript(timer) abort
+  call s:lod('vim-javascript','vim-jsx')
+endfunction
 " 600
 function! spacevim#defer#motion(timer) abort
   call s:lod('vim-sneak', 'vim-easymotion')
