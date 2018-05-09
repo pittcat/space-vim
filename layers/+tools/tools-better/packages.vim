@@ -1,4 +1,4 @@
-" if g:spacevim_timer
+if g:spacevim_timer
   "sjmbbill/undotree
   "{
   MP 'mbbill/undotree'
@@ -115,4 +115,4 @@
   "}
   call timer_start(1400,'spacevim#defer#awesome_tools')
 
-" endif
+endif

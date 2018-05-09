@@ -27,7 +27,6 @@ function! spacevim#defer#lsp(timer) abort
 endfunction
 
 
-
 " 400
 function! spacevim#defer#programming(timer) abort
   call s:lod('rainbow', 'vim-rooter', 'vim-polyglot')
@@ -68,7 +67,7 @@ endfunction
 
 " 900
 function! spacevim#defer#operation_freestyle(timer) abort
-  call s:lod('vim-repeat','vim-expand-region','tabman.vim','BufOnly.vim','loremipsum','splitjoin.vim','vim-smooth-scroll','change-inside-surroundings.vim','linediff.vim','ctrlsf.vim')
+  call s:lod('vim-repeat','wildfire.vim','tabman.vim','BufOnly.vim','splitjoin.vim','vim-smooth-scroll','change-inside-surroundings.vim','linediff.vim','ctrlsf.vim')
 endfunction
 
 " 1400
@@ -77,7 +76,7 @@ function! spacevim#defer#awesome_tools(timer) abort
 endfunction
 
 function! spacevim#defer#markdown(timer) abort
-  call s:lod('vim-markdown')
+  call s:lod('vim-markdown','vim-markdown-composer','vim-markdown-toc')
 endfunction
 
 function! spacevim#defer#rust(timer) abort
@@ -89,5 +88,5 @@ function! spacevim#defer#go(timer) abort
 endfunction
 
 function! spacevim#defer#python(timer) abort
-  call s:lod('vim-python-pep8-indent','SimpylFold')
+  call s:lod('vim-python-pep8-indent','SimpylFold','vim-python/python-syntax')
 endfunction
