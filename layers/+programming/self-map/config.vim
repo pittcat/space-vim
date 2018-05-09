@@ -123,6 +123,3 @@ nnoremap <silent> <leader>gT :call spacevim#vim#auto#AddTitle()<cr>
 "{
 nnoremap <silent> <leader>BD :bd!
 "}
-"{
-autocmd BufNewFile * :call spacevim#vim#auto#AddTitle()
-"}
