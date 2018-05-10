@@ -29,7 +29,6 @@ function! spacevim#vim#auto#AddTitle()
     call setline(1, l:template[l:ft])
     execute "normal! G"
     call append(line("."), "")
-    call append(line("."), "")
     execute "normal! G"
     startinsert
   endif
