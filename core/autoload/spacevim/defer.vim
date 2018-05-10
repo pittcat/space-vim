@@ -26,7 +26,6 @@ function! spacevim#defer#lsp(timer) abort
   call s:lod('LanguageClient-neovim')
 endfunction
 
-
 " 400
 function! spacevim#defer#programming(timer) abort
   call s:lod('rainbow', 'vim-rooter', 'vim-polyglot')
@@ -68,6 +67,13 @@ endfunction
 function! spacevim#defer#javascript(timer) abort
   call s:lod('vim-javascript','vim-jsx')
 endfunction
+function! spacevim#defer#ruby(timer) abort
+  call s:lod('vim-ruby','vim-rbenv','vim-bundler','vim-rails','vim-rake','rspec.vim')
+endfunction
+function! spacevim#defer#typescript(timer) abort
+  call s:lod('typescript-vim','vim-tsx')
+endfunction
+
 " 600
 function! spacevim#defer#motion(timer) abort
   call s:lod('vim-sneak', 'vim-easymotion')
