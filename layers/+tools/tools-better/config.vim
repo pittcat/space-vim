@@ -1,6 +1,6 @@
   "tpope/vim-eunuch
   "{rename and mkdir 
-    noremap <leader>rn :Move 
+    noremap <leader>rn :Rename 
     noremap <leader>cd :Mkdir 
   "}
   "{ 
