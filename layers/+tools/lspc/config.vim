@@ -1,7 +1,7 @@
 let g:LanguageClient_serverCommands = {
     \ 'python':['pyls'],
-    \ 'cpp': ['cquery','--language-server','--log-file=/tmp/cq.log'],                                                                                                                                                                              
-    \ 'c': ['cquery','--language-server','--log-file=/tmp/cq.log'],                                                                                                                                                                              
+    \ 'cpp': ['cquery','--language-server','--log-file=/tmp/cq.log'],
+    \ 'c': ['cquery','--language-server','--log-file=/tmp/cq.log'],
     \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
     \ 'javascript': ['javascript-typescript-stdio'],
     \ 'javascript.jsx': ['javascript-typescript-stdio'],
