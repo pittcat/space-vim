@@ -53,7 +53,7 @@ nnoremap <silent> <F29> :vertical res -6<cr>
       exec 'cclose'
     else
       let l:qf_height = float2nr(round(winheight('%') * 0.3))
-      exec 'copen l:qf_height'
+      exec 'copen 16'
     endif
   endfun
   nnoremap <silent> <F8> :call Map_Qf_Behavior()<cr>
