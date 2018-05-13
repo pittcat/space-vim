@@ -68,7 +68,7 @@ function! spacevim#defer#javascript(timer) abort
   call s:lod('vim-javascript','vim-jsx')
 endfunction
 function! spacevim#defer#ruby(timer) abort
-  call s:lod('vim-ruby','vim-rbenv','vim-bundler','vim-rails','vim-rake','rspec.vim')
+  call s:lod('vim-ruby','vim-rbenv','vim-bundler','vim-rails','vim-rake','rspec.vim','vim-rspec')
 endfunction
 function! spacevim#defer#typescript(timer) abort
   call s:lod('typescript-vim','vim-tsx')
