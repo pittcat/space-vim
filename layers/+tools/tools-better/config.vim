@@ -24,7 +24,11 @@
   noremap <silent> <localleader>ci :ChangeInsideSurrounding<cr>
   noremap <silent> <localleader>cas :ChangeAroundSurrounding<cr>
   "}
-  "
+  "{tpoppe/vim-repeat
+  " https://stackoverflow.com/questions/355907/how-do-i-repeat-an-edit-on-multiple-lines-in-vim
+  " allow the . to execute once for each line of a visual selection
+  vnoremap . :normal .<CR>
+  "}
   "{AndrewRadev/linediff.vim
   vmap <localleader>df :Linediff<cr>
   vmap <localleader>dr :LinediffReset<cr>
