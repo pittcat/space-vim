@@ -126,3 +126,10 @@ nnoremap <silent> <leader>BD :bd!
 "{add title
 autocmd BufNewFile * silent! call spacevim#vim#auto#AddTitle()
 "}
+"
+"{unmap j,k
+iunmap jj
+iunmap jk
+cunmap jj
+cunmap jk
+"}
