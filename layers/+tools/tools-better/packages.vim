@@ -113,6 +113,9 @@ if g:spacevim_timer
   "{ludovicchabant/vim-gutentags
   MP 'ludovicchabant/vim-gutentags'
   "}
+  "{iamcco/dict.vim
+  MP 'iamcco/dict.vim'
+  "}
   call timer_start(1400,'spacevim#defer#awesome_tools')
 
 endif

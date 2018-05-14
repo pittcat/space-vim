@@ -109,3 +109,12 @@
   endif
   set tags=s:vim_tags;,tags
   "}
+  " iamcco/dict.vim
+  " {
+  let g:api_key = "1932136763"
+  let g:keyfrom = "aioiyuuko"
+  nmap <silent> <Leader>yd <Plug>DictWSearch  
+  vmap <silent> <Leader>yd <Plug>DictRVSearch
+  nmap <silent> <localleader>yd <Plug>DictSearch
+
+  " }
