@@ -1,18 +1,18 @@
 " Only suitable for space-vim-dark theme, other themes are not guaranteed.
-let g:spacevim#plug#fzf#colors = 
-\ { 'fg':      ['fg', 'Normal'],
-  \ 'bg':      ['bg', 'Normal'],
-  \ 'hl':      ['fg', 'Comment'],
-  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-  \ 'hl+':     ['fg', 'Statement'],
-  \ 'info':    ['fg', 'PreProc'],
-  \ 'border':  ['fg', 'Ignore'],
-  \ 'prompt':  ['fg', 'Conditional'],
-  \ 'pointer': ['fg', 'Exception'],
-  \ 'marker':  ['fg', 'Keyword'],
-  \ 'spinner': ['fg', 'Label'],
-  \ 'header':  ['fg', 'Comment'] }
+let g:spacevim#plug#fzf#colors = {
+            \ 'fg':      ['fg', 'StatusLineNC'],
+            \ 'bg':      ['bg', 'Normal'],
+            \ 'hl':      ['fg', 'String'],
+            \ 'fg+':     ['fg', 'Number', 'Normal'],
+            \ 'bg+':     ['bg', 'StatusLine', 'Normal'],
+            \ 'hl+':     ['fg', 'Exception'],
+            \ 'info':    ['fg', 'Special'],
+            \ 'prompt':  ['fg', 'Function'],
+            \ 'pointer': ['fg', 'Error'],
+            \ 'marker':  ['fg', 'Error'],
+            \ 'spinner': ['fg', 'Statement'],
+            \ 'header':  ['fg', 'Number'],
+            \   }
 
 let g:fzf_layout = { 'down': '~40%'  }
 
@@ -377,8 +377,40 @@ function! spacevim#plug#fzf#SearchCword()
         \ expand('<cword>'),
         \ {
         \ 'sink': 'edit',
-        \ 'options': '--ansi --delimiter : --nth 4..,.. --prompt "Ag?> " '.
+        \ 'dir':FindRootDirectory(),
+        \ 'options': '--ansi --delimiter : --nth 4..,.. --prompt "?'.expand('<cword>').'> " '.
         \            '--color hl:68,hl+:110 --multi '.
         \            '--bind=ctrl-d:page-down,ctrl-u:page-up ',
         \ })
+endfunction
+
+" ------------------------------------------------------------------
+" Jumps incompleted, sink is wrong
+" ------------------------------------------------------------------
+function! s:format_jump(line)
+  return substitute(a:line, '\S', '\=s:yellow(submatch(0))', '')
+endfunction
+
+function! s:jump_sink(lines)
+  if len(a:lines) < 2
+    return
+  endif
+  let cmd = s:action_for(a:lines[0])
+  if !empty(cmd)
+    execute 'silent' cmd
+  endif
+  echom "a:lines[1]: ".a:lines[1]
+  echom "jumps normal: ".matchstr(a:lines[1], '\d\s')
+  execute 'normal! `'.matchstr(a:lines[1], '\S').'zz'
+endfunction
+
+function! spacevim#plug#fzf#Jumps(...)
+  redir => cout
+  silent jumps
+  redir END
+  let list = split(cout, "\n")
+  return s:fzf('jumps', {
+  \ 'source':  extend(list[0:0], map(list[1:-2], 's:format_jump(v:val)')),
+  \ 'sink*':   s:function('s:jump_sink'),
+  \ 'options': '+m -x --ansi --tiebreak=index --header-lines 1 --tiebreak=begin --prompt "Jumps> "'}, a:000)
 endfunction
