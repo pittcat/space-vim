@@ -133,3 +133,6 @@ iunmap jk
 cunmap jj
 cunmap jk
 "}
+"{copy whole buffer content
+nnoremap <silent> <leader>cb :%y+<cr>
+"}
