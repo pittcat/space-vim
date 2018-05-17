@@ -14,7 +14,7 @@
   nnoremap <Leader>f? :Files<CR>
 
   nnoremap <silent> <Leader>sf :call spacevim#plug#fzf#Session()<CR>
-  nnoremap <leader>rg :RG!<cr>
+  nnoremap <leader>rg :Pcg!<cr>
 
   nnoremap <Leader>f? :Files ~<CR>
   nnoremap <Leader>ff :Files $PWD/<CR>

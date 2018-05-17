@@ -203,7 +203,7 @@ command! -bang -nargs=* Rg
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
 
-command! -bang -nargs=* RG
+command! -bang -nargs=* Pcg
   \ call fzf#vim#grep(
   \   'rg --column --line-number --no-heading --color=always '.shellescape(expand('<cword>')), 1,
   \   <bang>0 ? fzf#vim#with_preview('up:70%')
