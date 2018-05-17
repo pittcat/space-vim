@@ -38,7 +38,25 @@ let g:spacevim#plug#leaderGuide#lmap['e'] = {
       \ 'p' : ['call feedkeys("\<Plug>(ale_previous)")', 'previous-error'],
       \ }
 let g:spacevim#plug#leaderGuide#lmap['f'] = {
-      \ 'name' : '+fold/files',
+      \ 'name' : '+find/files/fold',
+      \ '0' : ['set foldlevel=0', '0-fold-level'],
+      \ '1' : ['set foldlevel=1', '1-fold-level'],
+      \ '2' : ['set foldlevel=2', '2-fold-level'],
+      \ '3' : ['set foldlevel=3', '3-fold-level'],
+      \ '4' : ['set foldlevel=4', '4-fold-level'],
+      \ '5' : ['set foldlevel=5', '5-fold-level'],
+      \ '6' : ['set foldlevel=6', '6-fold-level'],
+      \ '7' : ['set foldlevel=7', '7-fold-level'],
+      \ '8' : ['set foldlevel=8', '8-fold-level'],
+      \ '9' : ['set foldlevel=9', '9-fold-level'],
+      \ 'l' : ['BLines', 'fzf-find-current-buffer'],
+      \ 'd' : ['NERDTreeFind', 'find-current-buffer-in-NERDTree'],
+      \ 'f' : ['Files PWD', 'files-in-pwd-direcotry'],
+      \ 's' : ['save', 'save-file'],
+      \ 't' : ['NERDTreeToggle', 'toggle-NERDTree'],
+      \ '?' : ['Files ~', 'files-in-home-direcotry'],
+      \ 'R' : ['source $MYVIMRC', 'reload-vimrc'],
+      \ 'w' : ['call spacevim#plug#fzf#SearchCword()', 'find-cword-in-project']
       \ }
 let g:spacevim#plug#leaderGuide#lmap['g'] = {
       \ 'name' : '+git/version-control',
@@ -69,7 +87,6 @@ let g:spacevim#plug#leaderGuide#lmap['p'] = {
       \ 'name' : '+projects',
       \ 'f' : ['call spacevim#plug#fzf#FindFileInProject()', 'find-file-in-project'],
       \ 's' : ['Rag', 'search-in-project'],
-      \ 'w' : ['call spacevim#plug#fzf#SearchCword()', 'find-cword-in-project'],
       \ }
 let g:spacevim#plug#leaderGuide#lmap['q'] = [ 'q', 'quit' ]
 let g:spacevim#plug#leaderGuide#lmap['Q'] = [ 'qa!', 'quit-without-saving' ]
