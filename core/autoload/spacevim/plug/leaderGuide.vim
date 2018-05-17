@@ -51,10 +51,10 @@ let g:spacevim#plug#leaderGuide#lmap['f'] = {
       \ '9' : ['set foldlevel=9', '9-fold-level'],
       \ 'l' : ['BLines', 'fzf-find-current-buffer'],
       \ 'd' : ['NERDTreeFind', 'find-current-buffer-in-NERDTree'],
-      \ 'f' : ['Files PWD', 'files-in-pwd-direcotry'],
+      \ 'f' : ['Files $PWD', 'files-in-pwd-direcotry'],
       \ 's' : ['save', 'save-file'],
       \ 't' : ['NERDTreeToggle', 'toggle-NERDTree'],
-      \ '?' : ['Files ~', 'files-in-home-direcotry'],
+      \ '?' : ['Files ~/', 'files-in-home-direcotry'],
       \ 'R' : ['source $MYVIMRC', 'reload-vimrc'],
       \ 'w' : ['call spacevim#plug#fzf#SearchCword()', 'find-cword-in-project']
       \ }
