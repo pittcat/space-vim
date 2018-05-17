@@ -192,8 +192,8 @@ endfunction
 
 command! -bang -nargs=* Ag
             \ call fzf#vim#ag(<q-args>,
-            \                 <bang>0 ? fzf#vim#with_preview('up:80%')
-            \                         : fzf#vim#with_preview('right:80%:hidden', '?'),
+            \                 <bang>0 ? fzf#vim#with_preview('up:70%')
+            \                         : fzf#vim#with_preview('right:50%:hidden', '?'),
             \                 <bang>0)
 
 command! -bang -nargs=* Rg
@@ -202,6 +202,14 @@ command! -bang -nargs=* Rg
   \   <bang>0 ? fzf#vim#with_preview('up:70%')
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
+
+command! -bang -nargs=* RG
+  \ call fzf#vim#grep(
+  \   'rg --column --line-number --no-heading --color=always '.shellescape(expand('<cword>')), 1,
+  \   <bang>0 ? fzf#vim#with_preview('up:70%')
+  \           : fzf#vim#with_preview('right:50%:hidden', '?'),
+  \   <bang>0)
+
 
 " Likewise, Files command with preview window
 command! -bang -nargs=? -complete=dir Files
