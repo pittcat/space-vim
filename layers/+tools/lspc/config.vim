@@ -20,9 +20,9 @@ let g:LanguageClient_loggingLevel = 'DEBUG'
 " disable interact with ale
 let g:LanguageClient_diagnosticsEnable=0
 
-nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
-nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
-nnoremap <silent> <leader>cn :call LanguageClient_textDocument_rename()<CR>
+nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> <leader>cn :call LanguageClient#textDocument_rename()<CR>
 nnoremap <silent> <leader><leader>z :pc<CR>
 
 augroup LanguageClient_config
