@@ -25,15 +25,6 @@ else
   tnoremap <expr> <Esc> "<C-\><C-n>"
 endif
 
-" window resize
-set <F26>==
-set <F27>=-
-set <F28>=)
-set <F29>=(
-nnoremap <silent> <F26> :res +6<cr>
-nnoremap <silent> <F27> :res -6<cr>
-nnoremap <silent> <F28> :vertical res +6<cr>
-nnoremap <silent> <F29> :vertical res -6<cr>
 " }
 "quickfix
 " {
@@ -132,6 +123,11 @@ iunmap jj
 iunmap jk
 cunmap jj
 cunmap jk
+"}
+"{
+vunmap v
+unmap <Leader>u
+unmap <Leader>d
 "}
 "{copy whole buffer content
 nnoremap <silent> <leader>cb :%y+<cr>

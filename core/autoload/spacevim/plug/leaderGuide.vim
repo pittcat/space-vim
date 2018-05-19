@@ -31,7 +31,7 @@ let g:spacevim#plug#leaderGuide#lmap['b'] = {
       \ 'b' : ['Buffers', 'fzf-buffer'],
       \ '?' : ['Buffers', 'fzf-buffer'],
       \ }
-let g:spacevim#plug#leaderGuide#lmap['d'] = [ 'call feedkeys("\<C-d>")', 'scroll-down' ]
+" let g:spacevim#plug#leaderGuide#lmap['d'] = [ 'call feedkeys("\<C-d>")', 'scroll-down' ]
 let g:spacevim#plug#leaderGuide#lmap['e'] = {
       \ 'name' : '+errors',
       \ 'n' : ['call feedkeys("\<Plug>(ale_next)")', 'next-error'],
@@ -103,7 +103,7 @@ let g:spacevim#plug#leaderGuide#lmap['t'] = {
       \ 'c' : ['call spacevim#util#ToggleCursorColumn()', 'cursor-column'],
       \ 'C' : ['call spacevim#util#ToggleColorColumn()', 'color-column'],
       \ }
-let g:spacevim#plug#leaderGuide#lmap['u'] = [ 'call feedkeys("\<C-u>")', 'scroll-up' ]
+" let g:spacevim#plug#leaderGuide#lmap['u'] = [ 'call feedkeys("\<C-u>")', 'scroll-up' ]
 
 nnoremap <Plug>(window_w) <C-W>w
 nnoremap <Plug>(window_r) <C-W>r

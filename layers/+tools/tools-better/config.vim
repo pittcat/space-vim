@@ -115,5 +115,7 @@
   let g:keyfrom = "aioiyuuko"
   nmap <silent> <Leader>yd <Plug>DictWSearch  
   vmap <silent> <Leader>yd <Plug>DictRVSearch
+  nmap <silent> <nop> <Plug>DictSearch
+  vmap <silent> <nop> <Plug>DictVSearch
 
   " }
