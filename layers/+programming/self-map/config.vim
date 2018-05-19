@@ -126,8 +126,8 @@ cunmap jk
 "}
 "{
 vunmap v
-unmap <Leader>u
-unmap <Leader>d
+nunmap <Leader>u
+nunmap <Leader>d
 "}
 "{copy whole buffer content
 nnoremap <silent> <leader>cb :%y+<cr>
