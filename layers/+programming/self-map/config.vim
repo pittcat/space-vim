@@ -132,3 +132,8 @@ nunmap <Leader>d
 "{copy whole buffer content
 nnoremap <silent> <leader>cb :%y+<cr>
 "}
+"
+"{
+nnoremap <silent> <leader>pu :PlugUpdate!<cr>
+nnoremap <silent> <leader>pr :PlugClean<cr>
+"}
