@@ -98,9 +98,6 @@ if g:spacevim_timer
   "{dietsche/vim-lastplace
   MP 'dietsche/vim-lastplace'
   "}
-  " {metakirby5/codi.vim
-  MP 'metakirby5/codi.vim'
-  " }
   " {lilydjwg/fcitx.vim
   MP 'lilydjwg/fcitx.vim'
   " }

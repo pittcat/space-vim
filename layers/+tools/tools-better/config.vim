@@ -17,9 +17,6 @@
   "{BufOnly 
   nnoremap <leader>bD :BufOnly<cr>
   "}
-  "{codi.vim
-  noremap <silent> <localleader>cd :Codi!!<cr>
-  "}
   "{briandoll/change-inside-surroundings.vim
   noremap <silent> <localleader>ci :ChangeInsideSurrounding<cr>
   noremap <silent> <localleader>cas :ChangeAroundSurrounding<cr>
