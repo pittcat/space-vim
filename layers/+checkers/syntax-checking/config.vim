@@ -14,7 +14,7 @@ if g:spacevim_vim8 || g:spacevim_nvim
 
   " language option
   "{
-  let g:ale_python_flake8_options = '--ignore=W,E501,E231,E225,E741,E116,E3'         " python
+  let g:ale_python_flake8_options = '--ignore=W,E501,E231,E225,E741,E116,E3,E226'         " python
   "}
 
   nmap <Leader>en <Plug>(ale_next)
