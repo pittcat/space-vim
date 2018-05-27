@@ -58,10 +58,11 @@ augroup END
 " }
 
 " asyncrun.vim {
+  noremap <F8> :call asyncrun#quickfix_toggle(14)<cr>
   nnoremap <F5> :call spacevim#plug#asyncrun#CompileAndRun()<CR>
   augroup spacevimAsyncRun
     autocmd!
-    autocmd User AsyncRunStart call spacevim#vim#auto#AsyncRunStart()
+    autocmd User AsyncRunStart call asyncrun#quickfix_toggle(14, 1)
   augroup END
 " }
 

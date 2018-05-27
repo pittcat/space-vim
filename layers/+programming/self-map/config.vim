@@ -26,29 +26,6 @@ else
 endif
 
 " }
-"quickfix
-" {
-  function! Map_Qf_Behavior()
-    function! QFwinnr() 
-       let i=1 
-       while i <= winnr('$') 
-           if getbufvar(winbufnr(i), '&buftype') == 'quickfix' 
-               return i 
-           endif 
-           let i += 1 
-       endwhile 
-       return 0 
-    endfunction 
-
-    if QFwinnr()
-      exec 'cclose'
-    else
-      let l:qf_height = float2nr(round(winheight('%') * 0.3))
-      exec 'copen 16'
-    endif
-  endfun
-  nnoremap <silent> <F8> :call Map_Qf_Behavior()<cr>
-"}
 "{create new tab 
 nmap <leader>nb :edit $PWD/
 nmap <leader>nB :edit 

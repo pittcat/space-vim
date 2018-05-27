@@ -19,5 +19,3 @@ function! spacevim#plug#asyncrun#CompileAndRun()
     call spacevim#util#err("spacevim#util#CompileAndRun not supported in current filetype!")
   endif
 endfunction
-
-
