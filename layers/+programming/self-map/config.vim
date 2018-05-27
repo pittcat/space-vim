@@ -123,6 +123,8 @@ iunmap jj
 iunmap jk
 cunmap jj
 cunmap jk
+sunmap j
+sunmap k
 "}
 "{
 vunmap v
