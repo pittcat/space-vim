@@ -58,6 +58,7 @@ augroup END
 " }
 
 " asyncrun.vim {
+  nnoremap <F9> :Asyncstop<cr>
   noremap <F8> :call asyncrun#quickfix_toggle(14)<cr>
   nnoremap <F5> :call spacevim#plug#asyncrun#CompileAndRun()<CR>
   augroup spacevimAsyncRun
