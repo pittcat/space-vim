@@ -36,8 +36,8 @@
   au BufLeave * if !&diff | let b:winview = winsaveview() | endif
   au BufEnter * if exists('b:winview') && !&diff | call winrestview(b:winview) | unlet! b:winview | endif
 
-  nnoremap <silent> <C-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
-  nnoremap <silent> <C-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
+  nnoremap <silent> <C-Up> :call smooth_scroll#up(&scroll, 0, 2)<CR>
+  nnoremap <silent> <C-Down> :call smooth_scroll#down(&scroll, 0, 2)<CR>
   nnoremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
   nnoremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
   " }
