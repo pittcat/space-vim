@@ -42,10 +42,16 @@
   nnoremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
   " }
     "{dyng/ctrlsf.vim
-  let g:ctrlsf_position = 'bottom'
-  let g:ctrlsf_winsize = '30%'
-  vmap <silent> <localleader>cf <Plug>CtrlSFVwordExec
-  nmap <silent> <localleader>cf <Plug>CtrlSFCwordPath<cr>
+  " let g:ctrlsf_position = 'bottom'
+  " let g:ctrlsf_winsize = '30%'
+  " vmap <silent> <localleader>cf :call VM_ctrlsf()<cr>
+  " nnoremap <silent> <localleader>cf :call VM_ctrlsf()<cr>
+  " nnoremap <C-n> :call VM_ctrlsf()<cr>
+  " fun! VM_ctrlsf()
+    " let txt = b:VM_Selection.Regions[0].txt
+    " call vm#reset()
+  " exe "CtrlSF ".txt
+  " endfun
     "}
     "
    "{tweekmonster/fzf-filemru

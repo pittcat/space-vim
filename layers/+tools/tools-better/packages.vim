@@ -85,7 +85,7 @@ if g:spacevim_timer
   "}
   "
   "{dyng/ctrlsf.vim
-  MP 'dyng/ctrlsf.vim'
+  " MP 'dyng/ctrlsf.vim'
   "}
   call timer_start(900,'spacevim#defer#operation_freestyle')
 
