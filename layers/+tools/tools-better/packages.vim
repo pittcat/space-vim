@@ -1,14 +1,13 @@
 if g:spacevim_timer
-  "sjmbbill/undotree
+  "simnalamburt/vim-mundo 
   "{
-  MP 'mbbill/undotree'
-  let g:undotree_SplitWidth=40
-  let g:undotree_SetFocusWhenToggle=1
-  noremap <F2> :UndotreeToggle<cr>
-  if has("persistent_undo")
-      set undodir=~/.undodir/
-      set undofile
-  endif
+  MP 'simnalamburt/vim-mundo'
+  let g:mundo_width = 40
+  let g:mundo_preview_height = 40
+  " let g:mundo_right = 1
+  nnoremap <F2> :MundoToggle<CR>
+  set undodir=~/.undodir/
+  set undofile
   "}
 
   " {autosave
