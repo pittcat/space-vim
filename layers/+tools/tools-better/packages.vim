@@ -3,7 +3,7 @@ if g:spacevim_timer
   "{
   MP 'simnalamburt/vim-mundo'
   let g:mundo_width = 40
-  let g:mundo_preview_height = 40
+  let g:mundo_preview_height = 20
   " let g:mundo_right = 1
   nnoremap <F2> :MundoToggle<CR>
   set undodir=~/.undodir/
