@@ -1,5 +1,5 @@
 " lightline.vim {
   let g:lightline = {
-              \ 'colorscheme': 'wombat',
+              \ 'colorscheme': 'one',
               \ }
 " }
