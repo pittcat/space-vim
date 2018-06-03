@@ -34,8 +34,8 @@ scriptencoding utf-8
   endfunction!
 
   function! MacroAfter(...)
-    nnoremap s <plug>sneak_s
-    nnoremap S <Plug>Sneak_S
+    nmap s <plug>sneak_s
+    nmap S <Plug>Sneak_S
     let b:deoplete_disable_auto_complete = 0
   endfunction!
 " }

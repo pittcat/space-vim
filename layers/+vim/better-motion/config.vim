@@ -29,7 +29,7 @@ map <Leader>jf  <Plug>(easymotion-prefix)w
 map <Leader>jb  <Plug>(easymotion-prefix)F
 
 "{justinmk/vim-sneak
-nnoremap s <Plug>Sneak_s
-nnoremap S <Plug>Sneak_S
+nmap s <Plug>Sneak_s
+nmap S <Plug>Sneak_S
 "}
 
