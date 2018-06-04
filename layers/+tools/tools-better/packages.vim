@@ -54,7 +54,7 @@ if g:spacevim_timer
   MP 'tpope/vim-repeat'
   "}
   "{expand region
-  MP 'gcmt/wildfire.vim'
+  MP 'terryma/vim-expand-region'
   "}
   "{
   MP 'kien/tabman.vim'

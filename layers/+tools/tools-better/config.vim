@@ -4,14 +4,9 @@
     noremap <leader>cd :Mkdir 
   "}
   "{ 
-  "gcmt/wildfire.vim
-  let g:wildfire_objects = ["i'", 'i"', "i)", "i]", "i}", "ip", "it"]
-  nmap <localleader>s <Plug>(wildfire-quick-select)
-  cal wildfire#triggers#AddQs("<localleader>s", {
-        \ "*" : ["i)", "i]","i}",'i"',"i'"],
-        \ })
-  map <nop> <Plug>(wildfire-fuel)
-  vmap <nop> <Plug>(wildfire-water)
+  " 'terryma/vim-expand-region'
+  vmap v <Plug>(expand_region_expand)
+  vmap V <Plug>(expand_region_shrink)
   "
   "}
   "{BufOnly 
@@ -118,7 +113,7 @@
   let g:keyfrom = "aioiyuuko"
   nmap <silent> <Leader>yd <Plug>DictWSearch  
   vmap <silent> <Leader>yd <Plug>DictRVSearch
-  nmap <silent> <nop> <Plug>DictSearch
-  vmap <silent> <nop> <Plug>DictVSearch
+  nnoremap <silent> <nop> <Plug>DictSearch
+  vnoremap <silent> <nop> <Plug>DictVSearch
 
   " }
