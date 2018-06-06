@@ -11,18 +11,18 @@
   "
   "}
   "{ Goyo for markdown
-  function! s:auto_goyo()
-    if &ft == 'markdown'
-      Goyo 80
-    else
-      let bufnr = bufnr('%')
-      Goyo!
-      execute 'b '.bufnr
-    endif
-  endfunction
+  " function! s:auto_goyo()
+    " if &ft == 'markdown'
+      " Goyo 80
+    " else
+      " let bufnr = bufnr('%')
+      " Goyo!
+      " execute 'b '.bufnr
+    " endif
+  " endfunction
 
-  augroup goyo_markdown
-    autocmd!
-    autocmd BufNewFile,BufRead * call s:auto_goyo()
-  augroup END
+  " augroup goyo_markdown
+    " autocmd!
+    " autocmd BufNewFile,BufRead * call s:auto_goyo()
+  " augroup END
   "}
