@@ -116,3 +116,6 @@ nnoremap <silent> <leader>cb :%y+<cr>
 nnoremap <silent> <leader>pu :PlugUpdate!<cr>
 nnoremap <silent> <leader>pr :PlugClean<cr>
 "}
+"{
+imap <A-BS> <C-W>
+"}

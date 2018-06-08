@@ -54,7 +54,7 @@ if g:spacevim_timer
   MP 'tpope/vim-repeat'
   "}
   "{expand region
-  MP 'terryma/vim-expand-region'
+  MP 'gorkunov/smartpairs.vim'
   "}
   "{
   MP 'kien/tabman.vim'
