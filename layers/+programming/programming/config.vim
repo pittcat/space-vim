@@ -65,6 +65,17 @@ augroup END
     autocmd!
     autocmd User AsyncRunStart call asyncrun#quickfix_toggle(14, 1)
   augroup END
+
+  function! AsyncrunBdfix()
+    let qf_exist_num=filter(range(1, winnr('$')), 'getwinvar(v:val, "&ft") == "qf"')
+    if len(qf_exist_num)
+      execute "cclose" 
+      execute "bd"
+    else
+      execute "bd"
+    endif
+  endfunction
+  nnoremap <silent> <leader>bd :call AsyncrunBdfix()<cr>
 " }
 
 " indentLine {
