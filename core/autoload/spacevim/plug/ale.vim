@@ -4,6 +4,7 @@ let g:spacevim#plug#ale#linters = {
           \ 'sh' : ['shellcheck'],
           \ 'vim' : ['vint'],
           \ 'html' : ['tidy'],
+          \ 'cpp' :['clangcheck'],
           \ 'css' : ['prettier'],
           \ 'python' : ['flake8'],
           \ 'markdown' : ['mdl'],
