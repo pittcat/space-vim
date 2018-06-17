@@ -203,7 +203,16 @@ command! -bang -nargs=* Rg
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
 
-command! -bang -nargs=* Pcg
+
+
+command! -bang -nargs=* PCAg
+  \ call fzf#vim#ag(expand('<cword>'),
+  \                 <bang>1 ? fzf#vim#with_preview('up:60%')
+  \                         : fzf#vim#with_preview('right:50%:hidden', '?'),
+  \                 <bang>1)
+
+
+command! -bang -nargs=* PCRg
   \ call fzf#vim#grep(
   \   'rg --column --line-number --no-heading --color=always '.shellescape(expand('<cword>')), 1,
   \   <bang>0 ? fzf#vim#with_preview('up:70%')
@@ -422,3 +431,17 @@ function! spacevim#plug#fzf#Jumps(...)
   \ 'sink*':   s:function('s:jump_sink'),
   \ 'options': '+m -x --ansi --tiebreak=index --header-lines 1 --tiebreak=begin --prompt "Jumps> "'}, a:000)
 endfunction
+
+" Search visually selected
+function! spacevim#plug#fzf#ag_vsearch()
+  let vselection = spacevim#util#VisualSelection()
+  call fzf#vim#ag(
+        \ vselection,{
+        \ 'dir': spacevim#util#RootDirectory(),
+        \ 'options': '--ansi --delimiter : --nth 4..,.. --prompt "?'.vselection.'> " '.
+        \            '--color hl:68,hl+:110 --multi '.
+        \            '--bind=ctrl-d:page-down,ctrl-u:page-up ',
+        \ },)
+endfunction
+
+
