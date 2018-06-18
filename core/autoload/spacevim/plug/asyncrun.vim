@@ -1,12 +1,12 @@
 function! spacevim#plug#asyncrun#CompileAndRun()
   let l:cmd = {
-        \ 'c'      : "gcc %:p -o %<; time %:p:h/%:t:r<",
-        \ 'cpp'    : "g++ -std=c++11 %:p -o %<; time %:p:h/%:t:r",
+        \ 'c'      : "gcc '%:p' -o  './exec/%:t:r'; time %:p:h/exec/%:t:r<",
+        \ 'cpp'    : "g++ -std=c++11 '%:p' -o './exec/%:t:r'; time %:p:h/exec/%:t:r",
         \ 'sh'     : "time bash %",
         \ 'go'     : "go run %",
         \ 'ruby'   : "time ruby %",
         \ 'java'   : "javac %:p; time java %:p:h/%:t:r",
-        \ 'rust'   : "rustc %:p -o %<; time %:p:h/%:t:r",
+        \ 'rust'   : "rustc '%:p' -o  './exec/%:t:r'; time %:p:h/exec/%:t:r",
         \ 'python' : "time python %",
         \ 'haskell': "ghc %:p -o %< && %:p:h/%:t:r<",
         \ 'javascript': "time node %<"
