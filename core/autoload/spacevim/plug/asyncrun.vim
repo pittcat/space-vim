@@ -1,15 +1,15 @@
 function! spacevim#plug#asyncrun#CompileAndRun()
   let l:cmd = {
-        \ 'c'      : "gcc % -o %<; time %<",
+        \ 'c'      : "gcc %:p -o %<; time %:p:h/%:t:r<",
+        \ 'cpp'    : "g++ -std=c++11 %:p -o %<; time %:p:h/%:t:r",
         \ 'sh'     : "time bash %",
         \ 'go'     : "go run %",
-        \ 'cpp'    : "g++ -std=c++11 % -o %<; time %<",
         \ 'ruby'   : "time ruby %",
-        \ 'java'   : "javac %; time java %<",
-        \ 'rust'   : "rustc % -o %<; time %<",
+        \ 'java'   : "javac %:p; time java %:p:h/%:t:r",
+        \ 'rust'   : "rustc %:p -o %<; time %:p:h/%:t:r",
         \ 'python' : "time python %",
-        \ 'haskell': "ghc % -o %< && %<",
-        \ 'javascript': "time node %"
+        \ 'haskell': "ghc %:p -o %< && %:p:h/%:t:r<",
+        \ 'javascript': "time node %<"
         \}
   let l:ft = &filetype
   if has_key(l:cmd, l:ft)
