@@ -32,7 +32,6 @@ endif
 
 let g:spacevim_dir = $HOME.'/.space-vim'
 let g:spacevim_core_dir = '/core'
-let g:spacevim_version = '0.7.0'
 
 set runtimepath+=$HOME/.space-vim/core
 

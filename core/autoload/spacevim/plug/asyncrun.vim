@@ -1,7 +1,7 @@
 function! spacevim#plug#asyncrun#CompileAndRun()
   let l:cmd = {
         \ 'c'      : "gcc '%:p' -o  './exec/%:t:r'; time %:p:h/exec/%:t:r<",
-        \ 'cpp'    : "g++ -std=c++11 '%:p' -o './exec/%:t:r'; time %:p:h/exec/%:t:r",
+        \ 'cpp'    : "g++ -std=c++11 '%:p' -o '%:p:h/exec/%:t:r'; time %:p:h/exec/%:t:r",
         \ 'sh'     : "time bash %",
         \ 'go'     : "go run %",
         \ 'ruby'   : "time ruby %",
