@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead *.sh,*.zsh setlocal ft=zsh
+autocmd BufNewFile,BufRead *.zsh setlocal ft=zsh

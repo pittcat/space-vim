@@ -12,6 +12,7 @@ let g:spacevim#plug#ale#linters = {
           \ 'javascript' : ['eslint'],
           \ 'ruby' : ['rubocop'],
           \ 'rust' : ['rustc'] ,
+          \ 'sh':['language-server'],
             \}
 
 if exists('emoji#for')
