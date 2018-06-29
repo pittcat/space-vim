@@ -36,6 +36,9 @@ let g:spacevim#plug#leaderGuide#lmap['e'] = {
       \ 'name' : '+errors',
       \ 'n' : ['call feedkeys("\<Plug>(ale_next)")', 'next-error'],
       \ 'p' : ['call feedkeys("\<Plug>(ale_previous)")', 'previous-error'],
+      \ 'd' :['ALEDetail','detail'],
+      \ 'l' :['lopen','show check list'],
+      \ 'c' :['lclose','close check list']
       \ }
 let g:spacevim#plug#leaderGuide#lmap['f'] = {
       \ 'name' : '+find/files/fold',
@@ -98,10 +101,10 @@ let g:spacevim#plug#leaderGuide#lmap['t'] = {
       \ 'name' : '+toggle',
       \ 'g' : ['GitGutterToggle', 'gitgutter'],
       \ 'p' : ['setlocal paste!', 'paste-mode'],
-      \ 's' : ['SyntasticToggleMode', 'syntastic'],
       \ 't' : ['TagbarToggle', 'tagbar'],
       \ 'c' : ['call spacevim#util#ToggleCursorColumn()', 'cursor-column'],
       \ 'C' : ['call spacevim#util#ToggleColorColumn()', 'color-column'],
+      \ 's' : ['ALEToggle','toggle ale'],
       \ }
 " let g:spacevim#plug#leaderGuide#lmap['u'] = [ 'call feedkeys("\<C-u>")', 'scroll-up' ]
 
