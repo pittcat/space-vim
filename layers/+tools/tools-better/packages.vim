@@ -9,7 +9,10 @@ if g:spacevim_timer
   set undodir=~/.undodir/
   set undofile
   "}
-
+  
+  "
+  "
+  ""
   " {autosave
   MP '907th/vim-auto-save'
   let g:auto_save = 1
@@ -111,6 +114,9 @@ if g:spacevim_timer
   "}
   "{iamcco/dict.vim
   MP 'iamcco/dict.vim'
+  "}
+  "{machakann/vim-highlightedyank
+  MP 'machakann/vim-highlightedyank'
   "}
   call timer_start(1400,'spacevim#defer#awesome_tools')
 

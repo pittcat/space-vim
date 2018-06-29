@@ -1,7 +1,7 @@
   "tpope/vim-eunuch
-  "{rename and mkdir 
-    noremap <leader>rn :Rename 
-    noremap <leader>cd :Mkdir 
+  "{rename and mkdir
+    noremap <leader>rn :Rename
+    noremap <leader>cd :Mkdir
   "}
   "{gorkunov/smartpairs.vim
   let g:smartpairs_key = 'v'
@@ -10,7 +10,7 @@
   let g:smartpairs_nextpairs_key_i = ''
   let g:smartpairs_nextpairs_key_a = '<C-m>'
   "}
-  "{BufOnly 
+  "{BufOnly
   nnoremap <leader>bD :BufOnly<cr>
   "}
   "{briandoll/change-inside-surroundings.vim
@@ -28,7 +28,7 @@
   nmap <localleader>ls :LinediffShow<cr>
   "}
   " {terryma/vim-smooth-scroll
-  " avoid buffer change the cursor scroll 
+  " avoid buffer change the cursor scroll
   au BufLeave * if !&diff | let b:winview = winsaveview() | endif
   au BufEnter * if exists('b:winview') && !&diff | call winrestview(b:winview) | unlet! b:winview | endif
 
@@ -87,6 +87,8 @@
   let g:netrw_nogx = 1 " disable netrw's gx mapping.
 	nmap <leader>go <Plug>(openbrowser-smart-search)
 	vmap <leader>go <Plug>(openbrowser-smart-search)
+  nmap <silent> <leader>gx <Plug>(openbrowser-open)
+	vmap <silent> <leader>gx <Plug>(openbrowser-open)
   "}
 
   " ludovicchabant/vim-gutentags
@@ -112,9 +114,15 @@
   " {
   let g:api_key = "1932136763"
   let g:keyfrom = "aioiyuuko"
-  nmap <silent> <Leader>yd <Plug>DictWSearch  
+  nmap <silent> <Leader>yd <Plug>DictWSearch
   vmap <silent> <Leader>yd <Plug>DictRVSearch
   nnoremap <silent> <nop> <Plug>DictSearch
   vnoremap <silent> <nop> <Plug>DictVSearch
 
   " }
+  "{machakann/vim-highlightedyank
+  if !exists('##TextYankPost')
+    map y <Plug>(highlightedyank)
+  endif
+  let g:highlightedyank_highlight_duration = 1000
+  "}

@@ -34,15 +34,12 @@ endfunction
 " 500
 
 function! spacevim#defer#defaults(timer) abort
-  if has('patch-8.0.1206') || has('nvim-0.2.3')
-    call s:lod('traces.vim')
-  endif
-  call s:lod('vim_current_word', 'vim-signature', 'vim-rsi')
+  call s:lod('vim_current_word', 'vim-signature', 'vim-rsi','traces.vim')
 endfunction
 
 " 550
 function! spacevim#defer#markdown(timer) abort
-  call s:lod('vim-markdown','vim-markdown-composer','vim-markdown-toc')
+  call s:lod('vim-markdown','vim-markdown-composer','vim-markdown-toc','md-img-paste.vim')
 endfunction
 
 function! spacevim#defer#rust(timer) abort
@@ -106,6 +103,6 @@ endfunction
 
 " 1400
 function! spacevim#defer#awesome_tools(timer) abort
-  call s:lod('nginx.vim','vim-table-mode','vim-lastplace','fcitx.vim','zeavim.vim','open-browser.vim','vim-gutentags','dict.vim')
+  call s:lod('nginx.vim','vim-table-mode','vim-lastplace','fcitx.vim','zeavim.vim','open-browser.vim','vim-gutentags','dict.vim','vim-highlightedyank')
 endfunction
 

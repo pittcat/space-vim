@@ -55,3 +55,7 @@ let g:multi_cursor_quit_key='<Esc>'
   augroup END
 
 " }
+" {Shougo/echodoc.vim
+  set cmdheight=2
+	let g:echodoc_enable_at_startup = 1
+" }
