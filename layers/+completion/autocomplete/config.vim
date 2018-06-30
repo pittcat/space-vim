@@ -19,7 +19,7 @@ if g:spacevim_nvim
     " auto_refresh
     let g:auto_refresh_delay=0
     
-    let refresh_always=true
+    let refresh_always=v:true
     
 
 
