@@ -10,6 +10,7 @@ let g:LanguageClient_serverCommands = {
     \ 'typescript': ['javascript-typescript-stdio'],
     \ 'go': ['go-langserver'],
     \ 'sh': ['bash-language-server', 'start'],
+    \ 'ruby': ['solargraph','stdio']
     \ }
 let g:LanguageClient_autoStart = 1
 let g:LanguageClient_loadSettings = 1
