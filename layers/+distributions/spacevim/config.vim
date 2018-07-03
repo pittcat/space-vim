@@ -66,6 +66,14 @@ augroup spacevimBasic
   endif
 augroup END
 
+
+" Open quickfix window automatically when something is feeded
+autocmd QuickFixCmdPost *
+    \ if !len(filter(range(1, winnr('$')), 'getwinvar(v:val, "&ft") == "qf"'))
+    \| copen 8
+    \|endif
+
+
 " Show trailing white space
 hi ExtraWhitespace guifg=#FF2626 gui=underline ctermfg=124 cterm=underline
 match ExtraWhitespace /\s\+$/
