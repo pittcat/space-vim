@@ -54,9 +54,6 @@ function! spacevim#defer#python(timer) abort
   call s:lod('vim-python-pep8-indent','SimpylFold','vim-python/python-syntax')
 endfunction
 
-function! spacevim#defer#shell(timer) abort
-  call s:lod('vim-zsh')
-endfunction
 
 function! spacevim#defer#clang(timer) abort
   call s:lod('vim-clang-format','vim-cpp-enhanced-highlight')
