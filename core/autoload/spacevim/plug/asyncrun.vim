@@ -5,7 +5,6 @@ function! spacevim#plug#asyncrun#CompileAndRun()
         \ 'sh'     : "time bash %",
         \ 'go'     : "go run %",
         \ 'ruby'   : "time ruby %",
-        \ 'java'   : "javac %:p; time java %:p:h/%:t:r",
         \ 'rust'   : "rustc '%:p' -o  './exec/%:t:r'; time %:p:h/exec/%:t:r",
         \ 'python' : "time python %",
         \ 'haskell': "ghc %:p -o %< && %:p:h/%:t:r<",
