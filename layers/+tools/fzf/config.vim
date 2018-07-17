@@ -27,4 +27,5 @@
 
   nnoremap <leader>rg :PCRg!<cr>
   nnoremap <localleader>rg :Rg!<cr>
+  vnoremap <leader>rg :<c-u>call spacevim#plug#fzf#RgVisual()<cr>
   " }

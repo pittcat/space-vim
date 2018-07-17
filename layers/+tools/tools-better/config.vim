@@ -115,7 +115,11 @@
   let g:api_key = "1932136763"
   let g:keyfrom = "aioiyuuko"
   nmap <silent> <Leader>yd <Plug>DictWSearch
-  vmap <silent> <Leader>yd <Plug>DictRVSearch
+  function! Space_Dict_Search()
+    let l:vselection = spacevim#util#VisualSelection()
+    call dict#Search(l:vselection, 'complex')
+  endfunction
+  vnoremap <silent> <Leader>yd :call Space_Dict_Search()<cr>
   nnoremap <silent> <nop> <Plug>DictSearch
   vnoremap <silent> <nop> <Plug>DictVSearch
 

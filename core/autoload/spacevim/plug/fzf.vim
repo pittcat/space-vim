@@ -443,4 +443,9 @@ function! spacevim#plug#fzf#ag_vsearch()
         \ },)
 endfunction
 
-
+function! spacevim#plug#fzf#RgVisual()
+  let l:query = spacevim#util#VisualSelection()
+  call fzf#vim#grep(
+        \ 'rg --column --line-number --no-heading --color=always --smart-case '.l:query, 1,
+        \ )
+endfunction
