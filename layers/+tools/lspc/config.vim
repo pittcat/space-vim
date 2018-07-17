@@ -14,6 +14,7 @@ let g:LanguageClient_serverCommands = {
     \ }
 let g:LanguageClient_autoStart = 1
 let g:LanguageClient_loadSettings = 1
+let g:LanguageClient_completionPreferTextEdit=1
 " Use an absolute configuration path if you want system-wide settings
 if g:spacevim_vim8
   let g:LanguageClient_settingsPath = $HOME.'/.vim/settings.json'
