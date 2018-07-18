@@ -41,7 +41,7 @@ augroup spacevimBasic
         quit!
       endif
     endif
-    " if (winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree()) | q! | endif
+    if (winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree()) | q! | endif
   endfunction
 
   " http://stackoverflow.com/questions/5933568/disable-blinking-at-the-first-last-line-of-the-file

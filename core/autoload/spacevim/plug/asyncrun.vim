@@ -8,8 +8,10 @@ function! spacevim#plug#asyncrun#CompileAndRun()
         \ 'rust'   : "rustc '%:p' -o  './exec/%:t:r'; time %:p:h/exec/%:t:r",
         \ 'python' : "time python %",
         \ 'haskell': "ghc %:p -o %< && %:p:h/%:t:r<",
-        \ 'javascript': "time node %<"
+        \ 'javascript': "time node %<",
+        \ 'java'   : "javac %;java %:t:r;rm %:t:r.'class'",
         \}
+  " javac -d classes MyProgram.java
   let l:ft = &filetype
   if has_key(l:cmd, l:ft)
     exec 'w'

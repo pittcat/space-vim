@@ -16,4 +16,4 @@ let g:neoformat_enabled_rust = ['rustfmt']
 let g:neoformat_enabled_rust = ['rubocop']
 let g:neoformat_enabled_c = ['clang-format']
 let g:neoformat_enabled_cpp = ['clang-format']
-
+let g:neoformat_enabled_java = ['uncrustify']

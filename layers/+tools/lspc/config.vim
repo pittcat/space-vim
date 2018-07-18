@@ -11,6 +11,7 @@ let g:LanguageClient_serverCommands = {
     \ 'go': ['go-langserver'],
     \ 'sh': ['bash-language-server', 'start'],
     \ 'ruby': ['solargraph','stdio'],
+    \ 'java': ['jdtls'],
     \ 'vue': ['vls'],
     \ }
 let g:LanguageClient_autoStart = 1
