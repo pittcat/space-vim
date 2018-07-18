@@ -56,11 +56,11 @@ let g:spacevim#plug#leaderGuide#lmap['f'] = {
       \ 'd' : ['NERDTreeFind', 'find-current-buffer-in-NERDTree'],
       \ 'f' : ['Files $PWD', 'files-in-pwd-direcotry'],
       \ 's' : ['save', 'save-file'],
-      \ 't' : ['NERDTreeToggle', 'toggle-NERDTree'],
       \ '?' : ['Files ~/', 'files-in-home-direcotry'],
       \ 'R' : ['source $MYVIMRC', 'reload-vimrc'],
       \ 'w' : ['call spacevim#plug#fzf#SearchCword()', 'find-cword-in-project']
       \ }
+
 let g:spacevim#plug#leaderGuide#lmap['g'] = {
       \ 'name' : '+git/version-control',
       \ 'b' : ['Gblame', 'fugitive-blame'],

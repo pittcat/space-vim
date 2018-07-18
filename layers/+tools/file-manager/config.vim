@@ -14,7 +14,6 @@ scriptencoding utf-8
   nnoremap <silent> <Leader>fd :NERDTreeFind<CR>
   let NERDTreeChDirMode=0
   noremap <silent> <leader>nc :NERDTreeCWD<cr>
-  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " }
 
 " nerdtree-git-plugin {
