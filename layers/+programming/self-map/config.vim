@@ -89,7 +89,7 @@ set mouse=a
 nnoremap <silent> <leader>gT :call spacevim#vim#auto#AddTitle()<cr>
 "}
 "{
-nnoremap <silent> <leader>BD :bd!
+nnoremap <silent> <localleader>BD :bd!<cr>
 "}
 "{add title
 autocmd BufNewFile * silent! call spacevim#vim#auto#AddTitle()
