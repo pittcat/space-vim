@@ -19,25 +19,25 @@ let g:multi_cursor_quit_key='<Esc>'
 " }
 
 " { mg979/vim-visual-multi 
-  fun! VM_before_auto()
-    call MacroBefore()
-  endfun
+  " fun! VM_before_auto()
+    " call MacroBefore()
+  " endfun
 
-  fun! VM_after_auto()
-    call MacroAfter()
-  endfun
+  " fun! VM_after_auto()
+    " call MacroAfter()
+  " endfun
 
-  function! MacroBefore(...)
-    unmap s
-    unmap S
-    let b:deoplete_disable_auto_complete = 1
-  endfunction!
+  " function! MacroBefore(...)
+    " unmap s
+    " unmap S
+    " let b:deoplete_disable_auto_complete = 1
+  " endfunction!
 
-  function! MacroAfter(...)
-    nmap s <plug>sneak_s
-    nmap S <Plug>Sneak_S
-    let b:deoplete_disable_auto_complete = 0
-  endfunction!
+  " function! MacroAfter(...)
+    " nmap s <plug>sneak_s
+    " nmap S <Plug>Sneak_S
+    " let b:deoplete_disable_auto_complete = 0
+  " endfunction!
 " }
 
 
