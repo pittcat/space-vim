@@ -71,6 +71,8 @@ augroup END
     if len(qf_exist_num)
       execute "cclose" 
       execute "bd"
+    elseif expand('%:t')=='chosenfile "."'
+      execute "bd!"
     else
       execute "bd"
     endif
