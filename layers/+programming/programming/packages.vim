@@ -17,5 +17,6 @@ MP 'junegunn/rainbow_parentheses.vim', { 'for': ['lisp', 'clojure', 'scheme'] }
 MP 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 
 MP 'Yggdroot/indentLine',             { 'on': 'IndentLinesToggle' }
+autocmd! User indentLine call spacevim#autocmd#indent#Init()
 
 MP 'skywind3000/asyncrun.vim',        { 'on': ['AsyncRun!', 'AsyncRun'] }
