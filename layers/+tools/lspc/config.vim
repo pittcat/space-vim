@@ -30,8 +30,10 @@ let g:LanguageClient_diagnosticsEnable=0
 nnoremap <silent> <F1> :call LanguageClient_contextMenu()<CR>
 nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> gvd :call LanguageClient#textDocument_definition({'gotoCmd': 'split'})<CR>
 nnoremap <silent> <leader>cn :call LanguageClient#textDocument_rename()<CR>
 nnoremap <silent> <leader><leader>z :pc<CR>
+nnoremap <silent> <M-c> :pc<CR>
 
 augroup LanguageClient_config
   autocmd!
