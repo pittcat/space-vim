@@ -29,7 +29,6 @@ scriptencoding utf-8
   highlight SignifySignDelete cterm=bold ctermbg=NONE ctermfg=red
   highlight SignifySignChange cterm=bold ctermbg=NONE ctermfg=yellow
 
-
   nnoremap <silent> <Leader>gg :SignifyToggle<CR>
   nnoremap <silent> <leader>gr :SignifyRefresh<CR>
   nnoremap <leader>gh :SignifyToggleHighlight<CR>
