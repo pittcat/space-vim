@@ -16,7 +16,6 @@ if g:spacevim_gui
   noremap - :Smaller<CR>
 endif
 
-
 " vim-startify {
 let g:startify_custom_header = g:spacevim#plug#startify#header
 let g:startify_list_order = g:spacevim#plug#startify#list_order
