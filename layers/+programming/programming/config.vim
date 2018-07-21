@@ -66,19 +66,19 @@ augroup END
     autocmd User AsyncRunStart call asyncrun#quickfix_toggle(14, 1)
   augroup END
 
-  function! s:AsyncrunBdfix()
+  function! s:CorrectCloseBuffer()
     let qf_exist_num=filter(range(1, winnr('$')), 'getwinvar(v:val, "&ft") == "qf"')
     if len(qf_exist_num)
       execute "cclose" 
       execute "bd"
-    elseif expand('%:t')=='chosenfile "."'
+    elseif matchstr(expand('%:t'), '"') =='"'
       execute "bd!"
     else
       execute "bd"
     endif
   endfunction
-  command! AsyncrunBdfix call s:AsyncrunBdfix()
-  nnoremap <silent> <leader>bd :AsyncrunBdfix<cr>
+  command! CorrectCloseBuffer call s:CorrectCloseBuffer()
+  nnoremap <silent> <leader>bd :CorrectCloseBuffer<cr>
 " }
 
 " indentLine {
