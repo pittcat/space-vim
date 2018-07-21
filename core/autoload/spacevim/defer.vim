@@ -16,6 +16,11 @@ function! spacevim#defer#airline(timer) abort
   redraws!
 endfunction
 
+" 280
+function! spacevim#defer#fzf(timer) abort
+  call s:lod('fzf', 'fzf.vim')
+endfunction
+
 " 300
 function! spacevim#defer#vimsignify(timer) abort
   call s:lod('vim-signify')
@@ -51,7 +56,7 @@ function! spacevim#defer#go(timer) abort
 endfunction
 
 function! spacevim#defer#python(timer) abort
-  call s:lod('vim-python-pep8-indent','SimpylFold','vim-python/python-syntax')
+  call s:lod('vim-python-pep8-indent','vim-python/python-syntax')
 endfunction
 
 
@@ -73,10 +78,6 @@ function! spacevim#defer#motion(timer) abort
   call s:lod('vim-sneak', 'vim-easymotion')
 endfunction
 
-" 700
-function! spacevim#defer#fzf(timer) abort
-  call s:lod('fzf', 'fzf.vim')
-endfunction
 
 "750
 function! spacevim#defer#filemanage(timer) abort
