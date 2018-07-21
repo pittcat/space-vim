@@ -1,15 +1,16 @@
 if g:spacevim_timer
   MP 'luochen1990/rainbow'  , { 'on': [] }
   MP 'sheerun/vim-polyglot' , { 'on': [] }
-  " MP 'airblade/vim-rooter'  , { 'on': []}
+  MP 'airblade/vim-rooter'  , { 'on': []}
+  MP 'editorconfig/editorconfig-vim', { 'on': 'EditorConfigReload' }
   call timer_start(400, 'spacevim#defer#programming')
 else
   MP 'luochen1990/rainbow'
   MP 'sheerun/vim-polyglot'
-  " MP 'airblade/vim-rooter'
+  MP 'airblade/vim-rooter'
+  MP 'editorconfig/editorconfig-vim'
 endif
 
-MP 'editorconfig/editorconfig-vim', { 'on': 'EditorConfigReload' }
 
 MP 'junegunn/rainbow_parentheses.vim', { 'for': ['lisp', 'clojure', 'scheme'] }
 
