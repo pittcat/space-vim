@@ -8,7 +8,7 @@ scriptencoding utf-8
   nnoremap <leader>ga :Git! add .<cr>:bd!<cr>
   nnoremap <silent> <Leader>gw :Gwrite<cr>
   nnoremap <silent> <Leader>gc :Gcommit<CR>
-  nnoremap <silent> <Leader>gp :Gpush<cr>
+  nnoremap <Leader>gp :Gpush<cr>
 
   " nnoremap <silent> <Leader>ge :Gedit<CR>
   " nnoremap <silent> <Leader>gr :Gread<CR>
