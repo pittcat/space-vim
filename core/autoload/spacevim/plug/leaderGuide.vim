@@ -66,12 +66,9 @@ let g:spacevim#plug#leaderGuide#lmap['g'] = {
       \ 'b' : ['Gblame', 'fugitive-blame'],
       \ 'c' : ['Gcommit', 'fugitive-commit'],
       \ 'd' : ['Gdiff', 'fugitive-diff'],
-      \ 'e' : ['Gedit', 'fugitive-edit'],
-      \ 'l' : ['Glog', 'fugitive-log'],
-      \ 'r' : ['Gread', 'fugitive-read'],
       \ 's' : ['Gstatus', 'fugitive-status'],
       \ 'w' : ['Gwrite', 'fugitive-write'],
-      \ 'p' : ['Git push', 'fugitive-push'],
+      \ 'p' : ['Gpush', 'fugitive-push'],
       \ 'y' : ['Goyo', 'goyo-mode'],
       \ }
 let g:spacevim#plug#leaderGuide#lmap['h'] = {
