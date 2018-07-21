@@ -28,7 +28,7 @@ endfunction
 
 " 400
 function! spacevim#defer#programming(timer) abort
-  call s:lod('rainbow', 'vim-rooter', 'vim-polyglot')
+  call s:lod('rainbow', 'vim-polyglot')
 endfunction
 
 " 500

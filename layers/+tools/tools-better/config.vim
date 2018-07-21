@@ -1,7 +1,15 @@
   "tpope/vim-eunuch
   "{rename and mkdir
-    noremap <leader>rn :Rename 
-    noremap <leader>cd :Mkdir
+  function! GiveFileNewName()
+    let l:filename = input('new file name:','')
+    execut 'Rename' l:filename
+  endfunction
+    noremap <leader>rn :call GiveFileNewName()<cr>
+  function! CreateDirectory()
+    let l:directory = input('new file name:','')
+    execute 'Mkdir' l:directory
+  endfunction
+    noremap <leader>cd :call CreateDirectory()<cr>
   "}
   "{gorkunov/smartpairs.vim
   let g:smartpairs_key = 'v'

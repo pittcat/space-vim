@@ -28,7 +28,13 @@ endif
 " }
 "{create new tab 
 nmap <leader>nb :edit $PWD/
-nmap <leader>nB :edit 
+function! AddNewFile()
+  " lcd %:p:h
+  let l:filename = input('new file name:','')
+  let l:path=expand('%:p:h').'/'.l:filename
+  execut 'edit' l:path
+endfunction
+nmap <leader>nf :call AddNewFile()<cr>
 "}
 " {open .spacevim
 noremap <silent> <leader>fed :edit ~/.spacevim<cr>
