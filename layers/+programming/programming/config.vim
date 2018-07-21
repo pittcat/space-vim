@@ -73,6 +73,8 @@ augroup END
       execute "bd"
     elseif matchstr(expand('%:t'), '"') =='"'
       execute "bd!"
+    elseif matchstr(expand('%:t'), 'git push')=="git push"
+      execute "bd!"
     else
       execute "bd"
     endif
