@@ -15,10 +15,8 @@ scriptencoding utf-8
   " nnoremap <silent> <Leader>gl :Glog<CR>
   " Mnemonic _i_nteractive
   "}
-
   
   "{vim-signify
-
   let g:signify_vcs_list              = [ 'git', 'hg' ]
   let g:signify_cursorhold_insert     = 1
   let g:signify_cursorhold_normal     = 1
