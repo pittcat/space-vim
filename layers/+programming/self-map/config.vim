@@ -101,19 +101,6 @@ nnoremap <silent> <localleader>BD :bd!<cr>
 autocmd BufNewFile * silent! call spacevim#vim#auto#AddTitle()
 "}
 "
-"{unmap j,k
-iunmap jj
-iunmap jk
-cunmap jj
-cunmap jk
-sunmap j
-sunmap k
-"}
-"{
-vunmap v
-nunmap <Leader>u
-nunmap <Leader>d
-"}
 "{copy whole buffer content
 nnoremap <silent> <leader>cb :%y+<cr>
 "}
