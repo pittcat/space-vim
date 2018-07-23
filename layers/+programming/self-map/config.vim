@@ -97,9 +97,6 @@ nnoremap <silent> <leader>gT :call spacevim#vim#auto#AddTitle()<cr>
 "{
 nnoremap <silent> <localleader>BD :bd!<cr>
 "}
-"{add title
-autocmd BufNewFile * silent! call spacevim#vim#auto#AddTitle()
-"}
 "
 "{copy whole buffer content
 nnoremap <silent> <leader>cb :%y+<cr>
