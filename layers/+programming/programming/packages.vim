@@ -11,11 +11,7 @@ else
   MP 'editorconfig/editorconfig-vim'
 endif
 
-
 MP 'junegunn/rainbow_parentheses.vim', { 'for': ['lisp', 'clojure', 'scheme'] }
-
-" Need to disable airline extension for tagbar, see vim-airline issue 1313.
-MP 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 
 MP 'Yggdroot/indentLine',             { 'on': 'IndentLinesToggle' }
 autocmd! User indentLine call spacevim#autocmd#indent#Init()
