@@ -1,5 +1,4 @@
-
-MP 'liuchengxu/vim-better-default'
+MP 'pittcat/vim-better-default'
 
 if !spacevim#load('airline') && !spacevim#load('lightline')
   MP 'ap/vim-buftabline'
