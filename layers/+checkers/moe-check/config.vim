@@ -1,5 +1,19 @@
+let g:ale_linters={
+          \ 'vim' : ['vint'],
+          \ 'html' : ['tidy'],
+          \ 'cpp' :['clang'],
+          \ 'css' : ['prettier'],
+          \ 'python' : ['flake8'],
+          \ 'markdown' : ['mdl'],
+          \ 'javascript.jsx' : ['eslint'],
+          \ 'javascript' : ['eslint'],
+          \ 'ruby' : ['rubocop'],
+          \ 'rust' : ['rustc'] ,
+          \ 'sh':['language-server'],
+          \ 'java': ['javac'],
+          \}
+
 let g:ale_set_highlights = 0
-let g:ale_fix_on_save = 1
 let g:ale_echo_msg_format = '[#%linter%#] %s [%severity%]'
 let g:ale_statusline_format = ['E•%d', 'W•%d', 'OK']
 
