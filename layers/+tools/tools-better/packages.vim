@@ -90,7 +90,7 @@ if g:spacevim.timer
   MP 'dietsche/vim-lastplace'
   "}
   " {lilydjwg/fcitx.vim
-  MP 'lilydjwg/fcitx.vim'
+  MP 'lilydjwg/fcitx.vim',{'for':'markdown'}
   " }
   "{KabbAmine/zeavim.vim
   MP 'KabbAmine/zeavim.vim'
