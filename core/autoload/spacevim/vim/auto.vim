@@ -4,10 +4,7 @@ function! spacevim#vim#auto#AddTitle()
           \ '#include <stdio.h>'
           \ ],
         \ 'sh': [
-          \ '#!/usr/bin/env sh'
-          \ ],
-        \ 'zsh': [
-          \ '#!/usr/bin/env zsh'
+          \ '#!/usr/bin/env bash'
           \ ],
         \ 'cpp': [
           \ '#include <iostream>',
@@ -29,11 +26,15 @@ function! spacevim#vim#auto#AddTitle()
     call setline(1, l:template[l:ft])
     execute "normal! G"
     call append(line("."), "")
+    call append(line("."), "")
     execute "normal! G"
     startinsert
+  else
+    call spacevim#util#err('spacevim#auto#AddTitle not supported in current filetype!')
   endif
 endfunction
 
+" Deprecated, use g:asyncrun_open
 function! spacevim#vim#auto#AsyncRunStart()
     let l:qf_height = float2nr(round(winheight('%') * 0.3))
     if !exists('*asyncrun#quickfix_toggle')

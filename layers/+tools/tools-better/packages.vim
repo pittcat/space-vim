@@ -1,4 +1,4 @@
-if g:spacevim_timer
+if g:spacevim.timer
   "simnalamburt/vim-mundo 
   "{
   MP 'simnalamburt/vim-mundo'

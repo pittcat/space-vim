@@ -1,4 +1,4 @@
-if g:spacevim_timer
+if g:spacevim.timer
   MP 'autozimu/LanguageClient-neovim', {
       \ 'branch': 'next',
       \ 'do': 'bash install.sh',

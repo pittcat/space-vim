@@ -7,7 +7,7 @@ function! spacevim#util#err(msg)
   echohl None
 endfunction
 
-function! spacevim#util#warn(cmd, msg)
+function! spacevim#util#warn(msg)
   echohl WarningMsg
   echom '[space-vim] '.a:msg
   echohl None
@@ -20,10 +20,6 @@ endfunction
 " argument plugin is the vim plugin's name
 function! spacevim#util#IsDir(plugin) abort
   return isdirectory(expand(g:my_plug_home.a:plugin)) ? 1 : 0
-endfunction
-
-function! spacevim#util#load(layer) abort
-    return index(g:layers_loaded, a:layer) > -1 ? 1 : 0
 endfunction
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -120,6 +116,7 @@ function! spacevim#util#RootDirectory()
   endif
   return root_dir == '' ? getcwd() : root_dir
 endfunction
+
 
 function! spacevim#util#VisualSelection()
     " Why is this not a built-in Vim script function?!

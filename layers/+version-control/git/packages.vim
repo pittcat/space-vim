@@ -1,6 +1,6 @@
   MP 'cohama/agit.vim'
 
-if g:spacevim_timer
+if g:spacevim.timer
 
   MP 'tpope/vim-fugitive'     , { 'on': [] }
   MP 'mhinz/vim-signify'      , {'on':[]}

@@ -8,7 +8,7 @@ function! BuildComposer(info)
   endif
 endfunction
 
-if g:spacevim_timer
+if g:spacevim.timer
   MP 'plasticboy/vim-markdown',      { 'on': [] }
   MP 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') ,'for':'markdown','frozen':1}
   MP 'mzlogin/vim-markdown-toc',     { 'on': ['GenTocGFM', 'GenTocRedcarpet', 'GenTocGitLab', 'UpdateToc', 'RemoveToc'],'for':'markdown'}

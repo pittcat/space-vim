@@ -1,4 +1,4 @@
-if g:spacevim_timer
+if g:spacevim.timer
   MP 'vim-ruby/vim-ruby', { 'for': ['ruby', 'haml', 'eruby'] }
   MP 'tpope/vim-rbenv', { 'for': 'ruby' }
   MP 'tpope/vim-bundler', { 'for': 'ruby' }

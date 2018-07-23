@@ -1,4 +1,4 @@
-if g:spacevim_timer
+if g:spacevim.timer
   MP 'junegunn/fzf',  { 'dir': '~/.fzf', 'do': './install --all', 'on': [] }
   MP 'junegunn/fzf.vim', { 'on': [] }
   call timer_start(280, 'spacevim#defer#fzf')

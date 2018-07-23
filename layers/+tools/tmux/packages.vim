@@ -1,3 +1,3 @@
-if g:spacevim_tmux
+if g:spacevim.tmux
   MP 'benmills/vimux'
 endif

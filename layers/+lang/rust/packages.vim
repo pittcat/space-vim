@@ -1,4 +1,4 @@
-if g:spacevim_timer
+if g:spacevim.timer
   MP 'rust-lang/rust.vim', { 'on': [] }
   call timer_start(550,'spacevim#defer#rust')
 else

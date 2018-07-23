@@ -17,7 +17,7 @@ else
 endif
 nnoremap <leader>' :call OpenTerminal()<cr>
 
-if spacevim_nvim
+if spacevim.nvim
   autocmd! FileType fzf tnoremap  <Esc> <Esc>
   tnoremap <expr> <Esc> "<C-\><C-n><CR>"
   tnoremap <expr> <C-d> "<C-\><C-n>:bd!<cr>"

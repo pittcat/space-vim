@@ -7,7 +7,7 @@ function! s:get_nvim_version()
     return matchstr(l:s, 'NVIM v\zs[^\n]*')
 endfunction
 
-let s:version = g:spacevim_nvim ? 'nvim '.s:get_nvim_version() : 'vim '.v:version
+let s:version = g:spacevim.nvim ? 'nvim '.s:get_nvim_version() : 'vim '.v:version
 let s:custom_header = [
             \'                                             _',
             \'         ___ _ __   __ _  ___ ___     __   _(_)_ __ ___',
@@ -15,7 +15,7 @@ let s:custom_header = [
             \'        \__ \ |_) | (_| | (_|  __/_____\ V /| | | | | | |',
             \'        |___/ .__/ \__._|\___\___|      \_/ |_|_| |_| |_|',
             \'            |_|',
-            \'                  [ space-vim '  . ' ＠' . s:version . ' ]',
+            \'                  [ space-vim ' . g:spacevim.version . ' ＠' . s:version . ' ]',
             \]
 
 let s:list_order = [

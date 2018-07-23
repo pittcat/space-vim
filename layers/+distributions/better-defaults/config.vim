@@ -9,7 +9,7 @@ augroup END
 " }
 
 " From tpope
-if g:spacevim_gui
+if g:spacevim.gui
   command! Bigger  :let &guifont = substitute(&guifont, '\d\+$', '\=submatch(0)+1', '')
   command! Smaller :let &guifont = substitute(&guifont, '\d\+$', '\=submatch(0)-1', '')
   noremap + :Bigger<CR>

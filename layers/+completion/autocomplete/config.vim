@@ -1,13 +1,10 @@
 scriptencoding utf-8
 
-if g:spacevim_vim8 || g:spacevim_nvim
   inoremap <expr> <down> pumvisible() ? "\<C-n>" : "\<down>"
   inoremap <expr> <up> pumvisible() ? "\<C-p>" : "\<up>"
-else
-endif
 
 
-if g:spacevim_nvim
+if g:spacevim.nvim
 
     set completeopt-=preview  "close show_docstring
     let g:deoplete#enable_at_startup = 0

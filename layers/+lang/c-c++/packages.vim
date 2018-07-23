@@ -1,4 +1,4 @@
-if g:spacevim_timer
+if g:spacevim.timer
   MP 'rhysd/vim-clang-format',           { 'for': [ 'c', 'cpp' ] }
   MP 'octol/vim-cpp-enhanced-highlight', { 'for': [ 'c', 'cpp' ] }
   call timer_start(550,'spacevim#defer#clang')

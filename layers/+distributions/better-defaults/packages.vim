@@ -2,7 +2,7 @@
     " Plug 'ybian/smartim'
 " endif
 
-if g:spacevim_timer
+if g:spacevim.timer
   MP 'kshenoy/vim-signature'        , { 'on': [] }
   MP 'tpope/vim-rsi'                , { 'on': [] }
   MP 'xtal8/traces.vim'             , { 'on': [] }

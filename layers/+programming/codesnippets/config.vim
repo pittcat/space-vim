@@ -1,10 +1,10 @@
 scriptencoding utf-8
 
-if g:spacevim_nvim || g:spacevim_vim8
+if g:spacevim.nvim || g:spacevim.vim8
   let g:UltiSnipsUsePythonVersion = 3
   let g:UltiSnipsSnippetDirectories=['UltiSnips']
-  exe 'set rtp+=' . expand(g:spacevim_dir . '/private/UltiSnips')
-  if g:spacevim_vim8
+  exe 'set rtp+=' . expand('~/.space-vim/' . '/private/UltiSnips')
+  if g:spacevim.vim8
     let g:UltiSnipsSnippetsDir = '~/.vim/UltiSnips'
   else
     let g:UltiSnipsSnippetsDir =  '~/.config/nvim/UltiSnips'
@@ -19,7 +19,7 @@ if g:spacevim_nvim || g:spacevim_vim8
       let snippet = UltiSnips#ExpandSnippet()
       if g:ulti_expand_res > 0
           return snippet
-      elseif g:spacevim_vim8
+      elseif g:spacevim.vim8
           return "\<C-y>"
       else 
         return deoplete#close_popup()
