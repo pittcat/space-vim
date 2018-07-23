@@ -61,7 +61,7 @@ endfunction
 
 
 function! spacevim#defer#clang(timer) abort
-  call s:lod('vim-clang-format','vim-cpp-enhanced-highlight')
+  call s:lod('vim-cpp-enhanced-highlight')
 endfunction
 function! spacevim#defer#javascript(timer) abort
   call s:lod('vim-javascript','vim-jsx')
