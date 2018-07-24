@@ -10,7 +10,7 @@ let g:loaded_escalt = 1
 set cpo&vim
 " ---------------------------------------------------------------------
 " Functions:
-function Escalt_console()
+function! spacevim#autocmd#escalt#Init()
   for i in range(48, 57) + range(65, 90) + range(97, 122)
     exe "set <M-".nr2char(i).">=\<Esc>".nr2char(i)
   endfor
@@ -60,12 +60,7 @@ function Escalt_console()
     set <S-F4>=O1;2S
   endif
 endfunction
-" ---------------------------------------------------------------------
-" Call Functions:
-if !has('nvim')
-  call Escalt_console()
-endif
-" ---------------------------------------------------------------------
+
 " Restoration And Modelines:
 let &cpo= s:keepcpo
 unlet s:keepcpo
