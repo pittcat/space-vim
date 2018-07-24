@@ -1,15 +1,3 @@
-" escalt.vim    控制台下让用 <M-x> 也可用
-" Author:       lilydjwg <lilydjwg@gmail.com>
-" ---------------------------------------------------------------------
-" Load Once:
-if &cp || exists("g:loaded_escalt") || has("gui_running") || has("win32") || has("win64")
-  finish
-endif
-let s:keepcpo = &cpo
-let g:loaded_escalt = 1
-set cpo&vim
-" ---------------------------------------------------------------------
-" Functions:
 function! spacevim#autocmd#escalt#Init()
   for i in range(48, 57) + range(65, 90) + range(97, 122)
     exe "set <M-".nr2char(i).">=\<Esc>".nr2char(i)
@@ -60,8 +48,3 @@ function! spacevim#autocmd#escalt#Init()
     set <S-F4>=O1;2S
   endif
 endfunction
-
-" Restoration And Modelines:
-let &cpo= s:keepcpo
-unlet s:keepcpo
-" vim:fdm=expr:fde=getline(v\:lnum-1)=~'\\v"\\s*-{20,}'?'>1'\:1
