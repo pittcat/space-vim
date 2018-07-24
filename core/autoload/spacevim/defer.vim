@@ -48,7 +48,7 @@ function! spacevim#defer#markdown(timer) abort
 endfunction
 
 function! spacevim#defer#rust(timer) abort
-  call s:lod('rust.vim')
+  call s:lod('rust.vim','vim-cargo')
 endfunction
 
 function! spacevim#defer#go(timer) abort
