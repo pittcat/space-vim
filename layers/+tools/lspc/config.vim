@@ -34,6 +34,7 @@ nnoremap <silent> gvd :call LanguageClient#textDocument_definition({'gotoCmd': '
 nnoremap <silent> <leader>cn :call LanguageClient#textDocument_rename()<CR>
 nnoremap <silent> <leader><leader>z :pc<CR>
 nnoremap <silent> <M-c> :pc<CR>
+nnoremap <localleader>sr :LanguageClientStop<cr>:sleep 1000m<cr>:LanguageClientStart<cr>
 
 augroup LanguageClient_config
   autocmd!
