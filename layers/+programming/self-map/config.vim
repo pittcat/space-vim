@@ -1,5 +1,5 @@
 " {terminal
-if has('nvim')
+if g:spacevim.nvim
   fu! OpenTerminal()
   " open split windows on the topleft
   belowright split
@@ -17,12 +17,13 @@ else
 endif
 nnoremap <leader>' :call OpenTerminal()<cr>
 
-if spacevim.nvim
+if g:spacevim.nvim
   autocmd! FileType fzf tnoremap  <Esc> <Esc>
-  tnoremap <expr> <Esc> "<C-\><C-n><CR>"
+  tnoremap <expr> <C-\> "<C-\><C-n><CR>"
   tnoremap <expr> <C-d> "<C-\><C-n>:bd!<cr>"
 else
-  tnoremap <expr> <Esc> "<C-\><C-n>"
+  tnoremap <expr> <C-\> "<C-\><C-n><CR>"
+  tnoremap <expr> <C-d> "<C-\><C-n>:bd!<cr>"
 endif
 
 " }
