@@ -2,17 +2,12 @@
     " Plug 'ybian/smartim'
 " endif
 
-if g:spacevim.timer
-  MP 'kshenoy/vim-signature'        , { 'on': [] }
-  MP 'tpope/vim-rsi'                , { 'on': [] }
-  MP 'xtal8/traces.vim'             , { 'on': [] }
-  MP 'dominikduda/vim_current_word' , { 'on': [] }
-  call timer_start(500, 'spacevim#defer#defaults')
-else
-  MP 'tpope/vim-rsi'
-  MP 'kshenoy/vim-signature'
-  MP 'dominikduda/vim_current_word'
-endif
+MP 'kshenoy/vim-signature'        , { 'on': [] }
+MP 'tpope/vim-rsi'                , { 'on': [] }
+MP 'xtal8/traces.vim'             , { 'on': [] }
+MP 'dominikduda/vim_current_word' , { 'on': [] }
+call timer_start(500, 'spacevim#defer#defaults')
+
 
 MP 't9md/vim-choosewin', { 'on': '<Plug>(choosewin)' }
 MP 'mhinz/vim-startify', { 'on': 'Startify' }
