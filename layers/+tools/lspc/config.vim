@@ -35,6 +35,8 @@ nnoremap <silent> <leader>cn :call LanguageClient#textDocument_rename()<CR>
 nnoremap <silent> <leader><leader>z :pc<CR>
 nnoremap <silent> <M-c> :pc<CR>
 nnoremap <localleader>sr :LanguageClientStop<cr>:sleep 1000m<cr>:LanguageClientStart<cr>
+autocmd BufEnter * if (expand('%:t')=='__LanguageClient__' && &filetype ==# 'markdown')
+      \ | nnoremap <silent> <buffer> q :pc<cr> | endif
 
 augroup LanguageClient_config
   autocmd!
