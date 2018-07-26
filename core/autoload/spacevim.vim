@@ -3,7 +3,7 @@ scriptencoding utf-8
 let g:spacevim.info = g:spacevim.base. '/core/autoload/spacevim/info.vim'
 let g:spacevim.layers_base = '/layers'
 let g:spacevim.private_base = '/private'
-let g:spacevim.nvim = has('nvim') && exists('*jobwait') && !g:spacevim.os.windows
+let g:spacevim.nvim = has('nvim') && exists('*jobwait')
 let g:spacevim.vim8 = exists('*job_start')
 let g:spacevim.timer = exists('*timer_start')
 let g:spacevim.gui = has('gui_running')
@@ -29,9 +29,7 @@ endfunction
 
 function! spacevim#begin() abort
   " Download vim-plug if unavailable
-  if !g:spacevim.os.windows
-    call s:check_vim_plug()
-  endif
+  call s:check_vim_plug()
   call s:define_command()
   call s:cache()
   call s:check_dot_spacevim()
@@ -65,7 +63,7 @@ endfunction
 function! s:cache() abort
   let l:info = g:spacevim.info
   if filereadable(l:info)
-    execute 'source ' . (g:spacevim.os.windows ? s:path(l:info) : l:info)
+    execute 'source ' . l:info
   else
     call spacevim#cache#init()
   endif
@@ -122,10 +120,6 @@ function! s:Source(file, ...) abort
       call spacevim#cache#init()
     endtry
   endif
-endfunction
-
-function! s:path(path) abort
-  return substitute(a:path, '/', '\', 'g')
 endfunction
 
 function! spacevim#end() abort
