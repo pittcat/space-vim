@@ -1,5 +1,5 @@
 MP 'tpope/vim-surround'
-MP 'jiangmiao/auto-pairs'
+MP 'jiangmiao/auto-pairs', { 'on': [] }
 MP 'terryma/vim-multiple-cursors'
 " MP 'mg979/vim-visual-multi',{'branch':'test'}
 MP 'brooth/far.vim'
