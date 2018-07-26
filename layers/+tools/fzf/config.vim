@@ -28,4 +28,8 @@
   nnoremap <leader>rg :PCRg!<cr>
   nnoremap <localleader>rg :Rg!<cr>
   vnoremap <leader>rg :<c-u>call spacevim#plug#fzf#RgVisual()<cr>
+
+  if g:spacevim.nvim
+    autocmd! FileType fzf tnoremap  <Esc> <Esc>
+  endif
   " }

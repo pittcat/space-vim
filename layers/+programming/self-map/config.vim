@@ -1,32 +1,3 @@
-" {terminal
-if g:spacevim.nvim
-  fu! OpenTerminal()
-  " open split windows on the topleft
-  belowright split
-  " resize the height of terminal windows to 30
-  :terminal
-  startinsert
-  endf
-else
-  fu! OpenTerminal()
-  " open split windows on the topleft
-  belowright split
-  " resize the height of terminal windows to 30
-  :call term_start('zsh', {'curwin' : 1, 'term_finish' : 'close'})
-  endf
-endif
-nnoremap <leader>' :call OpenTerminal()<cr>
-
-if g:spacevim.nvim
-  autocmd! FileType fzf tnoremap  <Esc> <Esc>
-  tnoremap <expr> <C-\> "<C-\><C-n><CR>"
-  tnoremap <expr> <C-d> "<C-\><C-n>:bd!<cr>"
-else
-  tnoremap <expr> <C-\> "<C-\><C-n><CR>"
-  tnoremap <expr> <C-d> "<C-\><C-n>:bd!<cr>"
-endif
-
-" }
 "{create new tab 
 nmap <leader>nb :edit $PWD/
 function! AddNewFile()
