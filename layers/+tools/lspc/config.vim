@@ -4,7 +4,7 @@ let g:LanguageClient_serverCommands = {
     \ 'python':['pyls'],
     \ 'cpp': ['cquery','--log-file=/tmp/cq.log'],
     \ 'c': ['cquery','--log-file=/tmp/cq.log'],
-    \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
+    \ 'rust': ['rustup', 'run', 'stable', 'rls'],
     \ 'javascript': ['javascript-typescript-stdio'],
     \ 'javascript.jsx': ['javascript-typescript-stdio'],
     \ 'typescript': ['javascript-typescript-stdio'],
