@@ -2,8 +2,10 @@
     " \ 'c':  ['clangd','-run-synchronously'],
 let g:LanguageClient_serverCommands = {
     \ 'python':['pyls'],
-    \ 'cpp': ['cquery','--log-file=/tmp/cq.log'],
-    \ 'c': ['cquery','--log-file=/tmp/cq.log'],
+    \ 'cpp': ['cquery','--log-file=/tmp/cq.log',
+    \ '--init={"cacheDirectory":"/tmp/cquery/", "completion": {"filterAndSort": false}}'],
+    \ 'c': ['cquery','--log-file=/tmp/cq.log' ,
+    \ '--init={"cacheDirectory":"/tmp/cquery/", "completion": {"filterAndSort": false}}'],
     \ 'rust': ['rustup', 'run', 'stable', 'rls'],
     \ 'javascript': ['javascript-typescript-stdio'],
     \ 'javascript.jsx': ['javascript-typescript-stdio'],
@@ -17,12 +19,6 @@ let g:LanguageClient_serverCommands = {
 let g:LanguageClient_autoStart = 1
 let g:LanguageClient_loadSettings = 1
 let g:LanguageClient_completionPreferTextEdit=1
-" Use an absolute configuration path if you want system-wide settings
-if g:spacevim.vim8
-  let g:LanguageClient_settingsPath = $HOME.'/.vim/settings.json'
-else
-  let g:LanguageClient_settingsPath = $HOME.'/.config/nvim/settings.json'
-endif
 let g:LanguageClient_loggingLevel = 'DEBUG'
 " disable interact with ale
 let g:LanguageClient_diagnosticsEnable=0
