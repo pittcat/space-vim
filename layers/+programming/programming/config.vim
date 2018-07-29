@@ -22,6 +22,7 @@ augroup END
   nnoremap <F9> :AsyncStop<cr>
   noremap <F8> :call asyncrun#quickfix_toggle(14)<cr>
   nnoremap <F5> :call spacevim#plug#asyncrun#CompileAndRun()<CR>
+  " vnoremap <F5> :call spacevim#plug#asyncrun#VisualSelectRun()<cr>
   augroup spacevimAsyncRun
     autocmd!
     autocmd User AsyncRunStart call asyncrun#quickfix_toggle(14, 1)
