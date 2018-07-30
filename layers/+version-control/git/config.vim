@@ -8,7 +8,7 @@ scriptencoding utf-8
   nnoremap <leader>ga :Git! add .<cr>:bd!<cr>
   nnoremap <silent> <Leader>gw :Gwrite<cr>
   nnoremap <silent> <Leader>gc :Gcommit<CR>
-  nnoremap <Leader>gp :AsyncRun -cwd=$VIM_ROOT git push<cr>cclose<cr>
+  nnoremap <Leader>gp :AsyncRun -cwd=$VIM_ROOT git push<cr>
 
   " nnoremap <silent> <Leader>ge :Gedit<CR>
   " nnoremap <silent> <Leader>gr :Gread<CR>
