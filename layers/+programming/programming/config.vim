@@ -25,10 +25,10 @@ augroup END
   
   vnoremap <silent> <F5> :call spacevim#plug#asyncrun#CreateTemperoryFile()<cr>
         \ :call spacevim#plug#asyncrun#QuickRunVisualTempfile()<cr>
-  augroup spacevimAsyncRun
-    autocmd!
-    autocmd User AsyncRunStart call asyncrun#quickfix_toggle(14, 1)
-  augroup END
+  " augroup spacevimAsyncRun
+    " autocmd!
+    " autocmd User AsyncRunStart call asyncrun#quickfix_toggle(14, 1)
+  " augroup END
 
   function! s:CorrectCloseBuffer()
     let qf_exist_num=filter(range(1, winnr('$')), 'getwinvar(v:val, "&ft") == "qf"')
