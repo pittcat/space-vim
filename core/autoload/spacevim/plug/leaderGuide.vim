@@ -66,10 +66,13 @@ let g:spacevim#plug#leaderGuide#lmap['g'] = {
       \ 'b' : ['Gblame', 'fugitive-blame'],
       \ 'c' : ['Gcommit', 'fugitive-commit'],
       \ 'd' : ['Gdiff', 'fugitive-diff'],
-      \ 's' : ['Gstatus', 'fugitive-status'],
-      \ 'w' : ['Gwrite', 'fugitive-write'],
+      \ 'g' : ['SignifyToggle','Toggle Signify'],
+      \ 'h' : ['SignifyToggleHighlight','Toggle Signify Height'],
       \ 'p' : ['AsyncRun -cwd=$VIM_ROOT git push','GBpush'],
-      \ 'y' : ['Goyo', 'goyo-mode'],
+      \ 'v' : ['Agit','Better View'],
+      \ 'w' : ['Gwrite', 'fugitive-write'],
+      \ 'r' : ['SignifyRefresh','Refresh Signify'],
+      \ 's' : ['Gstatus', 'fugitive-status'],
       \ }
 let g:spacevim#plug#leaderGuide#lmap['h'] = {
       \ 'name' : '+help',
