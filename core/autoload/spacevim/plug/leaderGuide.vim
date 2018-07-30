@@ -68,7 +68,7 @@ let g:spacevim#plug#leaderGuide#lmap['g'] = {
       \ 'd' : ['Gdiff', 'fugitive-diff'],
       \ 's' : ['Gstatus', 'fugitive-status'],
       \ 'w' : ['Gwrite', 'fugitive-write'],
-      \ 'p' : ['Gpush', 'AsyncRun -cwd=$VIM_ROOT git push'],
+      \ 'p' : ['GBpush', 'AsyncRun -cwd=$VIM_ROOT git push'],
       \ 'y' : ['Goyo', 'goyo-mode'],
       \ }
 let g:spacevim#plug#leaderGuide#lmap['h'] = {
