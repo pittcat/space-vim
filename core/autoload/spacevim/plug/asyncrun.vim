@@ -45,9 +45,6 @@ function! spacevim#plug#asyncrun#QuickRunVisualTempfile()
   let l:ft = &filetype
 
   if has_key(l:cmd, l:ft)
-    if filereadable(l:fname)
-      exec "silent !rm " . l:fname
-    endif
     exec "AsyncRun! ".l:cmd[l:ft] . l:fname . ";rm " . l:fname
   else
     call spacevim#util#err("spacevim#util#VisualSelectionRun not supported in current filetype!")
