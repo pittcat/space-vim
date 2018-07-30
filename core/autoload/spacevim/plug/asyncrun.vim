@@ -1,6 +1,6 @@
 let g:asyncrun_shell = '/usr/bin/zsh'
 let g:asyncrun_shellflag = '-c'
-let g:asyncrun_exit=1
+
 function! spacevim#plug#asyncrun#CompileAndRun()
   let l:cmd = {
         \ 'c'      : "gcc '%:p' -o  './exec/%:t:r'; time %:p:h/exec/%:t:r<",
@@ -52,5 +52,4 @@ function! spacevim#plug#asyncrun#QuickRunVisualTempfile()
   else
     call spacevim#util#err("spacevim#util#VisualSelectionRun not supported in current filetype!")
   endif
-  wincmd j
 endfunction
