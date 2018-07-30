@@ -24,6 +24,7 @@ function! spacevim#plug#asyncrun#CompileAndRun()
   endif
 endfunction
 
+" Cooperate with famous fugitive
 if exists(':Make') == 2
   noautocmd Make
 else
