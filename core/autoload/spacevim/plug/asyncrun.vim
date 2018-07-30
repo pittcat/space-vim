@@ -24,16 +24,6 @@ function! spacevim#plug#asyncrun#CompileAndRun()
   endif
 endfunction
 
-" Cooperate with famous fugitive
-if exists(':Make') == 2
-  noautocmd Make
-else
-  silent noautocmd make!
-  redraw!
-  return 'call fugitive#cwindow()'
-endif 
-command! -bang -nargs=* -complete=file Make AsyncRun -program=make @ <args>
-
 
 function! spacevim#plug#asyncrun#CreateTemperoryFile()
   let l:visualselect=spacevim#util#VisualSelection()
