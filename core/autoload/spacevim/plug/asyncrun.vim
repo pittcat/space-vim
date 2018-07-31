@@ -26,12 +26,16 @@ function! spacevim#plug#asyncrun#CompileAndRun()
 endfunction
 
 
-function! spacevim#plug#asyncrun#VisualBlockRun()
+function! spacevim#plug#asyncrun#CreateTemperoryFile()
   let l:visualselect=spacevim#util#VisualSelection()
-  exe "norm! \<Esc>"
-  let l:fname=tempname() . '.' . expand('%:e')
+  let l:fname='/tmp/tempfile.' . expand('%:e')
   silent! execute 'w' . l:fname
   silent! call writefile(split(l:visualselect, "\n", 1), glob(l:fname), 's')
+
+endfunction
+
+function! spacevim#plug#asyncrun#QuickRunVisualTempfile()
+  let l:fname='/tmp/tempfile.' . expand('%:e')
   let l:cmd = {
         \ 'sh'     : "time bash ",
         \ 'ruby'   : "time ruby ",
@@ -46,6 +50,5 @@ function! spacevim#plug#asyncrun#VisualBlockRun()
     call spacevim#util#err("spacevim#util#VisualSelectionRun not supported in current filetype!")
   endif
   call asyncrun#quickfix_toggle(14, 1)
-
 endfunction
 
