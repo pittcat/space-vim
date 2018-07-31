@@ -17,6 +17,7 @@
   let g:smartpairs_revert_key = '<C-s>'
   let g:smartpairs_nextpairs_key_i = 'v'
   let g:smartpairs_nextpairs_key_a = '<C-m>'
+  sunmap v
   "}
   "{BufOnly
   nnoremap <leader>bD :BufOnly<cr>
