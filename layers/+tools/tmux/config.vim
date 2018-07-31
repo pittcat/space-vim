@@ -1,14 +1,19 @@
 if g:spacevim.tmux
-  let g:VimuxHeight = "40"
-  let g:VimuxOrientation = "h"
-  let g:VimuxRunnerType = "pane"
-  nnoremap <silent> <Leader>vr :call spacevim#plug#vimux#VimuxCompileRun()<cr>
-  nnoremap <silent> <Leader>vo :call spacevim#plug#vimux#VimuxOpenPane()<CR>
-  nnoremap <silent> <Leader>vc :VimuxCloseRunner<cr>
-  nnoremap <silent> <Leader>vl :call VimuxSendKeys("C-l")
-  nnoremap <silent> <Leader>vz :VimuxZoomRunner<CR>
-  nnoremap <silent> <Leader>vb :VimuxInterruptRunner<CR>
-  
-  " vmap <Leader>vt :call TmuxSendReady()<CR>
-
+  let g:VtrOrientation = "h"
+  let g:VtrPercentage = 40
+  let g:vtr_filetype_runner_overrides = {
+        \ 'python': 'python {file}',
+        \ 'javascript': 'node {file}'
+        \ }
+  nnoremap <leader>vp :VtrOpenRunner<cr>
+  nnoremap <leader>vr :call spacevim#plug#vimtmuxrunner#Quickrun()<cr>
+  nnoremap <leader>vp :call spacevim#plug#vimtmuxrunner#OpenPane()<cr>
+  nnoremap <leader>vk :VtrKillRunner<cr>
+  nnoremap <leader>vs :VtrSendCommandToRunner<cr>
+  nnoremap <leader>vl :VtrClearRunner<cr>
+  nnoremap <leader>vd :VtrSendCtrlD<cr>
+  vnoremap <C-c><C-c> :VtrSendLinesToRunner<cr>
+  nnoremap <C-c><C-l> :VtrSendLinesToRunner<cr>
+  vnoremap <C-c><C-l> :VtrSendLinesToRunner<cr>
 endif
+

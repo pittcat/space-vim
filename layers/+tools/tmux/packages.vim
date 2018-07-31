@@ -1,3 +1,3 @@
 if g:spacevim.tmux
-  MP 'benmills/vimux'
+  MP 'christoomey/vim-tmux-runner'
 endif
