@@ -51,3 +51,4 @@ function! spacevim#plug#asyncrun#QuickRunVisualTempfile()
   endif
   call asyncrun#quickfix_toggle(14, 1)
 endfunction
+

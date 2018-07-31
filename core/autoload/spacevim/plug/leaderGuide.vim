@@ -63,12 +63,12 @@ let g:spacevim#plug#leaderGuide#lmap['f'] = {
 
 let g:spacevim#plug#leaderGuide#lmap['g'] = {
       \ 'name' : '+git/version-control',
+      \ 'a' : ['call GitAdd()','Git Add'],
       \ 'b' : ['Gblame', 'fugitive-blame'],
       \ 'c' : ['Gcommit', 'fugitive-commit'],
       \ 'd' : ['Gdiff', 'fugitive-diff'],
       \ 'g' : ['SignifyToggle','Toggle Signify'],
       \ 'h' : ['SignifyToggleHighlight','Toggle Signify Height'],
-      \ 'p' : ['AsyncRun -cwd=$VIM_ROOT git push','GBpush'],
       \ 'v' : ['Agit','Better View'],
       \ 'w' : ['Gwrite', 'fugitive-write'],
       \ 'r' : ['SignifyRefresh','Refresh Signify'],

@@ -22,9 +22,12 @@ augroup END
   nnoremap <F9> :AsyncStop<cr>
   noremap <F8> :call asyncrun#quickfix_toggle(14)<cr>
   nnoremap <F5> :call spacevim#plug#asyncrun#CompileAndRun()<CR>
-  
+
   vnoremap <silent> <F5> :call spacevim#plug#asyncrun#CreateTemperoryFile()<cr>
         \ :call spacevim#plug#asyncrun#QuickRunVisualTempfile()<cr>
+
+  command! GitPush AsyncRun -cwd=$VIM_ROOT git push
+  nnoremap <silent> <leader>gp :GitPush<cr>
   " augroup spacevimAsyncRun
     " autocmd!
     " autocmd User AsyncRunStart call asyncrun#quickfix_toggle(14, 1)

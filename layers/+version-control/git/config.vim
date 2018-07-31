@@ -1,8 +1,15 @@
 scriptencoding utf-8
 
 " vim-fugitive {
+  function! GitAdd()
+    if @%=='Startify' || @%==''
+      echo 'No Git Add'
+    else
+      execute 'Git! add .' 
+      execute 'bd!'
+    endif
+  endfunction
 
-  nnoremap <silent> <leader>ga :Git! add .<cr>:bd!<cr>
   " nnoremap <silent> <Leader>ge :Gedit<CR>
   " nnoremap <silent> <Leader>gr :Gread<CR>
   " nnoremap <silent> <Leader>gl :Glog<CR>
