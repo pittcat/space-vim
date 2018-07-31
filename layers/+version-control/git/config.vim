@@ -33,3 +33,8 @@ scriptencoding utf-8
 
 " {Agit.vim
 " }
+"
+" {open-browser-github.vim
+  nnoremap <leader>gf :OpenGithubFile<cr> 
+  vnoremap <leader>gf :OpenGithubFile<cr>
+" }
