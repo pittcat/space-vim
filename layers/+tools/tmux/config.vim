@@ -8,7 +8,7 @@ if g:spacevim.tmux
   nnoremap <silent> <Leader>vl :call VimuxSendKeys("C-l")
   nnoremap <silent> <Leader>vz :VimuxZoomRunner<CR>
   nnoremap <silent> <Leader>vb :VimuxInterruptRunner<CR>
-
-  vmap <Leader>vt :call VimuxSendText(@v)<CR>
+  
+  vmap <Leader>vt :call TmuxSendReady()<CR>
 
 endif

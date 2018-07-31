@@ -45,9 +45,6 @@ if g:spacevim.timer
   "{tpope/vim-repeat
   MP 'tpope/vim-repeat'
   "}
-  "{expand region
-  MP 'gorkunov/smartpairs.vim'
-  "}
   "{
   MP 'kien/tabman.vim'
   nnoremap <silent> <F7> :TMToggle<cr>
