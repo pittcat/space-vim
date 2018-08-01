@@ -6,6 +6,7 @@ let g:LanguageClient_serverCommands = {
     \ '--init={"cacheDirectory":"/tmp/cquery/", "completion": {"filterAndSort": false}}'],
     \ 'c': ['cquery','--log-file=/tmp/cq.log' ,
     \ '--init={"cacheDirectory":"/tmp/cquery/", "completion": {"filterAndSort": false}}'],
+    \ 'dockerfile' : ['docker-langserver','--stdio'],
     \ 'rust': ['rustup', 'run', 'stable', 'rls'],
     \ 'javascript': ['javascript-typescript-stdio'],
     \ 'javascript.jsx': ['javascript-typescript-stdio'],
