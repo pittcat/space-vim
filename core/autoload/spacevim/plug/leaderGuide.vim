@@ -38,7 +38,7 @@ let g:spacevim#plug#leaderGuide#lmap['e'] = {
       \ 'p' : ['call feedkeys("\<Plug>(ale_previous)")', 'previous-error'],
       \ 'd' :['ALEDetail','detail'],
       \ 'l' :['lopen','show check list'],
-      \ 'c' :['lclose','close check list']
+      \ 'c' :['lclose','close check list'],
       \ 't' : ['ALEToggle','toggle ale'],
       \ }
 let g:spacevim#plug#leaderGuide#lmap['f'] = {
