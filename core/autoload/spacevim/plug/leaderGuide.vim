@@ -40,6 +40,7 @@ let g:spacevim#plug#leaderGuide#lmap['e'] = {
       \ 'l' :['lopen','show check list'],
       \ 'c' :['lclose','close check list'],
       \ 't' : ['ALEToggle','toggle ale'],
+      \ 'f' : ['ALEFix '],
       \ }
 let g:spacevim#plug#leaderGuide#lmap['f'] = {
       \ 'name' : '+find/files/fold',

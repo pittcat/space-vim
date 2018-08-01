@@ -14,6 +14,25 @@ let g:ale_linters={
           \ 'java': ['javac'],
           \}
 
+let g:ale_fixers = {
+          \ 'python': ['yapf'],
+          \ 'javascript': ['prettier'],
+          \ 'javascript.jsx': ['prettier'],
+          \ 'css' : ['prettier'],
+          \ 'html': ['tidy'],
+          \ 'less': ['prettier'],
+          \ 'scss': ['prettier'],
+          \ 'json': ['prettier'],
+          \ 'graphql': ['prettier'],
+          \ 'markdown': ['prettier'],
+          \ 'vue': ['prettier'],
+          \ 'rust': ['rustfmt'],
+          \ 'ruby': ['rubocop'],
+          \ 'cpp' : ['clang-format'],
+          \ 'c' : ['clang-format'],
+          \ 'java' : ['google_java_format'],
+\}
+nnoremap <localleader>\ :ALEFix<cr>
 let g:ale_set_highlights = 0
 let g:ale_echo_msg_format = '[#%linter%#] %s [%severity%]'
 let g:ale_statusline_format = ['E•%d', 'W•%d', 'OK']
