@@ -39,6 +39,7 @@ let g:spacevim#plug#leaderGuide#lmap['e'] = {
       \ 'd' :['ALEDetail','detail'],
       \ 'l' :['lopen','show check list'],
       \ 'c' :['lclose','close check list']
+      \ 't' : ['ALEToggle','toggle ale'],
       \ }
 let g:spacevim#plug#leaderGuide#lmap['f'] = {
       \ 'name' : '+find/files/fold',
@@ -104,7 +105,6 @@ let g:spacevim#plug#leaderGuide#lmap['t'] = {
       \ 't' : ['TagbarToggle', 'tagbar'],
       \ 'c' : ['call spacevim#util#ToggleCursorColumn()', 'cursor-column'],
       \ 'C' : ['call spacevim#util#ToggleColorColumn()', 'color-column'],
-      \ 's' : ['ALEToggle','toggle ale'],
       \ }
 " let g:spacevim#plug#leaderGuide#lmap['u'] = [ 'call feedkeys("\<C-u>")', 'scroll-up' ]
 
