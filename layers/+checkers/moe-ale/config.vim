@@ -1,6 +1,7 @@
 let g:ale_linters={
           \ 'vim' : ['vint'],
           \ 'html' : ['tidy'],
+          \ 'c' :['clang'],
           \ 'cpp' :['clang'],
           \ 'css' : ['prettier'],
           \ 'python' : ['flake8'],

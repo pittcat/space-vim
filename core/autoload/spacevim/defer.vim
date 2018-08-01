@@ -10,6 +10,10 @@ function! spacevim#defer#ale(timer) abort
   call s:lod('ale')
 endfunction
 
+function! spacevim#defer#neomake(timer) abort
+  call s:lod('neomake')
+endfunction
+
 " 250
 function! spacevim#defer#airline(timer) abort
   call s:lod('vim-airline', 'vim-airline-themes')
