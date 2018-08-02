@@ -12,6 +12,7 @@ let g:ale_linters={
           \ 'rust' : ['rustc'] ,
           \ 'sh':['language-server'],
           \ 'java': ['javac'],
+          \ 'go'  : ['golint'],
           \}
 
 let g:ale_fixers = {
@@ -31,6 +32,7 @@ let g:ale_fixers = {
           \ 'cpp' : ['clang-format'],
           \ 'c' : ['clang-format'],
           \ 'java' : ['google_java_format'],
+          \ 'go'  : ['gofmt'],
 \}
 nnoremap <localleader>\ :ALEFix<cr>
 let g:ale_set_highlights = 0
