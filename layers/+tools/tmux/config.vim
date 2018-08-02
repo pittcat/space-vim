@@ -13,8 +13,10 @@ if g:spacevim.tmux
   nnoremap <leader>vs :VtrSendCommandToRunner<cr>
   nnoremap <leader>vl :VtrClearRunner<cr>
   nnoremap <leader>vd :VtrSendCtrlD<cr>
-  vnoremap <C-c><C-c> :VtrSendLinesToRunner<cr>
+  xnoremap <C-c><C-c> :VtrSendLinesToRunner<cr>
   nnoremap <C-c><C-l> :VtrSendLinesToRunner<cr>
-  vnoremap <C-c><C-l> :VtrSendLinesToRunner<cr>
+  xnoremap <C-c><C-l> :VtrSendLinesToRunner<cr>
+  xmap <M-\> :VtrSendLinesToRunner<cr>
+  nnoremap <M-\> :VtrSendLinesToRunner<cr>
 endif
 

@@ -8,6 +8,8 @@ function! spacevim#plug#vimtmuxrunner#OpenPane()
   let l:cmd = {
         \ 'python' : "ptpython ",
         \ 'ruby'   : "irb",
+        \ 'javascript' : "noderepl",
+        \ 'javascript.jsx' : "noderepl",
         \}
   let l:ft = &filetype
   if has_key(l:cmd, l:ft)
