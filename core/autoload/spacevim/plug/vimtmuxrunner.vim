@@ -11,6 +11,7 @@ function! spacevim#plug#vimtmuxrunner#OpenPane()
         \ 'javascript' : "noderepl",
         \ 'javascript.jsx' : "noderepl",
         \ 'java'  : 'java-repl',
+        \ 'go'    : 'go'
         \}
   let l:ft = &filetype
   if has_key(l:cmd, l:ft)
