@@ -10,6 +10,7 @@ function! spacevim#plug#vimtmuxrunner#OpenPane()
         \ 'ruby'   : "irb",
         \ 'javascript' : "noderepl",
         \ 'javascript.jsx' : "noderepl",
+        \ 'java'  : 'java-repl',
         \}
   let l:ft = &filetype
   if has_key(l:cmd, l:ft)
