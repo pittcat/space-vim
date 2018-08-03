@@ -34,14 +34,14 @@ let g:spacevim#plug#leaderGuide#lmap['b'] = {
 " let g:spacevim#plug#leaderGuide#lmap['d'] = [ 'call feedkeys("\<C-d>")', 'scroll-down' ]
 let g:spacevim#plug#leaderGuide#lmap['e'] = {
       \ 'name' : '+errors',
-      \ 'n' : ['call feedkeys("\<Plug>(ale_next)")', 'next-error'],
-      \ 'p' : ['call feedkeys("\<Plug>(ale_previous)")', 'previous-error'],
-      \ 'd' :['ALEDetail','detail'],
-      \ 'l' :['lopen','show check list'],
-      \ 'c' :['lclose','close check list'],
-      \ 't' : ['ALEToggle','toggle ale'],
-      \ 'f' : ['ALEFix '],
+      \ 't' : ['ALEToggle','Toggle']    ,
+      \ 'c' :['lclose','close view']    ,
+      \ 'd' :['ALEDetail','detail']   ,
+      \ 'n' : ['call feedkeys("\<Plug>(ale_next)")', 'next-error']    ,
+      \ 'p' : ['call feedkeys("\<Plug>(ale_previous)")', 'previous-error']    ,
+      \ 'f' : ['ALEFix ','format code']   ,
       \ }
+
 let g:spacevim#plug#leaderGuide#lmap['f'] = {
       \ 'name' : '+find/files/fold',
       \ '0' : ['set foldlevel=0', '0-fold-level'],
