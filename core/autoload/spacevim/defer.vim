@@ -94,7 +94,7 @@ endfunction
 
 " 800
 function! spacevim#defer#fugitive(timer) abort
-  call s:lod('vim-fugitive','open-browser-github.vim')
+  call s:lod('vim-fugitive','vim-githubinator')
 endfunction
 
 " 850
