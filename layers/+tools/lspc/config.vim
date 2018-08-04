@@ -1,11 +1,7 @@
-    " \ 'cpp':  ['clangd','-run-synchronously'],
-    " \ 'c':  ['clangd','-run-synchronously'],
 let g:LanguageClient_serverCommands = {
     \ 'python':['pyls'],
-    \ 'cpp': ['cquery','--log-file=/tmp/cq.log',
-    \ '--init={"cacheDirectory":"/tmp/cquery/", "completion": {"filterAndSort": false}}'],
-    \ 'c': ['cquery','--log-file=/tmp/cq.log' ,
-    \ '--init={"cacheDirectory":"/tmp/cquery/", "completion": {"filterAndSort": false}}'],
+    \ 'cpp':  ['clangd'],
+    \ 'c':  ['clangd'],
     \ 'dockerfile' : ['docker-langserver','--stdio'],
     \ 'rust': ['rustup', 'run', 'stable', 'rls'],
     \ 'javascript': ['javascript-typescript-stdio'],
