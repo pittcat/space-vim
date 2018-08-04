@@ -1,3 +1,2 @@
-  "{ludovicchabant/vim-gutentags
-  MP 'ludovicchabant/vim-gutentags'
-  "}
+MP 'jsfaint/gen_tags.vim'
+MP 'skywind3000/vim-preview'
