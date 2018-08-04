@@ -11,10 +11,4 @@ let g:gen_tags#blacklist = split(glob('~/.vim/plugged/*'))
 
 " maps
 let g:gen_tags#gtags_default_map=1
-
-" skywind3000/vim-preview
-noremap <M-u> :PreviewScroll -1<cr>
-noremap <M-d> :PreviewScroll +1<cr>
-inoremap <M-u> <c-\><c-o>:PreviewScroll -1<cr>
-inoremap <M-d> <c-\><c-o>:PreviewScroll +1<cr>
-
+let g:gen_tags#statusline=1
