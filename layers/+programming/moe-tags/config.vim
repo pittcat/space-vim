@@ -14,6 +14,12 @@ let g:gen_tags#gtags_default_map=1
 let g:gen_tags#statusline=1
 
 " skywind3000/vim-preview
+function! PreViewInput()
+  let l:tagname = input('tag name:','')
+  execut 'PreviewTag' l:tagname
+endfunction
+nnoremap <localleader>cp :call PreViewInput()<cr>
+nmap <leader>nf :call AddNewFile()<cr>
 autocmd FileType qf nnoremap <silent><buffer> p :PreviewQuickfix<cr>
 autocmd FileType qf nnoremap <silent><buffer> [ :PreviewClose<cr>
 noremap <M-u> :PreviewScroll -1<cr>
