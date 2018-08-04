@@ -109,6 +109,6 @@ endfunction
 
 " 1400
 function! spacevim#defer#awesome_tools(timer) abort
-  call s:lod('nginx.vim','vim-table-mode','vim-lastplace','fcitx.vim','zeavim.vim','open-browser.vim','vim-gutentags','dict.vim','vim-highlightedyank')
+  call s:lod('nginx.vim','vim-table-mode','vim-lastplace','fcitx.vim','zeavim.vim','open-browser.vim','dict.vim','vim-highlightedyank')
 endfunction
 

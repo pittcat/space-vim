@@ -95,9 +95,6 @@ if g:spacevim.timer
   "{tyru/open-browser.vim
   MP 'tyru/open-browser.vim'
   "}
-  "{ludovicchabant/vim-gutentags
-  MP 'ludovicchabant/vim-gutentags'
-  "}
   "{iamcco/dict.vim
   MP 'iamcco/dict.vim'
   "}
