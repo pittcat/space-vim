@@ -64,10 +64,6 @@
   let g:table_mode_delimiter = ' '
   noremap <leader>itb :Tableize<cr>
   " }
-  "{codi.vim
-  noremap <silent> <localleader>cd :Codi!!<cr>
-  "}
-
   " {roxma/vim-paste-easy
   let g:paste_easy_message=0
   " }
