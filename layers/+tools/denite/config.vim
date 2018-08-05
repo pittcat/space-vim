@@ -40,5 +40,5 @@ nnoremap <silent> <localleader>rg :<C-u>Denite grep:. -auto-preview -auto-highli
 nnoremap <silent> <leader>bb :Denite buffer -auto-highlight<cr>
 nnoremap <silent> <leader>fl :Denite line -auto-highlight<cr>
 nnoremap <silent> <leader>sf :Denite session<cr>
-nnoremap <silent> <leader>sf :Denite command<cr>
+nnoremap <silent> <leader>fc :Denite command<cr>
 
