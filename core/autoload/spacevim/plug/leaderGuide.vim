@@ -28,8 +28,6 @@ let g:spacevim#plug#leaderGuide#lmap['b'] = {
       \ 'l' : ['blast', 'last-buffer'],
       \ 'n' : ['bnext', 'next-buffer'],
       \ 'p' : ['bprevious', 'previous-buffer'],
-      \ 'b' : ['Buffers', 'fzf-buffer'],
-      \ '?' : ['Buffers', 'fzf-buffer'],
       \ }
 " let g:spacevim#plug#leaderGuide#lmap['d'] = [ 'call feedkeys("\<C-d>")', 'scroll-down' ]
 let g:spacevim#plug#leaderGuide#lmap['e'] = {
@@ -54,13 +52,9 @@ let g:spacevim#plug#leaderGuide#lmap['f'] = {
       \ '7' : ['set foldlevel=7', '7-fold-level'],
       \ '8' : ['set foldlevel=8', '8-fold-level'],
       \ '9' : ['set foldlevel=9', '9-fold-level'],
-      \ 'l' : ['BLines', 'fzf-find-current-buffer'],
-      \ 'd' : ['NERDTreeFind', 'find-current-buffer-in-NERDTree'],
-      \ 'f' : ['Files $PWD', 'files-in-pwd-direcotry'],
       \ 's' : ['save', 'save-file'],
       \ '?' : ['Files ~/', 'files-in-home-direcotry'],
       \ 'R' : ['source $MYVIMRC', 'reload-vimrc'],
-      \ 'w' : ['call spacevim#plug#fzf#SearchCword()', 'find-cword-in-project']
       \ }
 
 let g:spacevim#plug#leaderGuide#lmap['g'] = {
@@ -90,7 +84,6 @@ let g:spacevim#plug#leaderGuide#lmap['j'] = {
       \ }
 let g:spacevim#plug#leaderGuide#lmap['p'] = {
       \ 'name' : '+projects',
-      \ 'f' : ['call spacevim#plug#fzf#FindFileInProject()', 'find-file-in-project'],
       \ 's' : ['Rag', 'search-in-project'],
       \ }
 let g:spacevim#plug#leaderGuide#lmap['q'] = [ 'q', 'quit' ]
@@ -146,7 +139,6 @@ let g:spacevim#plug#leaderGuide#lmap['w'] = {
       \ '=' : ['call feedkeys("\<Plug>(window_b)")', 'balance-window'],
       \ 's' : ['call feedkeys("\<Plug>(window_s1)")', 'split-window-below'],
       \ 'v' : ['call feedkeys("\<Plug>(window_v1)")', 'split-window-below'],
-      \ '?' : ['Windows', 'fzf-window'],
       \ }
 let g:spacevim#plug#leaderGuide#lmap['x'] = {
       \ 'name' : '+text',

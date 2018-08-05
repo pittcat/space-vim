@@ -7,7 +7,8 @@
   omap <Leader>? <plug>(fzf-maps-o)
 
   nnoremap <Leader>bb :Buffers<CR>
-
+  
+  nnoremap <Leader>pf :call spacevim#plug#fzf#FindFileInProject()<cr>
   nnoremap <Leader>b? :Buffers<CR>
   nnoremap <Leader>w? :Windows<CR>
   nnoremap <Leader>f? :Files<CR>
