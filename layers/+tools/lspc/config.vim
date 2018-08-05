@@ -20,7 +20,11 @@ let g:LanguageClient_loggingLevel = 'DEBUG'
 " disable interact with ale
 let g:LanguageClient_diagnosticsEnable=0
 
-nnoremap <silent> <F1> :call LanguageClient_contextMenu()<CR>
+if has_key(g:plugs, 'denite.nvm')
+  nnoremap  <silent> <F1> :Denite contextMenu <cr>
+else
+  nnoremap <silent> <F1> :call LanguageClient_contextMenu()<CR>
+endif
 nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> gvd :call LanguageClient#textDocument_definition({'gotoCmd': 'split'})<CR>

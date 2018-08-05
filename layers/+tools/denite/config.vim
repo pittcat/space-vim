@@ -38,6 +38,12 @@ nnoremap <silent> <leader>rg :DeniteCursorWord grep:. -auto-preview -vertical-pr
 nnoremap <silent> <leader>bb :Denite buffer <cr>
 nnoremap <silent> <leader>fl :Denite line <cr>
 nnoremap <silent> <leader>sf :Denite session<cr>
-nnoremap <silent> <leader>fc :Denite command<cr>
+nnoremap <silent> <leader>ls :Denite jump<cr>
+nnoremap <silent> <leader>ct :Denite tag<cr>
+nnoremap <silent> <leader>fb :Denite outline<cr>
 nnoremap <Leader>fep :Denite file/rec:~/MEGA/code/dotfiles<CR>
 
+
+nnoremap <Leader>es :Denite ale<cr>
+nnoremap <Leader>fd :Denite directory_rec<cr>
+nnoremap <silent> <leader>fc :Denite command<cr>
