@@ -1,3 +1,4 @@
+" https://github.com/SpaceVim/SpaceVim/blob/19f8f32bfa7aa13c7397cae20382f200e34c272e/config/plugins/denite.vim
 call denite#custom#var('session', 'path', '~/.vim/session')
 
 call denite#custom#filter('matcher/ignore_globs', 'ignore_globs',
