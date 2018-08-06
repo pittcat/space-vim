@@ -1,7 +1,7 @@
 let g:LanguageClient_serverCommands = {
     \ 'python':['pyls'],
-    \ 'cpp':  ['clangd'],
-    \ 'c':  ['clangd'],
+    \ 'c': ['clangd', '-compile-commands-dir=' . getcwd()],
+    \ 'cpp': ['clangd', '-compile-commands-dir=' . getcwd()],
     \ 'dockerfile' : ['docker-langserver','--stdio'],
     \ 'rust': ['rustup', 'run', 'stable', 'rls'],
     \ 'javascript': ['javascript-typescript-stdio'],
