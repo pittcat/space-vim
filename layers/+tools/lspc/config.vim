@@ -1,7 +1,11 @@
 let g:LanguageClient_serverCommands = {
     \ 'python':['pyls'],
-    \ 'c': ['clangd', '-compile-commands-dir=' . getcwd()],
-    \ 'cpp': ['clangd', '-compile-commands-dir=' . getcwd()],
+    \ 'c': ['ccls', 
+    \ '--log-file=/tmp/cq.log',
+    \ '--init={"cacheDirectory":"/tmp/ccls/"}'],
+    \ 'cpp': ['ccls', 
+    \ '--log-file=/tmp/cq.log',
+    \ '--init={"cacheDirectory":"/tmp/ccls/"}'],
     \ 'dockerfile' : ['docker-langserver','--stdio'],
     \ 'rust': ['rustup', 'run', 'stable', 'rls'],
     \ 'javascript': ['javascript-typescript-stdio'],
