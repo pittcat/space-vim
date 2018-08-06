@@ -1,31 +1,41 @@
-let g:gen_tags#use_cache_dir=1
-let g:gen_tags#blacklist = split(glob('~/.vim/plugged/*'))
+let g:gutentags_project_root = ['.root', '.svn', '.git', '.hg', '.project']
+
+let g:gutentags_ctags_tagfile = '.tags'
+
+let s:vim_tags = expand('~/.cache/tags')
+if !isdirectory(s:vim_tags)
+   silent! call mkdir(s:vim_tags, 'p')
+endif
+let g:gutentags_cache_dir = s:vim_tags
+let g:gutentags_define_advanced_commands = 1
+let g:gutentags_auto_add_cscope=0
+let g:gutentags_auto_add_gtags_cscope = 0
+
+let g:gutentags_modules = []
+if executable('ctags')
+	let g:gutentags_modules += ['ctags']
+endif
+if executable('gtags-cscope') && executable('gtags')
+	let g:gutentags_modules += ['gtags_cscope']
+endif
+" ctags
+let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
+let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
+let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
+let g:gutentags_ctags_extra_args += ['--output-format=e-ctags']
 
 " gtags
 let $GTAGSLABEL = 'native-pygments'
 let $GTAGSCONF = '/usr/share/gtags/gtags.conf'
-let g:loaded_gentags#gtags=0
-let g:gen_tags#gtags_auto_gen=1
 
-let g:gen_tags#gtags_default_map=1  "maps
-
-
-
-" ctags
-" let g:loaded_gentags#ctags=0
-" let g:gen_tags#ctags_auto_gen =1
-" let g:gen_tags#ctags_opts =['--fields=+niazS', '--extra=+q']
-" let g:gen_tags#ctags_opts += ['--c++-kinds=+px', '--c-kinds=+px']
-
-" brookhong/cscope.vim
-"
-if has_key(g:plugs, 'cscope.vim')
-  nnoremap <silent> <localleader>cg :!cscope -Rbq<cr>
-  nnoremap <silent> <localleader>ct :cscope add cscope.out<cr>
-  nnoremap <silent> <localleader>cr :!rm cscope.*<cr>
-  nnoremap <silent> <localleader>cf :call CscopeFindInteractive(expand('<cword>'))<CR>
-  nnoremap <silent> <localleader>cl :call ToggleLocationList()<CR>
-cscope.vim
+"cscope
+" if has_key(g:plugs, 'cscope.vim')
+  " nnoremap <silent> <localleader>cg :!cscope -Rbq<cr>
+  " nnoremap <silent> <localleader>ct :cscope add cscope.out<cr>
+  " nnoremap <silent> <localleader>cr :!rm cscope.*<cr>
+  " nnoremap <silent> <localleader>cf :call CscopeFindInteractive(expand('<cword>'))<CR>
+  " nnoremap <silent> <localleader>cl :call ToggleLocationList()<CR>
+" endif
 
 " skywind3000/vim-preview
 function! PreViewInput()
@@ -34,10 +44,22 @@ function! PreViewInput()
 endfunction
 nnoremap <localleader>cp :call PreViewInput()<cr>
 nmap <leader>nf :call AddNewFile()<cr>
-autocmd FileType qf nnoremap <silent><buffer> p :PreviewQuickfix<cr>
+autocmd FileType qf nnoremap <silent><buffer> ] :PreviewQuickfix<cr>
 autocmd FileType qf nnoremap <silent><buffer> [ :PreviewClose<cr>
 noremap <M-u> :PreviewScroll -1<cr>
 noremap <M-d> :PreviewScroll +1<cr>
 inoremap <M-u> <c-\><c-o>:PreviewScroll -1<cr>
 inoremap <M-d> <c-\><c-o>:PreviewScroll +1<cr>
 nnoremap <silent> <M-h> :PreviewSignature!<cr>
+
+" skywind3000/gutentags_plus
+let g:gutentags_plus_nomap = 1
+noremap <silent> <localleader>gs :GscopeFind s <C-R><C-W><cr>
+noremap <silent> <localleader>gg :GscopeFind g <C-R><C-W><cr>
+noremap <silent> <localleader>gc :GscopeFind c <C-R><C-W><cr>
+noremap <silent> <localleader>gt :GscopeFind t <C-R><C-W><cr>
+noremap <silent> <localleader>ge :GscopeFind e <C-R><C-W><cr>
+noremap <silent> <localleader>gf :GscopeFind f <C-R>=expand("<cfile>")<cr><cr>
+noremap <silent> <localleader>gi :GscopeFind i <C-R>=expand("<cfile>")<cr><cr>
+noremap <silent> <localleader>gd :GscopeFind d <C-R><C-W><cr>
+noremap <silent> <localleader>ga :GscopeFind a <C-R><C-W><cr>

@@ -17,6 +17,7 @@
   nnoremap <Leader>f? :Files ~<CR>
   nnoremap <Leader>ff :Files $PWD/<CR>
   nnoremap <Leader>fep :Files ~/MEGA/code/dotfiles<CR>
+  nnoremap <Leader>fes :Files ~/MEGA/code/dotfiles/space-vim/UltiSnips<CR>
   nnoremap <silent> <leader>ct :Tags<cr>
   nnoremap <silent> <leader>fb :BTags<cr>
   nnoremap <silent> <leader>ls :Lines<cr>
