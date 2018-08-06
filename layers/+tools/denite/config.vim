@@ -13,6 +13,7 @@ call denite#custom#option('default', {
       \ 'highlight_matched_range' : 'MoreMsg',
 			\ 'direction': 'rightbelow',
       \ 'auto_highlight': v:true,
+      \ 'highlight_mode_insert': 'WildMenu'
       \ })
 
 let s:insert_mode_mappings = [
