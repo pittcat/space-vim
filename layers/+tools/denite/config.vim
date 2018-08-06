@@ -19,7 +19,9 @@ call denite#custom#option('default', {
 let s:insert_mode_mappings = [
       \ ['<Up>','<denite:move_to_previous_line>', 'noremap'],
       \ ['<Down>', '<denite:move_to_next_line>', 'noremap'],
-      \ ['jk', '<denite:enter_mode:normal>', 'noremap'],
+      \ ['<C-c>', '<denite:enter_mode:normal>', 'noremap'],
+      \ ['<jj>', '<denite:enter_mode:normal>', 'noremap'],
+      \ ['<C-j>', '<denite:move_to_next_line>', 'noremap'],
       \ ['<C-j>', '<denite:move_to_next_line>', 'noremap'],
       \ ['<C-k>', '<denite:move_to_previous_line>', 'noremap'],
       \ ['<C-t>', '<denite:do_action:tabopen>', 'noremap'],
