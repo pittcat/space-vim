@@ -38,6 +38,14 @@ let $GTAGSCONF = '/usr/share/gtags/gtags.conf'
 " endif
 
 " skywind3000/vim-preview
+function! s:CleanEmptyBuffers()
+    let buffers = filter(range(1, bufnr('$')), 'buflisted(v:val) && empty(bufname(v:val)) && bufwinnr(v:val)<0 && !getbufvar(v:val, "&mod")')
+    if !empty(buffers)
+        exe 'bw ' . join(buffers, ' ')
+    endif
+endfunction
+auto BufWinEnter * call s:CleanEmptyBuffers()
+
 function! PreViewInput()
   let l:tagname = input('tag name:','')
   execut 'PreviewTag' l:tagname
