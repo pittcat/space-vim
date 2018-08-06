@@ -71,7 +71,7 @@ nnoremap <silent> <localleader>BD :bd!<cr>
 "}
 "
 "{copy whole buffer content
-nnoremap <silent> <leader>cb :%y+<cr>
+nnoremap <silent> <leader>bc :%y+<cr>
 "}
 "
 "{
