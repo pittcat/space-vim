@@ -41,7 +41,7 @@ let $GTAGSCONF = '/usr/share/gtags/gtags.conf'
 function! s:CleanEmptyBuffers()
     let buffers = filter(range(1, bufnr('$')), 'buflisted(v:val) && empty(bufname(v:val)) && bufwinnr(v:val)<0 && !getbufvar(v:val, "&mod")')
     if !empty(buffers)
-        exe 'bw ' . join(buffers, ' ')
+        exe 'bd ' . join(buffers, ' ')
     endif
 endfunction
 auto BufWinEnter * call s:CleanEmptyBuffers()
