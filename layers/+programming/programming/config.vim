@@ -28,10 +28,9 @@ augroup END
 
   command! GitPush AsyncRun -cwd=$VIM_ROOT git push
   nnoremap <silent> <leader>gp :GitPush<cr>
-  " augroup spacevimAsyncRun
-    " autocmd!
-    " autocmd User AsyncRunStart call asyncrun#quickfix_toggle(14, 1)
-  " augroup END
+
+  " language
+  autocmd FileType cpp nnoremap <silent> <buffer> <leader>mk :AsyncRun! g++ -std=c++11 '%:p' -o '%:p:h/exec/%:t:r'; time %:p:h/exec/%:t:r<cr>
 
   function! s:CorrectCloseBuffer()
     let qf_exist_num=filter(range(1, winnr('$')), 'getwinvar(v:val, "&ft") == "qf"')
