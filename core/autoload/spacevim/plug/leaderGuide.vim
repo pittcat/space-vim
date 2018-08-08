@@ -35,6 +35,7 @@ let g:spacevim#plug#leaderGuide#lmap['e'] = {
       \ 't' : ['ALEToggle','Toggle']    ,
       \ 'c' :['lclose','close view']    ,
       \ 'd' :['ALEDetail','detail']   ,
+      \ 'l' :['lopen','show errors'],
       \ 'n' : ['call feedkeys("\<Plug>(ale_next)")', 'next-error']    ,
       \ 'p' : ['call feedkeys("\<Plug>(ale_previous)")', 'previous-error']    ,
       \ 'f' : ['ALEFix ','format code']   ,

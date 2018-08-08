@@ -19,6 +19,8 @@ let g:LanguageClient_serverCommands = {
     \ }
 let g:LanguageClient_autoStart = 1
 let g:LanguageClient_loadSettings = 1
+set completefunc=LanguageClient#complete
+set formatexpr=LanguageClient#textDocument_rangeFormatting_sync()
 let g:LanguageClient_completionPreferTextEdit=1
 let g:LanguageClient_loggingLevel = 'DEBUG'
 " disable interact with ale
