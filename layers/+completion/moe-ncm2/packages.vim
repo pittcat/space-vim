@@ -1,5 +1,6 @@
 if g:spacevim.nvim
   Plug 'ncm2/ncm2'
+  Plug 'roxma/nvim-yarp'
 
 elseif g:spacevim.vim8
   Plug 'ncm2/ncm2'
@@ -12,5 +13,6 @@ endif
   Plug 'ncm2/ncm2-ultisnips'
 
   " languages
-  Plug 'ncm2/ncm2-tern',  {'do': 'npm install','for':'javascript'}
+  Plug 'ncm2/ncm2-tern',  {'do': 'npm install'}
+  Plug 'ncm2/ncm2-jedi'
 
