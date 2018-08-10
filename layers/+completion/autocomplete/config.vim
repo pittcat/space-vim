@@ -18,8 +18,8 @@ scriptencoding utf-8
 
 
   " Plugin key-mappings.
-  inoremap <expr><C-g>     deoplete#undo_completion()
-  inoremap <expr><C-l>     deoplete#refresh()
+  inoremap <expr><C-g> deoplete#undo_completion()
+  inoremap <expr><C-l> deoplete#refresh()
 
   " <C-h>: close popup and delete backword char.
   inoremap <expr><C-h> deoplete#smart_close_popup()."\<C-h>"
