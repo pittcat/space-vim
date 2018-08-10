@@ -15,18 +15,7 @@ if g:spacevim.nvim || g:spacevim.vim8
   let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
   let g:UltiSnipsExpandTrigger = "<C-z>"
   let g:ulti_expand_res = 0
-  function! ExpandSnippetOrCarriageReturn()
-      let snippet = UltiSnips#ExpandSnippet()
-      if g:ulti_expand_res > 0
-          return snippet
-      elseif g:spacevim.vim8
-          return "\<C-y>"
-      else 
-        return deoplete#close_popup()
-      endif
-  endfunction
 
-  inoremap <expr> <CR> pumvisible() ? "<C-R>=ExpandSnippetOrCarriageReturn()<CR>" : "\<CR>"
   " function! TabJumpNext()
    " let snippet=UltiSnips#JumpForwards()
    " if pumvisible()==0

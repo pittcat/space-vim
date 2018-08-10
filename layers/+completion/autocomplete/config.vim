@@ -53,3 +53,4 @@ scriptencoding utf-8
 " }
 
 
+  source $HOME/.space-vim/layers/+completion/autocomplete/langconf.vim
