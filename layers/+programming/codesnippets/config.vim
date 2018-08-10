@@ -27,29 +27,29 @@ if g:spacevim.nvim || g:spacevim.vim8
   endfunction
 
   inoremap <expr> <CR> pumvisible() ? "<C-R>=ExpandSnippetOrCarriageReturn()<CR>" : "\<CR>"
-  function! TabJumpNext()
-   let snippet=UltiSnips#JumpForwards()
-   if pumvisible()==0
-     if g:ulti_jump_forwards_res==1
-       return snippet
-     else
-       return "\<tab>"
-     endif
-   endif
-  endfunction
+  " function! TabJumpNext()
+   " let snippet=UltiSnips#JumpForwards()
+   " if pumvisible()==0
+     " if g:ulti_jump_forwards_res==1
+       " return snippet
+     " else
+       " return "\<tab>"
+     " endif
+   " endif
+  " endfunction
   " inoremap <expr> <tab> pumvisible() ? "<C-n>" : "<C-R>=TabJumpNext()<CR>"
   inoremap <expr> <tab> pumvisible() ? "<C-n>" : "\<tab>"
 
-  function! STabJumpBack()
-   let snippet=UltiSnips#JumpBackwards()
-   if pumvisible()==0
-     if g:ulti_jump_backwards_res==1
-       return snippet
-     else
-       return "\<s-tab>"
-     endif
-   endif
-  endfunction
+  " function! STabJumpBack()
+   " let snippet=UltiSnips#JumpBackwards()
+   " if pumvisible()==0
+     " if g:ulti_jump_backwards_res==1
+       " return snippet
+     " else
+       " return "\<s-tab>"
+     " endif
+   " endif
+  " endfunction
 
   " inoremap <expr> <s-tab> pumvisible() ? "<C-p>" : "<C-R>=STabJumpBack()<CR>"
   inoremap <expr> <s-tab> pumvisible() ? "<C-p>" : "\<s-tab>"
