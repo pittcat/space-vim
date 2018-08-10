@@ -42,14 +42,5 @@ elseif g:spacevim.vim8
   Plug 'Shougo/neoinclude.vim'      "include completion
   Plug 'Shougo/neco-vim'         "syntax completion
 
-  " snippets
-  " {
-  " web 
-  "
-  " Plug 'jvanja/vim-bootstrap4-snippets'       "html
-  Plug 'epilande/vim-react-snippets'          "react
-  Plug 'isRuslan/vim-es6'                     "es6
-  " cpp
-  " }
 
 endif
