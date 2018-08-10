@@ -7,14 +7,13 @@ scriptencoding utf-8
   set completeopt-=preview  "close show_docstring
   let g:deoplete#enable_at_startup = 0
   " Set minimum syntax keyword length.
-  let g:min_pattern_length=2
-
-  " delay
-  let g:deoplete#auto_complete_delay=0
-  " auto_refresh
-  let g:auto_refresh_delay=0
   
-  let refresh_always=v:true
+  call deoplete#custom#option({
+  \ 'auto_complete_delay': 20,
+  \ 'smart_case': v:true,
+  \ 'camel_case': v:true,
+  \ 'min_pattern_length':2
+  \ })
   
 
 
