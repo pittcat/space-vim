@@ -1,7 +1,7 @@
 let g:ncm2#auto_popup=1
 au User Ncm2PopupOpen set completeopt=noinsert,menuone,noselect
 au User Ncm2PopupClose set completeopt=menuone
-" autocmd BufEnter * call ncm2#enable_for_buffer()
+autocmd BufEnter * call ncm2#enable_for_buffer()
 au TextChangedI * call ncm2#auto_trigger()
 
 function! ExpandSnippetOrCarriageReturn()

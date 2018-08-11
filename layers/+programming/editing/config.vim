@@ -1,5 +1,9 @@
 scriptencoding utf-8
 
+"{jiangmiao/auto-pairs
+  let g:AutoPairsMapSpace=0
+"}
+
 " nerdcommenter {
   let g:NERDSpaceDelims=1
 
