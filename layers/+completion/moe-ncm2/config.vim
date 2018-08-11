@@ -22,3 +22,7 @@ function! Multiple_cursors_after()
     call ncm2#unlock('vim-multiple-cursors')
 endfunction
 
+
+call ncm2#override_source('ultisnips', {'priority': 10})
+" lsp
+call ncm2#override_source('LanguageClient_python', {'enable': 0})

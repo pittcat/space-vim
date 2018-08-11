@@ -14,5 +14,6 @@ endif
 
   " languages
   Plug 'ncm2/ncm2-tern',  {'do': 'npm install'}
-  Plug 'ncm2/ncm2-jedi'
+  Plug 'ncm2/ncm2-cssomni',{'for':'css'}
+  Plug 'ncm2/ncm2-jedi',{'for':'python'}
 

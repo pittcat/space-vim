@@ -1,5 +1,6 @@
 scriptencoding utf-8
-
+inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
+inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
 if g:spacevim.nvim || g:spacevim.vim8
   let g:UltiSnipsUsePythonVersion = 3
   let g:UltiSnipsSnippetDirectories=['UltiSnips']
