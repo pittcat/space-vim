@@ -35,9 +35,6 @@ if g:spacevim.timer
   "{
   MP 'tweekmonster/fzf-filemru'
   "}
-  " {roxma/vim-paste-easy
-  MP 'roxma/vim-paste-easy'
-  " }
 
   call timer_start(850,'spacevim#defer#copy_and_paste')
 

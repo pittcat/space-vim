@@ -64,9 +64,6 @@
   let g:table_mode_delimiter = ' '
   noremap <leader>itb :Tableize<cr>
   " }
-  " {roxma/vim-paste-easy
-  let g:paste_easy_message=0
-  " }
 
   "{KabbAmine/zealvim.vim
   nmap <silent> <leader>gz <Plug>Zeavim
