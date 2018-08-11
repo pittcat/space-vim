@@ -17,6 +17,7 @@
   let g:nvim_typescript#server_path='/usr/bin/tsserver'       " mhartington/nvim-typescript
   let g:deoplete#sources#clang#libclang_path='/usr/lib/libclang.so'   "zchee/deoplete-clang
   let  g:deoplete#sources#clang#clang_header='/usr/lib/clang'
+  let g:deoplete#sources#clang#std={'c': 'c11', 'cpp': 'c++1z', 'objc': 'c11', 'objcpp': 'c++1z'}
   let g:deoplete#sources#rust#racer_binary='/home/pittcat/.cargo/bin/racer'          "sebastianmarkow/deoplete-rust
   let g:deoplete#sources#rust#rust_source_path='/home/pittcat/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'                "echo `rustc --print sysroot`/lib/rustlib/src/rust/src
   let g:deoplete#sources#rust#documentation_max_height=30
