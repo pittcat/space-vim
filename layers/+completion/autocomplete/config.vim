@@ -54,3 +54,17 @@ scriptencoding utf-8
 
 
   source $HOME/.space-vim/layers/+completion/autocomplete/langconf.vim
+
+
+  function! ExpandSnippetOrCarriageReturn()
+      let snippet = UltiSnips#ExpandSnippet()
+      if g:ulti_expand_res > 0
+          return snippet
+      elseif g:spacevim.vim8
+          return "\<C-y>"
+      else 
+        return deoplete#close_popup()
+      endif
+  endfunction
+
+  inoremap <expr> <CR> pumvisible() ? "<C-R>=ExpandSnippetOrCarriageReturn()<CR>" : "\<CR>"
