@@ -1,6 +1,5 @@
 let g:ncm2#auto_popup=1
-au User Ncm2PopupOpen set completeopt=noinsert,menuone,noselect
-au User Ncm2PopupClose set completeopt=menuone
+set completeopt=noselect,menuone,noinsert
 autocmd BufEnter * call ncm2#enable_for_buffer()
 au TextChangedI * call ncm2#auto_trigger()
 
@@ -25,6 +24,12 @@ endfunction
 " common
 call ncm2#override_source('ultisnips', {'priority': 10})
 " language
+let g:ncm2_pyclang#library_path = '/usr/lib/libclang.so'
+let g:ncm2_pyclang#args_file_path = ['.clang_complete']
+let g:ncm2_pyclang#database_path = [
+            \ 'compile_commands.json',
+            \ 'build/compile_commands.json'
+            \ ]
 " lsp
 call ncm2#override_source('LanguageClient_python', {'enable': 0})
-" call ncm2#override_source('LanguageClient_javascript', {'enable': 0})
+call ncm2#override_source('LanguageClient_cpp', {'enable': 0})
