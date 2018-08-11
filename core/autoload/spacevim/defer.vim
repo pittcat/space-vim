@@ -99,7 +99,7 @@ endfunction
 
 " 850
 function! spacevim#defer#copy_and_paste(timer) abort
-  call s:lod('fzf-filemru','vim-paste-easy')
+  call s:lod('fzf-filemru')
 endfunction
 
 " 900
