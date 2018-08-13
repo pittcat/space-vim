@@ -14,6 +14,7 @@ let g:LanguageClient_serverCommands = {
     \ 'go': ['go-langserver'],
     \ 'sh': ['bash-language-server', 'start'],
     \ 'ruby': ['solargraph','stdio'],
+    \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
     \ 'java': ['jdtls'],
     \ 'vue': ['vls'],
     \ }

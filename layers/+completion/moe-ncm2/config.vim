@@ -1,6 +1,6 @@
 let g:ncm2#auto_popup=1
 set completeopt=noselect,menuone,noinsert
-autocmd BufEnter * call ncm2#enable_for_buffer()
+autocmd InsertEnter * call ncm2#enable_for_buffer()
 au TextChangedI * call ncm2#auto_trigger()
 
 function! ExpandSnippetOrCarriageReturn()
@@ -32,4 +32,6 @@ let g:ncm2_pyclang#database_path = [
             \ ]
 " lsp
 call ncm2#override_source('LanguageClient_python', {'enable': 0})
-call ncm2#override_source('LanguageClient_cpp', {'enable': 0})
+" call ncm2#override_source('LanguageClient_cpp', {'enable': 0})
+" call ncm2#override_source('LanguageClient_javascript', {'enable': 0})
+" call ncm2#override_source('LanguageClient_javascript.jsx', {'enable': 0})
