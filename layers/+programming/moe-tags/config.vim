@@ -51,7 +51,6 @@ function! PreViewInput()
   execut 'PreviewTag' l:tagname
 endfunction
 nnoremap <localleader>cp :call PreViewInput()<cr>
-nmap <leader>nf :call AddNewFile()<cr>
 autocmd FileType qf nnoremap <silent><buffer> ] :PreviewQuickfix<cr>
 autocmd FileType qf nnoremap <silent><buffer> [ :PreviewClose<cr>
 noremap <M-u> :PreviewScroll -1<cr>
