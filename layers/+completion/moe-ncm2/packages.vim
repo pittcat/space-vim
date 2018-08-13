@@ -7,11 +7,11 @@ elseif g:spacevim.vim8
   Plug 'roxma/nvim-yarp',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
 endif
 
-  Plug 'ncm2/ncm2-bufword',{ 'on': [], 'on_event': 'InsertEnter' }
+  Plug 'ncm2/ncm2-bufword',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
 if g:spacevim.tmux
-  Plug 'ncm2/ncm2-tmux',{ 'on': [], 'on_event': 'InsertEnter' }
+  Plug 'ncm2/ncm2-tmux',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
 endif
-  Plug 'ncm2/ncm2-path',{ 'on': [], 'on_event': 'InsertEnter' }
+  Plug 'ncm2/ncm2-path',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
   Plug 'ncm2/ncm2-ultisnips',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
   Plug 'ncm2/ncm2-neoinclude',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
   Plug 'Shougo/neoinclude.vim',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
