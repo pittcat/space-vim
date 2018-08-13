@@ -16,9 +16,10 @@ if g:spacevim.timer
   " {autosave
   MP '907th/vim-auto-save'
   let g:auto_save = 1
-  let g:auto_save_events=["BufNew","InsertLeave ","TextChanged","QuitPre"]
+  let g:auto_save_silent = 1
+  let g:auto_save_events=["InsertLeave", "TextChanged","InsertCharPre"]
   let g:auto_save_write_all_buffers=1
-  let g:autosave_timer=8000
+  let g:autosave_timer=600000
   "}
 
   "{tpope/vim-eunuch'
