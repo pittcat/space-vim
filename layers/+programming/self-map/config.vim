@@ -1,6 +1,7 @@
 "{create new tab 
 function! AddNewFile()
   let l:filename = input('new file name(based on pwd):','')
+  if(empty(l:filename)) | return | endif
   let l:path='$PWD'.'/'.l:filename
   execute 'edit' l:path
   execute 'w'
@@ -9,6 +10,7 @@ nmap <leader>nb :call AddNewFile()<cr>
 function! AddNewFileBSB()
   " lcd %:p:h
   let l:filename = input('new file name(based on buffer info):','')
+  if(empty(l:filename)) | return | endif
   let l:path=expand('%:p:h').'/'.l:filename
   execute 'edit' l:path
   execute 'w'
