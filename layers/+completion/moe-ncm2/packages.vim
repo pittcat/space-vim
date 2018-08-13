@@ -1,18 +1,20 @@
 if g:spacevim.nvim
-  Plug 'ncm2/ncm2'
-  Plug 'roxma/nvim-yarp'
+  Plug 'ncm2/ncm2',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
+  Plug 'roxma/nvim-yarp',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
 
 elseif g:spacevim.vim8
-  Plug 'ncm2/ncm2'
-  Plug 'roxma/nvim-yarp'
+  Plug 'ncm2/ncm2',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
+  Plug 'roxma/nvim-yarp',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
 endif
 
-  Plug 'ncm2/ncm2-bufword'
-  Plug 'ncm2/ncm2-tmux'
-  Plug 'ncm2/ncm2-path'
-  Plug 'ncm2/ncm2-ultisnips'
-  Plug 'ncm2/ncm2-neoinclude'
-  Plug 'Shougo/neoinclude.vim'
+  Plug 'ncm2/ncm2-bufword',{ 'on': [], 'on_event': 'InsertEnter' }
+if g:spacevim.tmux
+  Plug 'ncm2/ncm2-tmux',{ 'on': [], 'on_event': 'InsertEnter' }
+endif
+  Plug 'ncm2/ncm2-path',{ 'on': [], 'on_event': 'InsertEnter' }
+  Plug 'ncm2/ncm2-ultisnips',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
+  Plug 'ncm2/ncm2-neoinclude',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
+  Plug 'Shougo/neoinclude.vim',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
   Plug 'ncm2/ncm2-vim',{'for':'vim'}
   Plug 'Shougo/neco-vim',{'for':'vim'}
 
