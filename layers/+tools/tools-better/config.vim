@@ -2,11 +2,13 @@
   "{rename and mkdir
   function! GiveFileNewName()
     let l:filename = input('new file name for rename:','')
+    if(empty(l:filename)) | return | endif
     execut 'Rename' l:filename
   endfunction
     noremap <leader>rn :call GiveFileNewName()<cr>
   function! CreateDirectory()
     let l:directory = input('new directory name:','')
+    if(empty(l:directory)) | return | endif
     execute 'Mkdir' l:directory
   endfunction
     noremap <leader>cd :call CreateDirectory()<cr>
