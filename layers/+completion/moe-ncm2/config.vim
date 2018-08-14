@@ -3,16 +3,30 @@ set completeopt=noselect,menuone,noinsert
 autocmd InsertEnter * call ncm2#enable_for_buffer()
 au TextChangedI * call ncm2#auto_trigger()
 
-function! ExpandSnippetOrCarriageReturn()
-    let snippet = UltiSnips#ExpandSnippet()
-    if g:ulti_expand_res > 0
-        return snippet
-    else 
-        return "\<C-y>"
-    endif
-endfunction
+" function! ExpandSnippetOrCarriageReturn()
+    " let snippet = UltiSnips#ExpandSnippet()
+    " if g:ulti_expand_res > 0
+        " return snippet
+    " else 
+        " return "\<C-y>"
+    " endif
+" endfunction
 
-inoremap <expr> <CR> pumvisible() ? "<C-R>=ExpandSnippetOrCarriageReturn()<CR>" : "\<CR>"
+" inoremap <expr> <CR> pumvisible() ? "<C-R>=ExpandSnippetOrCarriageReturn()<CR>" : "\<CR>"
+
+function SmartEnterImap()
+  if pumvisible()
+    return ncm2_ultisnips#expand_or("", 'n')
+  else
+    return "\<CR>"
+  endif
+endfunction
+inoremap <silent> <expr> <CR> <C-R>=SmartEnterImap()<CR>
+
+" inoremap <silent> <expr> <CR> ncm2_ultisnips#expand_or("", 'n')
+
+" inoremap <silent> <expr> <CR> ncm2_ultisnips#expand_or("\<C-y>", 'n')
+
 function! Multiple_cursors_before()
     call ncm2#lock('vim-multiple-cursors')
 endfunction
