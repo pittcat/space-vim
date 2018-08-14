@@ -10,12 +10,11 @@ if g:spacevim.nvim || g:spacevim.vim8
   else
     let g:UltiSnipsSnippetsDir =  '~/.config/nvim/UltiSnips'
   endif
-  let g:UltiSnipsRemoveSelectModeMappings = 0
+  let g:UltiSnipsRemoveSelectModeMappings = 1
 
   let g:UltiSnipsJumpForwardTrigger = '<C-j>'
   let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
   let g:UltiSnipsExpandTrigger = "<C-z>"
-  let g:ulti_expand_res = 0
 
   " function! TabJumpNext()
    " let snippet=UltiSnips#JumpForwards()
