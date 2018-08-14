@@ -52,7 +52,7 @@ function! spacevim#defer#markdown(timer) abort
 endfunction
 
 function! spacevim#defer#html(timer) abort
-  call s:lod('html5.vim','vim-css3-syntax','scss-syntax.vim','emmet-vim')
+  call s:lod('html5.vim','vim-css3-syntax','scss-syntax.vim','vim-css-color','emmet-vim')
 endfunction
 
 function! spacevim#defer#rust(timer) abort
