@@ -29,6 +29,8 @@ augroup END
   command! GitPush AsyncRun -cwd=$VIM_ROOT git push
   nnoremap <silent> <leader>gp :GitPush<cr>
 
+  nnoremap <silent> <localleader>dg :call spacevim#plug#asyncrun#Gdb()<cr>
+
   " language
   autocmd FileType cpp nnoremap <silent> <buffer> <leader>mk :AsyncRun! g++ -std=c++11 '%:p' -o '%:p:h/exec/%:t:r';<cr>
 

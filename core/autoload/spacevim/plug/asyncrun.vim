@@ -52,3 +52,16 @@ function! spacevim#plug#asyncrun#QuickRunVisualTempfile()
   call asyncrun#quickfix_toggle(14, 1)
 endfunction
 
+function! spacevim#plug#asyncrun#Gdb()
+  let l:cmd = {
+        \ 'c'      : "gcc -g '%:p' -o  './exec/%:t:r';",
+        \ 'cpp'    : "g++ -g -std=c++11 '%:p' -o '%:p:h/exec/%:t:r';",
+        \}
+  let l:ft = &filetype
+  if has_key(l:cmd, l:ft)
+    exec 'w'
+    exec "AsyncRun! ".l:cmd[l:ft]
+  else
+    call spacevim#util#err("spacevim#util#Gdb not supported in current filetype!")
+  endif
+endfunction
