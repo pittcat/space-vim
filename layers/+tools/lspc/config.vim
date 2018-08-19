@@ -1,11 +1,7 @@
 let g:LanguageClient_serverCommands = {
     \ 'python':['pyls'],
-    \ 'c': ['ccls', 
-    \ '--log-file=/tmp/cq.log',
-    \ '--init={"cacheDirectory":"/tmp/ccls/"}'],
-    \ 'cpp': ['ccls', 
-    \ '--log-file=/tmp/cq.log',
-    \ '--init={"cacheDirectory":"/tmp/ccls/"}'],
+    \ 'c'     :['clangd'],
+    \ 'cpp'     :['clangd'],
     \ 'javascript': ['javascript-typescript-stdio'],
     \ 'javascript.jsx': ['javascript-typescript-stdio'],
     \ 'typescript': ['javascript-typescript-stdio'],
