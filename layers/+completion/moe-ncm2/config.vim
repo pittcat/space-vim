@@ -1,3 +1,8 @@
+if g:spacevim.nvim
+  let $NVIM_PYTHON_LOG_FILE="/tmp/nvim_log"
+  let $NVIM_PYTHON_LOG_LEVEL="DEBUG"
+endif
+
 let g:ncm2#auto_popup=1
 set completeopt=noselect,menuone,noinsert
 autocmd InsertEnter * call ncm2#enable_for_buffer()
