@@ -1,6 +1,10 @@
 if g:spacevim.nvim
   let $NVIM_PYTHON_LOG_FILE="/tmp/nvim_log"
   let $NVIM_PYTHON_LOG_LEVEL="DEBUG"
+  let g:python_host_skip_check=1
+  let g:python_host_prog = '/usr/bin/python'
+  let g:python3_host_skip_check=1
+  let g:python3_host_prog = '/usr/bin/python3'
 endif
 
 let g:ncm2#auto_popup=1
