@@ -13,8 +13,8 @@ if g:spacevim.tmux
 endif
   Plug 'ncm2/ncm2-path',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
   Plug 'ncm2/ncm2-ultisnips',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
-  Plug 'ncm2/ncm2-neoinclude'
-  Plug 'Shougo/neoinclude.vim'
+  Plug 'ncm2/ncm2-neoinclude',{'for':['c','cpp',],'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
+  Plug 'Shougo/neoinclude.vim',{'for':['c','cpp',],'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
   Plug 'ncm2/ncm2-vim',{'for':'vim'}
   Plug 'Shougo/neco-vim',{'for':'vim'}
 
