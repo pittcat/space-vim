@@ -8,6 +8,7 @@ let g:ale_linters={
           \ 'markdown' : ['mdl'],
           \ 'javascript.jsx' : ['eslint'],
           \ 'javascript' : ['eslint'],
+          \ 'typescript' : ['eslint'],
           \ 'ruby' : ['rubocop'],
           \ 'rust' : ['rustc'] ,
           \ 'sh':['language-server'],
@@ -33,6 +34,7 @@ let g:ale_fixers = {
           \ 'c' : ['clang-format'],
           \ 'java' : ['google_java_format'],
           \ 'go'  : ['gofmt'],
+          \ 'typescript' : ['prettier'],
 \}
 nnoremap <localleader>\ :ALEFix<cr>
 let g:ale_set_highlights = 0
