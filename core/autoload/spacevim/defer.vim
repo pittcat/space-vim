@@ -67,6 +67,9 @@ function! spacevim#defer#python(timer) abort
   call s:lod('vim-python-pep8-indent','vim-python/python-syntax')
 endfunction
 
+function! spacevim#defer#yaml(timer) abort
+  call s:lod('vim-yaml')
+endfunction
 
 function! spacevim#defer#clang(timer) abort
   call s:lod('vim-cpp-enhanced-highlight')
