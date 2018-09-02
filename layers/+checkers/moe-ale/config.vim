@@ -14,6 +14,7 @@ let g:ale_linters={
           \ 'sh':['language-server'],
           \ 'java': ['javac'],
           \ 'go'  : ['golint'],
+          \ 'yaml'  : ['prettier'],
           \}
 
 let g:ale_fixers = {
@@ -35,6 +36,7 @@ let g:ale_fixers = {
           \ 'java' : ['google_java_format'],
           \ 'go'  : ['gofmt'],
           \ 'typescript' : ['prettier'],
+          \ 'yaml' : ['prettier'],
 \}
 nnoremap <localleader>\ :ALEFix<cr>
 let g:ale_set_highlights = 0
