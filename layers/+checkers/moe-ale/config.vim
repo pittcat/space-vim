@@ -15,6 +15,7 @@ let g:ale_linters={
           \ 'java': ['javac'],
           \ 'go'  : ['golint'],
           \ 'yaml'  : ['prettier'],
+          \ 'json' : ['jsonlint'],
           \}
 
 let g:ale_fixers = {
