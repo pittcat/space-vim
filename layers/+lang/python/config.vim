@@ -1,2 +1,2 @@
 
-  nmap <leader>op :OpenBrowser http://localhost:5555/<cr>
+autocmd FileType python nmap <leader>op :OpenBrowser http://localhost:5555/<cr>
