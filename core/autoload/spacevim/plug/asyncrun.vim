@@ -1,7 +1,9 @@
 let g:asyncrun_shell = '/usr/bin/zsh'
 let g:asyncrun_shellflag = '-c'
-let g:asyncrun_open=1
-let g:asyncrun_open = 14
+
+augroup AsyncrunGroup
+    autocmd User AsyncRunStart call asyncrun#quickfix_toggle(14, 1)
+augroup END
 
 function! spacevim#plug#asyncrun#CompileAndRun()
   let l:cmd = {
