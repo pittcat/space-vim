@@ -1,5 +1,7 @@
 let g:asyncrun_shell = '/usr/bin/zsh'
 let g:asyncrun_shellflag = '-c'
+let g:asyncrun_open=1
+let g:asyncrun_open = 14
 
 function! spacevim#plug#asyncrun#CompileAndRun()
   let l:cmd = {
@@ -22,7 +24,6 @@ function! spacevim#plug#asyncrun#CompileAndRun()
   else
     call spacevim#util#err("spacevim#util#CompileAndRun not supported in current filetype!")
   endif
-  call asyncrun#quickfix_toggle(14, 1)
 endfunction
 
 
@@ -49,7 +50,6 @@ function! spacevim#plug#asyncrun#QuickRunVisualTempfile()
   else
     call spacevim#util#err("spacevim#util#VisualSelectionRun not supported in current filetype!")
   endif
-  call asyncrun#quickfix_toggle(14, 1)
 endfunction
 
 function! spacevim#plug#asyncrun#Gdb()
