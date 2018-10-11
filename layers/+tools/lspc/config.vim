@@ -1,7 +1,7 @@
 let g:LanguageClient_serverCommands = {
     \ 'python':['pyls'],
-    \ 'c'     :['clangd'],
-    \ 'cpp'     :['clangd'],
+    \ 'c': ['clangd', '-compile-commands-dir=' . getcwd() . '/build'],
+    \ 'cpp': ['clangd', '-compile-commands-dir=' . getcwd() . '/build'],
     \ 'javascript': ['javascript-typescript-stdio'],
     \ 'javascript.jsx': ['javascript-typescript-stdio'],
     \ 'typescript': ['javascript-typescript-stdio'],
