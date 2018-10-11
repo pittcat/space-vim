@@ -60,14 +60,35 @@
 
 2. make fugitive cooperation with asyncrun
 
-        " Cooperate with famous fugitive
+    ```
+            " Cooperate with famous fugitive
 
-        if exists(':Make') == 2
-          noautocmd Make
-        else
-          silent noautocmd make!
-          redraw!
-          return 'call fugitive#cwindow()'
-        endif 
-        command! -bang -nargs=* -complete=file Make AsyncRun -program=make @ <args>
+            if exists(':Make') == 2
+              noautocmd Make
+            else
+              silent noautocmd make!
+              redraw!
+              return 'call fugitive#cwindow()'
+            endif 
+            command! -bang -nargs=* -complete=file Make AsyncRun -program=make @ <args>
+    ```
 
+
+3. improve neoinclude.vim
+
+    ```
+
+    function! s:set_cpp_paths(bufnr) abort
+      let files = split(glob('/usr/include/*'), '\n')
+            \ + split(glob('/usr/include/c++/*'), '\n')
+            \ + split(glob('/usr/include/*/c++/*'), '\n')
+      call filter(files, 'isdirectory(v:val)')
+
+      " Add cpp path.
+      call neoinclude#util#set_default_dictionary(
+            \ 'g:neoinclude#paths', 'cpp',
+            \ getbufvar(a:bufnr, '&path') .
+            \ ','.join(files, ','))
+    endfunction
+
+    ```
