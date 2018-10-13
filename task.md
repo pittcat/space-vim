@@ -92,3 +92,5 @@
     endfunction
 
     ```
+
+4. replace vim_current_word with vim-interestingwords
