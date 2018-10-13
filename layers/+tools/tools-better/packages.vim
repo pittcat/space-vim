@@ -94,7 +94,7 @@ if g:spacevim.timer
   MP 'tyru/open-browser.vim'
   "}
   "{iamcco/dict.vim
-  MP 'iamcco/dict.vim'
+  MP 'hackingcat/dict.vim'
   "}
   "{machakann/vim-highlightedyank
   MP 'machakann/vim-highlightedyank'

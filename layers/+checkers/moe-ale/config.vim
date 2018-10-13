@@ -10,7 +10,7 @@ let g:ale_linters={
           \ 'javascript' : ['eslint'],
           \ 'typescript' : ['eslint'],
           \ 'ruby' : ['rubocop'],
-          \ 'rust' : ['rustc'] ,
+          \ 'rust' : ['cargo'] ,
           \ 'sh':['language-server'],
           \ 'java': ['javac'],
           \ 'go'  : ['golint'],
