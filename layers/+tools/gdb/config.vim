@@ -8,6 +8,12 @@ function! SpacevimGdbStart()
   let l:ft = &filetype
   if l:ft=='python'
     exec 'GdbStartPDB python -m pdb '.expand("%:p")
+  elseif l:ft=='cpp'
+    call spacevim#plug#asyncrun#Gdb()
+    exec 'GdbStart gdb -q '.expand("%:p:h").'/exec/'.expand("%:t:r")
+  elseif l:ft=='c'
+    call spacevim#plug#asyncrun#Gdb()
+    exec 'GdbStart gdb -q '.expand("%:p:h").'/exec/'.expand("%:t:r")
   else
     call spacevim#util#err("SpacevimGdbStart not supported in current filetype!")
   endif
