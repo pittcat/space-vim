@@ -20,6 +20,9 @@ function! spacevim#defer#airline(timer) abort
   redraws!
 endfunction
 
+function! spacevim#defer#nvimgdb(timer) abort
+  call s:lod('nvim-gdb')
+endfunction
 " 280
 function! spacevim#defer#fzf(timer) abort
   call s:lod('fzf', 'fzf.vim')
