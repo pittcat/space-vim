@@ -38,8 +38,10 @@ augroup END
     if len(qf_exist_num)
       execute "cclose" 
       execute "bd"
+    elseif &filetype==''
+      exec "bd!"
     else
-      execute "bd!"
+      execute "bd"
     endif
   endfunction
   command! CorrectCloseBuffer call s:CorrectCloseBuffer()
