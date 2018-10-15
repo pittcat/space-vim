@@ -38,12 +38,8 @@ augroup END
     if len(qf_exist_num)
       execute "cclose" 
       execute "bd"
-    elseif matchstr(expand('%:t'), '"') =='"'
-      execute "bd!"
-    elseif matchstr(expand('%:t'), 'bash')=="bash"
-      execute "bd!"
     else
-      execute "bd"
+      execute "bd!"
     endif
   endfunction
   command! CorrectCloseBuffer call s:CorrectCloseBuffer()
