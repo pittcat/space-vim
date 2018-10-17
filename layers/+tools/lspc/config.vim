@@ -3,7 +3,7 @@ let g:LanguageClient_serverCommands = {
     \ 'c': ['clangd', '-compile-commands-dir=' . getcwd() . '/build'],
     \ 'cpp': ['clangd', '-compile-commands-dir=' . getcwd() . '/build'],
     \ 'javascript': ['typescript-language-server','--stdio'],
-    \ 'javascript.jsx': ['typescript-language-server ','--stdio'],
+    \ 'javascript.jsx': ['typescript-language-server','--stdio'],
     \ 'typescript': ['typescript-language-server', '--stdio'],
     \ 'go': ['go-langserver'],
     \ 'sh': ['bash-language-server', 'start'],
