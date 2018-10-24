@@ -1,11 +1,11 @@
 scriptencoding=utf-8
 
 " vim-airline {
-  let g:airline_theme='violet'
+  let g:airline_theme='alduin'
   let g:Powerline_symbols='fancy'
   let g:airline#extensions#branch#enabled = 1
   let g:airline#extensions#tabline#enabled=1
-  let g:airline#extensions#tabline#buffer_idx_mode = 1
+  let g:airline#extensions#tabline#buffer_idx_mode = 0
   let g:airline#extensions#tabline#buffer_nr_show = 1
   let g:airline#extensions#tabline#buffer_nr_format = '%s:'
   let g:airline#extensions#tabline#fnamemod = ':t'
@@ -26,6 +26,4 @@ scriptencoding=utf-8
               \ ]
   " Distinct background color is enough to discriminate the warning and
   " error information.
-  let g:airline#extensions#ale#error_symbol = '•'
-  let g:airline#extensions#ale#warning_symbol = '•'
 " }
