@@ -24,6 +24,8 @@ scriptencoding=utf-8
               \ [ 'a', 'error', 'warning', 'b', 'c' ],
               \ [ 'x', 'y', 'z' ]
               \ ]
+  let g:airline#extensions#ale#enabled = 0
+  let g:airline#extensions#languageclient#enabled = 1
   " Distinct background color is enough to discriminate the warning and
   " error information.
 " }
