@@ -1,7 +1,7 @@
   "tpope/vim-eunuch
   "{rename and mkdir
   function! GiveFileNewName()
-    let l:filename = input('new file name for rename:','')
+    let l:filename = input('new file name for rename:',expand('%:t'))
     if(empty(l:filename)) | return | endif
     execut 'Rename' l:filename
   endfunction
