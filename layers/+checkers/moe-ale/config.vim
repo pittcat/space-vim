@@ -16,6 +16,7 @@ let g:ale_linters={
           \ 'go'  : ['golint'],
           \ 'yaml'  : ['prettier'],
           \ 'json' : ['jsonlint'],
+          \ 'php' : ['php'],
           \}
 
 let g:ale_fixers = {
@@ -38,6 +39,7 @@ let g:ale_fixers = {
           \ 'go'  : ['gofmt'],
           \ 'typescript' : ['prettier'],
           \ 'yaml' : ['prettier'],
+          \ 'php' : ['phpcbf'],
 \}
 nnoremap <localleader>\ :ALEFix<cr>
 let g:ale_set_highlights = 0

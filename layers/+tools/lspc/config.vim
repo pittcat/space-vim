@@ -5,12 +5,13 @@ let g:LanguageClient_serverCommands = {
     \ 'javascript': ['typescript-language-server','--stdio'],
     \ 'javascript.jsx': ['typescript-language-server','--stdio'],
     \ 'typescript': ['typescript-language-server', '--stdio'],
-    \ 'go': ['go-langserver'],
+    \ 'go': ['go-langserver', '-gocodecompletion', '-func-snippet-enabled'],
     \ 'sh': ['bash-language-server', 'start'],
     \ 'ruby': ['solargraph','stdio'],
     \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
     \ 'java': ['jdtls'],
     \ 'vue': ['vls'],
+    \ 'php': ['php',expand('$HOME/.composer/vendor/bin/php-language-server.php')],
     \ }
 let g:LanguageClient_autoStart = 1
 let g:LanguageClient_loadSettings = 1
