@@ -10,7 +10,7 @@ endif
 let g:ncm2#auto_popup=1
 set completeopt=noselect,menuone,noinsert
 autocmd InsertEnter * call ncm2#enable_for_buffer()
-au TextChangedI * call ncm2#auto_trigger()
+" au TextChangedI * call ncm2#auto_trigger()
 
 
 function! SmartEnterMap()

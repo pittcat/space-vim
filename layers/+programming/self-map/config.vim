@@ -45,7 +45,9 @@ nnoremap <silent> [p :pu!<cr>
 "}
 "{ buffer and file 
 function! DeleteFileAndCloseBuffer()
-  call delete(expand('%')) | bdelete!
+  if expand('%')!=''
+    call delete(expand('%')) | bdelete!
+  endif
 endfun
 " noremap <silent> <leader>df :Delete<cr>
 noremap <silent> <leader>df :call DeleteFileAndCloseBuffer()<cr>
