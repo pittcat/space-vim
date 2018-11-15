@@ -112,3 +112,7 @@ nnoremap <silent> <leader>wf :ZoomToggle<CR>
 nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
 nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
 "}
+"
+"{remap “\” as “,” for repeat search in opposite direction
+nnoremap \ ,
+"}

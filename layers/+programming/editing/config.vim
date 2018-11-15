@@ -51,7 +51,7 @@ let g:multi_cursor_quit_key='<Esc>'
 " {unblevable/quick-scope
   nmap <localleader>qs <plug>(QuickScopeToggle)
   xmap <localleader>qs <plug>(QuickScopeToggle)
-  let g:qs_highlight_on_keys = ['t', 'T']
+  let g:qs_highlight_on_keys = ['t', 'T','f','F']
   augroup qs_colors
     autocmd!
     autocmd ColorScheme * highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline
