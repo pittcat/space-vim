@@ -53,8 +53,10 @@
   " endfun
     "}
     "
-   "{tweekmonster/fzf-filemru
+   "{tweekmonster/fzf-filemru and Vigemus/fzf-proj.vim
   noremap <silent> <leader>fr :FilesMru<cr>
+  let g:fzf#proj#project_dir='~/MEGA/gitlab/'
+  noremap <silent> <leader>fr :Projects<cr>
    "}
    "
   " }

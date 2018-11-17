@@ -35,6 +35,7 @@ if g:spacevim.timer
 
   "{
   MP 'tweekmonster/fzf-filemru'
+  MP 'Vigemus/fzf-proj.vim'
   "}
 
   call timer_start(850,'spacevim#defer#copy_and_paste')
