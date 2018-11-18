@@ -1,7 +1,9 @@
+    " \ 'c': ['clangd', '-compile-commands-dir=' . getcwd() . '/build'],
+    " \ 'cpp': ['clangd', '-compile-commands-dir=' . getcwd() . '/build'],
 let g:LanguageClient_serverCommands = {
     \ 'python':['pyls'],
-    \ 'c': ['clangd', '-compile-commands-dir=' . getcwd() . '/build'],
-    \ 'cpp': ['clangd', '-compile-commands-dir=' . getcwd() . '/build'],
+    \ 'c': ['ccls', '--log-file=/tmp/cc.log'],
+    \ 'cpp': ['ccls', '--log-file=/tmp/cc.log'],
     \ 'javascript': ['typescript-language-server','--stdio'],
     \ 'javascript.jsx': ['typescript-language-server','--stdio'],
     \ 'typescript': ['typescript-language-server', '--stdio'],
@@ -15,6 +17,7 @@ let g:LanguageClient_serverCommands = {
     \ }
 let g:LanguageClient_autoStart = 1
 let g:LanguageClient_loadSettings = 1
+let g:LanguageClient_settingsPath = '$HOME/.space-vim/layers/+tools/lspc/settings.json'
 set completefunc=LanguageClient#complete
 set formatexpr=LanguageClient#textDocument_rangeFormatting_sync()
 let g:LanguageClient_completionPreferTextEdit=1
