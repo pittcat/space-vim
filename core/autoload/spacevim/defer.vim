@@ -51,7 +51,7 @@ endfunction
 
 " 550
 function! spacevim#defer#markdown(timer) abort
-  call s:lod('vim-markdown','markdown-preview.nvim','vim-markdown-toc','md-img-paste.vim')
+  call s:lod('vim-markdown','vim-markdown-composer','vim-markdown-toc','md-img-paste.vim')
 endfunction
 
 function! spacevim#defer#html(timer) abort
