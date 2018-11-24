@@ -6,7 +6,6 @@ scriptencoding utf-8
   " ❯
   let g:NERDTreeDirArrowExpandable = "\u276f"
   let g:NERDTreeDirArrowCollapsible = "~"
-  let g:NERDTreeIgnore = g:spacevim#plug#nerdtree#ignore
 
   nnoremap <silent> <F4> :NERDTreeToggle<CR>
   inoremap <silent> <F4> <ESC>:NERDTreeToggle<CR>
@@ -17,11 +16,6 @@ scriptencoding utf-8
 " }
 
 " nerdtree-git-plugin {
-  let g:NERDTreeIndicatorMapCustom = g:spacevim#plug#nerdtree#IndicatorMapCustom
-" }
-
-  let g:NERDTreeExtensionHighlightColor = g:spacevim#plug#nerdtree#ExtensionHighlightColor " this line is needed to avoid error
-  let g:NERDTreeExactMatchHighlightColor = g:spacevim#plug#nerdtree#ExactMatchHighlightColor " this line is needed to avoid error
 " }
 
 " {nerdtree-tabs

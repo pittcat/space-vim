@@ -1,5 +1,6 @@
 " Refer to https://github.com/junegunn/dotfiles  vimrc
 MP 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
+autocmd! User nerdtree call spacevim#autocmd#nerdtree#Init()
 augroup loadNerdtree
   autocmd!
   autocmd VimEnter * silent! autocmd! FileExplorer
