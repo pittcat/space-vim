@@ -6,6 +6,25 @@ for s:i in range(1, 9)
 endfor
 unlet s:i
 
+nnoremap <Plug>(window_w) <C-W>w
+nnoremap <Plug>(window_r) <C-W>r
+nnoremap <Plug>(window_d) <C-W>c
+nnoremap <Plug>(window_q) <C-W>q
+nnoremap <Plug>(window_j) <C-W>j
+nnoremap <Plug>(window_k) <C-W>k
+nnoremap <Plug>(window_h) <C-W>h
+nnoremap <Plug>(window_l) <C-W>l
+nnoremap <Plug>(window_H) <C-W>5<
+nnoremap <Plug>(window_L) <C-W>5>
+nnoremap <Plug>(window_J) :resize +5<CR>
+nnoremap <Plug>(window_K) :resize -5<CR>
+nnoremap <Plug>(window_b) <C-W>=
+nnoremap <Plug>(window_s1) <C-W>s
+nnoremap <Plug>(window_s2) <C-W>s
+nnoremap <Plug>(window_v1) <C-W>v
+nnoremap <Plug>(window_v2) <C-W>v
+nnoremap <Plug>(window_2) <C-W>v
+
 let g:spacevim#map#leader#desc['?'] = [ 'Maps', 'show-keybindings' ]
 let g:spacevim#map#leader#desc[';'] = [ '<Plug>NERDCommenterToggle','commenter' ]
 let g:spacevim#map#leader#desc[' '] = {
@@ -22,7 +41,8 @@ let g:spacevim#map#leader#desc[' '] = {
       \ }
 
 let g:spacevim#map#leader#desc['a'] = {
-      \ 'name' : '+align',
+      \ 'name' : '+ag/',
+      \ 'g' : ['PCAg','ag-project'],
       \ }
 
 let g:spacevim#map#leader#desc['b'] = {
@@ -36,6 +56,7 @@ let g:spacevim#map#leader#desc['b'] = {
       \ '7' : ['b7', 'buffer 7'],
       \ '8' : ['b8', 'buffer 8'],
       \ '9' : ['b9', 'buffer 9'],
+      \ 'c' : ['%y+','copy-buffer'],
       \ 'd' : ['bd', 'delete-buffer'],
       \ 'f' : ['bfirst', 'first-buffer'],
       \ 'h' : ['Startify', 'home-buffer'],
@@ -44,7 +65,6 @@ let g:spacevim#map#leader#desc['b'] = {
       \ 'n' : ['bnext', 'next-buffer'],
       \ 'p' : ['bprevious', 'previous-buffer'],
       \ }
-" let g:spacevim#map#leader#desc['d'] = [ 'call feedkeys("\<C-d>")', 'scroll-down' ]
 let g:spacevim#map#leader#desc['e'] = {
       \ 'name' : '+errors',
       \ 't' : ['ALEToggle','Toggle']    ,
@@ -57,7 +77,7 @@ let g:spacevim#map#leader#desc['e'] = {
       \ }
 
 let g:spacevim#map#leader#desc['f'] = {
-      \ 'name' : '+find/files/fold',
+      \ 'name' : '+fzf/fold',
       \ '0' : ['set foldlevel=0', '0-fold-level'],
       \ '1' : ['set foldlevel=1', '1-fold-level'],
       \ '2' : ['set foldlevel=2', '2-fold-level'],
@@ -69,8 +89,11 @@ let g:spacevim#map#leader#desc['f'] = {
       \ '8' : ['set foldlevel=8', '8-fold-level'],
       \ '9' : ['set foldlevel=9', '9-fold-level'],
       \ 's' : ['save', 'save-file'],
-      \ '?' : ['Files ~/', 'files-in-home-direcotry'],
       \ 'R' : ['source $MYVIMRC', 'reload-vimrc'],
+      \ '?' : ['Files ~','Home Files'],
+      \ 'f' : ['Files $PWD','PWD Files'],
+      \ 'l' : ['Blines','BLines'],
+      \ 'b' : ['Btags','Btags'],
       \ }
 
 let g:spacevim#map#leader#desc['g'] = {
@@ -118,24 +141,7 @@ let g:spacevim#map#leader#desc['t'] = {
       \ }
 " let g:spacevim#map#leader#desc['u'] = [ 'call feedkeys("\<C-u>")', 'scroll-up' ]
 
-nnoremap <Plug>(window_w) <C-W>w
-nnoremap <Plug>(window_r) <C-W>r
-nnoremap <Plug>(window_d) <C-W>c
-nnoremap <Plug>(window_q) <C-W>q
-nnoremap <Plug>(window_j) <C-W>j
-nnoremap <Plug>(window_k) <C-W>k
-nnoremap <Plug>(window_h) <C-W>h
-nnoremap <Plug>(window_l) <C-W>l
-nnoremap <Plug>(window_H) <C-W>5<
-nnoremap <Plug>(window_L) <C-W>5>
-nnoremap <Plug>(window_J) :resize +5<CR>
-nnoremap <Plug>(window_K) :resize -5<CR>
-nnoremap <Plug>(window_b) <C-W>=
-nnoremap <Plug>(window_s1) <C-W>s
-nnoremap <Plug>(window_s2) <C-W>s
-nnoremap <Plug>(window_v1) <C-W>v
-nnoremap <Plug>(window_v2) <C-W>v
-nnoremap <Plug>(window_2) <C-W>v
+
 
 let g:spacevim#map#leader#desc['w'] = {
       \ 'name' : '+windows',
@@ -160,4 +166,15 @@ let g:spacevim#map#leader#desc['x'] = {
       \ 'name' : '+text',
       \ 'a' : ['call feedkeys("\<Plug>(EasyAlign)")', 'easy-align'],
       \ 'd' : ['StripWhitespace', 'delete-trailing-whitespace'],
+      \ }
+
+
+let g:spacevim#map#leader#desc['p'] = {
+      \ 'name' : '+path/plugin',
+      \ 'a' : ['call system("xclip -i -selection clipboard", expand("%:p"))','copy-full-path'],
+      \ 'n' : ['call system("xclip -i -selection clipboard", expand("%t"))','copy-filename'],
+      \ 'l' : ['call system("xclip -i -selection clipboard", expand("%"))','copy-relative-filename'],
+      \ 'd' : ['call system("xclip -i -selection clipboard", expand("%:p:h"))','copy-dir-path'],
+      \ 'r' : ['PlugClean','clean-plugin'],
+      \ 'u' : ['PlugUpdate!','update-plugin'],
       \ }

@@ -28,14 +28,6 @@ autocmd BufEnter * if (winnr('$') == 1 && &buftype ==# 'quickfix' ) |
             \   q | endif
   " }
 
-" file and filename copy
-" {
-nmap <leader>cp :call system("xclip -i -selection clipboard", expand("%:t"))<CR>
-nmap <leader>ap :call system("xclip -i -selection clipboard", expand("%:p"))<CR>
-nmap <leader>rp :call system("xclip -i -selection clipboard", expand("%"))<CR>
-nmap <leader>pc :call system("xclip -i -selection clipboard", expand("%:p:h"))<CR>
-" }
-
 
 "{unimpaired-like-map
 nnoremap <silent> [<space> :pu! _<cr>:']+1<cr>
@@ -58,10 +50,6 @@ inoremap  <C-v> <esc>gUiwea
 "}
 "{change window quickly
 nnoremap <localleader>ww <C-W>w
-nnoremap <leader><Right> <C-w>l
-nnoremap <leader><Left> <C-w>h
-nnoremap <leader><Up> <C-w>k
-nnoremap <leader><Down> <C-w>j
 "}
 
 "{fold
@@ -81,14 +69,6 @@ nnoremap <silent> <leader>gT :call spacevim#vim#auto#AddTitle()<cr>
 nnoremap <silent> <localleader>BD :bd!<cr>
 "}
 "
-"{copy whole buffer content
-nnoremap <silent> <leader>bc :%y+<cr>
-"}
-"
-"{
-nnoremap <silent> <leader>pu :PlugUpdate!<cr>
-nnoremap <silent> <leader>pr :PlugClean<cr>
-"}
 "{
 imap <A-BS> <C-W>
 "}

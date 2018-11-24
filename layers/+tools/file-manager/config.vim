@@ -10,9 +10,8 @@ scriptencoding utf-8
   nnoremap <silent> <F4> :NERDTreeToggle<CR>
   inoremap <silent> <F4> <ESC>:NERDTreeToggle<CR>
   nnoremap <silent> <Leader>ft :NERDTreeToggle<CR>
-  nnoremap <silent> <Leader>fd :NERDTreeFind<CR>
   let NERDTreeChDirMode=0
-  noremap <silent> <leader>nc :NERDTreeCWD<cr>
+  noremap <silent> <leader>nc :NERDTreeFind<cr>
 " }
 
 " nerdtree-git-plugin {
