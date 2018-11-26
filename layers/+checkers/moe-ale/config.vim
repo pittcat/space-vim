@@ -41,7 +41,6 @@ let g:ale_fixers = {
           \ 'yaml' : ['prettier'],
           \ 'php' : ['phpcbf'],
 \}
-nnoremap <localleader>\ :ALEFix<cr>
 let g:ale_set_highlights = 0
 let g:ale_echo_msg_format = '[#%linter%#] %s [%severity%]'
 let g:ale_statusline_format = ['E•%d', 'W•%d', 'OK']
