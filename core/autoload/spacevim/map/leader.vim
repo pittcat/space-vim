@@ -172,7 +172,7 @@ let g:spacevim#map#leader#desc['x'] = {
 let g:spacevim#map#leader#desc['p'] = {
       \ 'name' : '+path/plugin',
       \ 'a' : ['call system("xclip -i -selection clipboard", expand("%:p"))','copy-full-path'],
-      \ 'n' : ['call system("xclip -i -selection clipboard", expand("%t"))','copy-filename'],
+      \ 'n' : ['call system("xclip -i -selection clipboard", expand("%:t"))','copy-filename'],
       \ 'l' : ['call system("xclip -i -selection clipboard", expand("%"))','copy-relative-filename'],
       \ 'd' : ['call system("xclip -i -selection clipboard", expand("%:p:h"))','copy-dir-path'],
       \ 'g' : ["call system('xclip -i -selection clipboard', expand('%:p:h').'/exec/'.expand('%:t:r'))",'copy-gcc-out'],

@@ -46,7 +46,7 @@ let g:multi_cursor_quit_key='<Esc>'
 
 
 " {brooth/far.vim
-  nnoremap <silent> <localleader>fd :Fardo<cr>
+  " nnoremap <silent> <localleader>fd :Fardo<cr>
 " }
 " {unblevable/quick-scope
   nmap <localleader>qs <plug>(QuickScopeToggle)

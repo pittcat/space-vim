@@ -1,0 +1,24 @@
+{
+  "coc.preferences.triggerAfterInsertEnter": false,
+  "coc.preferences.diagnostic.enable": false,
+  "coc.preferences.snippets.enable": true,
+  "coc.preferences.hoverTarget": "echo",
+  "coc.preferences.colorSupport": true,
+  "languageserver": {
+    "sh": {
+      "command": "bash-language-server",
+      "args": ["start", "--stdio"],
+      "filetypes": ["sh"],
+      "cwd": "./",
+      "initializationOptions": {},
+      "settings": {}
+    },
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "objc", "objcpp"],
+      "initializationOptions": {
+        "cacheDirectory": "/tmp/ccls"
+      }
+    }
+  }
+}
