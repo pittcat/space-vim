@@ -12,6 +12,9 @@ let g:LanguageClient_serverCommands = {
     \ 'ruby': ['solargraph','stdio'],
     \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
     \ 'java': ['jdtls'],
+    \ 'css' : ['css-languageserver','--stdio'],
+    \ 'less' : ['css-languageserver','--stdio'],
+    \ 'sass' : ['css-languageserver','--stdio'],
     \ 'vue': ['vls'],
     \ 'php': ['php',expand('$HOME/.composer/vendor/bin/php-language-server.php')],
     \ }
