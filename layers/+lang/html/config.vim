@@ -12,3 +12,5 @@
     \}
 
 " }
+
+autocmd FileType html nnoremap <buffer> <leader>op :execute('OpenBrowser http://localhost:3000/'.expand("%:t"))<cr>
