@@ -1,6 +1,6 @@
 let g:gutentags_project_root = ['.root', '.svn', '.git', '.hg', '.project']
 
-let g:gutentags_ctags_tagfile = '.tags'
+let g:gutentags_ctags_tagfile = 'tags'
 
 let s:vim_tags = expand('~/.cache/tags')
 if !isdirectory(s:vim_tags)
@@ -13,7 +13,7 @@ let g:gutentags_auto_add_gtags_cscope = 0
 
 let g:gutentags_modules = []
 if executable('ctags')
-	let g:gutentags_modules += ['ctags']
+  let g:gutentags_modules += ['ctags']
 endif
 if executable('gtags-cscope') && executable('gtags')
 	let g:gutentags_modules += ['gtags_cscope']
@@ -61,6 +61,7 @@ nnoremap <silent> <M-h> :PreviewSignature!<cr>
 
 " skywind3000/gutentags_plus
 let g:gutentags_plus_nomap = 1
+let g:gutentags_define_advanced_commands = 1
 noremap <silent> <localleader>gs :GscopeFind s <C-R><C-W><cr>
 noremap <silent> <localleader>gg :GscopeFind g <C-R><C-W><cr>
 noremap <silent> <localleader>gc :GscopeFind c <C-R><C-W><cr>
