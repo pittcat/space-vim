@@ -125,7 +125,10 @@ let g:spacevim#map#leader#desc['p'] = {
       \ 'name' : '+projects',
       \ 's' : ['Rag', 'search-in-project'],
       \ }
-let g:spacevim#map#leader#desc['q'] = [ 'q', 'quit' ]
+let g:spacevim#map#leader#desc['q'] = {
+      \ 'name' :  '+quit',
+      \ 'q' : ['quit','quit'],
+      \}
 let g:spacevim#map#leader#desc['Q'] = [ 'qa!', 'quit-without-saving' ]
 let g:spacevim#map#leader#desc['s'] = {
       \ 'name' : '+search',
@@ -170,8 +173,9 @@ let g:spacevim#map#leader#desc['x'] = {
 
 
 let g:spacevim#map#leader#desc['p'] = {
-      \ 'name' : '+path/plugin',
+      \ 'name' : '+copy/plugin',
       \ 'a' : ['call system("xclip -i -selection clipboard", expand("%:p"))','copy-full-path'],
+      \ 'b' : ['%y+','copy-full-buffer'],
       \ 'n' : ['call system("xclip -i -selection clipboard", expand("%:t"))','copy-filename'],
       \ 'l' : ['call system("xclip -i -selection clipboard", expand("%"))','copy-relative-filename'],
       \ 'd' : ['call system("xclip -i -selection clipboard", expand("%:p:h"))','copy-dir-path'],
