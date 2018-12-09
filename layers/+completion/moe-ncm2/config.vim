@@ -45,4 +45,9 @@ call ncm2#override_source('LanguageClient_python', {'enable': 0})
 call ncm2#override_source('LanguageClient_php', {'enable': 0})
 " call ncm2#override_source('LanguageClient_cpp', {'enable': 0})
 call ncm2#override_source('LanguageClient_javascript', {'enable': 0})
+call ncm2#override_source('LanguageClient_typescript', {'enable': 0})
 call ncm2#override_source('LanguageClient_javascript.jsx', {'enable': 0})
+
+" typescript
+let g:nvim_typescript#server_path='/usr/bin/tsserver'
+let g:nvim_typescript#javascript_support=1
