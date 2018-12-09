@@ -125,10 +125,9 @@ let g:spacevim#map#leader#desc['p'] = {
       \ 'name' : '+projects',
       \ 's' : ['Rag', 'search-in-project'],
       \ }
-let g:spacevim#map#leader#desc['q'] = {
-      \ 'name' :  '+quit',
-      \ 'q' : ['quit','quit'],
-      \}
+
+let g:spacevim#map#leader#desc['q'] = [ 'q', 'quit' ]
+
 let g:spacevim#map#leader#desc['Q'] = [ 'qa!', 'quit-without-saving' ]
 let g:spacevim#map#leader#desc['s'] = {
       \ 'name' : '+search',
