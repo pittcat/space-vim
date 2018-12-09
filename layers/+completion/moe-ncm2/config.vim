@@ -44,5 +44,5 @@ let g:ncm2_pyclang#database_path = [
 call ncm2#override_source('LanguageClient_python', {'enable': 0})
 call ncm2#override_source('LanguageClient_php', {'enable': 0})
 " call ncm2#override_source('LanguageClient_cpp', {'enable': 0})
-call ncm2#override_source('LanguageClient_javascript', {'enable': 0})
-call ncm2#override_source('LanguageClient_javascript.jsx', {'enable': 0})
+" call ncm2#override_source('LanguageClient_javascript', {'enable': 0})
+" call ncm2#override_source('LanguageClient_javascript.jsx', {'enable': 0})
