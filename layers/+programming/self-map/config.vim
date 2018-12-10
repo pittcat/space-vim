@@ -4,7 +4,6 @@ function! AddNewFile()
   if(empty(l:filename)) | return | endif
   let l:path='$PWD'.'/'.l:filename
   execute 'edit' l:path
-  execute 'w'
 endfunction
 nmap <leader>nb :call AddNewFile()<cr>
 function! AddNewFileBSB()
@@ -13,7 +12,6 @@ function! AddNewFileBSB()
   if(empty(l:filename)) | return | endif
   let l:path=expand('%:p:h').'/'.l:filename
   execute 'edit' l:path
-  execute 'w'
 endfunction
 nmap <leader>nf :call AddNewFileBSB()<cr>
 "}
@@ -41,7 +39,6 @@ function! DeleteFileAndCloseBuffer()
     call delete(expand('%')) | bdelete!
   endif
 endfun
-" noremap <silent> <leader>df :Delete<cr>
 noremap <silent> <leader>df :call DeleteFileAndCloseBuffer()<cr>
 noremap <silent> <leader>da ggdG
 "}
