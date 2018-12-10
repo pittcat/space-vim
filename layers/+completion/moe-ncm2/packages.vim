@@ -21,10 +21,10 @@ endif
   Plug 'Shougo/neco-vim',{'for':'vim'}
 
   " languages
-  " Plug 'ncm2/ncm2-tern',  {'do': 'npm install','for':['javascript','javascript.jsx']}
+  Plug 'ncm2/ncm2-tern',  {'do': 'npm install','for':['javascript','javascript.jsx']}
   " Plug 'ncm2/ncm2-pyclang',  {'for':['c','cpp']}
   Plug 'ncm2/ncm2-cssomni',{'for':'css'}
   Plug 'ncm2/ncm2-jedi',{'for':'python'}
   Plug 'phpactor/phpactor' ,  {'do': 'composer install', 'for': 'php'}
   Plug 'phpactor/ncm2-phpactor',{'for':'php'}
-  Plug 'mhartington/nvim-typescript', {'do': './install.sh','for':['javascript','javascript.jsx','typescript']}
+  Plug 'mhartington/nvim-typescript', {'do': './install.sh','for':['typescript']}
