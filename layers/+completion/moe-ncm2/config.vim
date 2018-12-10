@@ -51,3 +51,4 @@ call ncm2#override_source('LanguageClient_javascript.jsx', {'enable': 0})
 " typescript
 let g:nvim_typescript#server_path='/usr/bin/tsserver'
 let g:nvim_typescript#javascript_support=1
+let g:nvim_typescript#diagnostics_enable=0
