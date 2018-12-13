@@ -26,7 +26,7 @@ f.write(
     'Last updated: ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
 f.write("\n\n")
 f.write(
-    "Default layers: `fzf`, `unite`, `better-defaults` and `which-key`."
+    "Default layers: `fzf`, `better-defaults` and `which-key`."
 )
 f.write("\n\n")
 

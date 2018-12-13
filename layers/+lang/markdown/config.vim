@@ -7,4 +7,5 @@ let g:mkdp_auto_close = 0
 
 autocmd FileType markdown nnoremap <silent> <leader>mmp :call mdip#MarkdownClipboardImage()<CR>
 autocmd FileType markdown nnoremap <silent> <buffer> <F5> :ComposerOpen<CR>
+let g:markdown_composer_refresh_rate=1000
 " autocmd FileType markdown nnoremap <silent> <buffer> <F5> :MarkdownPreview<CR>
