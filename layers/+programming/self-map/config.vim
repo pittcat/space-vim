@@ -4,6 +4,7 @@ function! AddNewFile()
   if(empty(l:filename)) | return | endif
   let l:path='$PWD'.'/'.l:filename
   execute 'edit' l:path
+  execute 'w' l:path
 endfunction
 nmap <leader>nb :call AddNewFile()<cr>
 function! AddNewFileBSB()
@@ -12,6 +13,7 @@ function! AddNewFileBSB()
   if(empty(l:filename)) | return | endif
   let l:path=expand('%:p:h').'/'.l:filename
   execute 'edit' l:path
+  execute 'w' l:path
 endfunction
 nmap <leader>nf :call AddNewFileBSB()<cr>
 "}

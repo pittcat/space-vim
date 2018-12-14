@@ -1,6 +1,5 @@
 if g:spacevim.nvim
   Plug 'ncm2/ncm2',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
-  Plug 'ncm2/ncm2-highprio-pop',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
   Plug 'roxma/nvim-yarp',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
 
 elseif g:spacevim.vim8
