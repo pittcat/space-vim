@@ -3,8 +3,9 @@ function! AddNewFile()
   let l:filename = input('new file name(based on pwd):','')
   if(empty(l:filename)) | return | endif
   let l:path='$PWD'.'/'.l:filename
+  silent execute '!touch' l:path
   execute 'edit' l:path
-  execute 'w' l:path
+  silent! call spacevim#vim#auto#AddTitle()
 endfunction
 nmap <leader>nb :call AddNewFile()<cr>
 function! AddNewFileBSB()
@@ -12,8 +13,9 @@ function! AddNewFileBSB()
   let l:filename = input('new file name(based on buffer info):','')
   if(empty(l:filename)) | return | endif
   let l:path=expand('%:p:h').'/'.l:filename
+  silent execute '!touch' l:path
   execute 'edit' l:path
-  execute 'w' l:path
+  silent! call spacevim#vim#auto#AddTitle()
 endfunction
 nmap <leader>nf :call AddNewFileBSB()<cr>
 "}

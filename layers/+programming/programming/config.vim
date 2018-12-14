@@ -1,11 +1,5 @@
 scriptencoding utf-8
 
-augroup spacevimNewFile
-  autocmd!
-  " Add title automatically when new files and move cursor to the end of file
-  autocmd BufNewFile * silent! call spacevim#vim#auto#AddTitle()
-augroup END
-
 " rainbow {
   let g:rainbow_active = 1
   let g:rainbow_conf = g:spacevim#plug#rainbow#conf
