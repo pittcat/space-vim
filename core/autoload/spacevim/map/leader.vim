@@ -64,6 +64,7 @@ let g:spacevim#map#leader#desc['b'] = {
       \ 'l' : ['blast', 'last-buffer'],
       \ 'n' : ['bnext', 'next-buffer'],
       \ 'p' : ['bprevious', 'previous-buffer'],
+      \ 'K' : ['bufdo bd', 'kill-all-buffer'],
       \ }
 let g:spacevim#map#leader#desc['e'] = {
       \ 'name' : '+errors',
