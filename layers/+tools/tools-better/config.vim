@@ -73,11 +73,10 @@
   nmap <silent> <leader>gz <Plug>Zeavim
   vmap <leader>gz <Plug>ZVVisSelection
   let g:zv_disable_mapping = 1
-  let g:zv_get_docset_by = ['ft']
   let g:zv_file_types = {
               \   'css'                 : 'css',
               \   'javascript'          : 'javascript,nodejs',
-              \   'python'              : 'python,django',
+              \   'python'              : 'python_3,scipy,numpy,matplotlib',
               \ }
   "}
 
