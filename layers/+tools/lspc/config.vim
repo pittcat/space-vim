@@ -16,6 +16,8 @@ let g:LanguageClient_serverCommands = {
     \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
     \ 'java': ['jdtls'],
     \ 'vue': ['vls'],
+    \ 'reason': ['ocaml-language-server', '--stdio'],
+    \ 'ocaml': ['ocaml-language-server', '--stdio'],
     \ 'php': ['php',expand('$HOME/.composer/vendor/bin/php-language-server.php')],
     \ }
 let g:LanguageClient_autoStart = 1

@@ -18,6 +18,7 @@ let g:ale_linters={
           \ 'json' : ['jsonlint'],
           \ 'php' : ['php'],
           \ 'sql' : ['sqlint'],
+          \ 'ocaml':['ols'],
           \}
 
 let g:ale_fixers = {
@@ -42,6 +43,7 @@ let g:ale_fixers = {
           \ 'yaml' : ['prettier'],
           \ 'php' : ['phpcbf'],
           \ 'sql' : ['sqlfmt'],
+          \ 'ocaml': ['ocamlformat'],
 \}
 let g:ale_set_highlights = 0
 let g:ale_echo_msg_format = '[#%linter%#] %s [%severity%]'
