@@ -18,6 +18,7 @@ endif
   " Plug 'Shougo/neoinclude.vim',{'for':['c','cpp',],'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
   Plug 'ncm2/ncm2-vim',{'for':'vim'}
   Plug 'Shougo/neco-vim',{'for':'vim'}
+  Plug 'filipekiss/ncm2-look.vim',{'for':'markdown'}
 
   " languages
   Plug 'ncm2/ncm2-tern',  {'do': 'npm install','for':['javascript','javascript.jsx']}

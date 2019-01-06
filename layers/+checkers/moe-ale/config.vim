@@ -1,10 +1,3 @@
-let g:ale_set_highlights = 1
-let g:ale_set_signs = 0
-hi link ALEErrorLine ErrorMsg
-hi link ALEWarningLine WarningMsg
-let g:ale_lint_on_text_changed = 'normal'
-let g:ale_lint_on_insert_leave = 1
-let g:ale_lint_delay = 0
 let g:ale_linters={
           \ 'vim' : ['vint'],
           \ 'html' : ['tidy'],
@@ -55,6 +48,7 @@ let g:ale_fixers = {
 let g:ale_echo_msg_format = '[#%linter%#] %s [%severity%]'
 let g:ale_statusline_format = ['E•%d', 'W•%d', 'OK']
 
+let g:ale_set_highlights = 0
 " let g:ale_sign_error = '✖︎'
 " let g:ale_sign_warning = '⚠'
 " let g:ale_echo_msg_error_str =  '✖︎ Error' 
