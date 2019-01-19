@@ -9,7 +9,7 @@ endif
 
   Plug 'ncm2/ncm2-bufword',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
 if g:spacevim.tmux
-  Plug 'ncm2/ncm2-tmux',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
+  Plug 'wellle/tmux-complete.vim',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
 endif
   Plug 'ncm2/ncm2-path',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
   Plug 'fgrsnau/ncm2-otherbuf', { 'branch': 'ncm2','on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter']}

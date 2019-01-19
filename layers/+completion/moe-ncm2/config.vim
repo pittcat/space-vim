@@ -13,15 +13,15 @@ autocmd InsertEnter * call ncm2#enable_for_buffer()
 " au TextChangedI * call ncm2#auto_trigger()
 
 
-function! SmartEnterMap()
-  if ncm2_ultisnips#completed_is_snippet()
-    return  ncm2_ultisnips#_do_expand_completed()
-  else
-    return "\<C-y>"
-  endif
-endfunction
-inoremap <expr> <CR> pumvisible() ? "<C-R>=SmartEnterMap()<CR>" : "\<CR>"
-
+" function! SmartEnterMap()
+  " if ncm2_ultisnips#completed_is_snippet()
+    " return  ncm2_ultisnips#_do_expand_completed()
+  " else
+    " return "\<C-y>"
+  " endif
+" endfunction
+" inoremap <expr> <CR> pumvisible() ? "<C-R>=SmartEnterMap()<CR>" : "\<CR>"
+inoremap <silent> <expr> <CR> ncm2_ultisnips#expand_or("\<CR>", 'n')
 
 function! Multiple_cursors_before()
     call ncm2#lock('vim-multiple-cursors')
@@ -44,9 +44,9 @@ let g:ncm2_pyclang#database_path = [
 call ncm2#override_source('LanguageClient_python', {'enable': 0})
 call ncm2#override_source('LanguageClient_php', {'enable': 0})
 " call ncm2#override_source('LanguageClient_cpp', {'enable': 0})
-call ncm2#override_source('LanguageClient_javascript', {'enable': 0})
-call ncm2#override_source('LanguageClient_typescript', {'enable': 0})
-call ncm2#override_source('LanguageClient_javascript.jsx', {'enable': 0})
+" call ncm2#override_source('LanguageClient_javascript', {'enable': 0})
+" call ncm2#override_source('LanguageClient_typescript', {'enable': 0})
+" call ncm2#override_source('LanguageClient_javascript.jsx', {'enable': 0})
 
 " typescript
 let g:nvim_typescript#server_path='/usr/bin/tsserver'
