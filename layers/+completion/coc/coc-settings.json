@@ -1,9 +1,13 @@
 {
   "coc.preferences.triggerAfterInsertEnter": false,
+  "coc.preferences.minTriggerInputLength": 1,
   "coc.preferences.diagnostic.enable": false,
   "coc.preferences.snippets.enable": true,
   "coc.preferences.hoverTarget": "echo",
   "coc.preferences.colorSupport": true,
+  "coc.source.word.filetypes": ["markdown"],
+  "coc.source.emoji.filetypes": ["markdown"],
+  "coc.source.neoinclude.filetypes": ["c","cpp"],
   "languageserver": {
     "sh": {
       "command": "bash-language-server",

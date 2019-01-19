@@ -1,3 +1,4 @@
+set updatetime=300
 set completeopt-=preview
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
