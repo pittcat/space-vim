@@ -13,15 +13,14 @@ autocmd InsertEnter * call ncm2#enable_for_buffer()
 " au TextChangedI * call ncm2#auto_trigger()
 
 
-" function! SmartEnterMap()
-  " if ncm2_ultisnips#completed_is_snippet()
-    " return  ncm2_ultisnips#_do_expand_completed()
-  " else
-    " return "\<C-y>"
-  " endif
-" endfunction
-" inoremap <expr> <CR> pumvisible() ? "<C-R>=SmartEnterMap()<CR>" : "\<CR>"
-inoremap <silent> <expr> <CR> ncm2_ultisnips#expand_or("\<CR>", 'n')
+function! SmartEnterMap()
+  if ncm2_ultisnips#completed_is_snippet()
+    return  ncm2_ultisnips#_do_expand_completed()
+  else
+    return "\<C-y>"
+  endif
+endfunction
+inoremap <expr> <CR> pumvisible() ? "<C-R>=SmartEnterMap()<CR>" : "\<CR>"
 
 function! Multiple_cursors_before()
     call ncm2#lock('vim-multiple-cursors')
