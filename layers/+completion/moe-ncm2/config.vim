@@ -20,7 +20,7 @@ function! SmartEnterMap()
     return "\<C-y>"
   endif
 endfunction
-inoremap <expr> <CR> pumvisible() ? "<C-R>=SmartEnterMap()<CR>" : "\<CR>"
+inoremap <expr> <CR> pumvisible() ? "<C-R>=SmartEnterMap()<CR>" : "\<C-g>u\<CR>"
 
 function! Multiple_cursors_before()
     call ncm2#lock('vim-multiple-cursors')
