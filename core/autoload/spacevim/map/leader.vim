@@ -93,7 +93,7 @@ let g:spacevim#map#leader#desc['f'] = {
       \ 'R' : ['source $MYVIMRC', 'reload-vimrc'],
       \ '?' : ['Files ~','Home Files'],
       \ 'f' : ['Files $PWD','PWD Files'],
-      \ 'l' : ['Blines','BLines'],
+      \ 'l' : ['BLines','BLines'],
       \ 'b' : ['Btags','Btags'],
       \ }
 

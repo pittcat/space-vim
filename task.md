@@ -94,5 +94,3 @@
     ```
 
 4. replace vim_current_word with vim-interestingwords
-
-5. set ncm2-look just for markdown
