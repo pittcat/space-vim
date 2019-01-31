@@ -189,6 +189,10 @@ function! s:align_lists(lists)
   return a:lists
 endfunction
 
+command! FilesPwd Files $PWD
+
+command! FilesHome Files ~
+
 command! -bang -nargs=* Ag
             \ call fzf#vim#ag(<q-args>,
             \                 <bang>0 ? fzf#vim#with_preview('up:70%')

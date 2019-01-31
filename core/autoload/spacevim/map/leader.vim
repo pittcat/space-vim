@@ -64,7 +64,7 @@ let g:spacevim#map#leader#desc['b'] = {
       \ 'l' : ['blast', 'last-buffer'],
       \ 'n' : ['bnext', 'next-buffer'],
       \ 'p' : ['bprevious', 'previous-buffer'],
-      \ 'K' : ['bufdo bd', 'kill-all-buffer'],
+      \ 'K' : ['Killallbuffer', 'kill-all-buffer'],
       \ }
 let g:spacevim#map#leader#desc['e'] = {
       \ 'name' : '+errors',
@@ -91,15 +91,15 @@ let g:spacevim#map#leader#desc['f'] = {
       \ '9' : ['set foldlevel=9', '9-fold-level'],
       \ 's' : ['save', 'save-file'],
       \ 'R' : ['source $MYVIMRC', 'reload-vimrc'],
-      \ '?' : ['Files ~','Home Files'],
-      \ 'f' : ['Files $PWD','PWD Files'],
+      \ '?' : ['FilesHome','Home Files'],
+      \ 'f' : ['FilesPwd','PWD Files'],
       \ 'l' : ['BLines','BLines'],
       \ 'b' : ['Btags','Btags'],
       \ }
 
 let g:spacevim#map#leader#desc['g'] = {
       \ 'name' : '+git/version-control',
-      \ 'a' : ['call GitAdd()','Git Add'],
+      \ 'a' : ['GitAdd()','Git Add'],
       \ 'b' : ['Gblame', 'fugitive-blame'],
       \ 'c' : ['Gcommit', 'fugitive-commit'],
       \ 'd' : ['Gdiff', 'fugitive-diff'],
@@ -114,13 +114,11 @@ let g:spacevim#map#leader#desc['h'] = {
       \ 'name' : '+help',
       \ }
 let g:spacevim#map#leader#desc['j'] = {
-      \ 'name' : '+jump',
-      \ 'j' : ['call feedkeys("\<Plug>(easymotion-overwin-f)")', 'easymotion-goto-char'],
-      \ 'J' : ['call feedkeys("\<Plug>(easymotion-overwin-f2)")', 'easymotion-goto-char-2'],
-      \ 'l' : ['call feedkeys("\<Plug>(easymotion-overwin-line)")', 'jump-linewise'],
-      \ 'w' : ['call feedkeys("\<Plug>(easymotion-overwin-w)")', 'jump-to-word-bidirectional'],
-      \ 'f' : ['call feedkeys("\<Plug>(easymotion-prefix)w")', 'jump-forward-wordwise'],
-      \ 'b' : ['call feedkeys("\<Plug>(easymotion-prefix)b")', 'jump-backword-wordwise'],
+      \ 'name' : '+jump/json'                   ,
+      \ 'j' : 'easymotion-goto-char'       ,
+      \ 'J' : 'easymotion-goto-char-2'     ,
+      \ 'l' : 'jump-linewise'              ,
+      \ 'w' : 'jump-to-word-bidirectional' ,
       \ }
 let g:spacevim#map#leader#desc['p'] = {
       \ 'name' : '+projects',
@@ -139,8 +137,8 @@ let g:spacevim#map#leader#desc['t'] = {
       \ 'g' : ['GitGutterToggle', 'gitgutter'],
       \ 'p' : ['setlocal invpaste!', 'toggle-paste-mode'],
       \ 't' : ['TagbarToggle', 'tagbar'],
-      \ 'c' : ['call spacevim#util#ToggleCursorColumn()', 'cursor-column'],
-      \ 'C' : ['call spacevim#util#ToggleColorColumn()', 'color-column'],
+      \ 'c' : ['spacevim#util#ToggleCursorColumn()', 'cursor-column'],
+      \ 'C' : ['spacevim#util#ToggleColorColumn()', 'color-column'],
       \ }
 " let g:spacevim#map#leader#desc['u'] = [ 'call feedkeys("\<C-u>")', 'scroll-up' ]
 
@@ -174,12 +172,12 @@ let g:spacevim#map#leader#desc['x'] = {
 
 let g:spacevim#map#leader#desc['p'] = {
       \ 'name' : '+copy/plugin',
-      \ 'a' : ['call system("xclip -i -selection clipboard", expand("%:p"))','copy-full-path'],
+      \ 'a' : ['system("xclip -i -selection clipboard", expand("%:p"))','copy-full-path'],
       \ 'b' : ['%y+','copy-full-buffer'],
-      \ 'n' : ['call system("xclip -i -selection clipboard", expand("%:t"))','copy-filename'],
-      \ 'l' : ['call system("xclip -i -selection clipboard", expand("%"))','copy-relative-filename'],
-      \ 'd' : ['call system("xclip -i -selection clipboard", expand("%:p:h"))','copy-dir-path'],
-      \ 'g' : ["call system('xclip -i -selection clipboard', expand('%:p:h').'/exec/'.expand('%:t:r'))",'copy-gcc-out'],
+      \ 'n' : ['system("xclip -i -selection clipboard", expand("%:t"))','copy-filename'],
+      \ 'l' : ['system("xclip -i -selection clipboard", expand("%"))','copy-relative-filename'],
+      \ 'd' : ['system("xclip -i -selection clipboard", expand("%:p:h"))','copy-dir-path'],
+      \ 'g' : ["system('xclip -i -selection clipboard', expand('%:p:h').'/exec/'.expand('%:t:r'))",'copy-gcc-out'],
       \ 'r' : ['PlugClean','clean-plugin'],
       \ 'u' : ['PlugUpdate!','update-plugin'],
       \ }

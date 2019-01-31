@@ -97,3 +97,6 @@ nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :wri
 "{remap “\” as “,” for repeat search in opposite direction
 nnoremap \ ,
 "}
+"{self command
+command! Killallbuffer execute "bufdo bd"
+"}
