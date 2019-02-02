@@ -179,5 +179,5 @@ let g:spacevim#map#leader#desc['p'] = {
       \ 'd' : ['system("xclip -i -selection clipboard", expand("%:p:h"))','copy-dir-path'],
       \ 'g' : ["system('xclip -i -selection clipboard', expand('%:p:h').'/exec/'.expand('%:t:r'))",'copy-gcc-out'],
       \ 'r' : ['PlugClean','clean-plugin'],
-      \ 'u' : ['PlugUpdate!','update-plugin'],
+      \ 'u' : ['PlugUpdate','update-plugin'],
       \ }

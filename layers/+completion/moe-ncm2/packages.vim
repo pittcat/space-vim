@@ -24,6 +24,5 @@ endif
   " Plug 'ncm2/ncm2-pyclang',  {'for':['c','cpp']}
   Plug 'ncm2/ncm2-cssomni',{'for':'css'}
   Plug 'ncm2/ncm2-jedi',{'for':'python'}
-  Plug 'phpactor/phpactor' ,  {'do': 'composer install', 'for': 'php'}
   Plug 'phpactor/ncm2-phpactor',{'for':'php'}
   Plug 'mhartington/nvim-typescript', {'do': './install.sh','for':['typescript']}
