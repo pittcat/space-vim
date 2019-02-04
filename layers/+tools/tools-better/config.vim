@@ -61,12 +61,12 @@
    "
   " }
  "  {dhruvasagar/vim-table-mode
-  let g:loaded_table_mode = 1
    "" Use this option to define the table corner character
   let g:table_mode_corner = '|'
   " Use this option to define the delimiter which used by
   let g:table_mode_delimiter = ' '
   noremap <leader>itb :Tableize<cr>
+  vnoremap <leader>itb :Tableize<cr>
   " }
 
   "{KabbAmine/zealvim.vim
