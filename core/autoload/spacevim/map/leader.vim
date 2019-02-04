@@ -56,7 +56,7 @@ let g:spacevim#map#leader#desc['b'] = {
       \ '7' : ['b7', 'buffer 7'],
       \ '8' : ['b8', 'buffer 8'],
       \ '9' : ['b9', 'buffer 9'],
-      \ 'c' : ['%y+','copy-buffer'],
+      \ 'c' : ['Copybuffer','copy-buffer'],
       \ 'd' : ['bd', 'delete-buffer'],
       \ 'f' : ['bfirst', 'first-buffer'],
       \ 'h' : ['Startify', 'home-buffer'],

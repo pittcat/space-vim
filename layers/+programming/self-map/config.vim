@@ -100,3 +100,6 @@ nnoremap \ ,
 "{self command
 command! Killallbuffer execute "bufdo bd"
 "}
+"{
+command! Copybuffer execute "%y+"
+"}

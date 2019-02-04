@@ -1,5 +1,6 @@
 {
   "coc.preferences.triggerAfterInsertEnter": false,
+  "coc.preferences.timeout": 1000,
   "coc.preferences.minTriggerInputLength": 1,
   "coc.preferences.diagnostic.enable": false,
   "coc.preferences.snippets.enable": true,
@@ -7,7 +8,7 @@
   "coc.preferences.colorSupport": true,
   "coc.source.word.filetypes": ["markdown"],
   "coc.source.emoji.filetypes": ["markdown"],
-  "coc.source.neoinclude.filetypes": ["c","cpp"],
+  "coc.source.neoinclude.filetypes": ["c", "cpp"],
   "languageserver": {
     "sh": {
       "command": "bash-language-server",
@@ -19,10 +20,42 @@
     },
     "ccls": {
       "command": "ccls",
-      "filetypes": ["c", "cpp", "objc", "objcpp"],
+      "filetypes": ["c", "cpp", "objc", "objcpp", "cuda"],
+      "rootPatterns": [
+        ".ccls",
+        "compile_commands.json",
+        ".vim/",
+        ".git/",
+        ".hg/"
+      ],
       "initializationOptions": {
         "cacheDirectory": "/tmp/ccls"
       }
+    },
+    "golang": {
+      "command": "go-langserver",
+      "filetypes": ["go"],
+      "initializationOptions": {
+        "gocodeCompletionEnabled": true,
+        "diagnosticsEnabled": true,
+        "lintTool": "golint"
+      }
+    },
+    "phplang": {
+      "command": "php",
+      "args": ["$HOME/.composer/vendor/bin/php-language-server.php"],
+      "filetypes": ["php"]
+    },
+    "ocaml": {
+      "command": "ocaml-language-server",
+      "args": ["--stdio"],
+      "filetypes": ["ocaml", "reason"]
+    },
+    "haskell": {
+      "command": "hie-wrapper",
+      "rootPatterns": [".stack.yaml", "cabal.config", "package.yaml"],
+      "filetypes": ["hs", "lhs", "haskell"],
+      "initializationOptions": {}
     }
   }
 }
