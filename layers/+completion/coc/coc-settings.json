@@ -1,6 +1,8 @@
 {
   "coc.preferences.triggerAfterInsertEnter": false,
   "coc.preferences.timeout": 1000,
+  "coc.preferences.acceptSuggestionOnCommitCharacter": true,
+  "coc.preferences.snippetIndicator": "►",
   "coc.preferences.minTriggerInputLength": 1,
   "coc.preferences.diagnostic.enable": false,
   "coc.preferences.snippets.enable": true,
