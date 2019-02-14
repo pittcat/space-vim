@@ -1,5 +1,8 @@
 scriptencoding utf-8
 
+" cohama/lexima.vim{
+call lexima#add_rule({'char': '**', 'input_after': '**', 'filetype': 'markdown'})
+" }
 
 " nerdcommenter {
   let g:NERDSpaceDelims=1
