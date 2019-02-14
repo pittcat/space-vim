@@ -15,18 +15,6 @@ if g:spacevim.timer
   ""
   " {autosave
   MP '907th/vim-auto-save'
-  fun! LoadAutoSave()
-    if &ft == "markdown"
-      return
-    endif
-    call plug#load('vim-auto-save')
-  endfun
-
-  augroup LoadAS
-    autocmd!
-    autocmd InsertEnter * call LoadAutoSave() | autocmd! LoadAS
-  augroup END
-
   let g:auto_save = 1
   let g:auto_save_silent = 1
   let g:auto_save_events=["InsertLeave","InsertEnter","QuitPre","CursorHold"]
