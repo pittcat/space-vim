@@ -88,18 +88,19 @@ endfunction
 command! ZoomToggle call s:ZoomToggle()
 nnoremap <silent> <leader>wf :ZoomToggle<CR>
 "}
+"{toogle paste
+set pastetoggle=<F3>
+"}
 
 "{switch buffers quickly
 nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
 nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
 "}
-"
+
 "{remap “\” as “,” for repeat search in opposite direction
 nnoremap \ ,
 "}
 "{self command
 command! Killallbuffer execute "bufdo bd"
-"}
-"{
 command! Copybuffer execute "%y+"
 "}

@@ -26,3 +26,4 @@ endif
   Plug 'ncm2/ncm2-jedi',{'for':'python'}
   Plug 'phpactor/ncm2-phpactor',{'for':'php'}
   Plug 'mhartington/nvim-typescript', {'do': './install.sh','for':['typescript']}
+  Plug 'filipekiss/ncm2-look.vim',{'for':'markdown'}
