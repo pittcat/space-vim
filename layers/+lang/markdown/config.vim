@@ -13,5 +13,6 @@ autocmd FileType markdown nnoremap <silent> <leader>mmp :call mdip#MarkdownClipb
 " let g:markdown_composer_refresh_rate=250
 autocmd FileType markdown nnoremap <silent> <buffer> <F5> :MarkdownPreview<CR>
 
-"ncm2 look
-autocmd FileType markdown let b:ncm2_look_enabled = 1
+autocmd FileType markdown nnoremap <silent> <leader>mmp :call mdip#MarkdownClipboardImage()<CR>
+
+autocmd FileType markdown silent AutoSaveToggle
