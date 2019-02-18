@@ -22,6 +22,8 @@ scriptencoding utf-8
   let g:signify_cursorhold_normal     = 1
   let g:signify_update_on_bufenter    = 0
   let g:signify_update_on_focusgained = 1
+  let g:signify_cursorhold_normal = 0
+  let g:signify_cursorhold_insert = 0
 
   highlight SignifyLineDelete cterm=bold ctermbg=NONE ctermfg=red
   highlight SignifyLineChange cterm=bold ctermbg=NONE ctermfg=yellow
