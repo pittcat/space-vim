@@ -12,8 +12,10 @@ if g:spacevim.nvim || g:spacevim.vim8
   endif
   let g:UltiSnipsRemoveSelectModeMappings = 1
 
-  let g:UltiSnipsJumpForwardTrigger = '<C-j>'
-  let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
+  if !has_key(g:plugs, 'coc.nvim')
+    let g:UltiSnipsJumpForwardTrigger = '<C-j>'
+    let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
+  endif
   let g:UltiSnipsExpandTrigger = "<C-z>"
 
   " function! TabJumpNext()

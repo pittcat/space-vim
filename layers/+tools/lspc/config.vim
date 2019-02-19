@@ -38,7 +38,7 @@ let g:LanguageClient_diagnosticsEnable=0
 if has_key(g:plugs, 'ncm2')
   let g:LanguageClient_hasSnippetSupport =1
 endif
-if has_key(g:plugs, 'denite.nvm')
+if has_key(g:plugs, 'denite.nvim')
   nnoremap  <silent> <F1> :Denite contextMenu <cr>
 else
   nnoremap <silent> <F1> :call LanguageClient_contextMenu()<CR>
