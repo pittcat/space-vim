@@ -29,31 +29,6 @@ function! spacevim#plug#asyncrun#CompileAndRun()
 endfunction
 
 
-function! spacevim#plug#asyncrun#CreateTemperoryFile()
-  let l:visualselect=spacevim#util#VisualSelection()
-  let l:fname='/tmp/tempfile.' . expand('%:e')
-  silent! execute 'w' . l:fname
-  silent! call writefile(split(l:visualselect, "\n", 1), glob(l:fname), 's')
-
-endfunction
-
-function! spacevim#plug#asyncrun#QuickRunVisualTempfile()
-  let l:fname='/tmp/tempfile.' . expand('%:e')
-  let l:cmd = {
-        \ 'sh'     : "time bash ",
-        \ 'ruby'   : "time ruby ",
-        \ 'python' : "time python ",
-        \ 'javascript': "time node ",
-        \}
-  let l:ft = &filetype
-
-  if has_key(l:cmd, l:ft)
-    exec "AsyncRun! ".l:cmd[l:ft] . l:fname . ";rm " . l:fname
-  else
-    call spacevim#util#err("spacevim#util#VisualSelectionRun not supported in current filetype!")
-  endif
-endfunction
-
 function! spacevim#plug#asyncrun#Gdb()
   let l:cmd = {
         \ 'c'      : "gcc -g '%:p' -o  './exec/%:t:r';",
