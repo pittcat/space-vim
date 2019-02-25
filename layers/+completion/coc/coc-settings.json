@@ -1,6 +1,5 @@
 {
   "coc.preferences.triggerAfterInsertEnter": false,
-  "coc.preferences.noselect": false,
   "coc.preferences.preferCompleteThanJumpPlaceholder": true,
   "coc.preferences.timeout": 1000,
   "coc.preferences.acceptSuggestionOnCommitCharacter": true,
