@@ -7,7 +7,7 @@ augroup END
 
 function! spacevim#plug#asyncrun#CompileAndRun()
   let l:cmd = {
-        \ 'c'      : "gcc '%:p' -o  './exec/%:t:r'; time %:p:h/exec/%:t:r<",
+        \ 'c'      : "gcc '%:p' -o  '%:p:h/exec/%:t:r'; time %:p:h/exec/%:t:r",
         \ 'cpp'    : "g++ -std=c++11 '%:p' -o '%:p:h/exec/%:t:r'; time %:p:h/exec/%:t:r",
         \ 'sh'     : "time bash %",
         \ 'go'     : "go run %",
@@ -28,6 +28,22 @@ function! spacevim#plug#asyncrun#CompileAndRun()
   endif
 endfunction
 
+
+
+function! spacevim#plug#asyncrun#Compile()
+  let l:cmd = {
+        \ 'c'      : "gcc '%:p' -o  '%:p:h/exec/%:t:r';",
+        \ 'cpp'    : "g++ -std=c++11 '%:p' -o '%:p:h/exec/%:t:r';",
+        \}
+  " javac -d classes MyProgram.java
+  let l:ft = &filetype
+  if has_key(l:cmd, l:ft)
+    exec 'w'
+    exec "AsyncRun! ".l:cmd[l:ft]
+  else
+    call spacevim#util#err("spacevim#util#Compile not supported in current filetype!")
+  endif
+endfunction
 
 function! spacevim#plug#asyncrun#Gdb()
   let l:cmd = {
