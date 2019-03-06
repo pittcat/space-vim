@@ -12,3 +12,9 @@ let g:spacevim#map#localleader#desc['r']={
   \ 'a' : ['ReplAuto','Auto Repl'],
   \ 'k' : ['ReplStop','Kill Repl']
   \}
+
+
+let g:spacevim#map#localleader#desc['l']={
+  \ 'name'  : '+latex',
+  \ 'n' : ['NeoTexOn','Live Compile'],
+  \}
