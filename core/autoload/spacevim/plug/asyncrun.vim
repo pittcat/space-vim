@@ -17,6 +17,7 @@ function! spacevim#plug#asyncrun#CompileAndRun()
         \ 'haskell': "ghc %:p -o %< && %:p:h/%:t:r<",
         \ 'javascript': "time node %<",
         \ 'java'   : "javac %;java %:t:r;rm %:t:r.'class'",
+        \ 'tex'    : "evince %:p:h/%:t:r.pdf"
         \}
   " javac -d classes MyProgram.java
   let l:ft = &filetype
