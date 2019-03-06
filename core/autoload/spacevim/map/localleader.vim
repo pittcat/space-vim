@@ -18,4 +18,5 @@ let g:spacevim#map#localleader#desc['l']={
   \ 'name'  : '+latex',
   \ 'n' : ['NeoTexOn','Live Compile'],
   \ 'f' : ['NeoTexOff','Live Compile Off'],
+  \ 'N' : ['NeoTex','Tex Compile']
   \}
