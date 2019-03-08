@@ -1,4 +1,4 @@
-2. make fugitive cooperation with asyncrun
+1. make fugitive cooperation with asyncrun
 
     ```
             " Cooperate with famous fugitive
@@ -15,4 +15,8 @@
 
 
 
-3. replace vim_current_word with vim-interestingwords
+2. replace vim_current_word with vim-interestingwords
+
+3. add vista.vim
+
+https://github.com/liuchengxu/vista.vim
