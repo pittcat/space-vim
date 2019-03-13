@@ -1,6 +1,6 @@
 MP 'tpope/vim-surround'
 
-MP 'cohama/lexima.vim'
+MP 'jiangmiao/auto-pairs'
 MP 'mg979/vim-visual-multi'
 MP 'brooth/far.vim'
 

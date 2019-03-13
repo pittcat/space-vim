@@ -1,7 +1,8 @@
 scriptencoding utf-8
 
 " cohama/lexima.vim{
-call lexima#add_rule({'char': '**', 'input_after': '**', 'filetype': 'markdown'})
+let g:AutoPairsMapCR=0
+au FileType markdown let b:AutoPairs = AutoPairsDefine({"**":"**"})
 " }
 
 " nerdcommenter {
