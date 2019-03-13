@@ -13,13 +13,11 @@ call lexima#add_rule({'char': '**', 'input_after': '**', 'filetype': 'markdown'}
 " }
 
 " vim-multiple-cursors {
-let g:multi_cursor_use_default_mapping=0
-let g:multi_cursor_start_word_key='<C-d>'
-let g:multi_cursor_select_all_word_key='<A-a>'
-let g:multi_cursor_next_key='<C-d>'
-let g:multi_cursor_prev_key='<C-u>'
-let g:multi_cursor_skip_key='<C-x>'
-let g:multi_cursor_quit_key='<Esc>'
+let g:VM_default_mappings = 0
+let g:VM_maps = {}
+let g:VM_maps['Find Under']         = '<C-d>'           " replace C-n
+let g:VM_maps['Find Subword Under'] = '<C-d>'           " replace visual C-n
+let g:VM_mouse_mappings = 1
 " }
 
 " { mg979/vim-visual-multi 

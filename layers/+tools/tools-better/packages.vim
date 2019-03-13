@@ -98,7 +98,7 @@ if g:spacevim.timer
   MP 'hackingcat/dict.vim'
   "}
   "{machakann/vim-highlightedyank
-  MP 'machakann/vim-highlightedyank'
+  " MP 'machakann/vim-highlightedyank'
   "}
   call timer_start(1400,'spacevim#defer#awesome_tools')
 

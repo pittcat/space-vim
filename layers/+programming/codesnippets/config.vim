@@ -11,8 +11,8 @@ if g:spacevim.nvim || g:spacevim.vim8
     let g:UltiSnipsSnippetsDir =  '~/.config/nvim/UltiSnips'
   endif
 
-  let g:UltiSnipsJumpForwardTrigger = '<C-j>'
-  let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
+  let g:UltiSnipsJumpForwardTrigger = '<nop>'
+  let g:UltiSnipsJumpBackwardTrigger = '<nop>'
   let g:UltiSnipsExpandTrigger = "<C-z>"
 
 

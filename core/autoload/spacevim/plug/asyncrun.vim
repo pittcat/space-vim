@@ -7,7 +7,7 @@ augroup END
 
 function! spacevim#plug#asyncrun#CompileAndRun()
   let l:cmd = {
-        \ 'c'      : "gcc '%:p' -o  '%:p:h/exec/%:t:r'; time %:p:h/exec/%:t:r",
+        \ 'c'      : "gcc '%:p' -o '%:p:h/exec/%:t:r'; time %:p:h/exec/%:t:r",
         \ 'cpp'    : "g++ -std=c++11 '%:p' -o '%:p:h/exec/%:t:r'; time %:p:h/exec/%:t:r",
         \ 'sh'     : "time bash %",
         \ 'go'     : "go run %",
@@ -33,7 +33,7 @@ endfunction
 
 function! spacevim#plug#asyncrun#Compile()
   let l:cmd = {
-        \ 'c'      : "gcc '%:p' -o  '%:p:h/exec/%:t:r';",
+        \ 'c'      : "gcc '%:p' -o '%:p:h/exec/%:t:r';",
         \ 'cpp'    : "g++ -std=c++11 '%:p' -o '%:p:h/exec/%:t:r';",
         \}
   " javac -d classes MyProgram.java
