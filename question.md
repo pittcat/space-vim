@@ -5,3 +5,5 @@
 autocmd FileType python nnoremap <buffer> <leader>op :OpenBrowser http://localhost:5555/<cr>
 autocmd FileType python vnoremap <buffer> <leader>op <nop>
 ```
+
+### coc.nvim 也许和vim-pairs 矛盾
