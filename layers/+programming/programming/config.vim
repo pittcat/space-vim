@@ -32,6 +32,8 @@ scriptencoding utf-8
       execute "bd"
     elseif split(@%,'/')[-2]=='bin'
       exec "bd!"
+    elseif &filetype==''
+      exec "bd!"
     else
       execute "bd"
     endif
