@@ -30,7 +30,7 @@ scriptencoding utf-8
     if len(qf_exist_num)
       execute "cclose" 
       execute "bd"
-    elseif &filetype==''
+    elseif split(@%,'/')[-2]=='bin'
       exec "bd!"
     else
       execute "bd"
