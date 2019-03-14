@@ -1,9 +1,5 @@
 scriptencoding utf-8
 
-" cohama/lexima.vim{
-let g:AutoPairsMapCR=0
-au FileType markdown let b:AutoPairs = AutoPairsDefine({"**":"**"})
-" }
 
 " nerdcommenter {
   let g:NERDSpaceDelims=1
