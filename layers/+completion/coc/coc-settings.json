@@ -7,7 +7,7 @@
   "coc.preferences.minTriggerInputLength": 1,
   "coc.preferences.diagnostic.enable": false,
   "coc.preferences.snippets.enable": true,
-  "coc.preferences.hoverTarget": "float",
+  "coc.preferences.hoverTarget": "echo",
   "coc.preferences.colorSupport": true,
   "coc.source.word.filetypes": ["markdown","latex"],
   "coc.source.emoji.filetypes": ["markdown"],
