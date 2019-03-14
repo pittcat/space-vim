@@ -58,7 +58,3 @@ let g:VM_mouse_mappings = 1
   augroup END
 
 " }
-" {Shougo/echodoc.vim
-  set cmdheight=2
-	let g:echodoc_enable_at_startup = 1
-" }
