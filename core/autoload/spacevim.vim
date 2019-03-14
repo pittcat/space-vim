@@ -22,12 +22,6 @@ let s:TYPE = {
 \ 'funcref': type(function('call'))
 \ }
 
-if has("python3")
-    python3 import vim; from sys import version_info as v; vim.command('let g:spacevim_python_version=%d' % (v[0]*100+ v[1]*10+v[2]))
-else
-    let g:spacevim_python_version=0
-endif
-
 function! spacevim#bootstrap() abort
   call spacevim#begin()
   call spacevim#end()
