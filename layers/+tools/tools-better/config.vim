@@ -81,11 +81,8 @@
   "}
 
   "{tyru/open-browser.vim
-  let g:netrw_nogx = 1 " disable netrw's gx mapping.
 	nmap <leader>go <Plug>(openbrowser-smart-search)
 	vmap <leader>go <Plug>(openbrowser-smart-search)
-  nmap <silent> <leader>gx <Plug>(openbrowser-open)
-	vmap <silent> <leader>gx <Plug>(openbrowser-open)
   "}
 
   " hackingcat/dict.vim
