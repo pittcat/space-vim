@@ -1,4 +1,5 @@
-  MP 'cohama/agit.vim'
+MP 'cohama/agit.vim'
+MP 'rhysd/git-messenger.vim'
 
 if g:spacevim.timer
 
