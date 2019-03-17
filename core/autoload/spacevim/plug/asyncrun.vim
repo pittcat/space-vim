@@ -48,7 +48,7 @@ endfunction
 
 function! spacevim#plug#asyncrun#Gdb()
   let l:cmd = {
-        \ 'c'      : "gcc -g '%:p' -o  './exec/%:t:r';",
+        \ 'c'      : "gcc -g '%:p' -o  '%:p:h/exec/%:t:r';",
         \ 'cpp'    : "g++ -g -std=c++11 '%:p' -o '%:p:h/exec/%:t:r';",
         \}
   let l:ft = &filetype
