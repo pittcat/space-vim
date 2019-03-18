@@ -1,3 +1,4 @@
+let g:which_key_use_floating_win=0
 set timeoutlen=500
 nnoremap <silent> <leader> :<c-u>WhichKey '<Space>'<CR>
 vnoremap <silent> <leader> :<c-u>WhichKeyVisual '<Space>'<CR>
