@@ -22,6 +22,7 @@ let g:LanguageClient_serverCommands = {
     \ 'ocaml': ['ocaml-language-server', '--stdio'],
     \ 'php': ['php',expand('$HOME/.composer/vendor/bin/php-language-server.php')],
     \ }
+let g:LanguageClient_useFloatingHover=1
 let g:LanguageClient_autoStart = 1
 let g:LanguageClient_loadSettings = 1
 let g:LanguageClient_settingsPath = '$HOME/.space-vim/layers/+tools/lspc/settings.json'
@@ -48,7 +49,6 @@ nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> gvd :call LanguageClient#textDocument_definition({'gotoCmd': 'split'})<CR>
 nnoremap <silent> <localleader>cn :call LanguageClient#textDocument_rename()<CR>
 nnoremap <silent> <leader><leader>z :pc<CR>
-nnoremap <silent> <M-c> <C-w>z
 nnoremap <localleader>sr :LanguageClientStop<cr>:sleep 1000m<cr>:LanguageClientStart<cr>
 autocmd BufEnter * if (expand('%:t')=='__LanguageClient__' && &filetype ==# 'markdown')
       \ | nnoremap <silent> <buffer> q <C-w>c | endif
