@@ -10,6 +10,14 @@
   "coc.source.word.filetypes": ["markdown","latex"],
   "coc.source.emoji.filetypes": ["markdown"],
   "coc.source.neoinclude.filetypes": ["c", "cpp"],
+  "pairs.enableCharacters": [
+    "(",
+    "[",
+    "{",
+    "'",
+    "\"",
+    "`"
+  ],
   "languageserver": {
     "sh": {
       "command": "bash-language-server",
