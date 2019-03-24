@@ -16,7 +16,7 @@ scriptencoding utf-8
   nnoremap <F9> :AsyncStop<cr>
   noremap <F8> :call asyncrun#quickfix_toggle(14)<cr>
   nnoremap <F5> :call spacevim#plug#asyncrun#CompileAndRun()<CR>
-  nnoremap <leader>cp :call spacevim#plug#asyncrun#CompileAndRun()<CR>
+  nnoremap <leader>cp :call spacevim#plug#asyncrun#Compile()<CR>
   nnoremap <silent> <localleader>dg :call spacevim#plug#asyncrun#Gdb()<cr>
 
   command! GitPush AsyncRun -cwd=$VIM_ROOT git push
