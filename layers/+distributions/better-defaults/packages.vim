@@ -5,7 +5,7 @@
 MP 'kshenoy/vim-signature'        , { 'on': [] }
 MP 'tpope/vim-rsi'                , { 'on': [] }
 MP 'xtal8/traces.vim'             , { 'on': [] }
-MP 'dominikduda/vim_current_word' , { 'on': [] }
+MP 'RRethy/vim-illuminate'        , { 'on': [] }
 call timer_start(500, 'spacevim#defer#defaults')
 
 
