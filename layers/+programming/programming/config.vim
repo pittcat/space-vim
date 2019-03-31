@@ -31,7 +31,7 @@ scriptencoding utf-8
     if len(qf_exist_num)
       execute "cclose" 
       execute "bd"
-    elseif split(@%,'/')[-2]=='bin'
+    elseif len(split(@%,'/'))>2 && split(@%,'/')[-2]=='bin'
       exec "bd!"
     elseif &filetype==''
       exec "bd!"
@@ -40,7 +40,6 @@ scriptencoding utf-8
     endif
   endfunction
   command! CorrectCloseBuffer call s:CorrectCloseBuffer()
-  nnoremap <silent> <leader>bd :CorrectCloseBuffer<cr>
 " }
 
 " indentLine {

@@ -58,7 +58,7 @@ let g:spacevim#map#leader#desc['b'] = {
       \ '8' : ['b8', 'buffer 8'],
       \ '9' : ['b9', 'buffer 9'],
       \ 'c' : ['Copybuffer','copy-buffer'],
-      \ 'd' : ['bd', 'delete-buffer'],
+      \ 'd' : ['CorrectCloseBuffer', 'delete-buffer'],
       \ 'f' : ['bfirst', 'first-buffer'],
       \ 'h' : ['Startify', 'home-buffer'],
       \ 'k' : ['bw', 'kill-buffer'],
