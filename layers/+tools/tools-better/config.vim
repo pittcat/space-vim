@@ -3,7 +3,7 @@
   function! GiveFileNewName()
     let l:filename = input('new file name for rename:',expand('%:t'))
     if(empty(l:filename)) | return | endif
-    execut 'Rename' l:filename
+    execut 'RenameF' l:filename
   endfunction
     noremap <leader>rn :call GiveFileNewName()<cr>
   function! CreateDirectory()
