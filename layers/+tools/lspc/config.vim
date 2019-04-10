@@ -20,7 +20,8 @@ let g:LanguageClient_serverCommands = {
     \ 'vue': ['vls'],
     \ 'reason': ['ocaml-language-server', '--stdio'],
     \ 'ocaml': ['ocaml-language-server', '--stdio'],
-    \ 'php': ['php',expand('$HOME/.composer/vendor/bin/php-language-server.php')],
+    \ 'php' : ['php',expand('$HOME/.composer/vendor/bin/php-language-server.php')],
+    \ 'lua' : ['lua-lsp']
     \ }
 let g:LanguageClient_useFloatingHover=1
 let g:LanguageClient_autoStart = 1

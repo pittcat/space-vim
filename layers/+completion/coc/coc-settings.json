@@ -57,6 +57,10 @@
       "rootPatterns": [".stack.yaml", "cabal.config", "package.yaml"],
       "filetypes": ["hs", "lhs", "haskell"],
       "initializationOptions": {}
+    },
+    "lua": {
+      "command": "lua-lsp",
+      "filetypes": ["lua"]
     }
   }
 }

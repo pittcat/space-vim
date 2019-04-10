@@ -19,6 +19,7 @@ let g:ale_linters={
           \ 'php' : ['php'],
           \ 'sql' : ['sqlint'],
           \ 'ocaml':['ols'],
+          \ 'lua' : ['luacheck'],
           \ 'tex' :['chktex']
           \}
 
@@ -45,7 +46,8 @@ let g:ale_fixers = {
           \ 'php' : ['phpcbf'],
           \ 'sql' : ['sqlfmt'],
           \ 'ocaml': ['ocamlformat'],
-          \ 'tex' : ['textlint']
+          \ 'tex' : ['textlint'],
+          \ 'lua' : ['remove_trailing_lines']
 \}
 let g:ale_echo_msg_format = '[#%linter%#] %s [%severity%]'
 let g:ale_statusline_format = ['E•%d', 'W•%d', 'OK']
