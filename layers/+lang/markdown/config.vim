@@ -1,6 +1,6 @@
 " markdown-composer
-let g:markdown_composer_open_browser=0
-let g:markdown_composer_refresh_rate=500
+" let g:markdown_composer_open_browser=0
+" let g:markdown_composer_refresh_rate=500
 
 " iamcco/markdown-preview.nvim
 let g:mkdp_auto_close = 0
