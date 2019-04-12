@@ -5,6 +5,6 @@ MP 'neoclide/coc-neco',{'for':'vim','on_event': ['CursorHold', 'CursorHoldI', 'I
 " MP 'jsfaint/coc-neoinclude',{'for':['c','cpp',],'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter']}
 "
 " snippets
-MP ' honza/vim-snippets'
+MP 'honza/vim-snippets'
 MP 'epilande/vim-react-snippets',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }          "react
 MP 'isRuslan/vim-es6',{'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }                     "es6
