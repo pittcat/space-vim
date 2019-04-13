@@ -25,9 +25,6 @@ if g:spacevim.timer
   "{tpope/vim-eunuch'
   MP 'tpope/vim-eunuch'
   "}
-  "{hackingcat/vim-rename
-  MP 'hackingcat/vim-rename'
-  "}
   "{
   MP 'justinmk/vim-gtfo'
   " got--------->terminal or tmux
