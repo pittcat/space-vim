@@ -10,6 +10,7 @@
       silent exec 'bdelete ' . old_name
       exec ':silent !mv ' . old_name . ' ' . new_name
       exec 'edit ' . new_name
+      exec 'w ' . new_name
       redraw!
     endif
   endfunction
