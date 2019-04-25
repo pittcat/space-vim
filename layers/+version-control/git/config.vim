@@ -6,7 +6,6 @@ scriptencoding utf-8
       echo 'No Git Add'
     else
       execute 'Git! add .' 
-      execute 'bd!'
     endif
   endfunction
 
