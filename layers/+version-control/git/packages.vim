@@ -1,4 +1,4 @@
-" MP 'cohama/agit.vim'
+MP 'junegunn/gv.vim'
 MP 'rhysd/git-messenger.vim'
 
 if g:spacevim.timer
