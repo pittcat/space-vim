@@ -106,7 +106,6 @@ let g:spacevim#map#leader#desc['g'] = {
       \ 'd' : ['Gdiff', 'fugitive-diff'],
       \ 'g' : ['SignifyToggle','Toggle Signify'],
       \ 'h' : ['SignifyToggleHighlight','Toggle Signify Height'],
-      \ 'v' : ['Agit','Better View'],
       \ 'w' : ['Gwrite', 'fugitive-write'],
       \ 'r' : ['SignifyRefresh','Refresh Signify'],
       \ 's' : ['Gstatus', 'fugitive-status'],

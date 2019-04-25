@@ -31,7 +31,3 @@ scriptencoding utf-8
   highlight SignifySignChange cterm=bold ctermbg=NONE ctermfg=yellow
 
   "}
-
-" {Agit.vim
-" }
-"
