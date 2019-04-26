@@ -30,4 +30,9 @@
   if g:spacevim.nvim
     autocmd! FileType fzf tnoremap  <Esc> <Esc>
   endif
+
+  if exists('*nvim_open_win')
+    let $FZF_DEFAULT_OPTS = '--layout=reverse'
+    let g:fzf_layout = { 'window': 'call spacevim#plug#fzf#FloatingWin()' }
+  else
   " }
