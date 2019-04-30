@@ -95,17 +95,13 @@
 	vmap <leader>go <Plug>(openbrowser-smart-search)
   "}
 
-  " hackingcat/dict.vim
+  " voldikss/vim-translate-me
   " {
-  let g:api_key = "1932136763"
-  let g:keyfrom = "aioiyuuko"
-  nmap <silent> <Leader>yd <Plug>DictWSearch
-  function! Space_Dict_Search()
-    let l:vselection = spacevim#util#VisualSelection()
-    call dict#Search(l:vselection, 'complex')
-  endfunction
-  vnoremap <silent> <Leader>yd :call Space_Dict_Search()<cr>
-
+  nmap <silent> <leader>yd <Plug>TranslateW
+  vmap <silent> <leader>yd <Plug>TranslateWV
+  nmap <silent> <leader>yr <Plug>TranslateR
+  vmap <silent> <leader>yr <Plug>TranslateRV
+  let g:vtm_default_mapping=0
   " }
   "{machakann/vim-highlightedyank
   " if !exists('##TextYankPost')
