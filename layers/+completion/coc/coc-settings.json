@@ -1,6 +1,6 @@
 {
   "suggest.triggerAfterInsertEnter": false,
-  "suggest.preferCompleteThanJumpPlaceholder": true,
+  "suggest.noselect": true,
   "suggest.timeout": 1000,
   "suggest.acceptSuggestionOnCommitCharacter": true,
   "suggest.snippetIndicator": "►",
