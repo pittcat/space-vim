@@ -91,8 +91,9 @@
   "}
 
   "{tyru/open-browser.vim
-	nmap <leader>go <Plug>(openbrowser-smart-search)
-	vmap <leader>go <Plug>(openbrowser-smart-search)
+  let g:vsm_default_mappings=0
+	nmap <leader>go :SearchCurrentText<cr>
+	vmap <leader>go :SearchVisualText<cr>
   "}
 
   " voldikss/vim-translate-me

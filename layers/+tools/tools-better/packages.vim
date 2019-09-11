@@ -92,6 +92,7 @@ if g:spacevim.timer
   MP 'KabbAmine/zeavim.vim'
   "}
   "{tyru/open-browser.vim
+  MP 'voldikss/vim-search-me'
   MP 'tyru/open-browser.vim'
   "}
   "{voldikss/vim-translate-me
