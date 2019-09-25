@@ -6,6 +6,7 @@ MP 'kshenoy/vim-signature'        , { 'on': [] }
 MP 'tpope/vim-rsi'                , { 'on': [] }
 MP 'xtal8/traces.vim'             , { 'on': [] }
 MP 'RRethy/vim-illuminate'
+MP 'lfv89/vim-interestingwords'   
 call timer_start(500, 'spacevim#defer#defaults')
 
 

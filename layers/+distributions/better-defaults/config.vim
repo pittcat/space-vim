@@ -16,6 +16,15 @@ if g:spacevim.gui
   noremap - :Smaller<CR>
 endif
 
+" vim-illuminate
+" {
+let g:Illuminate_ftHighlightGroups = {
+      \ 'vim:blacklist': ['vimVar', 'vimString', 'vimLineComment',
+      \         'vimFuncName', 'vimFunction', 'vimUserFunc', 'vimFunc']
+      \ }
+hi illuminatedWord cterm=underline gui=underline
+" }
+
 " vim-startify {
 let g:startify_custom_header = g:spacevim#plug#startify#header
 let g:startify_list_order = g:spacevim#plug#startify#list_order
@@ -23,6 +32,13 @@ let g:startify_change_to_vcs_root = 1
 let g:startify_session_persistence = 1
 noremap <silent> <leader>sv :SSave<cr>
 noremap <silent> <leader>sr :SLoad<cr>
+" }
+
+" vim-interestingwords
+" {
+nnoremap <silent> <leader>kk :call InterestingWords('n')<cr>
+nnoremap <silent> <leader>KK :call UncolorAllWords()<cr>
+let g:interestingWordsTermColors = ['154', '121', '211', '137', '214', '222']
 " }
 
 " vim-choosewin {
