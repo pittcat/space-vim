@@ -18,11 +18,9 @@ endif
 
 " vim-illuminate
 " {
-let g:Illuminate_ftHighlightGroups = {
-      \ 'vim:blacklist': ['vimVar', 'vimString', 'vimLineComment',
-      \         'vimFuncName', 'vimFunction', 'vimUserFunc', 'vimFunc']
-      \ }
-hi illuminatedWord cterm=underline gui=underline
+let g:Illuminate_highlightUnderCursor = 0
+let g:Illuminate_delay = 400
+hi link illuminatedWord Visual
 " }
 
 " vim-startify {
@@ -34,12 +32,6 @@ noremap <silent> <leader>sv :SSave<cr>
 noremap <silent> <leader>sr :SLoad<cr>
 " }
 
-" vim-interestingwords
-" {
-nnoremap <silent> <leader>kk :call InterestingWords('n')<cr>
-nnoremap <silent> <leader>KK :call UncolorAllWords()<cr>
-let g:interestingWordsTermColors = ['154', '121', '211', '137', '214', '222']
-" }
 
 " vim-choosewin {
 let g:choosewin_overlay_enable = 1

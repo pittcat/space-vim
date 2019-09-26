@@ -46,7 +46,7 @@ endfunction
 " 500
 
 function! spacevim#defer#defaults(timer) abort
-  call s:lod('vim-signature', 'vim-rsi','traces.vim','vim-illuminate','vim-interestingwords')
+  call s:lod('vim-signature', 'vim-rsi','traces.vim','vim-illuminate')
 endfunction
 
 " 550
