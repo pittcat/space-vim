@@ -1,5 +1,5 @@
 MP 'pittcat/vim-better-default'
 
 if !spacevim#load('airline') && !spacevim#load('lightline')
-  MP 'ap/vim-buftabline'
+  MP 'liuchengxu/eleline.vim'
 endif
