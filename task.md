@@ -15,8 +15,5 @@
 
 
 
-2. replace vim_current_word with vim-interestingwords
 
-3. add vista.vim
-
-https://github.com/liuchengxu/vista.vim
+2. 暂时只能使用coc-ultisnips，后面切换到coc-snippets

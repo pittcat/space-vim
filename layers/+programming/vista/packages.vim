@@ -1,0 +1,1 @@
+MP 'liuchengxu/vista.vim'
