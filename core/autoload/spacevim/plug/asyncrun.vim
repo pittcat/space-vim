@@ -1,5 +1,6 @@
 let g:asyncrun_shell = '/usr/bin/zsh'
 let g:asyncrun_shellflag = '-c'
+let $PYTHONUNBUFFERED=1
 
 augroup AsyncrunGroup
     autocmd User AsyncRunStart call asyncrun#quickfix_toggle(14, 1)
