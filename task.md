@@ -17,3 +17,5 @@
 
 
 2. 暂时只能使用coc-ultisnips，后面切换到coc-snippets
+
+3. 完成coc对lspc的替换
