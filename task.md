@@ -19,3 +19,5 @@
 2. 暂时只能使用coc-ultisnips，后面切换到coc-snippets
 
 3. 完成coc对lspc的替换
+
+4. 完成对ultisnips的替换，snippets.ultisnips.directories的文件夹问题
