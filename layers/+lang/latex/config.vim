@@ -1,8 +1,3 @@
-" vim-latex-live-preview {
-  " let g:livepreview_previewer = g:spacevim#plug#latex#Previewer
-  " let g:livepreview_cursorhold_recompile = 0
-" }
-
 " lervag/vimtex {
 " Disable math conceal with LaTeX math syntax enabled
   let g:tex_conceal = ''
