@@ -4,9 +4,8 @@ function! spacevim#autocmd#markdown#Init()
   if !s:loaded
 
 " vim-markdown {
-  let g:vim_markdown_math = 1
-  let g:vim_markdown_frontmatter = 1
-  let g:vim_markdown_conceal = 0
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
+let g:markdown_syntax_conceal = 0
 " }
 
 " vim-markdown-toc {
