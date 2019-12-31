@@ -70,7 +70,6 @@ if g:spacevim.timer
   "{AndrewRadev/linediff.vim
   MP 'AndrewRadev/linediff.vim'
   "}
-  "
   "{dyng/ctrlsf.vim
   " MP 'dyng/ctrlsf.vim'
   "}
@@ -95,11 +94,11 @@ if g:spacevim.timer
   MP 'voldikss/vim-search-me'
   MP 'tyru/open-browser.vim'
   "}
+  "{voldikss/vim-codelf
+  MP 'voldikss/vim-codelf'
+  "}
   "{voldikss/vim-translate-me
   MP 'voldikss/vim-translate-me'
-  "}
-  "{machakann/vim-highlightedyank
-  " MP 'machakann/vim-highlightedyank'
   "}
   call timer_start(1400,'spacevim#defer#awesome_tools')
 

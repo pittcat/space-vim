@@ -104,9 +104,6 @@
   vmap <silent> <leader>yr <Plug>TranslateRV
   let g:vtm_default_mapping=0
   " }
-  "{machakann/vim-highlightedyank
-  " if !exists('##TextYankPost')
-    " map y <Plug>(highlightedyank)
-  " endif
-  " let g:highlightedyank_highlight_duration = 1000
-  "}
+  " {voldikss/vim-codelf
+  nnoremap <localleader>cd :Codef 
+  " }
