@@ -105,5 +105,5 @@
   let g:vtm_default_mapping=0
   " }
   " {voldikss/vim-codelf
-  nnoremap <localleader>cd :Codef 
+  nnoremap <localleader>cd :Codelf 
   " }
