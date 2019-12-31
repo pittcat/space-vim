@@ -1,5 +1,6 @@
-let g:neoterm_default_mod='verbose'
-let g:neoterm_autojump=1
-let g:neoterm_keep_term_open=0
-tnoremap <C-\> <C-\><C-n>
-nnoremap <leader>' :Topen <CR>
+let g:floaterm_keymap_new    = "<leader>'"
+let g:floaterm_keymap_prev   = '<localleader>tp'
+let g:floaterm_keymap_next   = '<localleader>tn'
+let g:floaterm_keymap_toggle = '<localleader>tg'
+autocmd User Startified setlocal buflisted
+let g:floaterm_position =  'topright'

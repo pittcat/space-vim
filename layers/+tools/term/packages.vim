@@ -1,1 +1,1 @@
-MP 'kassio/neoterm'
+Plug 'voldikss/vim-floaterm'
