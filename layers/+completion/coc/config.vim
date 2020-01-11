@@ -4,8 +4,12 @@ set cmdheight=2
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-" let g:coc_snippet_next = '<A-j>'
-" let g:coc_snippet_prev = '<A-k>'
+let g:coc_global_extensions=['coc-ultisnips','coc-pairs','coc-yank','coc-word',
+      \'coc-java','coc-rls',
+      \'coc-python','coc-css','coc-html',
+      \'coc-tsserver','coc-json']
+let g:coc_snippet_next = '<C-j>'
+let g:coc_snippet_prev = '<C-k>'
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>

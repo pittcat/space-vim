@@ -2,7 +2,6 @@ MP 'neoclide/coc.nvim', {'tag': '*','branch': 'release','on_event': ['CursorHold
 MP 'Shougo/neco-vim',{'for':'vim','on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
 MP 'neoclide/coc-neco',{'for':'vim','on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
 MP 'tjdevries/coc-zsh',{'for':'zsh'}
-MP 'wellle/tmux-complete.vim'
 " MP 'Shougo/neoinclude.vim',{'for':['c','cpp',],'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter']}
 " MP 'jsfaint/coc-neoinclude',{'for':['c','cpp',],'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter']}
 "
