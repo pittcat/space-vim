@@ -1,1 +1,0 @@
-/home/pittcat/MEGA/code/dotfiles/space-vim/private/README.md
