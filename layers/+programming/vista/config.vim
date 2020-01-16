@@ -1,7 +1,7 @@
 nnoremap <F6> :Vista!!<CR>
 inoremap <F6> <ESC>:Vista!!<CR>
 nnoremap <Leader>tb :Vista!!<CR>
-nnoremap <Leader>vf :Vista finder lcn<CR>
+nnoremap <Leader>vf :Vista finder coc<CR>
 
 let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
 
@@ -13,10 +13,10 @@ let g:vista_default_executive = 'ctags'
 " instead of the default one for these filetypes when using `:Vista` without
 " specifying the executive.
 let g:vista_executive_for = {
-  \ 'cpp': 'lcn',
-  \ 'c': 'lcn',
-  \ 'php': 'lcn',
-  \ 'python': 'lcn',
+  \ 'cpp': 'coc',
+  \ 'c': 'coc',
+  \ 'php': 'coc',
+  \ 'python': 'coc',
   \ }
 
 " Declare the command including the executable and options used to generate ctags output
