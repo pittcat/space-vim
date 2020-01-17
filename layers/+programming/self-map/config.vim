@@ -1,3 +1,5 @@
+"use wild menu
+set wildmode=longest,full
 "{create new tab 
 function! AddNewFile()
   let l:filename = input('new file name(based on pwd):','')
