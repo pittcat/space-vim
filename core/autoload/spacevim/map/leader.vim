@@ -135,7 +135,6 @@ let g:spacevim#map#leader#desc['s'] = {
 let g:spacevim#map#leader#desc['t'] = {
       \ 'name' : '+toggle',
       \ 'g' : ['GitGutterToggle', 'gitgutter'],
-      \ 't' : ['TagbarToggle', 'tagbar'],
       \ 'c' : ['spacevim#util#ToggleCursorColumn()', 'cursor-column'],
       \ 'C' : ['spacevim#util#ToggleColorColumn()', 'color-column'],
       \ }

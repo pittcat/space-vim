@@ -1,7 +1,7 @@
 " defx conf
 nnoremap <silent> <F4> :Defx<CR>
 nnoremap <silent> <leader>ft :Defx<CR>
-command! DefxPwd Defx `expand('%:p:h')` -search=`expand('%:p')` -split=vertical -winwidth=30 -direction=topleft -columns=git:mark:filename:type
+command! DefxPwd Defx `expand('%:p:h')` -search=`expand('%:p')`
 noremap <silent> <leader>nc :DefxPwd<cr>
 
 call defx#custom#option('_', {

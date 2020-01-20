@@ -11,6 +11,7 @@
   "coc.source.emoji.filetypes": ["markdown"],
   "coc.source.neoinclude.filetypes": ["c", "cpp"],
   "pairs.enableCharacters": ["(", "[", "{", "'", "\"", "`"],
+  "yank.enableCompletion": false,
   "python.jediEnabled": false,
   "lua.commandPath": "/usr/local/bin/lua-lsp",
   "languageserver": {
