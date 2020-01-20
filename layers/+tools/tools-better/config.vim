@@ -1,19 +1,5 @@
   "tpope/vim-eunuch
-  "{rename and mkdir
-function! RenameFile()
-    let old_name = expand('%')
-    let new_dir = expand('%:h')
-    let new_name = input('New file name: ', expand('%'))
-
-    if new_name != '' && new_name != old_name
-        exec ':saveas ' . new_name
-        exec ':silent !rm ' . old_name
-        redraw!
-    endif
-endfunction
-
-
-  noremap <leader>rn :call RenameFile()<cr>
+  "{mkdir
   function! CreateDirectory()
     let l:directory = input('new directory name:','')
     if(empty(l:directory)) | return | endif
