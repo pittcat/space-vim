@@ -1,1 +1,1 @@
-" MP 'vim-jp/vim-java',{'for':'java'}
+MP 'uiiaoo/java-syntax.vim',{'for':'java'}
