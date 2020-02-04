@@ -33,6 +33,6 @@
 
   if exists('*nvim_open_win')
     let $FZF_DEFAULT_OPTS = '--layout=reverse'
-    let g:fzf_layout = { 'window': 'call spacevim#plug#fzf#FloatingWin()' }
-  else
+    let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
+  endif
   " }
