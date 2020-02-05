@@ -62,5 +62,6 @@
       "filetypes": ["hs", "lhs", "haskell"],
       "initializationOptions": {}
     }
-  }
+  },
+  "template.templatesDirectory": "~/.space-vim/templates"
 }
