@@ -14,6 +14,7 @@ let g:clap_provider_quick_open = {
 nmap <Leader>? :Clap maps<CR>
 nnoremap <Leader>bb :Clap buffers<CR>
 nnoremap <Leader>ff :Clap files<CR>
+nnoremap <Leader>fv :Clap filer<CR>
 nnoremap <Leader>w? :Clap windows<CR>
 nnoremap <silent> <leader>ct :Clap tags<cr>
 nnoremap <Leader>rg :Clap grep<cr>
