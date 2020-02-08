@@ -12,6 +12,7 @@
   nnoremap <Leader>b? :Buffers<CR>
   nnoremap <Leader>w? :Windows<CR>
   nnoremap <Leader>f? :Files<CR>
+  nnoremap <Leader>ff :FilesPwd<CR>
 
   nnoremap <silent> <Leader>sf :call spacevim#plug#fzf#Session()<CR>
   nnoremap <Leader>fep :Files ~/MEGA/code/dotfiles<CR>
