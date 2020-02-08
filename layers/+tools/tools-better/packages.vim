@@ -33,13 +33,6 @@ if g:spacevim.timer
 
   call timer_start(750,'spacevim#defer#filemanage')
 
-  "{
-  MP 'tweekmonster/fzf-filemru'
-  "}
-
-  call timer_start(850,'spacevim#defer#copy_and_paste')
-
-
   "{tpope/vim-repeat
   MP 'tpope/vim-repeat'
   "}

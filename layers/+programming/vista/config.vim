@@ -1,7 +1,12 @@
 nnoremap <F6> :Vista!!<CR>
 inoremap <F6> <ESC>:Vista!!<CR>
 nnoremap <Leader>tb :Vista!!<CR>
-nnoremap <Leader>vf :Vista finder coc<CR>
+if spacevim#load('clap')
+  nnoremap <Leader>vf :Clap tags<CR>
+elseif spacevim#load('fzf')
+  nnoremap <Leader>vf :Vista finder fzf<CR>
+  let g:vista_fzf_preview = ['right:50%']
+endif
 
 let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
 
@@ -28,7 +33,6 @@ let g:vista_ctags_cmd = {
 " To enable fzf's preview window set g:vista_fzf_preview.
 " The elements of g:vista_fzf_preview will be passed as arguments to fzf#vim#with_preview()
 " For example:
-let g:vista_fzf_preview = ['right:50%']
 
 
 

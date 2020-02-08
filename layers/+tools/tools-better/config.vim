@@ -47,9 +47,6 @@
   " endfun
     "}
     "
-   "{tweekmonster/fzf-filemru 
-  noremap <silent> <leader>fr :FilesMru<cr>
-   "}
    "
   " }
  "  {dhruvasagar/vim-table-mode

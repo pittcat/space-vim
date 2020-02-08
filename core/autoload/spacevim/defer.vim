@@ -103,11 +103,6 @@ function! spacevim#defer#fugitive(timer) abort
   call s:lod('vim-fugitive','vim-githubinator')
 endfunction
 
-" 850
-function! spacevim#defer#copy_and_paste(timer) abort
-  call s:lod('fzf-filemru','fzf-proj.vim')
-endfunction
-
 " 900
 function! spacevim#defer#operation_freestyle(timer) abort
   call s:lod('vim-repeat','tabman.vim','BufOnly.vim','splitjoin.vim','vim-smooth-scroll','change-inside-surroundings.vim','linediff.vim')

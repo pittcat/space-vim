@@ -79,7 +79,7 @@ let g:spacevim#map#leader#desc['e'] = {
       \ }
 
 let g:spacevim#map#leader#desc['f'] = {
-      \ 'name' : '+fzf/fold',
+      \ 'name' : 'fold',
       \ '0' : ['set foldlevel=0', '0-fold-level'],
       \ '1' : ['set foldlevel=1', '1-fold-level'],
       \ '2' : ['set foldlevel=2', '2-fold-level'],
@@ -92,10 +92,6 @@ let g:spacevim#map#leader#desc['f'] = {
       \ '9' : ['set foldlevel=9', '9-fold-level'],
       \ 's' : ['save', 'save-file'],
       \ 'R' : ['source $MYVIMRC', 'reload-vimrc'],
-      \ '?' : ['FilesHome','Home Files'],
-      \ 'f' : ['FilesPwd','PWD Files'],
-      \ 'l' : ['BLines','BLines'],
-      \ 'b' : ['Btags','Btags'],
       \ }
 
 let g:spacevim#map#leader#desc['g'] = {
