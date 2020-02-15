@@ -1,6 +1,7 @@
 let g:clap_layout = { 'width': '70%', 'col': '15%','row': '30%'}
 let g:clap_theme = 'material_design_dark'
 let g:clap_enable_icon=1
+let g:clap_disable_run_rooter=v:true
 
 
 
