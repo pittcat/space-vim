@@ -33,3 +33,4 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <silent> <localleader>rn <Plug>(coc-rename)
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
+nnoremap <silent> <leader>rn :CocCommand workspace.renameCurrentFile<cr>
