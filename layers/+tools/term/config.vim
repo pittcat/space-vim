@@ -10,9 +10,9 @@ tnoremap <silent> <C-[><C-[> <C-\><C-n> augroup terminal_settings
 nnoremap <silent> <Leader>' :Deol<CR>
 
 
-function! OpenVterm()
+function! s:openvterm()
   let cwd=fnamemodify('.', ':p')
   execute 'Deol' '-cwd='.cwd '-split=vertical'
 endfunction
-nnoremap <silent> <Leader>vt :call OpenVterm()<cr>
-
+command! -bang OVterm call s:openvterm()
+nnoremap <silent> <Leader>v' :OVtermcr>
