@@ -6,12 +6,12 @@ augroup terminal_settings
         \ endif
 augroup END
 
-tnoremap <silent> <C-[><C-[> <C-\><C-n> augroup terminal_settings
+tnoremap <silent> <C-[><C-[> <C-\><C-n>
 nnoremap <silent> <Leader>' :Deol<CR>
 
 
 function! s:openvterm()
-  let cwd=fnamemodify('.', ':p')
+  let cwd=fnamemodify(expand('%'), ':h')
   execute 'Deol' '-cwd='.cwd '-split=vertical'
 endfunction
 command! -bang OVterm call s:openvterm()
