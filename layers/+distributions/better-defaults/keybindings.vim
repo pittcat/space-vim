@@ -36,7 +36,7 @@ nnoremap <silent><Leader>bh :Startify<CR>
 nnoremap <Leader>xd :StripWhitespace<CR>
 
 " vim-choosewin
-nmap <Leader>ww <Plug>(choosewin)
+nmap <Leader>cw <Plug>(choosewin)
 
 " util
 nnoremap <Leader>tc :call spacevim#util#ToggleCursorColumn()<CR>

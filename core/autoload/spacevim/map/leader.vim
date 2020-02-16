@@ -41,8 +41,7 @@ let g:spacevim#map#leader#desc[' '] = {
       \ }
 
 let g:spacevim#map#leader#desc['a'] = {
-      \ 'name' : '+ag/',
-      \ 'g' : ['PCAg','ag-project'],
+      \ 'name' : '+save/',
       \ 's' : ['AutoSaveToggle','toogle-auto-save']
       \ }
 
