@@ -2,7 +2,7 @@
 // FileName: %FFILE%
 // Descrption:
 // Author: %USER% <%MAIL%>
-// GitHub: https://github.com/voldikss
+// GitHub: https://github.com/pittcat
 //============================================================================
 
 #include <stdio.h>

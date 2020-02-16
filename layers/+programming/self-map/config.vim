@@ -7,7 +7,6 @@ function! AddNewFile()
   let l:path='$PWD'.'/'.l:filename
   silent execute '!touch' l:path
   execute 'edit' l:path
-  silent! call spacevim#vim#auto#AddTitle()
 endfunction
 nmap <leader>nb :call AddNewFile()<cr>
 function! AddNewFileBSB()
@@ -17,7 +16,6 @@ function! AddNewFileBSB()
   let l:path=expand('%:p:h').'/'.l:filename
   silent execute '!touch' l:path
   execute 'edit' l:path
-  silent! call spacevim#vim#auto#AddTitle()
 endfunction
 nmap <leader>nf :call AddNewFileBSB()<cr>
 "}
@@ -64,9 +62,6 @@ nnoremap <silent> <leader>fS :wa!<cr>
 "}
 "{
 set mouse=a
-"}
-"{ generate title
-nnoremap <silent> <leader>gT :call spacevim#vim#auto#AddTitle()<cr>
 "}
 "{
 nnoremap <silent> <localleader>BD :bd!<cr>

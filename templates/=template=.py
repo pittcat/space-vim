@@ -2,6 +2,6 @@
 # FileName: %FFILE%
 # Description: 
 # Author: %USER%
-# GitHub: https://github.com/voldikss
+# GitHub: https://github.com/pittcat
 # ========================================================================
 %HERE%
