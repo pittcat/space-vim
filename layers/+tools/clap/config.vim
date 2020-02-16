@@ -37,3 +37,5 @@ function! MyClapOnEnter() abort
 endfunction
 
 autocmd User ClapOnEnter call MyClapOnEnter()
+
+autocmd FileType clap_input inoremap <silent> <buffer> <Esc> <Esc>:call clap#handler#exit()<CR>
