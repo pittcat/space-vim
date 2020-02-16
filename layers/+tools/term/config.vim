@@ -1,8 +1,18 @@
-let g:floaterm_keymap_new    = "<leader>'"
-let g:floaterm_keymap_prev   = '<localleader>tp'
-let g:floaterm_keymap_next   = '<localleader>tn'
-let g:floaterm_keymap_toggle = '<localleader>tg'
-autocmd User Startified setlocal buflisted
-let g:floaterm_position = 'topright'
-let g:floaterm_height = 0.9
-let g:floaterm_width  = 0.5
+augroup terminal_settings
+  autocmd!
+  autocmd TermClose term://*
+        \ if (expand('<afile>') !~ "fzf") && (expand('<afile>') !~ "ranger") && (expand('<afile>') !~ "coc") |
+        \   call nvim_input('<CR>')  |
+        \ endif
+augroup END
+
+tnoremap <silent> <C-[><C-[> <C-\><C-n> augroup terminal_settings
+nnoremap <silent> <Leader>' :Deol<CR>
+
+
+function! OpenVterm()
+  let cwd=fnamemodify('.', ':p')
+  execute 'Deol' '-cwd='.cwd '-split=vertical'
+endfunction
+nnoremap <silent> <Leader>vt :call OpenVterm()<cr>
+

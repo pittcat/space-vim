@@ -1,1 +1,1 @@
-Plug 'voldikss/vim-floaterm'
+Plug 'Shougo/deol.nvim'
