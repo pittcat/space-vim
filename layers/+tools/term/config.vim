@@ -15,4 +15,4 @@ function! s:openvterm()
   execute 'Deol' '-cwd='.cwd '-split=vertical'
 endfunction
 command! -bang OVterm call s:openvterm()
-nnoremap <silent> <Leader>v' :OVtermcr>
+nnoremap <silent> <Leader>v' :OVterm<cr>
