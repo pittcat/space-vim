@@ -26,7 +26,7 @@ let g:gutentags_ctags_extra_args += ['--output-format=e-ctags']
 
 " gtags
 let $GTAGSLABEL = 'native-pygments'
-let $GTAGSCONF = '/usr/share/gtags/gtags.conf'
+let $GTAGSCONF = '/usr/local/share/gtags/gtags.conf'
 
 "cscope
 " if has_key(g:plugs, 'cscope.vim')
