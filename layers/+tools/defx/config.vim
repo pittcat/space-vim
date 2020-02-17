@@ -5,7 +5,7 @@ command! DefxPwd Defx `expand('%:p:h')` -search=`expand('%:p')`
 noremap <silent> <leader>nc :DefxPwd<cr>
 
 call defx#custom#option('_', {
-      \ 'winwidth': 30,
+      \ 'winwidth': 40,
       \ 'split': 'vertical',
       \ 'direction': 'topleft',
       \ 'show_ignored_files': 0,
