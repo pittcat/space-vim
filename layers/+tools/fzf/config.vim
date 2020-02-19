@@ -11,6 +11,7 @@
   
   nnoremap <Leader>b? :FzfPreviewBuffers<CR>
   nnoremap <Leader>w? :Windows<CR>
+  nnoremap <Leader>f? :FZF<CR>
   nnoremap <Leader>ff :FzfPreviewDirectoryFiles<CR>
   nnoremap <Leader>pf :FzfPreviewProjectFiles<CR><CR>
 
