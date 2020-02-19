@@ -2,6 +2,7 @@
   let $LANG = 'en_US'
   " Customize fzf colors to match your color scheme
   let g:fzf_colors = g:spacevim#plug#fzf#colors
+  let g:fzf_history_dir=g:spacevim#plug#fzf#fzf_history_dir
   nmap <Leader>? <plug>(fzf-maps-n)
   xmap <Leader>? <plug>(fzf-maps-x)
   omap <Leader>? <plug>(fzf-maps-o)
@@ -18,16 +19,9 @@
   nnoremap <silent> <leader>ct :FzfPreviewBufferTags<cr>
   nnoremap <silent> <leader>ls :Lines<cr>
 
-  nnoremap <leader>rg :exec 'FzfPreviewProjectGrep ' . expand("<cword>")<cr>
-  nnoremap <localleader>rg :Rg!<cr>
-  vnoremap <leader>rg :<c-u>call spacevim#plug#fzf#RgVisual()<cr>
+  nnoremap <leader>rg :FPRG<cr>
+  nnoremap <localleader>rg :FzfPreviewProjectGrep 
 
-  if g:spacevim.nvim
-    autocmd! FileType fzf tnoremap  <Esc> <Esc>
-  endif
+  nnoremap <leader>fh :History:<cr>
 
-  if exists('*nvim_open_win')
-    let $FZF_DEFAULT_OPTS = '--layout=reverse'
-    let g:fzf_layout = {'window':'call fzf_preview#window#create_centered_floating_window()'}
-  endif
   " }
