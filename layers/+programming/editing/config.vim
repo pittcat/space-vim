@@ -46,7 +46,7 @@ let g:VM_mouse_mappings = 1
 " {unblevable/quick-scope
   nmap <localleader>qs <plug>(QuickScopeToggle)
   xmap <localleader>qs <plug>(QuickScopeToggle)
-  let g:qs_highlight_on_keys = ['t', 'T','f','F']
+  let g:qs_highlight_on_keys = ['t', 'T']
   augroup qs_colors
     autocmd!
     autocmd ColorScheme * highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline

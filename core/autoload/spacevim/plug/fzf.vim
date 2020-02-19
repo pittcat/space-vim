@@ -13,13 +13,11 @@ let g:spacevim#plug#fzf#colors = {
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
-let g:fzf_layout = { 'down': '~40%'  }
 
 " Steal from fzf.vim
 " ------------------------------------------------------------------
 " Common
 " ------------------------------------------------------------------
-let s:is_win = has('win32') || has('win64')
 let s:layout_keys = ['window', 'up', 'down', 'left', 'right']
 let s:TYPE = {'dict': type({}), 'funcref': type(function('call')), 'string': type(''), 'list': type([])}
 
@@ -189,9 +187,6 @@ function! s:align_lists(lists)
   return a:lists
 endfunction
 
-command! FilesPwd Files $PWD
-
-command! FilesHome Files ~
 
 command! -bang -nargs=* Ag
             \ call fzf#vim#ag(<q-args>,
@@ -208,25 +203,6 @@ command! -bang -nargs=* Rg
 
 
 
-command! -bang -nargs=* PCAg
-  \ call fzf#vim#ag(expand('<cword>'),
-  \                 <bang>1 ? fzf#vim#with_preview('up:60%')
-  \                         : fzf#vim#with_preview('right:50%:hidden', '?'),
-  \                 <bang>1)
-
-
-command! -bang -nargs=* PCRg
-  \ call fzf#vim#grep(
-  \   'rg --column --line-number --no-heading --color=always '.shellescape(expand('<cword>')), 1,
-  \   <bang>0 ? fzf#vim#with_preview('up:70%')
-  \           : fzf#vim#with_preview('right:50%:hidden', '?'),
-  \   <bang>0)
-
-
-" Likewise, Files command with preview window
-command! -bang -nargs=? -complete=dir Files
-  \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
-" }
 
 function! spacevim#plug#fzf#Session()
   call fzf#run({
@@ -436,21 +412,18 @@ function! spacevim#plug#fzf#Jumps(...)
 endfunction
 
 " Search visually selected
-function! spacevim#plug#fzf#ag_vsearch()
-  let vselection = spacevim#util#VisualSelection()
-  call fzf#vim#ag(
-        \ vselection,{
-        \ 'dir': spacevim#util#RootDirectory(),
-        \ 'options': '--ansi --delimiter : --nth 4..,.. --prompt "?'.vselection.'> " '.
-        \            '--color hl:68,hl+:110 --multi '.
-        \            '--bind=ctrl-d:page-down,ctrl-u:page-up ',
-        \ },)
-endfunction
+" function! spacevim#plug#fzf#ag_vsearch()
+  " let vselection = spacevim#util#VisualSelection()
+  " call fzf#vim#ag(
+        " \ vselection,{
+        " \ 'dir': spacevim#util#RootDirectory(),
+        " \ 'options': '--ansi --delimiter : --nth 4..,.. --prompt "?'.vselection.'> " '.
+        " \            '--color hl:68,hl+:110 --multi '.
+        " \            '--bind=ctrl-d:page-down,ctrl-u:page-up ',
+        " \ },)
+" endfunction
 
 function! spacevim#plug#fzf#RgVisual()
   let l:query = spacevim#util#VisualSelection()
-  call fzf#vim#grep(
-        \ 'rg --column --line-number --no-heading --color=always --smart-case '.l:query, 1,
-        \ )
 endfunction
 

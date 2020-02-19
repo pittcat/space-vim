@@ -6,24 +6,19 @@
   xmap <Leader>? <plug>(fzf-maps-x)
   omap <Leader>? <plug>(fzf-maps-o)
 
-  nnoremap <Leader>bb :Buffers<CR>
+  nnoremap <Leader>bb :FzfPreviewBuffers<CR>
   
-  nnoremap <Leader>pf :call spacevim#plug#fzf#FindFileInProject()<cr>
-  nnoremap <Leader>b? :Buffers<CR>
+  nnoremap <Leader>b? :FzfPreviewBuffers<CR>
   nnoremap <Leader>w? :Windows<CR>
-  nnoremap <Leader>f? :Files<CR>
-  nnoremap <Leader>ff :FilesPwd<CR>
+  nnoremap <Leader>ff :FzfPreviewDirectoryFiles<CR>
+  nnoremap <Leader>pf :FzfPreviewProjectFiles<CR>
+  nnoremap <Leader>fr :FzfPreviewProjectFiles<CR>
 
   nnoremap <silent> <Leader>sf :call spacevim#plug#fzf#Session()<CR>
-  nnoremap <Leader>fep :Files ~/MEGA/code/dotfiles<CR>
-  nnoremap <Leader>fes :Files ~/MEGA/code/dotfiles/space-vim/UltiSnips<CR>
-  nnoremap <silent> <leader>ct :Tags<cr>
+  nnoremap <silent> <leader>ct :FzfPreviewBufferTags<cr>
   nnoremap <silent> <leader>ls :Lines<cr>
 
-  nnoremap <localleader>ag :Ag!<CR>
-  vnoremap <leader>ag :<c-u>call spacevim#plug#fzf#ag_vsearch()<cr>
-
-  nnoremap <leader>rg :PCRg!<cr>
+  nnoremap <leader>rg :exec 'FzfPreviewProjectGrep ' . expand("<cword>")<cr>
   nnoremap <localleader>rg :Rg!<cr>
   vnoremap <leader>rg :<c-u>call spacevim#plug#fzf#RgVisual()<cr>
 
@@ -33,6 +28,6 @@
 
   if exists('*nvim_open_win')
     let $FZF_DEFAULT_OPTS = '--layout=reverse'
-    let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
+    let g:fzf_layout = {'window':'call fzf_preview#window#create_centered_floating_window()'}
   endif
   " }

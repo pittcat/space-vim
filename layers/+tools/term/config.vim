@@ -6,7 +6,6 @@ augroup terminal_settings
         \ endif
 augroup END
 
-tnoremap <silent> <C-[><C-[> <C-\><C-n>
 nnoremap <silent> <Leader>' :Deol<CR>
 
 
