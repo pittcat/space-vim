@@ -12,8 +12,7 @@
   nnoremap <Leader>b? :FzfPreviewBuffers<CR>
   nnoremap <Leader>w? :Windows<CR>
   nnoremap <Leader>ff :FzfPreviewDirectoryFiles<CR>
-  nnoremap <Leader>pf :FzfPreviewProjectFiles<CR>
-  nnoremap <Leader>fr :FzfPreviewProjectFiles<CR>
+  nnoremap <Leader>pf :FzfPreviewProjectFiles<CR><CR>
 
   nnoremap <silent> <Leader>sf :call spacevim#plug#fzf#Session()<CR>
   nnoremap <silent> <leader>ct :FzfPreviewBufferTags<cr>
@@ -25,3 +24,4 @@
   nnoremap <leader>fh :History:<cr>
 
   " }
+

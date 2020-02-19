@@ -42,3 +42,7 @@ endif
 
 
 command! FPRG exec 'FzfPreviewProjectGrep ' . expand("<cword>")
+
+
+" yuki-ycino/fzf-preview.vim
+let g:fzf_preview_command = 'bat --color=always --style=grid {-1}'
