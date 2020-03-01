@@ -76,8 +76,8 @@ if g:spacevim.timer
   "{dietsche/vim-lastplace
   MP 'dietsche/vim-lastplace'
   "}
-  " {lilydjwg/fcitx.vim
-  MP 'lilydjwg/fcitx.vim',{'for':'markdown'}
+  " {StrayDragon/vim-smartim
+  MP 'StrayDragon/vim-smartim'
   " }
   "{KabbAmine/zeavim.vim
   MP 'KabbAmine/zeavim.vim'
