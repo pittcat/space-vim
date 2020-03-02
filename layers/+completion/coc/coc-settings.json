@@ -5,7 +5,7 @@
   "suggest.acceptSuggestionOnCommitCharacter": true,
   "suggest.snippetIndicator": "►",
   "suggest.minTriggerInputLength": 1,
-  "codeLens.enable": true,
+  "codeLens.enable": false,
   "diagnostic.enable": false,
   "coc.source.word.filetypes": ["markdown", "latex"],
   "coc.source.emoji.filetypes": ["markdown"],
@@ -25,7 +25,12 @@
         ".hg/"
       ],
       "initializationOptions": {
-        "cacheDirectory": "/tmp/ccls"
+        "cache": {
+          "directory": "/tmp/ccls"
+        },
+        "client": {
+          "snippetSupport": true
+        }
       }
     }
   },
