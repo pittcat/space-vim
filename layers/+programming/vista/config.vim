@@ -8,6 +8,10 @@ elseif spacevim#load('fzf')
   let g:vista_fzf_preview = ['right:50%']
 endif
 
+
+
+let g:vista_sidebar_position = 'vertical topleft'
+let g:vista_sidebar_width = 40
 let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
 
 " Executive used when opening vista sidebar without specifying it.
@@ -18,10 +22,10 @@ let g:vista_default_executive = 'ctags'
 " instead of the default one for these filetypes when using `:Vista` without
 " specifying the executive.
 let g:vista_executive_for = {
-  \ 'cpp': 'coc',
-  \ 'c': 'coc',
-  \ 'php': 'coc',
-  \ 'python': 'coc',
+  \ 'cpp': 'ctags',
+  \ 'c': 'ctags',
+  \ 'php': 'ctags',
+  \ 'python': 'ctags',
   \ }
 
 " Declare the command including the executable and options used to generate ctags output

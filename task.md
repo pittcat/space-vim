@@ -2,6 +2,8 @@
 
 #### https://github.com/skywind3000/asynctasks.vim
 #### https://github.com/puremourning/vimspector
+#### https://github.com/AndrewRadev/tagalong.vim
+#### https://github.com/kyazdani42/highlight.lua
 #### ludovicchabant/vim-gutentags
 ```
 let s:vim_tags = expand('~/.cache/tags')
