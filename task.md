@@ -31,3 +31,5 @@ endif
 #### 学习插件
 xtal8/traces.vim
 google/vim-searchindex
+
+

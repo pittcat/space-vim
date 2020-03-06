@@ -25,12 +25,6 @@ if g:spacevim.timer
   "{tpope/vim-eunuch'
   MP 'tpope/vim-eunuch'
   "}
-  "{
-  MP 'justinmk/vim-gtfo'
-  " got--------->terminal or tmux
-  " gof--------->file manager
-  "}
-
   call timer_start(750,'spacevim#defer#filemanage')
 
   "{tpope/vim-repeat
