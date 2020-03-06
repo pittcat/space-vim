@@ -1,0 +1,1 @@
+MP 'Shougo/deol.nvim'

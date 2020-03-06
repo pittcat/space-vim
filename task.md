@@ -4,6 +4,7 @@
 #### https://github.com/puremourning/vimspector
 #### https://github.com/AndrewRadev/tagalong.vim
 #### https://github.com/kyazdani42/highlight.lua
+#### https://github.com/gpanders/vim-medieval
 #### ludovicchabant/vim-gutentags
 ```
 let s:vim_tags = expand('~/.cache/tags')
@@ -26,3 +27,7 @@ endif
 ```
 
 有时候需要清空 ./cache/tags解决错误
+
+#### 学习插件
+xtal8/traces.vim
+google/vim-searchindex

@@ -105,7 +105,7 @@ endfunction
 
 " 900
 function! spacevim#defer#operation_freestyle(timer) abort
-  call s:lod('vim-repeat','tabman.vim','BufOnly.vim','splitjoin.vim','vim-smooth-scroll','change-inside-surroundings.vim','linediff.vim')
+  call s:lod('vim-repeat','BufOnly.vim','splitjoin.vim','vim-smooth-scroll','change-inside-surroundings.vim','linediff.vim')
 endfunction
 
 " 1400

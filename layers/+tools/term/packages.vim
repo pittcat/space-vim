@@ -1,1 +1,0 @@
-Plug 'Shougo/deol.nvim'
