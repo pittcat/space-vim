@@ -5,7 +5,7 @@ scriptencoding utf-8
     if @%=='Startify' || @%==''
       echo 'No Git Add'
     else
-      execute 'Git! add .' 
+      execute 'Git add .' 
     endif
   endfunction
 
