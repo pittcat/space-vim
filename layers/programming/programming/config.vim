@@ -46,12 +46,6 @@ scriptencoding utf-8
   noremap <silent> <Leader>ti :IndentLinesToggle<cr>
 " }
 
-
-" vim-polyglot {
-  " Reset errorformat to its default value for cooperating with asyncrun.vim
-  autocmd BufEnter * set errorformat&
-" }
-
 " vim-rooter {
   " To stop vim-rooter echoing the project directory
   let g:rooter_silent_chdir = 1
