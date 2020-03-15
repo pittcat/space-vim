@@ -4,7 +4,7 @@ set cmdheight=2
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-let g:coc_global_extensions=['coc-explorer','coc-snippets','coc-pairs','coc-yank','coc-word',
+let g:coc_global_extensions=['coc-snippets','coc-pairs','coc-yank','coc-word',
       \'coc-rls','coc-template','coc-python','coc-sh','coc-json']
 let g:coc_snippet_next = '<C-j>'
 let g:coc_snippet_prev = '<C-k>'
