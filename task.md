@@ -23,8 +23,13 @@ endif
 if executable('gtags-cscope') && executable('gtags')
 	let g:gutentags_modules += ['gtags_cscope']
 endif
-
 ```
+
+#### diagnosis support for floating window
+- https://github.com/dense-analysis/ale/issues/2418
+- https://github.com/iamcco/coc-diagnostic
+
+
 
 有时候需要清空 ./cache/tags解决错误
 
