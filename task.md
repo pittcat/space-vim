@@ -1,11 +1,11 @@
 ### 周末做小调整，不做大更新，两个月做一次大的更新，添加新的特性的插件等等
 
-#### https://github.com/skywind3000/asynctasks.vim
-#### https://github.com/puremourning/vimspector
-#### https://github.com/AndrewRadev/tagalong.vim
-#### https://github.com/kyazdani42/highlight.lua
-#### https://github.com/gpanders/vim-medieval
-#### ludovicchabant/vim-gutentags
+#### https://github.com/skywind3000/asynctasks.vim(M)
+#### https://github.com/puremourning/vimspector(L)
+#### https://github.com/AndrewRadev/tagalong.vim(S)
+#### https://github.com/kyazdani42/highlight.lua(L)
+#### https://github.com/gpanders/vim-medieval(S)
+#### ludovicchabant/vim-gutentags(S)
 ```
 let s:vim_tags = expand('~/.cache/tags')
 if !isdirectory(s:vim_tags)
@@ -25,7 +25,7 @@ if executable('gtags-cscope') && executable('gtags')
 endif
 ```
 
-#### diagnosis support for floating window
+#### diagnosis support for floating window(L)
 - https://github.com/dense-analysis/ale/issues/2418
 - https://github.com/iamcco/coc-diagnostic
 
