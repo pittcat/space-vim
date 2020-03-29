@@ -1,17 +1,6 @@
-augroup terminal_settings
-  autocmd!
-  autocmd TermClose term://*
-        \ if (expand('<afile>') !~ "fzf") && (expand('<afile>') !~ "ranger") && (expand('<afile>') !~ "coc") |
-        \   call nvim_input('<CR>')  |
-        \ endif
-augroup END
-
-nnoremap <silent> <Leader>' :Deol<CR>
-
-
-function! s:openvterm()
-  let cwd=fnamemodify(expand('%'), ':h')
-  execute 'Deol' '-cwd='.cwd '-split=vertical'
-endfunction
-command! -bang OVterm call s:openvterm()
-nnoremap <silent> <Leader>v' :OVterm<cr>
+let g:floaterm_position='topright'
+let g:floaterm_keymap_new="<Leader>'"
+let g:floaterm_keymap_toggle = '<F12>'
+let g:floaterm_width=0.5
+let g:floaterm_height=0.8
+autocmd User Startified setlocal buflisted

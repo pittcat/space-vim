@@ -1,1 +1,1 @@
-MP 'Shougo/deol.nvim'
+MP 'voldikss/vim-floaterm'
