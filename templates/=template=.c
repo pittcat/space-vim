@@ -1,10 +1,3 @@
-//============================================================================
-// FileName: %FFILE%
-// Descrption:
-// Author: %USER% <%MAIL%>
-// GitHub: https://github.com/pittcat
-//============================================================================
-
 #include <stdio.h>
 #include <stdlib.h>
 

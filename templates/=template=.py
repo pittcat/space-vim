@@ -1,7 +1,3 @@
-# ========================================================================
-# FileName: %FFILE%
-# Description: 
-# Author: %USER%
-# GitHub: https://github.com/pittcat
-# ========================================================================
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 %HERE%
