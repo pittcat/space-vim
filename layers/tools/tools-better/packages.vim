@@ -57,9 +57,6 @@ if g:spacevim.timer
   "}
   call timer_start(900,'spacevim#defer#operation_freestyle')
 
-  "{
-  MP 'chr4/nginx.vim'                 "nginx高亮
-  "}
   "{dhruvasagar/vim-table-mode
   MP 'dhruvasagar/vim-table-mode',{'for':'markdown'}
   "}
