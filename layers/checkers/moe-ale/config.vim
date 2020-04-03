@@ -20,7 +20,8 @@ let g:ale_linters={
           \ 'sql' : ['sqlint'],
           \ 'ocaml':['ols'],
           \ 'lua' : ['luacheck'],
-          \ 'tex' :['chktex']
+          \ 'tex' : ['chktex']
+          \ 'cmake' : ['cmakelint']
           \}
 
 let g:ale_fixers = {
@@ -48,6 +49,7 @@ let g:ale_fixers = {
           \ 'ocaml': ['ocamlformat'],
           \ 'tex' : ['textlint'],
           \ 'lua' : ['remove_trailing_lines']
+          \ 'cmake' : ['cmakeformat']
 \}
 let g:ale_echo_msg_format = '[#%linter%#] %s [%severity%]'
 let g:ale_statusline_format = ['E•%d', 'W•%d', 'OK']
