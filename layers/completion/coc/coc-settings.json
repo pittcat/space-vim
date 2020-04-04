@@ -14,5 +14,6 @@
   "yank.enableCompletion": false,
   "python.jediEnabled": false,
   "languageserver": {},
-  "template.templatesDirectory": "~/.space-vim/templates"
+  "template.templatesDirectory": "~/.space-vim/templates",
+  "explorer.icon.enableNerdfont":true
 }

@@ -25,6 +25,6 @@ let g:sidebars = {
   \ }
   \ }
 
-noremap <silent> <M-1> :call sidebar#toggle('defx')<CR>
+noremap <silent> <M-1> :call sidebar#toggle('coc-explorer')<CR>
 noremap <silent> <M-2> :call sidebar#toggle('vista')<CR>
 noremap <silent> <M-3> :call sidebar#toggle('undotree')<CR>
