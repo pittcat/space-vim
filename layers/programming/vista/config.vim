@@ -4,7 +4,7 @@ nnoremap <Leader>tb :Vista!!<CR>
 if spacevim#load('clap')
   nnoremap <Leader>vf :Clap tags<CR>
 elseif spacevim#load('fzf')
-  nnoremap <Leader>vf :BTags<CR>
+  nnoremap <Leader>vf :Vista finder ctags<CR>
 endif
 
 

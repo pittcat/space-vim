@@ -17,6 +17,7 @@
 
   nnoremap <silent> <Leader>sf :call spacevim#plug#fzf#Session()<CR>
   nnoremap <silent> <leader>ct :FzfPreviewBufferTags<cr>
+  nnoremap <silent> <leader>bt :BTags<cr>
   nnoremap <silent> <leader>ls :Lines<cr>
 
   nnoremap <leader>rg :FPRG<cr>
