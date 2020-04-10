@@ -24,6 +24,7 @@ let g:ale_linters={
           \ 'cmake' : ['cmakelint']
           \}
 
+let g:ale_rust_cargo_use_clippy=1
 let g:ale_fixers = {
           \ 'python': ['yapf'],
           \ 'javascript': ['prettier'],

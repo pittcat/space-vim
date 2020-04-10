@@ -10,6 +10,7 @@ let g:gutentags_cache_dir = s:vim_tags
 let g:gutentags_define_advanced_commands = 1
 let g:gutentags_auto_add_cscope=0
 let g:gutentags_auto_add_gtags_cscope = 0
+let g:gutentags_exclude_filetypes=['rust']
 
 " ctags
 let g:gutentags_modules = []
