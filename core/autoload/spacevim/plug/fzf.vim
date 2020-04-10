@@ -75,3 +75,4 @@ command! FPRG exec 'FzfPreviewProjectGrep ' . expand("<cword>")
 
 " yuki-ycino/fzf-preview.vim
 let g:fzf_preview_command = 'bat --color=always --style=grid {-1}'
+let g:fzf_preview_directory_files_command = 'rg --files --follow --no-messages -g \!"* *"'
