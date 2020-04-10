@@ -4,8 +4,7 @@ nnoremap <Leader>tb :Vista!!<CR>
 if spacevim#load('clap')
   nnoremap <Leader>vf :Clap tags<CR>
 elseif spacevim#load('fzf')
-  nnoremap <Leader>vf :Vista finder fzf<CR>
-  let g:vista_fzf_preview = ['right:50%']
+  nnoremap <Leader>vf :BTags<CR>
 endif
 
 
