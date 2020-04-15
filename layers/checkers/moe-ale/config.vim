@@ -70,3 +70,7 @@ let g:ale_lint_on_enter = 1
 "{
 let g:ale_python_flake8_options = '--ignore=W,E501,E231,E225,E741,E116,E3,E226,E121'         " python
 "}
+
+
+" map
+nnoremap <silent> <localleader>ff :ALEFix<cr>

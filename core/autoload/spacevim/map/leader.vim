@@ -66,16 +66,19 @@ let g:spacevim#map#leader#desc['b'] = {
       \ 'p' : ['bprevious', 'previous-buffer'],
       \ 'K' : ['Killallbuffer', 'kill-all-buffer'],
       \ }
-let g:spacevim#map#leader#desc['e'] = {
-      \ 'name' : '+errors',
-      \ 't' : ['ALEToggle','Toggle']    ,
-      \ 'c' :['lclose','close view']    ,
-      \ 'd' :['ALEDetail','detail']   ,
-      \ 'l' :['lopen','show errors'],
-      \ 'n' : ['call feedkeys("\<Plug>(ale_next)")', 'next-error']    ,
-      \ 'p' : ['call feedkeys("\<Plug>(ale_previous)")', 'previous-error']    ,
-      \ 'f' : ['ALEFix ','format code']   ,
-      \ }
+
+if spacevim#load('moe-ale')
+  let g:spacevim#map#leader#desc['e'] = {
+        \ 'name' : '+errors',
+        \ 't' : ['ALEToggle','Toggle']    ,
+        \ 'c' :['lclose','close view']    ,
+        \ 'd' :['ALEDetail','detail']   ,
+        \ 'l' :['lopen','show errors'],
+        \ 'n' : ['call feedkeys("\<Plug>(ale_next)")', 'next-error']    ,
+        \ 'p' : ['call feedkeys("\<Plug>(ale_previous)")', 'previous-error']    ,
+        \ 'f' : ['ALEFix ','format code']   ,
+        \ }
+endif
 
 let g:spacevim#map#leader#desc['f'] = {
       \ 'name' : 'fold',
