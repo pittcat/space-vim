@@ -1,7 +1,6 @@
 let g:neoformat_only_msg_on_error = 0
 let g:neoformat_try_formatprg = 1
-nnoremap <F3> :Neoformat<cr>
-nnoremap <localleader>= :Neoformat<cr>
+nnoremap <localleader>ff :Neoformat<cr>
 let g:neoformat_enabled_python = ['yapf']
 let g:neoformat_enabled_html = ['prettydiff']
 let g:neoformat_enabled_javascript = ['prettier']
