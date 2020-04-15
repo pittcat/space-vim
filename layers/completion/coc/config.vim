@@ -6,7 +6,7 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 let g:coc_global_extensions=['coc-snippets','coc-pairs','coc-yank','coc-word',
       \'coc-rls','coc-template','coc-python','coc-sh','coc-json','coc-cmake',
-      \'coc-clangd','coc-explorer']
+      \'coc-clangd','coc-explorer','coc-emoji']
 let g:coc_snippet_next = '<C-j>'
 let g:coc_snippet_prev = '<C-k>'
 
@@ -41,3 +41,10 @@ nnoremap <silent> <leader>at :CocCommand template.templateTop<CR>
 " coc-explorer
 nnoremap <silent> <F4> :CocCommand explorer<CR>
 nnoremap <silent> <leader>ft :CocCommand explorer<CR>
+
+" coc.nvim for diagnostic
+if !spacevim#load('moe-ale')
+  nmap <silent> <leader>ep <Plug>(coc-diagnostic-prev)
+  nmap <silent> <leader>en <Plug>(coc-diagnostic-next)
+  nmap <silent> <leader>el :CocList diagnostics<cr>
+endif
