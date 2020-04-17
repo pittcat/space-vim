@@ -23,6 +23,6 @@
   "explorer.icon.enableNerdfont": true,
   "diagnostic-languageserver.filetypes": {
     "markdown": "write-good",
-    "sh": "shellcheck",
+    "sh": "shellcheck"
   }
 }

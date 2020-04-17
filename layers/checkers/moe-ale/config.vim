@@ -11,7 +11,7 @@ let g:ale_linters={
           \ 'typescript' : ['eslint'],
           \ 'ruby' : ['rubocop'],
           \ 'rust' : ['cargo'] ,
-          \ 'sh':['language_server'],
+          \ 'sh':['shellcheck'],
           \ 'java': ['javac'],
           \ 'go'  : ['golint'],
           \ 'yaml'  : ['prettier'],
