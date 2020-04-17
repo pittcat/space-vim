@@ -84,3 +84,4 @@ if g:spacevim.gui
 endif
 silent! set showtabline=1
 silent! set tabline=%!spacevim#vim#tab#TabLine()
+
