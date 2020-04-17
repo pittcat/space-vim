@@ -1,7 +1,7 @@
 " init fzf window function
 function! Create_Centered_Cloating_Window() abort
-    let width = min([&columns - 4, max([80, &columns - 20])])
-    let height = min([&lines - 4, max([20, &lines - 10])])
+    let width = float2nr(&columns * g:fzf_preview_floating_window_rate)
+    let height = float2nr(&lines * g:fzf_preview_floating_window_rate)
     let top = ((&lines - height) / 2) - 1
     let left = (&columns - width) / 2
     let opts = {'relative': 'editor', 'row': top, 'col': left, 'width': width, 'height': height, 'style': 'minimal'}
