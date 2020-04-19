@@ -95,7 +95,7 @@ endfunction
 
 "750
 function! spacevim#defer#filemanage(timer) abort
-  call s:lod('vim-mundo','vim-auto-save','vim-eunuch')
+  call s:lod('vim-mundo','vim-eunuch')
 endfunction
 
 " 800
