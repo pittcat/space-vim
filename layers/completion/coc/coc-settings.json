@@ -18,7 +18,21 @@
     " ",
     "--ignore=W,E501,E231,E225,E741,E116,E3,E226,E121"
   ],
-  "languageserver": {},
+  "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
+      "rootPatterns": [".ccls-root", "compile_commands.json"],
+      "initializationOptions": {
+        "cache": {
+          "directory": ".ccls-cache"
+        },
+        "client": {
+          "snippetSupport": true
+        }
+      }
+    }
+  },
   "template.templatesDirectory": "~/.space-vim/templates",
   "explorer.icon.enableNerdfont": true,
   "diagnostic-languageserver.filetypes": {
