@@ -101,3 +101,5 @@ nnoremap \ ,
 command! Killallbuffer execute "bufdo bd"
 command! Copybuffer execute "%y+"
 "}
+"
+"

@@ -35,8 +35,3 @@ let g:choosewin_overlay_enable = 1
 " }
 
 execute 'source' fnamemodify(expand('<sfile>'), ':h') . '/keybindings.vim'
-
-" ntpeters/vim-better-whitespace
-" {
-let g:better_whitespace_enabled=1
-" }

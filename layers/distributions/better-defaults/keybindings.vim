@@ -32,8 +32,6 @@ endfor
 " Startify
 nnoremap <silent><Leader>bh :Startify<CR>
 
-" vim-better-whitespace
-nnoremap <Leader>xd :StripWhitespace<CR>
 
 " vim-choosewin
 nmap <Leader>cw <Plug>(choosewin)

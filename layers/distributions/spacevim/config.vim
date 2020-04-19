@@ -73,15 +73,9 @@ autocmd QuickFixCmdPost *
     \| copen 8
     \|endif
 
-
-" Show trailing white space
-hi ExtraWhitespace guifg=#FF2626 gui=underline ctermfg=124 cterm=underline
-match ExtraWhitespace /\s\+$/
-
 " Refer to http://vim.wikia.com/wiki/Show_tab_number_in_your_tab_line
 if g:spacevim.gui
   set guioptions-=e
 endif
 silent! set showtabline=1
 silent! set tabline=%!spacevim#vim#tab#TabLine()
-

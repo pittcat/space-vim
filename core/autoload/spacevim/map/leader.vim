@@ -162,7 +162,6 @@ let g:spacevim#map#leader#desc['w'] = {
 let g:spacevim#map#leader#desc['x'] = {
       \ 'name' : '+text',
       \ 'a' : ['call feedkeys("\<Plug>(EasyAlign)")', 'easy-align'],
-      \ 'd' : ['StripWhitespace', 'delete-trailing-whitespace'],
       \ }
 
 
