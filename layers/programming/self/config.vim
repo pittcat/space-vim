@@ -102,4 +102,6 @@ command! Killallbuffer execute "bufdo bd"
 command! Copybuffer execute "%y+"
 "}
 "
-"
+"{
+autocmd InsertLeave,FocusLost * silent! wa
+"}

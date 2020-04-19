@@ -10,13 +10,6 @@ if g:spacevim.timer
   set undofile
   "}
 
-  "
-  "{
-  Plug 'chrisbra/vim-autosave'
-  let g:autosave_timer = 60*3*1000
-  autocmd InsertLeave * silent update
-  "}
-
   "{tpope/vim-eunuch'
   MP 'tpope/vim-eunuch'
   "}
