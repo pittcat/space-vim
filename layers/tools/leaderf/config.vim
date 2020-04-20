@@ -15,7 +15,7 @@ let g:Lf_PopupPosition = [16,0]
 let g:Lf_StlSeparator = { 'left': "\ue0b0", 'right': "\ue0b2", 'font': "DejaVu Sans Mono for Powerline" }
 let g:Lf_PreviewResult = {
         \ 'File': 0,
-        \ 'Buffer': 0,
+        \ 'Buffer': 1,
         \ 'Mru': 1,
         \ 'Tag': 1,
         \ 'BufTag': 1,
@@ -49,5 +49,3 @@ noremap <leader>gt :Leaderf gtags<CR>
 
 " remap
 let g:Lf_CommandMap = {'<C-K>': ['<Up>'], '<C-J>': ['<Down>']}
-
-let g:Lf_StlPalette = {}
