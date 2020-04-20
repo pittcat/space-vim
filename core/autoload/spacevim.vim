@@ -45,6 +45,7 @@ function! s:define_command() abort
   command! -nargs=+ -bar MP          call s:my_plugin(<args>)
   command! -nargs=+ -bar Layer       call s:layer(<args>)
   command! -nargs=0 -bar LayerCache  call spacevim#cache#init()
+  command! -nargs=0 -bar LayerClean  call delete(g:spacevim.info)
   command! -nargs=0 -bar LayerStatus call spacevim#layer#status()
 endfunction
 
