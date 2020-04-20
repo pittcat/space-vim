@@ -25,7 +25,7 @@ function! spacevim#defer#nvimgdb(timer) abort
 endfunction
 " 280
 function! spacevim#defer#fzf(timer) abort
-  call s:lod('fzf', 'fzf.vim')
+  call s:lod('fzf', 'fzf.vim','fzf-preview.vim')
 endfunction
 
 " 300

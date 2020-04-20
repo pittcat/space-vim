@@ -7,23 +7,30 @@
   xmap <Leader>? <plug>(fzf-maps-x)
   omap <Leader>? <plug>(fzf-maps-o)
 
-  nnoremap <Leader>bb :FzfPreviewAllBuffers<CR>
+  nnoremap <Leader>bb :<CR>
   
-  nnoremap <Leader>b? :FzfPreviewAllBuffers<CR>
+  nnoremap <Leader>b? :Buffers<CR>
   nnoremap <Leader>w? :Windows<CR>
   nnoremap <Leader>f? :FZF<CR>
-  nnoremap <Leader>ff :FzfPreviewDirectoryFiles<CR>
-  nnoremap <Leader>pf :FzfPreviewProjectFiles<CR><CR>
+  nnoremap <Leader>ff :Files<CR>
 
   nnoremap <silent> <Leader>sf :call spacevim#plug#fzf#Session()<CR>
-  nnoremap <silent> <leader>ct :FzfPreviewBufferTags<cr>
-  nnoremap <silent> <leader>bt :BTags<cr>
-  nnoremap <silent> <leader>ls :Lines<cr>
+  nnoremap <silent> <leader>ct :FZFTags<cr>
+  nnoremap <silent> <leader>bt :FZFBTags<cr>
+  nnoremap <silent> <leader>ls :FZFBLines<cr>
 
-  nnoremap <leader>rg :FPRG<cr>
-  nnoremap <localleader>rg :FzfPreviewProjectGrep 
+  nnoremap <leader>rg :FZFRg <cr>
 
-  nnoremap <leader>fh :History:<cr>
+  nnoremap <leader>fh :History<cr>
 
   " }
+  " coc-fzf
+  if spacevim#load('coc')
+    nnoremap <silent> <leader>fd  :<C-u>CocFzfList diagnostics<CR>
+    nnoremap <silent> <leader>fb  :<C-u>CocFzfList diagnostics --current-buf<CR>
+    nnoremap <silent> <leader>fc  :<C-u>CocFzfList commands<CR>
+    nnoremap <silent> <leader>fo  :<C-u>CocFzfList outline<CR>
+    nnoremap <silent> <leader>fy  :<C-u>CocFzfList symbols<CR>
+    nnoremap <silent> <leader>fv  :<C-u>CocFzfList services<CR>
+  endif
 
