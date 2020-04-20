@@ -7,7 +7,7 @@
   xmap <Leader>? <plug>(fzf-maps-x)
   omap <Leader>? <plug>(fzf-maps-o)
 
-  nnoremap <Leader>bb :<CR>
+  nnoremap <Leader>bb :Buffers<CR>
   
   nnoremap <Leader>b? :Buffers<CR>
   nnoremap <Leader>w? :Windows<CR>
@@ -33,4 +33,3 @@
     nnoremap <silent> <leader>fy  :<C-u>CocFzfList symbols<CR>
     nnoremap <silent> <leader>fv  :<C-u>CocFzfList services<CR>
   endif
-
