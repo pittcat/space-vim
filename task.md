@@ -38,6 +38,8 @@ xtal8/traces.vim
 google/vim-searchindex
 
 #### core/autoload/spacevim/info.vim 多次生成会导致启动时间增加
-- 暂时解决方案:更新.spacevim 之后删除此文件
+- 不能删除private文件夹
+- /home/pitt/.space-vim/core/autoload/spacevim/cache.vim  spacevim#cache#init
+有问题
 
 #### 一年换一次搜索插件

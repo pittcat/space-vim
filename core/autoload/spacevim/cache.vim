@@ -1,6 +1,6 @@
 function! spacevim#cache#init() abort
-  if has('python') || has('python3')
-    let s:py_exe = has('python') ? 'python' : 'python3'
+  if has('python3')
+    let s:py_exe = 'python3'
     try
       call s:py_init()
     catch
