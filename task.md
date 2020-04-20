@@ -37,4 +37,5 @@ endif
 xtal8/traces.vim
 google/vim-searchindex
 
-
+#### core/autoload/spacevim/info.vim 多次生成会导致启动时间增加
+- 暂时解决方案:更新.spacevim 之后删除此文件
