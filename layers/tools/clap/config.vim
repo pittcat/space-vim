@@ -1,4 +1,3 @@
-let g:clap_layout = { 'width': '70%', 'col': '15%','row': '30%'}
 let g:clap_theme = 'material_design_dark'
 let g:clap_enable_icon=1
 let g:clap_disable_run_rooter=v:true
@@ -22,20 +21,3 @@ nnoremap <Leader>rg :Clap grep<cr>
 nnoremap <Leader>fl :Clap lines<cr>
 nnoremap <Leader>cq :Clap quick_open<cr>
 
-
-
-function! s:ensure_closed() abort
-  call clap#floating_win#close()
-  silent! autocmd! ClapEnsureAllClosed
-endfunction
-
-function! MyClapOnEnter() abort
-  augroup ClapEnsureAllClosed
-    autocmd!
-    autocmd BufEnter,WinEnter,WinLeave * call s:ensure_closed()
-  augroup END
-endfunction
-
-autocmd User ClapOnEnter call MyClapOnEnter()
-
-autocmd FileType clap_input inoremap <silent> <buffer> <Esc> <Esc>:call clap#handler#exit()<CR>
