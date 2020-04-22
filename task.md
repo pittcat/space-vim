@@ -42,6 +42,7 @@ google/vim-searchindex
 - /home/pitt/.space-vim/core/autoload/spacevim/cache.vim  spacevim#cache#init
 有问题
 
-#### 一年换一次插件
-- 模糊匹配插件:2020-4-21
-- debug插件
+#### 更换插件时间限制
+- 模糊匹配插件:2020-4-21(1 year)
+- debug插件:vimspector(half year)
+- diagnostic:ale.vim(three quarters year)
