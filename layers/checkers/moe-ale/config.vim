@@ -1,10 +1,10 @@
 let g:ale_linters={
           \ 'vim' : ['vint'],
           \ 'html' : ['tidy'],
-          \ 'c' :[],
-          \ 'cpp' :[],
+          \ 'c' :['clang'],
+          \ 'cpp' :['clang'],
           \ 'css' : ['prettier'],
-          \ 'python' : [],
+          \ 'python' : ['flake8'],
           \ 'markdown' : ['write-good'],
           \ 'javascript.jsx' : ['eslint'],
           \ 'javascript' : ['eslint'],
