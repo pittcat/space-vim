@@ -63,6 +63,7 @@ let g:ale_echo_msg_warning_str = '⚠ Warning'
 let g:ale_set_loclist = 1
 let g:ale_lint_on_text_changed = 1
 let g:ale_lint_on_insert_leave = 1
+let g:ale_lint_on_enter = 1
 
 " language
 "{
