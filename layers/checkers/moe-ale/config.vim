@@ -60,8 +60,9 @@ let g:ale_sign_error = '✖︎'
 let g:ale_sign_warning = '⚠'
 let g:ale_echo_msg_error_str =  '✖︎ Error' 
 let g:ale_echo_msg_warning_str = '⚠ Warning'
+let g:ale_hover_to_preview = 1
 let g:ale_set_loclist = 1
-let g:ale_lint_on_text_changed = 1
+let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_enter = 1
 
