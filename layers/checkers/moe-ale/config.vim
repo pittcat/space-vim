@@ -65,6 +65,7 @@ let g:ale_set_loclist = 1
 let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_enter = 1
+let g:ale_virtualtext_cursor = 1
 
 " language
 "{
