@@ -1,7 +1,7 @@
 function! s:lod(...)
   " Ignore unknown plugins from vim-plug due to the excluded plugins
   for l:plug in a:000
-    silent! call plug#load(l:plug)
+    call plug#load(l:plug)
   endfor
 endfunction
 
@@ -10,19 +10,12 @@ function! spacevim#defer#ale(timer) abort
   call s:lod('ale')
 endfunction
 
-function! spacevim#defer#neomake(timer) abort
-  call s:lod('neomake')
-endfunction
-
 " 250
 function! spacevim#defer#airline(timer) abort
   call s:lod('vim-airline', 'vim-airline-themes')
   redraws!
 endfunction
 
-function! spacevim#defer#nvimgdb(timer) abort
-  call s:lod('nvim-gdb')
-endfunction
 " 280
 function! spacevim#defer#fzf(timer) abort
   call s:lod('fzf', 'fzf.vim','fzf-preview.vim')
@@ -49,43 +42,6 @@ function! spacevim#defer#defaults(timer) abort
   call s:lod('vim-signature', 'vim-rsi','traces.vim','vim-illuminate')
 endfunction
 
-" 550
-function! spacevim#defer#markdown(timer) abort
-  call s:lod('vim-markdown','markdown-preview.nvim','vim-markdown-toc','md-img-paste.vim')
-endfunction
-
-function! spacevim#defer#html(timer) abort
-  call s:lod('html5.vim','vim-css3-syntax','scss-syntax.vim','vim-css-color','emmet-vim')
-endfunction
-
-function! spacevim#defer#rust(timer) abort
-  call s:lod('rust.vim','vim-cargo')
-endfunction
-
-function! spacevim#defer#go(timer) abort
-   call s:lod('vim-go')
-endfunction
-
-function! spacevim#defer#python(timer) abort
-  call s:lod('vim-python-pep8-indent','vim-python/python-syntax')
-endfunction
-
-function! spacevim#defer#yaml(timer) abort
-  call s:lod('vim-yaml')
-endfunction
-
-function! spacevim#defer#clang(timer) abort
-  call s:lod('vim-cpp-enhanced-highlight')
-endfunction
-function! spacevim#defer#javascript(timer) abort
-  call s:lod('vim-javascript','vim-jsx')
-endfunction
-function! spacevim#defer#ruby(timer) abort
-  call s:lod('vim-ruby','vim-rbenv','vim-bundler','vim-rails','vim-rake','rspec.vim','vim-rspec')
-endfunction
-function! spacevim#defer#typescript(timer) abort
-  call s:lod('typescript-vim','vim-tsx')
-endfunction
 
 " 600
 function! spacevim#defer#motion(timer) abort
@@ -110,6 +66,6 @@ endfunction
 
 " 1400
 function! spacevim#defer#awesome_tools(timer) abort
-  call s:lod('vim-table-mode','vim-lastplace','vim-smartim','zeavim.vim','open-browser.vim','vim-search-me','dict.vim','vim-highlightedyank','vim-codelf')
+  call s:lod('vim-table-mode','vim-lastplace','vim-smartim','zeavim.vim','open-browser.vim','vim-search-me','vim-codelf')
 endfunction
 
