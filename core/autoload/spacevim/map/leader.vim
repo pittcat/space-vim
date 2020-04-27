@@ -112,7 +112,7 @@ let g:spacevim#map#leader#desc['h'] = {
       \ 'name' : '+help',
       \ }
 let g:spacevim#map#leader#desc['j'] = {
-      \ 'name' : '+jump/json'                   ,
+      \ 'name' : '+jump/jupyter'                   ,
       \ 'j' : 'easymotion-goto-char'       ,
       \ 'J' : 'easymotion-goto-char-2'     ,
       \ 'l' : 'jump-linewise'              ,
