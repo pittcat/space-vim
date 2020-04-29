@@ -25,10 +25,6 @@ if spacevim#load('text-align')
   nnoremap <buffer> <LocalLeader>ta :Tabularize /<Bar><CR>
 endif
 
-if g:spacevim.timer
-  call timer_start(1300, 'spacevim#defer#markdown')
-endif
-
 if exists('*emoji#complete')
   setlocal completefunc=emoji#complete
 endif
