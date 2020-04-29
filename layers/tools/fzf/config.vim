@@ -33,3 +33,6 @@
     nnoremap <silent> <leader>fy  :<C-u>CocFzfList symbols<CR>
     nnoremap <silent> <leader>fv  :<C-u>CocFzfList services<CR>
   endif
+
+  " coc-quickfix
+  nnoremap <silent> <leader>eq :Quickfix!<CR>
