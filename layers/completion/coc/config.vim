@@ -2,7 +2,7 @@ set hidden
 set nobackup
 set nowritebackup
 set cmdheight=2
-set updatetime=300
+set updatetime=200
 set shortmess+=c
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
