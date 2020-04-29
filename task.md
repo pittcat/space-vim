@@ -3,7 +3,7 @@
 #### https://github.com/skywind3000/asynctasks.vim(M)
 #### https://github.com/puremourning/vimspector(L)
 #### https://github.com/AndrewRadev/tagalong.vim(S)
-#### https://github.com/kyazdani42/highlight.lua(L)
+#### https://github.com/nvim-treesitter/nvim-treesitter(L)
 #### https://github.com/gpanders/vim-medieval(S)
 #### ludovicchabant/vim-gutentags(S)
 ```
