@@ -104,4 +104,5 @@ command! Copybuffer execute "%y+"
 "
 "{
 autocmd InsertLeave,FocusLost * silent! wa
+autocmd TextChanged * silent! update
 "}
