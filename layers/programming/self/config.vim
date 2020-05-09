@@ -110,8 +110,8 @@ autocmd TextChanged * silent! update
 "debug map <F1>
 "{
 "gdb
-command! Nemvier exec "AsyncRun! -silent ".'nemiver '.'%:p:h/exec/%:t:r'
-autocmd FileType c,cpp,rust nnoremap <buffer> <F1> :Nemvier<cr>
+command! Gede exec "AsyncRun!".'gede --args '.'%:p:h/exec/%:t:r'
+autocmd FileType c,cpp nnoremap <buffer> <F1> :Gede<cr>
 
 " pdb-web
 autocmd FileType python nnoremap <buffer> <F1> :OpenBrowser http://localhost:5555/<cr>
