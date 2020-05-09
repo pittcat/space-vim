@@ -106,3 +106,14 @@ command! Copybuffer execute "%y+"
 autocmd InsertLeave,FocusLost * silent! wa
 autocmd TextChanged * silent! update
 "}
+"
+"debug map <F1>
+"{
+"gdb
+command! Nemvier exec "AsyncRun! -silent ".'nemiver '.'%:p:h/exec/%:t:r'
+autocmd FileType c,cpp,rust nnoremap <buffer> <F1> :Nemvier<cr>
+
+" pdb-web
+autocmd FileType python nnoremap <buffer> <F1> :OpenBrowser http://localhost:5555/<cr>
+autocmd FileType python vnoremap <buffer> <leader>op <nop>
+"}
