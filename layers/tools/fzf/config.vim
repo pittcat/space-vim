@@ -11,8 +11,8 @@
   
   nnoremap <Leader>b? :Buffers<CR>
   nnoremap <Leader>w? :Windows<CR>
-  nnoremap <Leader>f? :FZF<CR>
-  nnoremap <Leader>ff :FZF<CR>
+  nnoremap <Leader>f? :FZFFiles<CR>
+  nnoremap <Leader>ff :FZFFiles<CR>
 
   nnoremap <silent> <Leader>sf :call spacevim#plug#fzf#Session()<CR>
   nnoremap <silent> <leader>ct :FZFTags<cr>
