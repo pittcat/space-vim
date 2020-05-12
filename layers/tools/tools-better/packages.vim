@@ -67,6 +67,8 @@ if g:spacevim.timer
   "{voldikss/vim-translate-me
   MP 'voldikss/vim-translate-me'
   "}
+  "hotoo/pangu.vim
+  MP 'hotoo/pangu.vim'
   call timer_start(1400,'spacevim#defer#awesome_tools')
 
 endif

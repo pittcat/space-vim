@@ -87,3 +87,6 @@
   " {voldikss/vim-codelf
   nnoremap <localleader>cd :Codelf 
   " }
+  " {pangu.vim
+  autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing()
+  " }

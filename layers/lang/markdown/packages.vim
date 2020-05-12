@@ -14,4 +14,5 @@ MP 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install','for':'markdo
 MP 'mzlogin/vim-markdown-toc',     { 'on': ['GenTocGFM', 'GenTocRedcarpet', 'GenTocGitLab', 'UpdateToc', 'RemoveToc'],'for':'markdown'}
 MP 'ferrine/md-img-paste.vim',{'for':'markdown'}
 
-autocmd! User vim-markdown,vim-markdown-composer,vim-markdown-toc,md-img-paste call spacevim#autocmd#markdown#Init()
+autocmd! User vim-markdown,vim-markdown-toc,md-img-paste call spacevim#autocmd#markdown#Init()
+
