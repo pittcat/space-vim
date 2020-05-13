@@ -18,6 +18,7 @@
   nnoremap <silent> <leader>ct :FZFTags<cr>
   nnoremap <silent> <leader>bt :FZFBTags<cr>
   nnoremap <silent> <leader>ls :FZFBLines<cr>
+  nnoremap <silent> <leader>es :FZFLocList<cr>
 
   nnoremap <leader>rg :FZFRg <cr>
 
@@ -34,5 +35,3 @@
     nnoremap <silent> <leader>fv  :<C-u>CocFzfList services<CR>
   endif
 
-  " coc-quickfix
-  nnoremap <silent> <leader>eq :Quickfix!<CR>
