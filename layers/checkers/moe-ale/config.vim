@@ -1,8 +1,8 @@
 let g:ale_linters={
           \ 'vim' : ['vint'],
           \ 'html' : ['tidy'],
-          \ 'c' :['clang'],
-          \ 'cpp' :['clang'],
+          \ 'c' :['clangd'],
+          \ 'cpp' :['clangd'],
           \ 'css' : ['prettier'],
           \ 'python' : ['flake8'],
           \ 'markdown' : ['write-good'],
