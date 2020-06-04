@@ -29,18 +29,11 @@ endif
 - https://github.com/dense-analysis/ale/issues/2418
 - https://github.com/iamcco/coc-diagnostic
 
-
-
 有时候需要清空 ./cache/tags解决错误
 
 #### 学习插件
 xtal8/traces.vim
 google/vim-searchindex
-
-#### core/autoload/spacevim/info.vim 多次生成会导致启动时间增加
-- 不能删除private文件夹
-- /home/pitt/.space-vim/core/autoload/spacevim/cache.vim  spacevim#cache#init
-有问题
 
 #### 更换插件时间限制
 - 模糊匹配插件:2020-4-21(1 year)
