@@ -52,7 +52,7 @@ if g:spacevim.timer
   MP 'dietsche/vim-lastplace'
   "}
   " {StrayDragon/vim-smartim
-  MP 'StrayDragon/vim-smartim'
+  MP 'StrayDragon/vim-smartim',{'for':'markdown'}
   " }
   "{KabbAmine/zeavim.vim
   MP 'KabbAmine/zeavim.vim'

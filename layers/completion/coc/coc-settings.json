@@ -30,6 +30,7 @@
   },
   "template.templatesDirectory": "~/.space-vim/templates",
   "explorer.icon.enableNerdfont": true,
+  "explorer.file.tabCD":false,
   "diagnostic-languageserver.filetypes": {
     "markdown": "write-good",
     "sh": "shellcheck"
