@@ -6,33 +6,17 @@
   "suggest.snippetIndicator": "►",
   "suggest.minTriggerInputLength": 1,
   "codeLens.enable": false,
-  "diagnostic.enable": false,
+  "diagnostic.enable": true,
+  "diagnostic.displayByAle": true,
   "coc.source.word.filetypes": ["markdown", "latex"],
   "coc.source.emoji.filetypes": ["markdown"],
   "pairs.enableCharacters": ["(", "[", "{", "'", "\"", "`"],
   "yank.enableCompletion": false,
   "python.jediEnabled": false,
-  "languageserver": {
-    "ccls": {
-      "command": "ccls",
-      "filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
-      "rootPatterns": [".ccls-root", "compile_commands.json"],
-      "initializationOptions": {
-        "cache": {
-          "directory": "/tmp/ccls"
-        },
-        "client": {
-          "snippetSupport": true
-        },
-        "highlight": { "lsRanges": true }
-      }
-    }
-  },
+  "python.linting.enabled": false,
+  "languageserver": {},
+  "clangd.semanticHighlighting": true,
   "template.templatesDirectory": "~/.space-vim/templates",
   "explorer.icon.enableNerdfont": true,
-  "explorer.file.tabCD":false,
-  "diagnostic-languageserver.filetypes": {
-    "markdown": "write-good",
-    "sh": "shellcheck"
-  }
+  "explorer.file.tabCD": false
 }
