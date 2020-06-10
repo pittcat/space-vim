@@ -1,2 +1,2 @@
 MP 'itchyny/lightline.vim'
-MP 'mgee/lightline-bufferline'
+MP 'ap/vim-buftabline'
