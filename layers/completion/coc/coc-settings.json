@@ -13,6 +13,7 @@
   "pairs.enableCharacters": ["(", "[", "{", "'", "\"", "`"],
   "yank.enableCompletion": false,
   "python.jediEnabled": false,
+  "sh.highlightParsingErrors": false,
   "python.linting.enabled": false,
   "languageserver": {},
   "clangd.semanticHighlighting": true,
