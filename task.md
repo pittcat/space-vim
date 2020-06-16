@@ -3,7 +3,6 @@
 #### https://github.com/skywind3000/asynctasks.vim(M)
 #### https://github.com/puremourning/vimspector(L)
 #### https://github.com/AndrewRadev/tagalong.vim(S)
-#### https://github.com/nvim-treesitter/nvim-treesitter(L)
 #### https://github.com/gpanders/vim-medieval(S)
 #### ludovicchabant/vim-gutentags(S)
 ```
@@ -32,5 +31,5 @@ google/vim-searchindex
 
 #### 更换插件时间限制
 - 模糊匹配插件:2020-4-21(1 year)
-- debug插件:vimspector(half year)
-- diagnostic:ale.vim(three quarters year)
+- debug插件:vimspector(1 year)
+- nvim-treesitter:2020-06-16(1 year)
