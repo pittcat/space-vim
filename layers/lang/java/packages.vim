@@ -1,1 +1,2 @@
-MP 'uiiaoo/java-syntax.vim',{'for':'java'}
+" syntax highlight treesitter
+
