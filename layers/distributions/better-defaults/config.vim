@@ -20,7 +20,10 @@ endif
 " {
 let g:Illuminate_highlightUnderCursor = 0
 let g:Illuminate_delay = 400
-hi link illuminatedWord Visual
+augroup illuminate_augroup
+    autocmd!
+    autocmd VimEnter * hi illuminatedWord cterm=underline gui=underline
+augroup END
 " }
 
 " vim-startify {
