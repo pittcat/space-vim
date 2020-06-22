@@ -18,11 +18,11 @@ endif
 
 " vim-illuminate
 " {
-let g:Illuminate_highlightUnderCursor = 0
+let g:Illuminate_highlightUnderCursor = 1
 let g:Illuminate_delay = 250
 augroup illuminate_augroup
     autocmd!
-    autocmd VimEnter * hi illuminatedWord cterm=underline gui=underline
+    autocmd VimEnter * hi illuminatedWord cterm=NONE ctermbg=0 ctermfg=NONE guibg=Gray35
 augroup END
 " }
 
