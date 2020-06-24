@@ -4,7 +4,11 @@ set nowritebackup
 set cmdheight=2
 set updatetime=200
 set shortmess+=c
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+if exists('*complete_info')
+  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+else
+  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+endif
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 let g:coc_global_extensions=['coc-snippets','coc-pairs','coc-yank','coc-word',
@@ -27,9 +31,6 @@ endfunction
 autocmd BufEnter * if (expand('%:t')=='' && &filetype ==# '')
       \ | nnoremap <silent> <buffer> q <C-w>c | endif
 
-
-" Highlight symbol under cursor on CursorHold
-autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Remap for rename current word
 nmap <silent> <localleader>rn <Plug>(coc-rename)
