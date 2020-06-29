@@ -30,5 +30,6 @@ xtal8/traces.vim
 google/vim-searchindex
 
 #### 更换插件时间限制
-- 模糊匹配插件:2020-4-21(1 year)
-- debug插件:vimspector(1 year)
+- 模糊匹配插件:(1 year)---2020-06-29 22:49
+- debug插件:vimspector(1 year)---2020-06-29 22:49
+- 补全插件：coc-nvim(3个月更新一次)2020-06-29 22:50
