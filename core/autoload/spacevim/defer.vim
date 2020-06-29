@@ -33,7 +33,7 @@ endfunction
 
 " 400
 function! spacevim#defer#programming(timer) abort
-  call s:lod('editorconfig-vim','vim-rooter')
+  call s:lod('rainbow','editorconfig-vim','vim-rooter')
 endfunction
 
 " 500
