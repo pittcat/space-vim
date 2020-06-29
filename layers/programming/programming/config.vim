@@ -2,14 +2,6 @@ scriptencoding utf-8
 
 " rainbow {
   let g:rainbow_active = 1
-  let g:rainbow_conf = g:spacevim#plug#rainbow#conf
-" }
-
-" rainbow_parentheses.vim {
-  augroup rainbowLisp
-    autocmd!
-    autocmd FileType lisp,clojure,scheme RainbowParentheses
-  augroup END
 " }
 
 " asyncrun.vim {

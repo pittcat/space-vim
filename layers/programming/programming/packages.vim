@@ -9,7 +9,6 @@ else
   MP 'editorconfig/editorconfig-vim'
 endif
 
-MP 'junegunn/rainbow_parentheses.vim', { 'for': ['lisp', 'clojure', 'scheme'] }
 
 MP 'Yggdroot/indentLine',             { 'on': 'IndentLinesToggle' }
 autocmd! User indentLine call spacevim#autocmd#indent#Init()
