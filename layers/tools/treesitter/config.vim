@@ -7,7 +7,6 @@ require'nvim-treesitter.configs'.setup {
 }
 require "nvim-treesitter.highlight"
 local hlmap = vim.treesitter.TSHighlighter.hl_map
+hlmap.error = nil
 hlmap["punctuation.bracket"] = nil
 EOF
-
-highlight link TSError Normal
