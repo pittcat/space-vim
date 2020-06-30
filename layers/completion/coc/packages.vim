@@ -1,4 +1,4 @@
-MP 'neoclide/coc.nvim', {'branch': 'master','on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'],'commit':'5530c442b23e606e018fa9bc0ee962b8cadcf88a'}
+MP 'neoclide/coc.nvim', {'branch': 'master','on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'],'commit':'bcdcd543b9cf6a29bb1b327f007eee0b873089f7'}
 MP 'Shougo/neco-vim',{'for':'vim','on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
 MP 'neoclide/coc-neco',{'for':'vim','on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter'] }
 MP 'tjdevries/coc-zsh',{'for':'zsh'}
