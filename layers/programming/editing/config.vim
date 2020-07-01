@@ -9,35 +9,13 @@ scriptencoding utf-8
   vmap <Leader>;; <Plug>NERDCommenterToggle
 " }
 
-" vim-multiple-cursors {
+" { mg979/vim-visual-multi 
 let g:VM_default_mappings = 0
 let g:VM_maps = {}
 let g:VM_maps['Find Under']         = '<C-d>'           " replace C-n
 let g:VM_maps['Find Subword Under'] = '<C-d>'           " replace visual C-n
 let g:VM_maps["Mouse Cursor"]                = '<M-LeftMouse>'
 let g:VM_mouse_mappings = 0
-" }
-
-" { mg979/vim-visual-multi 
-  " fun! VM_before_auto()
-    " call MacroBefore()
-  " endfun
-
-  " fun! VM_after_auto()
-    " call MacroAfter()
-  " endfun
-
-  " function! MacroBefore(...)
-    " unmap s
-    " unmap S
-    " let b:deoplete_disable_auto_complete = 1
-  " endfunction!
-
-  " function! MacroAfter(...)
-    " nmap s <plug>sneak_s
-    " nmap S <Plug>Sneak_S
-    " let b:deoplete_disable_auto_complete = 0
-  " endfunction!
 " }
 
 
