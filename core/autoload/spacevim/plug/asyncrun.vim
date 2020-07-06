@@ -8,16 +8,16 @@ augroup END
 
 function! spacevim#plug#asyncrun#CompileAndRun()
   let l:cmd = {
-        \ 'c'      : "gcc '%:p' -o '%:p:h/exec/%:t:r'; time %:p:h/exec/%:t:r",
-        \ 'cpp'    : "g++ -std=c++11 '%:p' -o '%:p:h/exec/%:t:r'; time %:p:h/exec/%:t:r",
-        \ 'sh'     : "time bash %",
+        \ 'c'      : "gcc '%:p' -o '%:p:h/exec/%:t:r';%:p:h/exec/%:t:r",
+        \ 'cpp'    : "g++ -std=c++11 '%:p' -o '%:p:h/exec/%:t:r';%:p:h/exec/%:t:r",
+        \ 'sh'     : "bash %",
         \ 'go'     : "go run %",
-        \ 'ruby'   : "time ruby %",
-        \ 'rust'   : "rustc '%:p' -o  './exec/%:t:r'; time %:p:h/exec/%:t:r",
-        \ 'python' : "time python %",
-        \ 'lua' : "time lua %",
+        \ 'ruby'   : "ruby %",
+        \ 'rust'   : "rustc '%:p' -o  './exec/%:t:r';%:p:h/exec/%:t:r",
+        \ 'python' : "python %",
+        \ 'lua' : "lua %",
         \ 'haskell': "ghc %:p -o %< && %:p:h/%:t:r<",
-        \ 'javascript': "time node %<",
+        \ 'javascript': "node %<",
         \ 'java'   : "javac %;cd %:p:h;java %:t:r;rm %:t:r.'class'",
         \ 'tex'    : "evince %:p:h/%:t:r.pdf"
         \}
