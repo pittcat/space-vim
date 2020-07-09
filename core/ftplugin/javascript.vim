@@ -5,6 +5,4 @@ let b:did_spacevim_js_ftplugin = 1
 
 setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
-if g:spacevim.timer
-  call timer_start(550,'spacevim#defer#javascript')
-endif
+let b:ale_linters = ['eslint']

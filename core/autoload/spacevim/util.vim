@@ -1,115 +1,92 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-"    Basic tools
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-function! spacevim#util#err(msg)
-  echohl ErrorMsg
-  echom '[space-vim] '.a:msg
-  echohl None
+let s:spacevim_tab = get(s:, 'spacevim_tab', -1)
+let s:spacevim_buf = get(s:, 'spacevim_buf', -1)
+
+function! s:new_window()
+  execute get(g:, 'spacevim_window', 'vertical topleft new')
 endfunction
 
-function! spacevim#util#warn(msg)
-  echohl WarningMsg
-  echom '[space-vim] '.a:msg
-  echohl None
+function! s:spacevim_window_exists()
+  let l:buflist = tabpagebuflist(s:spacevim_tab)
+  return !empty(l:buflist) && index(l:buflist, s:spacevim_buf) >= 0
 endfunction
 
-function! spacevim#util#info(msg)
-  echom '[space-vim] '.a:msg
+function! s:assign_name()
+  " Assign buffer name
+  let l:prefix = '[Layers]'
+  let l:name   = l:prefix
+  let l:idx    = 2
+  while bufexists(l:name)
+    let l:name = printf('%s (%s)', l:prefix, l:idx)
+    let l:idx = l:idx + 1
+  endwhile
+  silent! execute 'f' fnameescape(l:name)
 endfunction
 
-" argument plugin is the vim plugin's name
-function! spacevim#util#IsDir(plugin) abort
-  return isdirectory(expand(g:my_plug_home.a:plugin)) ? 1 : 0
-endfunction
+" Extracted from plug.vim
+function! spacevim#layer#status()
+  call s:new_window()
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-"    Utilities
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-function! spacevim#util#ToggleCursorColumn()
-  if &cursorcolumn
-    setlocal nocursorcolumn
-  else
-    setlocal cursorcolumn
-  endif
-endfunction
+  let b:spacevim_preview = -1
+  let s:spacevim_tab = tabpagenr()
+  let s:spacevim_buf = winbufnr(0)
+  call s:assign_name()
 
-function! spacevim#util#ToggleColorColumn()
-  if &colorcolumn
-    setlocal colorcolumn=
-  else
-    setlocal colorcolumn=80
-  endif
-endfunction
+  let [l:cnt, l:total] = [0, len(g:spacevim.loaded)]
 
-function! spacevim#util#Runtimepath()
-  for path in split(&runtimepath, ',')
-    echo path
+  let g:layers_sum = len(g:spacevim)
+
+  call append(0, ['Enabled layers: ' . '(' . len(g:spacevim.loaded) . '/' . g:layers_sum . ')'])
+  call setline(2, '[' . repeat('=', len(g:spacevim.loaded)) . ']')
+  let l:inx = 3
+  for l:layer in g:spacevim.loaded
+    call setline(l:inx, '+ ' . l:layer)
+    let l:inx = l:inx + 1
   endfor
-endfunction
-
-" http://vim.wikia.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor
-function! spacevim#util#SyntaxHiGroup()
-  echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
-  \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
-  \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"
-endfunction
-
-function! spacevim#util#HiOverLength(width)
-  highlight OverLength ctermbg=133 ctermfg=254 cterm=bold guibg=#592929
-  exec 'match OverLength /\%' . string(a:width+1) . 'v.*/'
-endfunction
-
-" http://vim.wikia.com/wiki/Jumping_to_previously_visited_locations
-function! spacevim#util#GotoJump()
-  jumps
-  let l:j = input("Please select your jump: ")
-  if l:j != ''
-    let l:pattern = '\v\c^\+'
-    if l:j =~ l:pattern
-      let l:j = substitute(l:j, l:pattern, '', 'g')
-      execute "normal " . l:j . "\<C-I>"
-    else
-      execute "normal " . l:j . "\<C-O>"
-    endif
+  setlocal buftype=nofile bufhidden=wipe nobuflisted nolist noswapfile nowrap cursorline nomodifiable nospell
+  setf spacevim
+  if exists('g:syntax_on')
+    call s:syntax()
   endif
+  nnoremap <silent> <buffer> q  :bd<CR>
 endfunction
 
+function! s:syntax()
+  syntax clear
+  syntax region Layer1 start=/\%1l/ end=/\%2l/ contains=LayerNumber
+  syntax region Layer2 start=/\%2l/ end=/\%3l/ contains=LayerBracket,LayerX
+  syn match LayerNumber /[0-9]\+[0-9.]*/ contained
+  syn match LayerBracket /[[\]]/ contained
+  syn match LayerX /x/ contained
+  syn match LayerDash /^-/
+  syn match LayerPlus /^+/
+  syn match LayerStar /^*/
+  syn match LayerMessage /\(^- \)\@<=.*/
+  syn match LayerName /\(^- \)\@<=[^ ]*:/
+  syn match LayerInstall /\(^+ \)\@<=[^:]*/
+  syn match LayerCache /\(^* \)\@<=[^:]*/
+  syn match LayerNotLoaded /(not loaded)$/
+  syn match LayerError /^x.*/
+  syn region LayerDeleted start=/^\~ .*/ end=/^\ze\S/
+  syn match LayerH2 /^.*:\n-\+$/
+  syn keyword Function LayerInstall LayerStatus LayerCache LayerClean
+  hi def link Layer1       Title
+  hi def link Layer2       Repeat
+  hi def link LayerH2      Type
+  hi def link LayerX       Exception
+  hi def link LayerBracket Structure
+  hi def link LayerNumber  Number
 
-let s:hidden_all = 0
-function! spacevim#util#ToggleHiddleAll()
-  if s:hidden_all == 0
-    let s:hidden_all = 1
-    setlocal noshowmode noruler noshowcmd laststatus=0 cmdheight=1
-  else
-    let s:hidden_all = 0
-    setlocal showmode ruler showcmd laststatus=2 cmdheight=1
-  endif
-endfunction
+  hi def link LayerDash    Special
+  hi def link LayerPlus    Constant
+  hi def link LayerStar    Boolean
 
-function! spacevim#util#RootDirectory()
-  if exists('*FindRootDirectory')
-    let root_dir = FindRootDirectory()
-  else
-    let git_dir = system('git rev-parse --git-dir')
-    if !v:shell_error
-      let root_dir = substitute(fnamemodify(git_dir, ':p:h'), ' ', '\\ ', 'g')
-    else
-      let root_dir = ''
-    endif
-  endif
-  return root_dir == '' ? getcwd() : root_dir
-endfunction
+  hi def link LayerMessage Function
+  hi def link LayerName    Label
+  hi def link LayerInstall Function
+  hi def link LayerCache   Type
 
+  hi def link LayerError   Error
+  hi def link LayerDeleted Ignore
 
-function! spacevim#util#VisualSelection()
-    " Why is this not a built-in Vim script function?!
-    let [line_start, column_start] = getpos("'<")[1:2]
-    let [line_end, column_end] = getpos("'>")[1:2]
-    let lines = getline(line_start, line_end)
-    if len(lines) == 0
-        return ''
-    endif
-    let lines[-1] = lines[-1][: column_end - (&selection == 'inclusive' ? 1 : 2)]
-    let lines[0] = lines[0][column_start - 1:]
-    return join(lines, "\n")
+  hi def link LayerNotLoaded Comment
 endfunction
