@@ -3,7 +3,7 @@ require'nvim-treesitter.configs'.setup {
     highlight = {
         enable = true,
     },
-    ensure_installed = {'python','c','cpp','java','javascript','css','html','go'}
+    ensure_installed = {'python','c','cpp','java','javascript','css','html','go','rust'}
 }
 require "nvim-treesitter.highlight"
 local hlmap = vim.treesitter.TSHighlighter.hl_map
