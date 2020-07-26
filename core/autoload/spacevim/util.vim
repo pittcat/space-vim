@@ -1,6 +1,12 @@
 let s:spacevim_tab = get(s:, 'spacevim_tab', -1)
 let s:spacevim_buf = get(s:, 'spacevim_buf', -1)
 
+function! spacevim#util#err(msg)
+  echohl ErrorMsg
+  echom '[space-vim] '.a:msg
+  echohl None
+endfunction
+
 function! s:new_window()
   execute get(g:, 'spacevim_window', 'vertical topleft new')
 endfunction
@@ -20,34 +26,6 @@ function! s:assign_name()
     let l:idx = l:idx + 1
   endwhile
   silent! execute 'f' fnameescape(l:name)
-endfunction
-
-" Extracted from plug.vim
-function! spacevim#layer#status()
-  call s:new_window()
-
-  let b:spacevim_preview = -1
-  let s:spacevim_tab = tabpagenr()
-  let s:spacevim_buf = winbufnr(0)
-  call s:assign_name()
-
-  let [l:cnt, l:total] = [0, len(g:spacevim.loaded)]
-
-  let g:layers_sum = len(g:spacevim)
-
-  call append(0, ['Enabled layers: ' . '(' . len(g:spacevim.loaded) . '/' . g:layers_sum . ')'])
-  call setline(2, '[' . repeat('=', len(g:spacevim.loaded)) . ']')
-  let l:inx = 3
-  for l:layer in g:spacevim.loaded
-    call setline(l:inx, '+ ' . l:layer)
-    let l:inx = l:inx + 1
-  endfor
-  setlocal buftype=nofile bufhidden=wipe nobuflisted nolist noswapfile nowrap cursorline nomodifiable nospell
-  setf spacevim
-  if exists('g:syntax_on')
-    call s:syntax()
-  endif
-  nnoremap <silent> <buffer> q  :bd<CR>
 endfunction
 
 function! s:syntax()
