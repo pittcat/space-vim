@@ -16,7 +16,7 @@ nnoremap <silent> [q :<c-u>call <SID>cycle('cprev', 'clast')<CR>
 nnoremap <silent> ]l :<c-u>call <SID>cycle('lnext', 'lfirst')<CR>
 nnoremap <silent> [l :<c-u>call <SID>cycle('lprev', 'llast')<CR>
 
-nnoremap <silent> <buffer> q :cclose<bar>:lclose<CR>
+nnoremap <silent> <buffer> q :cclose<cr>
 nnoremap <buffer> <CR> <CR>
 
 setlocal nowrap
