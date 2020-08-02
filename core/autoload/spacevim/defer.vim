@@ -45,7 +45,7 @@ endfunction
 
 " 600
 function! spacevim#defer#motion(timer) abort
-  call s:lod('vim-sneak', 'vim-easymotion')
+  call s:lod('vim-sneak', 'aerojump.nvim')
 endfunction
 
 

@@ -41,8 +41,11 @@ let g:spacevim#map#leader#desc[' '] = {
       \ }
 
 let g:spacevim#map#leader#desc['a'] = {
-      \ 'name' : '+save/',
-      \ 's' : ['AutoSaveToggle','toogle-auto-save']
+      \ 'name' : '+/',
+      \ 's' : ['<Plug>(AerojumpSpace)','AerojumpSpace'],
+      \ 'j' : ['<Plug>(AerojumpBolt)','AerojumpBolt'],
+      \ 'a' : ['<Plug>(AerojumpFromCursorBolt)','AerojumpFromCursorBolt'],
+      \ 'd' : ['<Plug>(AerojumpDefault)','AerojumpDefault']
       \ }
 
 let g:spacevim#map#leader#desc['b'] = {
