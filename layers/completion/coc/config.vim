@@ -17,6 +17,7 @@ let g:coc_global_extensions=['coc-snippets','coc-pairs','coc-yank','coc-word',
       \'coc-explorer','coc-emoji','coc-markmap']
 let g:coc_snippet_next = '<C-j>'
 let g:coc_snippet_prev = '<C-k>'
+imap <C-l> <Plug>(coc-snippets-expand)
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
