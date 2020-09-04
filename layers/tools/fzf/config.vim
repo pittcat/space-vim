@@ -35,3 +35,4 @@
     " nnoremap <silent> <leader>fv  :<C-u>CocFzfList services<CR>
   " endif
 
+let g:fzf_preview_window = 'right:hidden'
