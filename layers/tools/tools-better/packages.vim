@@ -66,6 +66,8 @@ if g:spacevim.timer
   "}
   "hotoo/pangu.vim
   MP 'hotoo/pangu.vim'
+
+  MP 'wfxr/minimap.vim'
   call timer_start(1400,'spacevim#defer#awesome_tools')
 
 endif

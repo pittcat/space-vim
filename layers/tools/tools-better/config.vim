@@ -90,3 +90,7 @@
   " {pangu.vim
   autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing()
   " }
+  " {
+  nnoremap <silent> <leader>mp :MinimapToggle<cr>
+  autocmd FileType minimap noremap <buffer> q :MinimapClose<cr>
+  " }

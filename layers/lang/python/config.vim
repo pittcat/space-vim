@@ -13,3 +13,6 @@ nmap <silent> <leader>jk :Iconect<cr>
 nmap <silent> <leader>jc <Plug>(IPy-RunCell)
 nmap <silent> <leader>ja <Plug>(IPy-RunAll)
 map <silent> <leader>je <Plug>(IPy-Run)
+
+
+
