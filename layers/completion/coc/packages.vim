@@ -6,4 +6,4 @@ MP 'tjdevries/coc-zsh',{'for':'zsh'}
 " MP 'jsfaint/coc-neoinclude',{'for':['c','cpp',],'on_event': ['CursorHold', 'CursorHoldI', 'InsertEnter']}
 "
 " snippets
-MP 'honza/vim-snippets'
+MP 'honza/vim-snippets',{'commit':'791c72d'}
