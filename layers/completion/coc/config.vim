@@ -54,3 +54,9 @@ if !spacevim#load('moe-ale')
   nmap <silent> <leader>en <Plug>(coc-diagnostic-next)
   nmap <silent> <leader>el :CocList diagnostics<cr>
 endif
+
+" vim-snippets
+let g:snips_author = ''
+let g:snips_email = ''
+
+
