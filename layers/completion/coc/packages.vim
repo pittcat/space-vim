@@ -7,3 +7,5 @@ MP 'tjdevries/coc-zsh',{'for':'zsh'}
 "
 " snippets
 MP 'honza/vim-snippets'
+
+MP 'beeender/Comrade',{'for':'java'}
