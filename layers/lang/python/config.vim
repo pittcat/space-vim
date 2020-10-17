@@ -1,5 +1,7 @@
-
-
+" pdb-web
+autocmd FileType python nnoremap <buffer> <F1> :OpenBrowser http://localhost:5555/<cr>
+autocmd FileType python vnoremap <buffer> <leader>op <nop>
+"}
 
 " bfredl/nvim-ipy
 let g:nvim_ipy_perform_mappings = 0

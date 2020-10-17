@@ -110,7 +110,4 @@ autocmd TextChanged * silent! update
 command! Gede exec "AsyncRun!".'gede --args '.'%:p:h/exec/%:t:r'
 autocmd FileType c,cpp nnoremap <buffer> <F1> :Gede<cr>
 
-" pdb-web
-autocmd FileType python nnoremap <buffer> <F1> :OpenBrowser http://localhost:5555/<cr>
-autocmd FileType python vnoremap <buffer> <leader>op <nop>
-"}
+

@@ -7,9 +7,3 @@ MP 'tjdevries/coc-zsh',{'for':'zsh'}
 "
 " snippets
 MP 'honza/vim-snippets'
-MP 'beeender/Comrade',{'on':[]}
-
-augroup load_comrade
-  autocmd!
-  autocmd InsertEnter * call plug#load('Comrade') | autocmd! load_comrade
-augroup END

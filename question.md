@@ -6,8 +6,6 @@ autocmd FileType python nnoremap <buffer> <leader>op :OpenBrowser http://localho
 autocmd FileType python vnoremap <buffer> <leader>op <nop>
 ```
 
-### coc.nvim 也许和vim-pairs 矛盾
-
 ### 获取python 的版本号
 
 ```

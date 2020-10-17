@@ -1,10 +1,15 @@
 ### 周末做小调整，不做大更新，两个月做一次大的更新，添加新的特性的插件等等
 
 #### https://github.com/skywind3000/asynctasks.vim(M)
+
 #### https://github.com/puremourning/vimspector(L)
+
 #### https://github.com/AndrewRadev/tagalong.vim(S)
+
 #### https://github.com/gpanders/vim-medieval(S)
+
 #### ludovicchabant/vim-gutentags(S)
+
 ```
 let s:vim_tags = expand('~/.cache/tags')
 if !isdirectory(s:vim_tags)
@@ -23,13 +28,30 @@ if executable('gtags-cscope') && executable('gtags')
 	let g:gutentags_modules += ['gtags_cscope']
 endif
 ```
-有时候需要清空 ./cache/tags解决错误
+
+有时候需要清空 ./cache/tags 解决错误
 
 #### 学习插件
+
 xtal8/traces.vim
 google/vim-searchindex
 
+#### 添加 jetbrain ide 支持
+
+```cpp
+MP 'beeender/Comrade',{'on':[],'for':'java'}
+augroup load_comrade
+  autocmd!
+  autocmd InsertEnter call plug#load('Comrade') | autocmd! load_comrade
+augroup END
+
+CocInstall coc-comrade
+```
+
+这个方案只能单独的用 ide 和 nvim 的联合工作，不能与 lsp 的补全联用，会错乱。
+
 #### 更换插件时间限制
+
 - 模糊匹配插件:(1 year)---2020-06-29 22:49
-- debug插件:vimspector(1 year)---2020-06-29 22:49
-- 补全插件：coc-nvim(3个月更新一次)2020-06-29 22:50
+- debug 插件:vimspector(1 year)---2020-06-29 22:49
+- 补全插件：coc-nvim(3 个月更新一次)2020-06-29 22:50
