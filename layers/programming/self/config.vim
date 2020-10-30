@@ -107,7 +107,7 @@ autocmd TextChanged * silent! update
 "debug map <F1>
 "{
 "gdb
-command! Gede exec "AsyncRun!".'gede --args '.'%:p:h/exec/%:t:r'
-autocmd FileType c,cpp nnoremap <buffer> <F1> :Gede<cr>
+command! Gdbgui exec "AsyncRun!".'gdbgui '.'%:p:h/exec/%:t:r'
+autocmd FileType c,cpp nnoremap <buffer> <F1> :Gdbgui<cr>
 
 

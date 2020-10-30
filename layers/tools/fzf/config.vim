@@ -9,7 +9,7 @@
 
   nnoremap <Leader>bb :Buffers<CR>
   
-  nnoremap <Leader>b? :Buffers<CR>
+  nnoremap <localleader>jj :Buffers<CR>
   nnoremap <Leader>w? :Windows<CR>
   nnoremap <Leader>f? :FZFFiles<CR>
   nnoremap <Leader>ff :FZFFiles<CR>

@@ -61,3 +61,18 @@ function! spacevim#plug#asyncrun#Gdb()
     call spacevim#util#err("spacevim#util#Gdb not supported in current filetype!")
   endif
 endfunction
+
+
+function! spacevim#plug#asyncrun#Vsdebug()
+  let l:cmd = {
+        \ 'c'      : "gcc -g '%:p' -o  '%:p:h/exec/vsdebug';",
+        \ 'cpp'    : "g++ -g -std=c++11 '%:p' -o '%:p:h/exec/vsdebug';",
+        \}
+  let l:ft = &filetype
+  if has_key(l:cmd, l:ft)
+    exec 'w'
+    exec "AsyncRun! ".l:cmd[l:ft]
+  else
+    call spacevim#util#err("spacevim#util#Gdb not supported in current filetype!")
+  endif
+endfunction
