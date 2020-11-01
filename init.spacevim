@@ -16,11 +16,6 @@ let g:spacevim_layers = [
       \ 'vim-which-key',
       \ ]
 
-" If you want to have more control over the layer, try using Layer command.
-" if g:spacevim.gui
-"   Layer 'airline'
-" endif
-
 " Manage your own plugins, refer to vim-plug's instruction for more detials.
 function! UserInit()
 
@@ -31,8 +26,6 @@ endfunction
 
 " Override the default settings as well as adding extras
 function! UserConfig()
-  " If you have installed the powerline fonts and want to enable airline layer
-  " let g:airline_powerline_fonts=1
 
   " Use gui colors in terminal if available
   function! s:enable_termgui()

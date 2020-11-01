@@ -10,11 +10,6 @@ function! spacevim#defer#ale(timer) abort
   call s:lod('ale')
 endfunction
 
-" 250
-function! spacevim#defer#airline(timer) abort
-  call s:lod('vim-airline', 'vim-airline-themes')
-  redraws!
-endfunction
 
 " 280
 function! spacevim#defer#fzf(timer) abort
