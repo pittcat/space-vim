@@ -1,4 +1,8 @@
+let s:use_fancy_style = get(g:, 'airline_powerline_fonts', 0)
+
+"    
 let s:sep = s:use_fancy_style ? ["\ue0b0", "\ue0b1"] : ['', '']
+"    
 let s:right_sep = s:use_fancy_style ? ["\ue0b2", "\ue0b3"] : ['', '']
 
 function! s:get_color(group, attr) abort
