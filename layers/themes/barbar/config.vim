@@ -1,4 +1,6 @@
 nnoremap <silent> <A-m> :BufferPick<CR>
+nnoremap <silent> <S-Tab> :BufferPrevious<CR>
+nnoremap <silent> <Tab> :BufferNext<CR>
 
 let bufferline = {}
 
@@ -9,7 +11,7 @@ let bufferline.shadow = v:true
 let bufferline.animation = v:true
 
 " Enable/disable icons
-let bufferline.icons = v:true
+let bufferline.icons = v:false
 
 " Enable/disable close button
 let bufferline.closable = v:true
