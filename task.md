@@ -50,6 +50,11 @@ CocInstall coc-comrade
 
 这个方案只能单独的用 ide 和 nvim 的联合工作，不能与 lsp 的补全联用，会错乱。
 
+#### treesitter 
+
+半年后切换到nvim-treesitter
+
+
 #### 更换插件时间限制
 
 - 模糊匹配插件:(1 year)---2020-06-29 22:49

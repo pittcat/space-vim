@@ -1,6 +1,3 @@
-" html5.vim {
-  let g:html5_event_handler_attributes_complete = 0
-" }
 
 " emmet.vim {
   let g:user_emmet_mode = 'a'

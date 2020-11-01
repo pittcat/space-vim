@@ -1,2 +1,2 @@
 MP 'bfredl/nvim-ipy',{'for':'python'}
-" syntax highlight by treesitter
+MP 'vim-python/python-syntax',{'for':'python'}
