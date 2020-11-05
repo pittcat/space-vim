@@ -1,6 +1,5 @@
-luafile $HOME/.space-vim/layers/tools/repl/iron.lua
+let g:neoterm_automap_keys=''
+let g:neoterm_default_mod='botright'
 
-let g:iron_map_defaults = 0
-
-nmap <C-c><C-l> <Plug>(iron-send-line)
-vmap <C-c><C-l> <Plug>(iron-visual-send)
+nnoremap <silent> <C-c><C-l> :TREPLSendLine<CR>
+vnoremap <silent> <C-c><C-l> :TREPLSendSelection<CR>

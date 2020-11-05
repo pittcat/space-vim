@@ -1,1 +1,1 @@
-MP 'hkupty/iron.nvim'
+MP 'kassio/neoterm'

@@ -7,9 +7,7 @@ let g:spacevim#map#localleader#desc['f']={
 
 let g:spacevim#map#localleader#desc['r']={
   \ 'name'  : '+Repl',
-  \ 'o' : ['IronRepl','Open Repl'],
-  \ 'r' : ['IronRestart','Restart Repl'],
-  \ 'i' : ['<plug>(iron-interrupt)','Interrupt Repl'],
-  \ 'q' : ['<Plug>(iron-exit)','Exit Repl'],
-  \ 'c' : ['<Plug>(iron-clear)','Clear Repl']
+  \ 'o' : ['Tnew','Open Repl'],
+  \ 'l' : ['Tclear!','Repl Clear'],
+  \ 't' : ['Ttoggle','Repl Ttoggle'],
   \}
