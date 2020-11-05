@@ -8,7 +8,7 @@ function! AddNewFile()
   silent execute '!touch' l:path
   execute 'edit' l:path
 endfunction
-nmap <leader>nb :call AddNewFile()<cr>
+nnoremap <leader>nb :call AddNewFile()<cr>
 function! AddNewFileBSB()
   " lcd %:p:h
   let l:filename = input('new file name(based on buffer info):','')
@@ -17,7 +17,7 @@ function! AddNewFileBSB()
   silent execute '!touch' l:path
   execute 'edit' l:path
 endfunction
-nmap <leader>nf :call AddNewFileBSB()<cr>
+nnoremap <leader>nf :call AddNewFileBSB()<cr>
 "}
 " {open .spacevim
 noremap <silent> <leader>fed :edit ~/.spacevim<cr>
