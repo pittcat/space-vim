@@ -66,7 +66,7 @@
   let g:zv_file_types = {
               \   'css'                 : 'css',
               \   'javascript'          : 'javascript,nodejs',
-              \   'python'              : 'python_3,scipy,numpy,matplotlib',
+              \   'python'              : 'python_3,scipy,numpy,matplotlib,pandas',
               \ }
   "}
 

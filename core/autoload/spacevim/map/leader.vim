@@ -115,11 +115,7 @@ let g:spacevim#map#leader#desc['h'] = {
       \ 'name' : '+help',
       \ }
 let g:spacevim#map#leader#desc['j'] = {
-      \ 'name' : '+jump/jupyter'                   ,
-      \ 'j' : 'easymotion-goto-char'       ,
-      \ 'J' : 'easymotion-goto-char-2'     ,
-      \ 'l' : 'jump-linewise'              ,
-      \ 'w' : 'jump-to-word-bidirectional' ,
+      \ 'name' : '+jupyter'                   ,
       \ }
 let g:spacevim#map#leader#desc['p'] = {
       \ 'name' : '+projects',
