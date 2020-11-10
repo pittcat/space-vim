@@ -23,6 +23,9 @@
   nnoremap <leader>rg :FZFRg <cr>
 
   nnoremap <leader>fh :History<cr>
+  
+  "words path /usr/share/dict/words
+  imap <c-s> <plug>(fzf-complete-word)
 
   " }
   " coc-fzf

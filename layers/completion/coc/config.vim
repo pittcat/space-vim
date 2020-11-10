@@ -12,7 +12,7 @@ else
 endif
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-let g:coc_global_extensions=['coc-snippets','coc-pairs','coc-yank','coc-word',
+let g:coc_global_extensions=['coc-snippets','coc-pairs','coc-yank',
       \'coc-template','coc-pyright','coc-clangd','coc-sh','coc-json','coc-cmake',
       \'coc-explorer','coc-emoji','coc-markmap']
 let g:coc_snippet_next = '<C-j>'
