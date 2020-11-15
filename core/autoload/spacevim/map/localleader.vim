@@ -11,3 +11,8 @@ let g:spacevim#map#localleader#desc['r']={
   \ 'l' : ['Tclear!','Repl Clear'],
   \ 't' : ['Ttoggle','Repl Ttoggle'],
   \}
+
+
+let g:spacevim#map#localleader#desc['j']={
+  \ 'name'  : '+buffer',
+  \}
