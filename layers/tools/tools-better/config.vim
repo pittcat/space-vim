@@ -96,6 +96,6 @@
   " }
   " {beacon
   let g:beacon_show_jumps = 0
-  let g:beacon_ignore_buffers = [\w*git*\w]
+  let g:beacon_fade = 0
   let g:beacon_ignore_filetypes = ['fzf']
   " }

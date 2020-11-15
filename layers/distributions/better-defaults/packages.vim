@@ -9,7 +9,6 @@ MP 'RRethy/vim-illuminate'
 call timer_start(500, 'spacevim#defer#defaults')
 
 
-MP 't9md/vim-choosewin', { 'on': '<Plug>(choosewin)' }
 MP 'mhinz/vim-startify', { 'on': 'Startify' }
 autocmd! User vim-startify call spacevim#autocmd#startify#Init()
 augroup spacevimStart

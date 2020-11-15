@@ -46,9 +46,7 @@ noremap <silent> <leader>da ggdG
 "{
 inoremap  <C-v> <esc>gUiwea
 "}
-"{change window quickly
-nnoremap <localleader>ww <C-W>w
-"}
+
 
 "{fold
 set foldmethod=manual
@@ -64,24 +62,7 @@ set mouse=a
 nnoremap <silent> <localleader>BD :bd!<cr>
 "}
 "
-"{
-imap <A-BS> <C-W>
-"}
-"{
-function! s:ZoomToggle() abort
-    if exists('t:zoomed') && t:zoomed
-        execute t:zoom_winrestcmd
-        let t:zoomed = 0
-    else
-        let t:zoom_winrestcmd = winrestcmd()
-        resize
-        vertical resize
-        let t:zoomed = 1
-    endif
-endfunction
-command! ZoomToggle call s:ZoomToggle()
-nnoremap <silent> <leader>wf :ZoomToggle<CR>
-"}
+
 "{toogle paste
 set pastetoggle=<F3>
 "}

@@ -30,8 +30,6 @@ endfor
 nnoremap <silent><Leader>bh :Startify<CR>
 
 
-" vim-choosewin
-nmap <Leader>cw <Plug>(choosewin)
 
 " util
 nnoremap <Leader>tc :call spacevim#util#ToggleCursorColumn()<CR>

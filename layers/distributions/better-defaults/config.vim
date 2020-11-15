@@ -33,8 +33,5 @@ let g:startify_session_persistence = 1
 " }
 
 
-" vim-choosewin {
-let g:choosewin_overlay_enable = 1
-" }
 
 execute 'source' fnamemodify(expand('<sfile>'), ':h') . '/keybindings.vim'
