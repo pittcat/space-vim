@@ -21,4 +21,3 @@ endfunction
 command! ZoomToggle call s:ZoomToggle()
 nnoremap <silent> <leader>wf :ZoomToggle<CR>
 "}
-
