@@ -1,29 +1,7 @@
 let g:spacevim#map#leader#desc =  get(g:, 'spacevim#map#leader#desc', {})
 let g:spacevim#map#leader#desc['name'] =  'space-vim root'
 
-for s:i in range(1, 9)
-  let g:spacevim#map#leader#desc[s:i] = 'window-'.s:i
-endfor
-unlet s:i
 
-nnoremap <Plug>(window_w) <C-W>w
-nnoremap <Plug>(window_r) <C-W>r
-nnoremap <Plug>(window_d) <C-W>c
-nnoremap <Plug>(window_q) <C-W>q
-nnoremap <Plug>(window_j) <C-W>j
-nnoremap <Plug>(window_k) <C-W>k
-nnoremap <Plug>(window_h) <C-W>h
-nnoremap <Plug>(window_l) <C-W>l
-nnoremap <Plug>(window_H) <C-W>5<
-nnoremap <Plug>(window_L) <C-W>5>
-nnoremap <Plug>(window_J) :resize +5<CR>
-nnoremap <Plug>(window_K) :resize -5<CR>
-nnoremap <Plug>(window_b) <C-W>=
-nnoremap <Plug>(window_s1) <C-W>s
-nnoremap <Plug>(window_s2) <C-W>s
-nnoremap <Plug>(window_v1) <C-W>v
-nnoremap <Plug>(window_v2) <C-W>v
-nnoremap <Plug>(window_2) <C-W>v
 
 let g:spacevim#map#leader#desc['?'] = [ 'Maps', 'show-keybindings' ]
 let g:spacevim#map#leader#desc[';'] = [ '<Plug>NERDCommenterToggle','commenter' ]
@@ -40,8 +18,10 @@ let g:spacevim#map#leader#desc[' '] = {
       \ '9' : 'tab-9'  ,
       \ }
 
+
+" better-motion layer
 let g:spacevim#map#leader#desc['a'] = {
-      \ 'name' : '+/',
+      \ 'name' : '+aeromotion',
       \ 's' : ['<Plug>(AerojumpSpace)','AerojumpSpace'],
       \ 'j' : ['<Plug>(AerojumpBolt)','AerojumpBolt'],
       \ 'a' : ['<Plug>(AerojumpFromCursorBolt)','AerojumpFromCursorBolt'],
@@ -50,15 +30,6 @@ let g:spacevim#map#leader#desc['a'] = {
 
 let g:spacevim#map#leader#desc['b'] = {
       \ 'name' : '+buffer',
-      \ '1' : ['b1', 'buffer 1'],
-      \ '2' : ['b2', 'buffer 2'],
-      \ '3' : ['b3', 'buffer 3'],
-      \ '4' : ['b4', 'buffer 4'],
-      \ '5' : ['b5', 'buffer 5'],
-      \ '6' : ['b6', 'buffer 6'],
-      \ '7' : ['b7', 'buffer 7'],
-      \ '8' : ['b8', 'buffer 8'],
-      \ '9' : ['b9', 'buffer 9'],
       \ 'c' : ['Copybuffer','copy-buffer'],
       \ 'd' : ['CorrectCloseBuffer', 'delete-buffer'],
       \ 'f' : ['bfirst', 'first-buffer'],
@@ -84,7 +55,7 @@ if spacevim#load('moe-ale')
 endif
 
 let g:spacevim#map#leader#desc['f'] = {
-      \ 'name' : 'fold',
+      \ 'name' : '+fold',
       \ '0' : ['set foldlevel=0', '0-fold-level'],
       \ '1' : ['set foldlevel=1', '1-fold-level'],
       \ '2' : ['set foldlevel=2', '2-fold-level'],
@@ -130,14 +101,31 @@ let g:spacevim#map#leader#desc['s'] = {
       \ 'c' : ['nohlsearch', 'search-clear-highlight']
       \ }
 let g:spacevim#map#leader#desc['t'] = {
-      \ 'name' : '+toggle',
-      \ 'g' : ['GitGutterToggle', 'gitgutter'],
+      \ 'name' : '+column',
       \ 'c' : ['spacevim#util#ToggleCursorColumn()', 'cursor-column'],
       \ 'C' : ['spacevim#util#ToggleColorColumn()', 'color-column'],
       \ }
-" let g:spacevim#map#leader#desc['u'] = [ 'call feedkeys("\<C-u>")', 'scroll-up' ]
 
 
+" window map
+nnoremap <Plug>(window_w) <C-W>w
+nnoremap <Plug>(window_r) <C-W>r
+nnoremap <Plug>(window_d) <C-W>c
+nnoremap <Plug>(window_q) <C-W>q
+nnoremap <Plug>(window_j) <C-W>j
+nnoremap <Plug>(window_k) <C-W>k
+nnoremap <Plug>(window_h) <C-W>h
+nnoremap <Plug>(window_l) <C-W>l
+nnoremap <Plug>(window_H) <C-W>5<
+nnoremap <Plug>(window_L) <C-W>5>
+nnoremap <Plug>(window_J) :resize +5<CR>
+nnoremap <Plug>(window_K) :resize -5<CR>
+nnoremap <Plug>(window_b) <C-W>=
+nnoremap <Plug>(window_s1) <C-W>s
+nnoremap <Plug>(window_s2) <C-W>s
+nnoremap <Plug>(window_v1) <C-W>v
+nnoremap <Plug>(window_v2) <C-W>v
+nnoremap <Plug>(window_2) <C-W>v
 
 let g:spacevim#map#leader#desc['w'] = {
       \ 'name' : '+windows',
@@ -175,3 +163,4 @@ let g:spacevim#map#leader#desc['p'] = {
       \ 'r' : ['PlugClean','clean-plugin'],
       \ 'u' : ['PlugUpdate','update-plugin'],
       \ }
+

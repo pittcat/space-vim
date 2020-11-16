@@ -35,18 +35,13 @@ autocmd BufEnter * if (expand('%:t')=='' && &filetype ==# '')
 
 
 " Remap for rename current word
-nmap <silent> <localleader>rn <Plug>(coc-rename)
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
-nnoremap <silent> <leader>rn :CocCommand workspace.renameCurrentFile<cr>
 
 
-" coc-template
-nnoremap <silent> <leader>at :CocCommand template.templateTop<CR>
 
 " coc-explorer
 nnoremap <silent> <F4> :CocCommand explorer<CR>
-nnoremap <silent> <leader>ft :CocCommand explorer<CR>
 
 " coc.nvim for diagnostic
 if !spacevim#load('moe-ale')

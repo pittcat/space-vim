@@ -15,7 +15,7 @@
   nnoremap <Leader>ff :FZFFiles<CR>
 
   nnoremap <silent> <Leader>sf :call spacevim#plug#fzf#Session()<CR>
-  nnoremap <silent> <leader>ct :FZFTags<cr>
+  nnoremap <silent> <leader>ft :FZFTags<cr>
   nnoremap <silent> <leader>bt :FZFBTags<cr>
   nnoremap <silent> <leader>ls :FZFBLines<cr>
   nnoremap <silent> <leader>es :FZFLocList<cr>
