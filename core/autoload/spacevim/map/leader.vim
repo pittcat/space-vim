@@ -18,6 +18,10 @@ let g:spacevim#map#leader#desc[' '] = {
       \ '9' : 'tab-9'  ,
       \ }
 
+" tools-better layer
+let g:spacevim#map#leader#desc['y'] = {
+      \ 'name' : 'translate',
+      \ }
 
 " better-motion layer
 let g:spacevim#map#leader#desc['a'] = {

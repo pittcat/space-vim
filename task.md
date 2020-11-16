@@ -50,6 +50,9 @@ CocInstall coc-comrade
 
 这个方案只能单独的用 ide 和 nvim 的联合工作，不能与 lsp 的补全联用，会错乱。
 
+#### 优化键位
+
+
 #### treesitter 
 
 半年后切换到nvim-treesitter
