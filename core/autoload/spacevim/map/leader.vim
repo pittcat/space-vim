@@ -54,7 +54,7 @@ let g:spacevim#map#leader#desc['a'] = {
       \ 't' : ['call feedkeys("\<Plug>(EasyAlign)")', 'easy-align'],
       \ }
 
-let g:spacevim#map#leader#desc['b'] = {
+let g:spacevim#map#leader#desc['k'] = {
       \ 'name' : '+buffer',
       \ 'c' : ['Copybuffer','copy-buffer'],
       \ 'd' : ['CorrectCloseBuffer', 'delete-buffer'],
