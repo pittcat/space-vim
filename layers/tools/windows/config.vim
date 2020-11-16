@@ -1,6 +1,6 @@
 " vim-choosewin {
 let g:choosewin_overlay_enable = 1
-nmap <Leader>cw <Plug>(choosewin)
+nmap <Leader>wc <Plug>(choosewin)
 " }
 "
 "{change window quickly

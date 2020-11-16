@@ -7,20 +7,19 @@
   xmap <Leader>? <plug>(fzf-maps-x)
   omap <Leader>? <plug>(fzf-maps-o)
 
-  nnoremap <Leader>bb :Buffers<CR>
-  
   nnoremap <localleader>jj :Buffers<CR>
   nnoremap <Leader>w? :Windows<CR>
   nnoremap <Leader>f? :FZFFiles<CR>
   nnoremap <Leader>ff :FZFFiles<CR>
-
-  nnoremap <silent> <Leader>sf :call spacevim#plug#fzf#Session()<CR>
+  
+  command! FZFSession call spacevim#plug#fzf#Session()
+  nnoremap <silent> <Leader>fo :FZFSession<CR>
   nnoremap <silent> <leader>ft :FZFTags<cr>
-  nnoremap <silent> <leader>bt :FZFBTags<cr>
-  nnoremap <silent> <leader>ls :FZFBLines<cr>
-  nnoremap <silent> <leader>es :FZFLocList<cr>
+  nnoremap <silent> <leader>fw :FZFBTags<cr>
+  nnoremap <silent> <leader>fl :FZFBLines<cr>
+  nnoremap <silent> <leader>fi :FZFLocList<cr>
 
-  nnoremap <leader>rg :FZFRg <cr>
+  nnoremap <leader>fr :FZFRg <cr>
 
   nnoremap <leader>fh :History<cr>
   

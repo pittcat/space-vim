@@ -6,4 +6,5 @@ let g:mkdp_highlight_css = '$HOME/.space-vim/layers/+lang/markdown/github-markdo
 
 autocmd FileType markdown nnoremap <silent> <buffer> <F5> :MarkdownPreview<CR>
 
-autocmd FileType markdown nnoremap <silent> <leader>mmp :call mdip#MarkdownClipboardImage()<CR>
+command MarkPimg call mdip#MarkdownClipboardImage()
+autocmd FileType markdown nnoremap <silent> <leader>mp :MarkPimg<CR>

@@ -1,12 +1,3 @@
-  "tpope/vim-eunuch
-  "{mkdir
-  function! CreateDirectory()
-    let l:directory = input('new directory name:','')
-    if(empty(l:directory)) | return | endif
-    execute 'Mkdir' l:directory
-  endfunction
-    noremap <leader>cd :call CreateDirectory()<cr>
-  "}
   "{BufOnly
   nnoremap <leader>bD :BufOnly<cr>
   "}
@@ -55,8 +46,8 @@
   let g:table_mode_corner = '|'
   " Use this option to define the delimiter which used by
   let g:table_mode_delimiter = ' '
-  noremap <leader>itb :Tableize<cr>
-  vnoremap <leader>itb :Tableize<cr>
+  noremap <leader>ji :Tableize<cr>
+  vnoremap <leader>ji :Tableize<cr>
   " }
 
   "{KabbAmine/zealvim.vim
@@ -78,10 +69,10 @@
 
   " voldikss/vim-translate-me
   " {
-  nmap <silent> <leader>yd <Plug>TranslateW
-  vmap <silent> <leader>yd <Plug>TranslateWV
-  nmap <silent> <leader>yr <Plug>TranslateR
-  vmap <silent> <leader>yr <Plug>TranslateRV
+  nmap <silent> <leader>di <Plug>TranslateW
+  vmap <silent> <leader>di <Plug>TranslateWV
+  nmap <silent> <leader>do <Plug>TranslateR
+  vmap <silent> <leader>do <Plug>TranslateRV
   let g:vtm_default_mapping=0
   " }
   " {voldikss/vim-codelf
@@ -91,7 +82,7 @@
   autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing()
   " }
   " {
-  nnoremap <silent> <leader>mp :MinimapToggle<cr>
+  nnoremap <silent> <leader>jm :MinimapToggle<cr>
   autocmd FileType minimap noremap <buffer> q :MinimapClose<cr>
   " }
   " {beacon

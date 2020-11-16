@@ -18,18 +18,40 @@ let g:spacevim#map#leader#desc[' '] = {
       \ '9' : 'tab-9'  ,
       \ }
 
+" self layer
+let g:spacevim#map#leader#desc['d'] = {
+      \ 'name' : '+delete/translate',
+      \ }
+
+let g:spacevim#map#leader#desc['n'] = {
+      \ 'name' : '+newfile',
+      \ }
+
+
+" plug/asyncrun.vim editing layer
+let g:spacevim#map#leader#desc['c'] = {
+      \ 'name' : '+compile/commenter',
+      \ }
+
 " tools-better layer
 let g:spacevim#map#leader#desc['y'] = {
-      \ 'name' : 'translate',
+      \ 'name' : '+translate',
       \ }
+
+" vista layer
+let g:spacevim#map#leader#desc['v'] = {
+      \ 'name' : '+vista',
+      \ }
+
 
 " better-motion layer
 let g:spacevim#map#leader#desc['a'] = {
-      \ 'name' : '+aeromotion',
+      \ 'name' : '+aeromotion/textalign',
       \ 's' : ['<Plug>(AerojumpSpace)','AerojumpSpace'],
       \ 'j' : ['<Plug>(AerojumpBolt)','AerojumpBolt'],
       \ 'a' : ['<Plug>(AerojumpFromCursorBolt)','AerojumpFromCursorBolt'],
-      \ 'd' : ['<Plug>(AerojumpDefault)','AerojumpDefault']
+      \ 'd' : ['<Plug>(AerojumpDefault)','AerojumpDefault'],
+      \ 't' : ['call feedkeys("\<Plug>(EasyAlign)")', 'easy-align'],
       \ }
 
 let g:spacevim#map#leader#desc['b'] = {
@@ -59,7 +81,7 @@ if spacevim#load('moe-ale')
 endif
 
 let g:spacevim#map#leader#desc['f'] = {
-      \ 'name' : '+fold',
+      \ 'name' : '+fold/fzf/save',
       \ '0' : ['set foldlevel=0', '0-fold-level'],
       \ '1' : ['set foldlevel=1', '1-fold-level'],
       \ '2' : ['set foldlevel=2', '2-fold-level'],
@@ -74,6 +96,8 @@ let g:spacevim#map#leader#desc['f'] = {
       \ 'R' : ['source $MYVIMRC', 'reload-vimrc'],
       \ }
 
+
+" plug/asyncrun.vim git layer
 let g:spacevim#map#leader#desc['g'] = {
       \ 'name' : '+git/version-control',
       \ 'a' : ['GitAdd()','Git Add'],
@@ -86,11 +110,8 @@ let g:spacevim#map#leader#desc['g'] = {
       \ 'r' : ['SignifyRefresh','Refresh Signify'],
       \ 's' : ['Gstatus', 'fugitive-status'],
       \ }
-let g:spacevim#map#leader#desc['h'] = {
-      \ 'name' : '+help',
-      \ }
 let g:spacevim#map#leader#desc['j'] = {
-      \ 'name' : '+jupyter'                   ,
+      \ 'name' : '+jupyter/tableize/minimap'                   ,
       \ }
 let g:spacevim#map#leader#desc['p'] = {
       \ 'name' : '+projects',
@@ -105,7 +126,7 @@ let g:spacevim#map#leader#desc['s'] = {
       \ 'c' : ['nohlsearch', 'search-clear-highlight']
       \ }
 let g:spacevim#map#leader#desc['t'] = {
-      \ 'name' : '+column',
+      \ 'name' : '+column/indentLine',
       \ 'c' : ['spacevim#util#ToggleCursorColumn()', 'cursor-column'],
       \ 'C' : ['spacevim#util#ToggleColorColumn()', 'color-column'],
       \ }
@@ -150,10 +171,7 @@ let g:spacevim#map#leader#desc['w'] = {
       \ 's' : ['call feedkeys("\<Plug>(window_s1)")', 'split-window-below'],
       \ 'v' : ['call feedkeys("\<Plug>(window_v1)")', 'split-window-below'],
       \ }
-let g:spacevim#map#leader#desc['x'] = {
-      \ 'name' : '+text',
-      \ 'a' : ['call feedkeys("\<Plug>(EasyAlign)")', 'easy-align'],
-      \ }
+
 
 
 let g:spacevim#map#leader#desc['p'] = {
@@ -167,4 +185,5 @@ let g:spacevim#map#leader#desc['p'] = {
       \ 'r' : ['PlugClean','clean-plugin'],
       \ 'u' : ['PlugUpdate','update-plugin'],
       \ }
+
 
