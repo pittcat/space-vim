@@ -24,8 +24,8 @@ let g:VM_theme = 'ocean'
   " nnoremap <silent> <localleader>fd :Fardo<cr>
 " }
 " {unblevable/quick-scope
-  nmap <localleader>qs <plug>(QuickScopeToggle)
-  xmap <localleader>qs <plug>(QuickScopeToggle)
+  nmap <localleader>ws <plug>(QuickScopeToggle)
+  xmap <localleader>ws <plug>(QuickScopeToggle)
   let g:qs_highlight_on_keys = ['t', 'T']
   augroup qs_colors
     autocmd!

@@ -22,7 +22,7 @@
   "{AndrewRadev/linediff.vim
   vmap <localleader>df :Linediff<cr>
   vmap <localleader>dr :LinediffReset<cr>
-  nmap <localleader>ls :LinediffShow<cr>
+  nmap <localleader>df :LinediffShow<cr>
   "}
   " {terryma/vim-smooth-scroll
   " avoid buffer change the cursor scroll

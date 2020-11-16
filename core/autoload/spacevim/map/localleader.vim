@@ -21,6 +21,21 @@ let g:spacevim#map#localleader#desc['j']={
   \}
 
 
+" programming tools-better layer
+let g:spacevim#map#localleader#desc['d']={
+  \ 'name'  : '+debuggen/linediff',
+  \}
+
+" .spacevim
+let g:spacevim#map#localleader#desc['p']={
+  \ 'name'  : '+upremoteplug/starttime',
+  \}
+
+" windows layer
+let g:spacevim#map#localleader#desc['w']={
+  \ 'name'  : '+windows/quickscope',
+  \}
+
 " coc layer
 let g:spacevim#map#localleader#desc['c']={
   \ 'name'  : '+Coc/Codef/Surround',
@@ -30,3 +45,5 @@ let g:spacevim#map#localleader#desc['c']={
   \ 'f':["CoCRenameFile","CocRenameF"],
   \ 'e':["CoCExplore","CocFiles"],
   \}
+
+
