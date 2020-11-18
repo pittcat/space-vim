@@ -42,8 +42,9 @@ let g:spacevim#map#localleader#desc['c']={
   \ 'g':["CocAction('jumpDefinition', 'drop')","CocDDefine"],
   \ 'v':["CocAction('jumpDefinition', 'vsplit')",'CocVDefine'],
   \ 'n':['<Plug>(coc-rename)','CocRename'],
-  \ 'f':["CoCRenameFile","CocRenameF"],
+  \ 'f':['CocRnameCFile','CocRenameF'],
   \ 'e':["CoCExplore","CocFiles"],
+  \ 'o':["CoCAddTemplateTop","CocATT"],
   \}
 
 

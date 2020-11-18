@@ -34,6 +34,10 @@ autocmd BufEnter * if (expand('%:t')=='' && &filetype ==# '')
       \ | nnoremap <silent> <buffer> q <C-w>c | endif
 
 
+command! -nargs=0 CoCAddTemplateTop :call CocAction('runCommand','template.templateTop')
+command! -nargs=0 CocRnameCFile :execute 'CocCommand workspace.renameCurrentFile'
+command! -nargs=0 CoCExplore :call CocAction('runCommand','explorer')
+
 " Remap for rename current word
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)

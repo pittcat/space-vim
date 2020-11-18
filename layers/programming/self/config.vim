@@ -18,7 +18,7 @@ function! AddNewFileBSB()
   silent execute '!touch' l:path
   execute 'edit' l:path
 endfunction
-command!  AddNewFile call AddNewFile()
+command!  AddNewFileBSB call AddNewFileBSB()
 nnoremap <leader>nf :AddNewFileBSB<cr>
 "}
 " {open .spacevim
