@@ -1,3 +1,5 @@
+set signcolumn=yes:1
+let g:ale_lint_delay = 100
 let g:ale_linters={
           \ 'vim' : ['vint'],
           \ 'html' : ['tidy'],
@@ -62,9 +64,10 @@ let g:ale_echo_msg_error_str =  '✖︎ Error'
 let g:ale_echo_msg_warning_str = '⚠ Warning'
 let g:ale_hover_to_preview = 1
 let g:ale_set_loclist = 1
-let g:ale_lint_on_text_changed = 'normal'
-let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_enter = 1
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 1
+let g:ale_lint_on_insert_leave = 1
 let g:ale_virtualtext_cursor = 1
 let g:ale_virtualtext_prefix = ' ✹ '
 
