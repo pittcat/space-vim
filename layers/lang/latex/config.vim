@@ -4,6 +4,10 @@
   let g:vim_markdown_math = 1
   let g:tex_flavor = 'latex'
   let g:vimtex_compiler_progname = 'nvr'
-  let g:livepreview_previewer = 'evince'
+
 " }
 "
+"{
+  let g:livepreview_previewer = 'evince'
+  let g:livepreview_cursorhold_recompile = 0
+"}

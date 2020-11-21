@@ -113,12 +113,6 @@ nnoremap \ ,
 command! Killallbuffer execute "bufdo bd"
 command! Copybuffer execute "%y+"
 "}
-"
-"{
-autocmd InsertLeave,WinEnter,WinLeave  * silent! write
-autocmd TextChanged,CursorHold,CursorMoved * silent! w
-"}
-"
 "debug map <F1>
 "{
 "gdb
