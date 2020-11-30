@@ -1,4 +1,4 @@
-let g:asyncrun_shell = '/usr/bin/zsh'
+let g:asyncrun_shell = '/bin/zsh'
 let g:asyncrun_shellflag = '-c'
 let $PYTHONUNBUFFERED=1
 
@@ -25,7 +25,7 @@ function! spacevim#plug#asyncrun#CompileAndRun()
   let l:ft = &filetype
   if has_key(l:cmd, l:ft)
     exec 'w'
-    exec "AsyncRun! -mode=term ".l:cmd[l:ft]
+    exec "AsyncRun! ".l:cmd[l:ft]
   else
     call spacevim#util#err("spacevim#util#CompileAndRun not supported in current filetype!")
   endif
@@ -42,7 +42,7 @@ function! spacevim#plug#asyncrun#Compile()
   let l:ft = &filetype
   if has_key(l:cmd, l:ft)
     exec 'w'
-    exec "AsyncRun! -mode=term ".l:cmd[l:ft]
+    exec "AsyncRun! ".l:cmd[l:ft]
   else
     call spacevim#util#err("spacevim#util#Compile not supported in current filetype!")
   endif
@@ -56,7 +56,7 @@ function! spacevim#plug#asyncrun#Gdb()
   let l:ft = &filetype
   if has_key(l:cmd, l:ft)
     exec 'w'
-    exec "AsyncRun! term".l:cmd[l:ft]
+    exec "AsyncRun! ".l:cmd[l:ft]
   else
     call spacevim#util#err("spacevim#util#Gdb not supported in current filetype!")
   endif

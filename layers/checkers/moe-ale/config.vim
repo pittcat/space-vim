@@ -6,7 +6,7 @@ let g:ale_linters={
           \ 'c' :[],
           \ 'cpp' :[],
           \ 'css' : ['prettier'],
-          \ 'python' : [],
+          \ 'python' : ['flake8'],
           \ 'markdown' : ['write-good'],
           \ 'javascript.jsx' : ['eslint'],
           \ 'javascript' : ['eslint'],
