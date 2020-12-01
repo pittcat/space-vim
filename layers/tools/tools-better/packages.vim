@@ -55,7 +55,7 @@ if g:spacevim.timer
   MP 'KabbAmine/zeavim.vim'
   "}
   "{tyru/open-browser.vim
-  MP 'voldikss/vim-search-me'
+  MP 'voldikss/vim-browser-search'
   MP 'tyru/open-browser.vim'
   "}
   "{voldikss/vim-codelf

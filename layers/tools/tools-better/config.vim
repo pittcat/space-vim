@@ -63,10 +63,11 @@
 
   "{tyru/open-browser.vim
   let g:vsm_default_mappings=0
-	nmap <leader>go :SearchCurrentText<cr>
-	vmap <leader>go :SearchVisualText<cr>
   "}
-
+  "{voldikss/vim-browser-search
+	nmap <leader>go <Plug>SearchNormal
+	vmap <leader>go <Plug>SearchVisual
+  " }
   " voldikss/vim-translate-me
   " {
   nmap <silent> <leader>di <Plug>TranslateW
