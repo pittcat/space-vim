@@ -40,9 +40,6 @@ if g:spacevim.timer
   "{AndrewRadev/linediff.vim
   MP 'AndrewRadev/linediff.vim'
   "}
-  "{dyng/ctrlsf.vim
-  " MP 'dyng/ctrlsf.vim'
-  "}
   call timer_start(900,'spacevim#defer#operation_freestyle')
 
   "{dhruvasagar/vim-table-mode
@@ -50,13 +47,6 @@ if g:spacevim.timer
   "}
   "{dietsche/vim-lastplace
   MP 'dietsche/vim-lastplace'
-  "}
-  "{KabbAmine/zeavim.vim
-  MP 'KabbAmine/zeavim.vim'
-  "}
-  "{tyru/open-browser.vim
-  MP 'voldikss/vim-browser-search'
-  MP 'tyru/open-browser.vim'
   "}
   "{voldikss/vim-codelf
   MP 'voldikss/vim-codelf'
