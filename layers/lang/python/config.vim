@@ -1,3 +1,7 @@
+" {
+let g:python_highlight_builtins = 1
+let g:python_highlight_class_vars = 1
+" }
 " pdb-web
 autocmd FileType python nnoremap <buffer> <F1> :OpenBrowser http://localhost:5555/<cr>
 autocmd FileType python vnoremap <buffer> <leader>op <nop>

@@ -79,7 +79,6 @@
   nnoremap <localleader>cd :Codelf 
   " }
   " {pangu.vim
-  autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing()
   " }
   " {
   nnoremap <silent> <leader>jm :MinimapToggle<cr>
