@@ -73,7 +73,7 @@ let g:ale_virtualtext_prefix = ' ✹ '
 
 " language
 "{
-let g:ale_python_flake8_options = '--ignore=W,E501,E231,E225,E741,E116,E3,E226,E121'         " python
+let g:ale_python_flake8_options = '--ignore=W,E501,E231,E225,E741,E116,E3,E226,E121,E266'         " python
 let g:ale_c_parse_compile_commands = 1                                                       " c/cpp
 "}
 

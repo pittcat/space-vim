@@ -50,23 +50,6 @@
   vnoremap <leader>ji :Tableize<cr>
   " }
 
-  "{KabbAmine/zealvim.vim
-  nmap <silent> <leader>gz <Plug>Zeavim
-  vmap <leader>gz <Plug>ZVVisSelection
-  let g:zv_disable_mapping = 1
-  let g:zv_file_types = {
-              \   'css'                 : 'css',
-              \   'javascript'          : 'javascript,nodejs',
-              \   'python'              : 'python_3,scipy,numpy,matplotlib,pandas',
-              \ }
-  "}
-
-  "{tyru/open-browser.vim
-  let g:vsm_default_mappings=0
-	nmap <leader>go :SearchCurrentText<cr>
-	vmap <leader>go :SearchVisualText<cr>
-  "}
-
   " voldikss/vim-translate-me
   " {
   nmap <silent> <leader>di <Plug>TranslateW
@@ -79,7 +62,6 @@
   nnoremap <localleader>cd :Codelf 
   " }
   " {pangu.vim
-  autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing()
   " }
   " {
   nnoremap <silent> <leader>jm :MinimapToggle<cr>

@@ -61,6 +61,6 @@ endfunction
 
 " 1400
 function! spacevim#defer#awesome_tools(timer) abort
-  call s:lod('vim-table-mode','vim-lastplace','zeavim.vim','open-browser.vim','vim-search-me','vim-codelf','pangu.vim','minimap.vim','beacon.nvim','vim-auto-save')
+  call s:lod('vim-table-mode','vim-lastplace','vim-codelf','pangu.vim','minimap.vim','beacon.nvim','vim-auto-save')
 endfunction
 

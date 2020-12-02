@@ -22,6 +22,10 @@ let g:vista_default_executive = 'ctags'
 let g:vista_executive_for = {
   \ 'cpp': 'coc',
   \ 'c': 'coc',
+<<<<<<< HEAD
+=======
+  \ 'go': 'coc',
+>>>>>>> dotfiles
   \ 'python': 'coc',
   \ }
 
