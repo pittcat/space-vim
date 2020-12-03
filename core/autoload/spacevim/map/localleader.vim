@@ -21,9 +21,21 @@ let g:spacevim#map#localleader#desc['j']={
   \}
 
 
-" programming tools-better layer
+" programming tools-better debugger layer
 let g:spacevim#map#localleader#desc['d']={
-  \ 'name'  : '+debuggen/linediff',
+  \ 'name'  : '+debug/linediff',
+  \ 'c':['vimspector#Continue()','Vcontinue'],
+  \ 's':['vimspector#Stop()','Vstop'],
+  \ 'r':['vimspector#Restart()','Vrestart'],
+  \ 'p':['vimspector#Pause()','Vpause'],
+  \ 't':['vimspector#ToggleBreakpoint()','Vtogglebt'],
+  \ 'e':['vimspector#RunToCursor()','Vruntocursor'],
+  \ 'n':['vimspector#StepOver()','Vstepover'],
+  \ 'i':['vimspector#StepInto()','Vstepinto'],
+  \ 'k':['vimspector#StepOut()','Vstepout'],
+  \ 'q':['vimspector#Reset()','Vreset'],
+  \ 'l':['vimspector#ListBreakpoints()','Vlistbt'],
+  \ 'w':['vimspector#ClearBreakpoints()','Vclearbt']
   \}
 
 " .spacevim
@@ -46,5 +58,4 @@ let g:spacevim#map#localleader#desc['c']={
   \ 'e':["CoCExplore","CocFiles"],
   \ 'o':["CoCAddTemplateTop","CocATT"],
   \}
-
 
