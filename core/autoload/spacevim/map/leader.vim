@@ -80,6 +80,13 @@ if spacevim#load('moe-ale')
         \ 'p' : ['call feedkeys("\<Plug>(ale_previous)")', 'previous-error']    ,
         \ 'f' : ['ALEFix ','format code']   ,
         \ }
+else
+  let g:spacevim#map#leader#desc['e'] = {
+        \ 'name' : '+errors',
+        \ 'l' :['CocDiagnostics','show errors'],
+        \ 'n' : ['<Plug>(coc-diagnostic-next)', 'next-error']    ,
+        \ 'p' : ['<Plug>(coc-diagnostic-prev)', 'previous-error']    ,
+        \ }
 endif
 
 let g:spacevim#map#leader#desc['f'] = {

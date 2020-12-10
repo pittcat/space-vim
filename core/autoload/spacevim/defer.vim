@@ -5,10 +5,6 @@ function! s:lod(...)
   endfor
 endfunction
 
-" 200
-function! spacevim#defer#ale(timer) abort
-  call s:lod('ale')
-endfunction
 
 
 " 280
