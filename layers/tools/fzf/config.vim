@@ -9,17 +9,16 @@
 
   nnoremap <localleader>jj :Buffers<CR>
   nnoremap <Leader>w? :Windows<CR>
-  nnoremap <Leader>f? :FZFFiles<CR>
-  nnoremap <Leader>ff :FZFFiles<CR>
+  nnoremap <Leader>f? :FZF<CR>
+  nnoremap <Leader>ff :FZF<CR>
   
   command! FZFSession call spacevim#plug#fzf#Session()
   nnoremap <silent> <Leader>fo :FZFSession<CR>
-  nnoremap <silent> <leader>ft :FZFTags<cr>
-  nnoremap <silent> <leader>fw :FZFBTags<cr>
-  nnoremap <silent> <leader>fl :FZFBLines<cr>
-  nnoremap <silent> <leader>fi :FZFLocList<cr>
+  nnoremap <silent> <leader>ft :Tags<cr>
+  nnoremap <silent> <leader>fw :BTags<cr>
+  nnoremap <silent> <leader>fl :BLines<cr>
 
-  nnoremap <leader>fr :FZFRg <cr>
+  nnoremap <leader>fr :Rg <cr>
 
   nnoremap <leader>fh :History<cr>
   
@@ -37,4 +36,4 @@
     " nnoremap <silent> <leader>fv  :<C-u>CocFzfList services<CR>
   " endif
 
-let g:fzf_preview_window = 'right:hidden'
+let g:fzf_preview_window = ['right:50%:hidden', 'ctrl-/']

@@ -9,7 +9,7 @@ endfunction
 
 " 280
 function! spacevim#defer#fzf(timer) abort
-  call s:lod('fzf', 'fzf.vim','fzf-preview.vim')
+  call s:lod('fzf', 'fzf.vim')
 endfunction
 
 " 300
