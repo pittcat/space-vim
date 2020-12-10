@@ -47,12 +47,6 @@ nmap <silent> gy <Plug>(coc-type-definition)
 " coc-explorer
 nnoremap <silent> <F4> :CocCommand explorer<CR>
 
-" coc.nvim for diagnostic
-if !spacevim#load('moe-ale')
-  nmap <silent> <leader>ep <Plug>(coc-diagnostic-prev)
-  nmap <silent> <leader>en <Plug>(coc-diagnostic-next)
-  nmap <silent> <leader>el :CocList diagnostics<cr>
-endif
 
 " vim-snippets
 let g:snips_author = ''
