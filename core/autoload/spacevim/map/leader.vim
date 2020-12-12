@@ -84,6 +84,7 @@ else
   let g:spacevim#map#leader#desc['e'] = {
         \ 'name' : '+errors',
         \ 'l' :['CocDiagnostics','show errors'],
+        \ 'c' :['lclose','close view']    ,
         \ 'n' : ['<Plug>(coc-diagnostic-next)', 'next-error']    ,
         \ 'p' : ['<Plug>(coc-diagnostic-prev)', 'previous-error']    ,
         \ }
@@ -101,7 +102,7 @@ let g:spacevim#map#leader#desc['f'] = {
       \ '7' : ['set foldlevel=7', '7-fold-level'],
       \ '8' : ['set foldlevel=8', '8-fold-level'],
       \ '9' : ['set foldlevel=9', '9-fold-level'],
-      \ 's' : ['save', 'save-file'],
+      \ 's' : ['update', 'save-file'],
       \ 'R' : ['source $MYVIMRC', 'reload-vimrc'],
       \ }
 

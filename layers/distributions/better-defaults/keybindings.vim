@@ -16,9 +16,6 @@ endfor
 " map y <Plug>(operator-flashy)
 " nmap Y <Plug>(operator-flashy)$
 
-" Startify
-nnoremap <silent><Leader>bh :Startify<CR>
-
 
 
 " util

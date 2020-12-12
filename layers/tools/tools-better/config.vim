@@ -1,5 +1,5 @@
   "{BufOnly
-  nnoremap <leader>bD :BufOnly<cr>
+  nnoremap <leader>kD :BufOnly<cr>
   "}
   "{briandoll/change-inside-surroundings.vim
   noremap <silent> <localleader>ci :ChangeInsideSurrounding<cr>
