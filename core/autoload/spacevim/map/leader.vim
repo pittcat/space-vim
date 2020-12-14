@@ -55,11 +55,10 @@ let g:spacevim#map#leader#desc['a'] = {
       \ }
 
 
-" vem 
+" 
 let g:spacevim#map#leader#desc['k'] = {
       \ 'name' : '+buffer',
       \ 'c' : ['Copybuffer','copy-buffer'],
-      \ 'd' : ['call feedkeys("\<Plug>vem_delete_buffer-")', 'delete-buffer'],
       \ 'f' : ['bfirst', 'first-buffer'],
       \ 'h' : ['Startify', 'home-buffer'],
       \ 'k' : ['bw', 'kill-buffer'],
