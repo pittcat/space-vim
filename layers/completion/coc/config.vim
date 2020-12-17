@@ -14,21 +14,13 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 let g:coc_global_extensions=['coc-snippets','coc-pairs','coc-yank','coc-word','coc-texlab',
       \'coc-template','coc-pyright','coc-clangd','coc-sh','coc-json','coc-cmake',
-      \'coc-explorer','coc-emoji','coc-markmap']
+      \'coc-vimlsp','coc-explorer','coc-emoji','coc-markmap']
 let g:coc_snippet_next = '<C-j>'
 let g:coc_snippet_prev = '<C-k>'
 imap <C-l> <Plug>(coc-snippets-expand)
 
 " Use K to show documentation in preview window
-nnoremap <silent> K :call <SID>show_documentation()<CR>
-
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  else
-    call CocAction('doHover')
-  endif
-endfunction
+nnoremap <silent> K :call CocAction('doHover')<CR>
 
 autocmd BufEnter * if (expand('%:t')=='' && &filetype ==# '')
       \ | nnoremap <silent> <buffer> q <C-w>c | endif

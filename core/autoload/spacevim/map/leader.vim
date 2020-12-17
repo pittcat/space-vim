@@ -1,8 +1,6 @@
 let g:spacevim#map#leader#desc =  get(g:, 'spacevim#map#leader#desc', {})
 let g:spacevim#map#leader#desc['name'] =  'space-vim root'
 
-
-
 let g:spacevim#map#leader#desc['?'] = [ 'Maps', 'show-keybindings' ]
 let g:spacevim#map#leader#desc[';'] = [ '<Plug>NERDCommenterToggle','commenter' ]
 let g:spacevim#map#leader#desc[' '] = {

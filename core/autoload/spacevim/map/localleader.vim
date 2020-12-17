@@ -34,7 +34,7 @@ if spacevim#load('debugger')
     \ 'n':['vimspector#StepOver()','Vstepover'],
     \ 'i':['vimspector#StepInto()','Vstepinto'],
     \ 'k':['vimspector#StepOut()','Vstepout'],
-    \ 'q':['vimspector#Reset()','Vreset'],
+    \ 'q':['VimspertorDrop()','Vreset'],
     \ 'l':['vimspector#ListBreakpoints()','Vlistbt'],
     \ 'w':['vimspector#ClearBreakpoints()','Vclearbt']
     \}
