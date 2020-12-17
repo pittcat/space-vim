@@ -12,7 +12,7 @@ function CleanVpectorEmptyTerminal() abort
   for i in filter(range(1, bufnr('$')), 'buflisted(v:val)')
       if getbufvar(i, '&buftype', '')==#'terminal'
       " if (jobwait([getbufvar(bufname(i), '&channel')], 0)[0]==#-3) && getbufvar(i, '&buftype', '')==#'terminal'
-        if stridx(bufname(),'/usr/bin/zsh;#neoterm')!=#-1
+        if stridx(bufname(i),'neoterm')<0
           silent execute 'bd! '.bufname(i)
         endif
       endif

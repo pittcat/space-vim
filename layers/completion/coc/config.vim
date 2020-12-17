@@ -20,11 +20,26 @@ let g:coc_snippet_prev = '<C-k>'
 imap <C-l> <Plug>(coc-snippets-expand)
 
 " Use K to show documentation in preview window
-nnoremap <silent> K :call CocAction('doHover')<CR>
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  elseif (coc#rpc#ready())
+    call CocActionAsync('doHover')
+  else
+    execute '!' . &keywordprg . " " . expand('<cword>')
+  endif
+endfunction
 
-autocmd BufEnter * if (expand('%:t')=='' && &filetype ==# '')
-      \ | nnoremap <silent> <buffer> q <C-w>c | endif
+autocmd CursorHold * silent call CocActionAsync('highlight')
 
+function! s:show_documentation()
+    if (index(['vim','help'], &filetype) >= 0)
+        execute 'h '.expand('<cword>')
+    else
+        call CocAction('doHover')
+    endif
+endfunction
 
 command! -nargs=0 CoCAddTemplateTop :call CocAction('runCommand','template.templateTop')
 command! -nargs=0 CocRnameCFile :execute 'CocCommand workspace.renameCurrentFile'
