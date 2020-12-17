@@ -43,29 +43,12 @@ snippet pyldebug "Python Launch(Debug)"
 		"name": "<name>: Launch",
 		"type": "python",
 		"request": "launch",
-		"cwd": "<working directory>",
-		"python": "${2:/bin/python}",
+		"cwd": "${2:<workspaceRoot>}",
+		"python": "${3:/usr/bin/python}",
 		"stopOnEntry": true,
 		"console": "externalTerminal",
 		"debugOptions": [],
-		"program": "${3:<path to main python file>}"
-	}
-}
-endsnippet
-
-snippet pylvsdebug "Python Launch(Debug)"
-"${1:<name>}: Launch": {
-	"adapter": "vscode-python",
-	"configuration": {
-		"name": "<name>: Launch",
-		"type": "python",
-		"request": "launch",
-		"cwd": "<working directory>",
-		"python": "${2:/bin/python}",
-		"stopOnEntry": true,
-		"console": "externalTerminal",
-		"debugOptions": [],
-		"program": "${3:<path to main python file>}"
+		"program": "${4:<path to main python file>}"
 	}
 }
 endsnippet
@@ -81,3 +64,17 @@ snippet goldebug "Golang Launch(Debug)"
 	}
 }
 endsnippet
+
+snippet cfamilydebug "Description"
+"${1:<name>}: Launch": {
+  "adapter": "vscode-cpptools",
+  "configuration": {
+  "request": "launch",
+  "program": "${2:<bin_dir>}/vsdebug",
+  "cwd": "${3:<workspaceRoot>}",
+  "externalConsole": true,
+  "MIMode": "gdb"
+  }
+}
+endsnippet
+
