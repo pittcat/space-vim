@@ -1,8 +1,8 @@
-### 周末做小调整，不做大更新，两个月做一次大的更新，添加新的特性的插件等等
+### 一个月做一次大的更新，添加新的特性的插件等等
+
+#### 更新跟进coc.nvim(v0.0.80)
 
 #### https://github.com/skywind3000/asynctasks.vim(M)
-
-#### https://github.com/puremourning/vimspector(L)
 
 #### https://github.com/AndrewRadev/tagalong.vim(S)
 
@@ -49,9 +49,6 @@ CocInstall coc-comrade
 ```
 
 这个方案只能单独的用 ide 和 nvim 的联合工作，不能与 lsp 的补全联用，会错乱。
-
-#### 优化键位
-
 
 #### treesitter 
 
