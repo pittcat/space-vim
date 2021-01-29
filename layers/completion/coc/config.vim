@@ -13,7 +13,7 @@ endif
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 let g:coc_global_extensions=['coc-snippets','coc-pairs','coc-yank','coc-word','coc-texlab',
-      \'coc-template','coc-pyright','coc-clangd','coc-sh','coc-json','coc-cmake',
+      \'coc-pyright','coc-clangd','coc-sh','coc-json','coc-cmake',
       \'coc-vimlsp','coc-explorer','coc-emoji','coc-markmap']
 let g:coc_snippet_next = '<C-j>'
 let g:coc_snippet_prev = '<C-k>'
@@ -41,14 +41,12 @@ function! s:show_documentation()
     endif
 endfunction
 
-command! -nargs=0 CoCAddTemplateTop :call CocAction('runCommand','template.templateTop')
 command! -nargs=0 CocRnameCFile :execute 'CocCommand workspace.renameCurrentFile'
 command! -nargs=0 CoCExplore :call CocAction('runCommand','explorer')
 
 " Remap for rename current word
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
-
 
 
 " coc-explorer
