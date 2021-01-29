@@ -48,13 +48,11 @@ command! -nargs=0 CoCExplore :call CocAction('runCommand','explorer')
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 
-
 " coc-explorer
 nnoremap <silent> <F4> :CocCommand explorer<CR>
-
-
 " vim-snippets
 let g:snips_author = ''
 let g:snips_email = ''
 
-
+" vim-template
+let g:templates_directory = '~/.space-vim/templates'
