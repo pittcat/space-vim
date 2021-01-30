@@ -1,5 +1,4 @@
-nnoremap <F6> :Vista!!<CR>
-inoremap <F6> <ESC>:Vista!!<CR>
+nnoremap <Leader>vs :Vista!!<CR>
 if spacevim#load('clap')
   nnoremap <Leader>vf :Clap tags<CR>
 elseif spacevim#load('fzf')
