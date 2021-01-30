@@ -38,3 +38,7 @@ command! -nargs=0  NdapTRepl :lua require'dap'.repl.toggle()
 command! -nargs=0  NdapLRepl :lua require'dap'.repl.run_last()
 
 luafile ~/.space-vim/layers/tools/ndap/ndap.lua
+
+" python
+command! -nargs=0  NdapPyTest :lua require('dap-python').test_method()
+autocmd FileType python nnoremap <buffer> <localleader>dn :NdapPyTest<cr>

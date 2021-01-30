@@ -1,6 +1,9 @@
 local dap = require('dap')
 local api = vim.api
 
+-- python
+require('dap-python').test_runner = 'pytest'
+
 -- variables hover
 local keymap_restore = {}
 dap.custom_event_handlers['event_initialized']['me'] = function()
