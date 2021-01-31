@@ -101,11 +101,6 @@ nnoremap <silent> <localleader>jD :bd!<cr>
 "}
 "
 
-"{toogle paste
-set pastetoggle=<F3>
-"}
-
-
 "{remap “\” as “,” for repeat search in opposite direction
 nnoremap \ ,
 "}
@@ -113,10 +108,3 @@ nnoremap \ ,
 command! Killallbuffer execute "bufdo bd"
 command! Copybuffer execute "%y+"
 "}
-"debug map <F1>
-"{
-"gdb
-command! Gdbgui exec "AsyncRun!".'gdbgui '.'%:p:h/exec/%:t:r'
-autocmd FileType c,cpp nnoremap <buffer> <F1> :Gdbgui<cr>
-
-

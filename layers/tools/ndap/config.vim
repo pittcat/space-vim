@@ -9,12 +9,11 @@ function CleanVpectorEmptyTerminal() abort
   endfor
 endfunction
 
+nnoremap <silent> <F1> :NdapContinue<CR>
+nnoremap <silent> <F2> :NdapStOver<CR>
+nnoremap <silent> <F3> :NdapStInto<CR>
+nnoremap <silent> <F4> :NdapExit<CR>
 nnoremap <silent> <F7> :call CleanVpectorEmptyTerminal()<cr>
-nnoremap <silent> <F6> :NdapContinue<CR>
-nnoremap <silent> <F10> :NdapStInto<CR>
-nnoremap <silent> <localleader>dc :NdapContinue<CR>
-nnoremap <silent> <localleader>ds :NdapStOver<CR>
-nnoremap <silent> <localleader>di :NdapStInto<CR>
 nnoremap <silent> <localleader>do :NdapStOut<CR>
 nnoremap <silent> <localleader>dt :NdapToggleBt<CR>
 nnoremap <silent> <localleader>dl :NdapListBt<CR>
@@ -22,7 +21,7 @@ nnoremap <silent> <localleader>de :NdapConBt<CR>
 nnoremap <silent> <localleader>dk :NdapLogBt<CR>
 nnoremap <silent> <localleader>dr :NdapORepl<CR>
 nnoremap <silent> <localleader>dw :NdapLRepl<CR>
-nnoremap <silent> <localleader>dp :NdapTRepl<CR>
+nnoremap <silent> <localleader>di :NdapTRepl<CR>
 
 lua require('dap-python').setup('/usr/bin/python')
 command! -nargs=0  NdapContinue :lua require'dap'.continue()
@@ -36,6 +35,7 @@ command! -nargs=0  NdapLogBt :lua require'dap'.set_breakpoint(nil, nil, vim.fn.i
 command! -nargs=0  NdapORepl :lua require'dap'.repl.open({}, 'vsplit')
 command! -nargs=0  NdapTRepl :lua require'dap'.repl.toggle()
 command! -nargs=0  NdapLRepl :lua require'dap'.repl.run_last()
+command! -nargs=0  NdapExit :lua require'dap'.disconnect()
 
 luafile ~/.space-vim/layers/tools/ndap/ndap.lua
 

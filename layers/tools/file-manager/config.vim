@@ -7,8 +7,8 @@ scriptencoding utf-8
   let g:NERDTreeDirArrowExpandable = "\u276f"
   let g:NERDTreeDirArrowCollapsible = "~"
 
-  nnoremap <silent> <F4> :NERDTreeToggle<CR>
-  inoremap <silent> <F4> <ESC>:NERDTreeToggle<CR>
+  nnoremap <silent> <F6> :NERDTreeToggle<CR>
+  inoremap <silent> <F6> <ESC>:NERDTreeToggle<CR>
   nnoremap <silent> <Leader>ft :NERDTreeToggle<CR>
   let NERDTreeChDirMode=0
   noremap <silent> <leader>nc :NERDTreeFind<cr>

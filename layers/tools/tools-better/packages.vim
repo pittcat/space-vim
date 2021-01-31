@@ -5,7 +5,7 @@ if g:spacevim.timer
   let g:mundo_width = 40
   let g:mundo_preview_height = 20
   " let g:mundo_right = 1
-  nnoremap <F2> :MundoToggle<CR>
+  nnoremap <F10> :MundoToggle<CR>
   set undodir=~/.undodir/
   set undofile
   "}

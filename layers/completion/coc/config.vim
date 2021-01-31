@@ -49,7 +49,7 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 
 " coc-explorer
-nnoremap <silent> <F4> :CocCommand explorer<CR>
+nnoremap <silent> <F6> :CocCommand explorer<CR>
 " vim-snippets
 let g:snips_author = ''
 let g:snips_email = ''

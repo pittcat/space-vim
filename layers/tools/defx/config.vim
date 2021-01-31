@@ -1,5 +1,5 @@
 " defx conf
-nnoremap <silent> <F4> :Defx<CR>
+nnoremap <silent> <F6> :Defx<CR>
 nnoremap <silent> <leader>ft :Defx<CR>
 command! DefxPwd Defx `expand('%:p:h')` -search=`expand('%:p')`
 noremap <silent> <leader>nc :DefxPwd<cr>
