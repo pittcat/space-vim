@@ -9,4 +9,4 @@ command! CbinPath execute CbinPath()
 autocmd FileType c,cpp nnoremap <buffer> <localleader>cp :CbinPath<cr>
 
 command! Gdbgui exec "AsyncRun!".'gdbgui '.'%:p:h/exec/%:t:r'
-autocmd FileType c,cpp nnoremap <buffer> <leader>gi :Gdbgui<cr>
+autocmd FileType c,cpp nnoremap <buffer> <leader>dc :Gdbgui<cr>

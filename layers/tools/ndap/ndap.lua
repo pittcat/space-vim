@@ -3,22 +3,13 @@ local api = vim.api
 
 -- python
 require('dap-python').test_runner = 'pytest'
--- go
-dap.adapters.go = {
-  type = 'executable';
-  command = 'node';
-  args = {os.getenv('HOME') .. '/.ndap_debugger/vscode-go/dist/debugAdapter.js'};
-}
-dap.configurations.go = {
-  {
-    type = 'go';
-    name = 'Debug';
-    request = 'launch';
-    showLog = false;
-    program = "${file}";
-    dlvToolPath = vim.fn.exepath('/usr/bin/dlv')  -- Adjust to where delve is installed
-  },
-}
+table.insert(dap.configurations.python, {
+  type = 'python',
+  request = 'launch',
+  name = 'Launch file in external terminal',
+  program = '${file}',   
+  console = 'externalTerminal';
+})
 
 -- js
 dap.adapters.node2 = {
@@ -36,6 +27,12 @@ dap.configurations.javascript = {
     protocol = 'inspector',
     console = 'integratedTerminal',
   },
+}
+
+-- external terminal
+dap.defaults.fallback.external_terminal = {
+  command = '/usr/bin/alacritty';
+  args = {'-e'};
 }
 
 -- variables hover
