@@ -59,3 +59,6 @@ CocInstall coc-comrade
 - 模糊匹配插件:(1 year)---2020-06-29 22:49
 - debug 插件:vimspector(1 year)---2020-06-29 22:49
 - 补全插件：coc-nvim(2 个月更新一次)2020-06-29 22:50
+
+#### 更该
+defer.vim 里面一些不用function
