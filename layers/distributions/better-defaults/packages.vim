@@ -23,5 +23,3 @@ augroup END
 " Bug here.
 " MP 'kana/vim-operator-user',         { 'on': '<Plug>(operator-flashy)' }
 " MP 'haya14busa/vim-operator-flashy', { 'on': '<Plug>(operator-flashy)' }
-
-MP 'google/vim-searchindex'

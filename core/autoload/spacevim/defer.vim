@@ -49,7 +49,6 @@ endfunction
 function! spacevim#defer#fugitive(timer) abort
   call s:lod('vim-fugitive','vim-githubinator')
 endfunction
-
 " 900
 function! spacevim#defer#operation_freestyle(timer) abort
   call s:lod('vim-repeat','BufOnly.vim','splitjoin.vim','vim-smooth-scroll','change-inside-surroundings.vim','linediff.vim')
