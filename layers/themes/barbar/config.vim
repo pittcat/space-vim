@@ -1,8 +1,9 @@
 " Use Tab to switch buffer
 nnoremap <silent> <C-s> :BufferPick<CR>
 nnoremap <silent> <leader>kd :BufferClose<CR>
-nnoremap <silent> <S-Tab> :BufferPrevious<CR>
-nnoremap <silent> <Tab> :BufferNext<CR>
+nnoremap <silent> <A-p> :BufferPrevious<CR>
+nnoremap <silent> <A-n> :BufferNext<CR>
+nnoremap <tab> <C-W>w
 
 let bufferline = {}
 
