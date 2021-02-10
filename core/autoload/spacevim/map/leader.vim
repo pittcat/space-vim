@@ -63,7 +63,6 @@ let g:spacevim#map#leader#desc['k'] = {
       \ 'l' : ['blast', 'last-buffer'],
       \ 'n' : ['bnext', 'next-buffer'],
       \ 'p' : ['bprevious', 'previous-buffer'],
-      \ 'K' : ['Killallbuffer', 'kill-all-buffer'],
       \ }
 
 if spacevim#load('moe-ale')

@@ -43,4 +43,4 @@ let bufferline.letters =
 " Sets the maximum padding width with which to surround each tab
 let bufferline.maximum_padding = 4
 
-luafile ~/.space-vim/layers/themes/vem/spaceline.lua
+luafile ~/.space-vim/layers/themes/barbar/spaceline.lua

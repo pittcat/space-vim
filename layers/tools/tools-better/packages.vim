@@ -61,5 +61,6 @@ if g:spacevim.timer
   MP 'DanilaMihailov/beacon.nvim'
   MP '907th/vim-auto-save'
   call timer_start(1400,'spacevim#defer#awesome_tools')
+  MP 'Asheq/close-buffers.vim'
 
 endif
