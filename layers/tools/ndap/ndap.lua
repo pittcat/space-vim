@@ -1,6 +1,25 @@
 local dap = require('dap')
 local api = vim.api
 
+-- cpp
+dap.adapters.cpp = {
+    type = 'executable',
+    name = "cppdbg",
+    command = os.getenv('HOME') .. '/.ndap_debugger/vimspector/gadgets/linux/download/vscode-cpptools/0.27.0/root/extension/debugAdapters/OpenDebugAD7',
+    args = {},
+    attach = {
+        pidProperty = "processId",
+        pidSelect = "ask"
+    }
+}
+
+vim.cmd [[
+    command! -complete=file -nargs=* DebugC lua require "my_debug".start_c_debugger({<f-args>}, "gdb")
+]]
+vim.cmd [[
+    command! -complete=file -nargs=* DebugRust lua require "my_debug".start_c_debugger({<f-args>}, "gdb", "rust-gdb")
+]]
+
 -- python
 require('dap-python').test_runner = 'pytest'
 table.insert(dap.configurations.python, {
