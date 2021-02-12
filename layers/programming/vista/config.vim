@@ -5,7 +5,14 @@ elseif spacevim#load('fzf')
   nnoremap <Leader>vf :Vista finder coc<CR>
 endif
 
+function! VistaNS()
+  echo "Disable vista for markdown"
+endfunction
+command!  VistaNS call VistaNS()
+autocmd FileType markdown nnoremap <buffer> <leader>vf :VistaNS<CR>
+autocmd FileType markdown nnoremap <buffer> <leader>vs :VistaNS<CR>
 
+let g:vista_enable_markdown_extension = 0
 let g:vista_sidebar_position = 'vertical topleft'
 let g:vista_sidebar_width = 40
 let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
