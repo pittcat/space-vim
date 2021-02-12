@@ -65,4 +65,3 @@ let g:spacevim#map#localleader#desc['c']={
   \ 'f':['CocRnameCFile','CocRenameF'],
   \ 'e':["CoCExplore","CocFiles"],
   \}
-

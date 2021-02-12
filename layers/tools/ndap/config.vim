@@ -20,7 +20,6 @@ nnoremap <silent> <localleader>dl :NdapListBt<CR>
 nnoremap <silent> <localleader>de :NdapConBt<CR>
 nnoremap <silent> <localleader>dk :NdapLogBt<CR>
 nnoremap <silent> <localleader>dr :NdapORepl<CR>
-nnoremap <silent> <localleader>dw :NdapLRepl<CR>
 nnoremap <silent> <localleader>di :NdapTRepl<CR>
 
 lua require('dap-python').setup('/usr/bin/python')
@@ -34,7 +33,6 @@ command! -nargs=0  NdapConBt :lua require'dap'.set_breakpoint(vim.fn.input('Brea
 command! -nargs=0  NdapLogBt :lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))
 command! -nargs=0  NdapORepl :lua require'dap'.repl.open({}, 'vsplit')
 command! -nargs=0  NdapTRepl :lua require'dap'.repl.toggle()
-command! -nargs=0  NdapLRepl :lua require'dap'.repl.run_last()
 command! -nargs=0  NdapExit :lua require'dap'.disconnect()
 
 luafile ~/.space-vim/layers/tools/ndap/ndap.lua
