@@ -1,13 +1,7 @@
 ### 一个月做一次大的更新，添加新的特性的插件等等
 
-#### 更新跟进coc.nvim(v0.0.80)
 
 #### https://github.com/skywind3000/asynctasks.vim(M)
-
-#### https://github.com/AndrewRadev/tagalong.vim(S)
-
-#### https://github.com/gpanders/vim-medieval(S)
-
 #### ludovicchabant/vim-gutentags(S)
 
 ```
@@ -35,23 +29,7 @@ endif
 
 xtal8/traces.vim
 
-#### 添加 jetbrain ide 支持
-
-```cpp
-MP 'beeender/Comrade',{'on':[],'for':'java'}
-augroup load_comrade
-  autocmd!
-  autocmd InsertEnter call plug#load('Comrade') | autocmd! load_comrade
-augroup END
-
-CocInstall coc-comrade
-```
-
-这个方案只能单独的用 ide 和 nvim 的联合工作，不能与 lsp 的补全联用，会错乱。
 
 #### treesitter 
 
 半年后切换到nvim-treesitter---2020-12-17
-
-#### 更该
-defer.vim 里面一些不用function

@@ -9,8 +9,8 @@
 
   nnoremap <localleader>jj :Buffers<CR>
   nnoremap <Leader>w? :Windows<CR>
-  nnoremap <Leader>f? :FZF<CR>
-  nnoremap <Leader>ff :FZF<CR>
+  nnoremap <Leader>f? :Files<CR>
+  nnoremap <Leader>ff :Files<CR>
   
   command! FZFSession call spacevim#plug#fzf#Session()
   nnoremap <silent> <Leader>fo :FZFSession<CR>

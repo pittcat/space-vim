@@ -1,5 +1,3 @@
-### How to get all buffer name lists ? How to match special buffer by match string ? 
-
 ### 屏幕闪烁，也许是OpenBrowser的问题
 ```
 autocmd FileType python nnoremap <buffer> <leader>op :OpenBrowser http://localhost:5555/<cr>
@@ -7,11 +5,13 @@ autocmd FileType python vnoremap <buffer> <leader>op <nop>
 ```
 
 
-### vimspector reset 之后留下一个无效的terminal buffer(debugger layer)
+### vista 在markdown 中的使用有问题
 
-临时解决办法
-```
-function VimspertorDrop() abort(debugger layer config file)
+总有报错：暂时解决方案事将vista 在markdown 里面禁用
 
-\ 'q':['VimspertorDrop()','Vreset'], (localleader.vim)
-```
+function! VistaNS()
+  echo "Disable vista for markdown"
+endfunction
+command!  VistaNS call VistaNS()
+autocmd FileType markdown nnoremap <buffer> <leader>vf :VistaNS<CR>
+autocmd FileType markdown nnoremap <buffer> <leader>vs :VistaNS<CR>
