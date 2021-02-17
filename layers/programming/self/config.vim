@@ -107,3 +107,25 @@ nnoremap \ ,
 "{self command
 command! Copybuffer execute "%y+"
 "}
+"{auto_save
+set autowriteall
+function FileAutoSave()
+  if exists('g:file_autosave_async')
+    return
+  endif
+
+  if @% == ""
+    return
+  elseif !filewritable(@%)
+    return
+  endif
+  let g:file_autosave_async = 1
+  call timer_start(800, 'FileAutoSaveAsync', {'repeat': 1})
+endfunction
+
+function FileAutoSaveAsync(timer)
+  silent! wa
+  unlet g:file_autosave_async
+endfunction
+autocmd FocusLost,InsertLeave,TextChanged * call FileAutoSave()
+"}

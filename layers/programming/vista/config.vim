@@ -13,6 +13,10 @@ autocmd FileType markdown nnoremap <buffer> <leader>vf :VistaNS<CR>
 autocmd FileType markdown nnoremap <buffer> <leader>vs :VistaNS<CR>
 
 let g:vista_enable_markdown_extension = 0
+let g:vista_update_on_text_changed = 1
+let g:vista_update_on_text_changed_delay = 2000
+let g:vista_close_on_fzf_select = 0
+
 let g:vista_sidebar_position = 'vertical topleft'
 let g:vista_sidebar_width = 40
 let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
