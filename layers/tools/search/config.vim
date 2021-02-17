@@ -16,9 +16,4 @@ let g:vsm_default_mappings=0
 nmap <leader>so <Plug>SearchNormal
 vmap <leader>so <Plug>SearchVisual
 " }
-" {
-nnoremap <silent> <leader>sj :SkylightJumpTo<CR>
-nnoremap <silent> <leader>sp :SkylightPreview<CR>
-nnoremap <silent><expr> <A-f> skylight#float#has_scroll() ? skylight#float#scroll(1) : "\<A-f>"
-nnoremap <silent><expr> <A-b> skylight#float#has_scroll() ? skylight#float#scroll(0) : "\<A-b>"
-" }
+

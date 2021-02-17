@@ -33,3 +33,5 @@ xtal8/traces.vim
 #### treesitter 
 
 半年后切换到nvim-treesitter---2020-12-17
+#### vista.vim
+等待bug解决得差不多了再行添加
