@@ -4,6 +4,7 @@ highlight link BqfPreviewRange IncSearch
 lua <<EOF
 require('bqf').setup({
     auto_enable = true,
+    auto_resize_height = false,
     preview = {
         win_height = 12,
         win_vheight = 12,

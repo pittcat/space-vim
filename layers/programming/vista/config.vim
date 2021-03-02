@@ -23,13 +23,6 @@ let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
 
 let g:vista_default_executive = 'ctags'
 
-let g:vista_executive_for = {
-  \ 'cpp': 'coc',
-  \ 'c': 'coc',
-  \ 'go': 'coc',
-  \ 'python': 'coc',
-  \ }
-
 let g:vista#renderer#enable_icon = 1
 
 let g:vista#renderer#icons = {
