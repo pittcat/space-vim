@@ -1,3 +1,14 @@
+"
+"{undotree
+  let g:undotree_SplitWidth = 40
+  let g:undotree_DiffpanelHeight = 20
+  nnoremap <F10> :UndotreeToggle<CR>
+  if !isdirectory($HOME."/.vim/undo")
+      call mkdir($HOME."/.vim/undo")
+  endif
+  set undodir=~/.vim/undo     "directory where the undo files will be stored
+  set undofile                    "turn on the feature
+"}
   "{BufOnly
   nnoremap <leader>kD :BufOnly<cr>
   "}

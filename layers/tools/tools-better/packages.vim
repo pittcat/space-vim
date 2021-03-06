@@ -2,15 +2,6 @@ if g:spacevim.timer
   "mbbill/undotree
   "{
   MP 'mbbill/undotree'
-  let g:undotree_SplitWidth = 40
-  let g:undotree_DiffpanelHeight = 20
-  " let g:mundo_right = 1
-  nnoremap <F10> :UndotreeToggle<CR>
-  if !isdirectory($HOME."/.vim/undo")
-      call mkdir($HOME."/.vim/undo")
-  endif
-  set undodir=~/.vim/undo     "directory where the undo files will be stored
-  set undofile                    "turn on the feature
   "}
 
   "{tpope/vim-eunuch'
