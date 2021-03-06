@@ -8,8 +8,8 @@ let g:sidebars = {
   \ 'undotree': {
   \     'position': 'left',
   \     'check_win': {nr -> getwinvar(nr, '&filetype') ==# 'undotree'},
-  \     'open': 'MundoShow',
-  \     'close': 'MundoHide'
+  \     'open': 'UndotreeShow',
+  \     'close': 'UndotreeHide'
   \ },
   \ }
 

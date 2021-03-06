@@ -42,7 +42,7 @@ endfunction
 
 "750
 function! spacevim#defer#filemanage(timer) abort
-  call s:lod('vim-mundo','vim-eunuch')
+  call s:lod('undotree','vim-eunuch')
 endfunction
 
 " 800
