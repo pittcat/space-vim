@@ -60,3 +60,7 @@ let g:templates_directory = '~/.space-vim/templates'
 
 " coc-fzf
 nnoremap <silent> <localleader>co :CocFzfList outline<cr>
+command! -nargs=0 CoCListError execute 'CocFzfList diagnostics'
+command! -nargs=0 CoCListCurError execute 'CocFzfList diagnostics --current-buf'
+let g:coc_fzf_preview = ''
+let g:coc_fzf_opts = []

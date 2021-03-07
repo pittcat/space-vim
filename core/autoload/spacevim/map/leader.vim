@@ -79,8 +79,8 @@ if spacevim#load('moe-ale')
 else
   let g:spacevim#map#leader#desc['e'] = {
         \ 'name' : '+errors',
-        \ 'l' :['CocDiagnostics','show errors'],
-        \ 'c' :['lclose','close view']    ,
+        \ 'l' :['CoCListError','show errors'],
+        \ 'c' :['CoCListCurError','show current errors']    ,
         \ 'n' : ['<Plug>(coc-diagnostic-next)', 'next-error']    ,
         \ 'p' : ['<Plug>(coc-diagnostic-prev)', 'previous-error']    ,
         \ }
