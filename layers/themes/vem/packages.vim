@@ -1,2 +1,3 @@
 MP 'pacha/vem-tabline'
-MP 'liuchengxu/eleline.vim'
+MP 'kyazdani42/nvim-web-devicons' 
+MP 'glepnir/galaxyline.nvim'
