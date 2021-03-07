@@ -38,8 +38,22 @@ nnoremap <silent> [p :pu!<cr>
 "}
 "{ buffer and file 
 function! DeleteFileAndCloseBuffer()
-  if expand('%')!=''
-    call delete(expand('%')) | bdelete!
+  if ( &ft == 'help' )
+    echohl Error
+    echo "Cannot delete a help buffer!"
+    echohl None
+    return -1
+  else
+    let theFile=expand('%:p')
+  endif
+  execute "bdelete! ".theFile
+  let delStatus=delete(theFile)
+  if(delStatus == 0)
+    echo "Deleted " . theFile
+  else
+    echohl WarningMsg
+    echo "Failed to delete " . theFile
+    echohl None
   endif
 endfun
 command DFileCBuffer call DeleteFileAndCloseBuffer()
@@ -49,7 +63,6 @@ noremap <silent> <leader>da ggdG
 "{
 inoremap  <C-v> <esc>gUiwea
 "}
-
 
 "{fold
 set foldmethod=manual
@@ -120,7 +133,7 @@ function FileAutoSave()
     return
   endif
   let g:file_autosave_async = 1
-  call timer_start(800, 'FileAutoSaveAsync', {'repeat': 1})
+  call timer_start(300, 'FileAutoSaveAsync', {'repeat': 1})
 endfunction
 
 function FileAutoSaveAsync(timer)
