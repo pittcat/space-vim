@@ -50,7 +50,17 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 
 " coc-explorer
-nnoremap <silent> <F6> :CocCommand explorer<CR>
+
+let g:coc_explorer_global_presets = {
+\   'floating': {
+\     'position': 'floating',
+\     'open-action-strategy': 'sourceWindow',
+\   },
+\   'buffer': {
+\     'sources': [{'name': 'buffer', 'expand': v:true}]
+\   },
+\ }
+nnoremap <silent> <F6> :CocCommand explorer --preset floating<CR>
 " vim-snippets
 let g:snips_author = ''
 let g:snips_email = ''

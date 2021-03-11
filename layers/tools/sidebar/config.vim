@@ -2,8 +2,8 @@ let g:sidebars = {
   \ 'coc-explorer': {
   \     'position': 'left',
   \     'check_win': {nr -> getwinvar(nr, '&filetype') ==# 'coc-explorer'},
-  \     'open': 'CocCommand explorer --no-toggle',
-  \     'close': 'CocCommand explorer --toggle'
+  \     'open': 'CocCommand explorer --preset floating --no-toggle',
+  \     'close': 'CocCommand explorer --preset floating --toggle'
   \ },
   \ 'undotree': {
   \     'position': 'left',
