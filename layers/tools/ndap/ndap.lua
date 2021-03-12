@@ -1,6 +1,7 @@
 local dap = require('dap')
 local api = vim.api
 
+vim.fn.sign_define('DapBreakpoint', {text='🛑', texthl='', linehl='', numhl=''})
 
 -- python
 require('dap-python').test_runner = 'pytest'
@@ -12,6 +13,7 @@ table.insert(dap.configurations.python, {
   console = 'externalTerminal';
 })
 
+-- go
 dap.adapters.go = function(callback, config)
   local handle
   local pid_or_err
