@@ -33,7 +33,6 @@ let g:spacevim#map#leader#desc['c'] = {
 
 " tools-better layer
 let g:spacevim#map#leader#desc['y'] = {
-      \ 'name' : '+translate',
       \ }
 
 " vista layer
