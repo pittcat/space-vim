@@ -36,28 +36,6 @@ nnoremap <silent> ]<space> :pu _<cr>:'[-1<cr>
 nnoremap <silent> ]p :pu<cr>
 nnoremap <silent> [p :pu!<cr>
 "}
-"{ buffer and file 
-function! DeleteFileAndCloseBuffer()
-  if ( &ft == 'help' )
-    echohl Error
-    echo "Cannot delete a help buffer!"
-    echohl None
-    return -1
-  else
-    let theFile=expand('%:p')
-  endif
-  execute "bdelete! ".theFile
-  let delStatus=delete(theFile)
-  if(delStatus == 0)
-    echo "Deleted " . theFile
-  else
-    echohl WarningMsg
-    echo "Failed to delete " . theFile
-    echohl None
-  endif
-endfun
-command DFileCBuffer call DeleteFileAndCloseBuffer()
-noremap <silent> <leader>df :DFileCBuffer<cr>
 noremap <silent> <leader>da ggdG
 "}
 "{
