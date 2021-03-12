@@ -1,19 +1,9 @@
-function CleanVpectorEmptyTerminal() abort
-  for i in filter(range(1, bufnr('$')), 'buflisted(v:val)')
-      if getbufvar(i, '&buftype', '')==#'terminal'
-      " if (jobwait([getbufvar(bufname(i), '&channel')], 0)[0]==#-3) && getbufvar(i, '&buftype', '')==#'terminal'
-        if stridx(bufname(i),'neoterm')<0
-          silent execute 'bd! '.bufname(i)
-        endif
-      endif
-  endfor
-endfunction
 
 nnoremap <silent> <F1> :NdapContinue<CR>
 nnoremap <silent> <F2> :NdapStOver<CR>
 nnoremap <silent> <F3> :NdapStInto<CR>
 nnoremap <silent> <F4> :NdapExit<CR>
-nnoremap <silent> <F7> :call CleanVpectorEmptyTerminal()<cr>
+nnoremap <silent> <F5> :NdapToggleBt<CR>
 nnoremap <silent> <localleader>do :NdapStOut<CR>
 nnoremap <silent> <localleader>dt :NdapToggleBt<CR>
 nnoremap <silent> <localleader>dl :NdapListBt<CR>

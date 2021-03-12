@@ -10,7 +10,7 @@ scriptencoding utf-8
   command! AsyCompile execute spacevim#plug#asyncrun#Compile()
   nnoremap <silent> <F9> :AsyncStop<cr>
   noremap <silent> <F8> :call asyncrun#quickfix_toggle(14)<cr>
-  nnoremap <silent> <F5> :call spacevim#plug#asyncrun#CompileAndRun()<CR>
+  nnoremap <silent> <F7> :call spacevim#plug#asyncrun#CompileAndRun()<CR>
   nnoremap <leader>cp :AsyCompile<CR>
   nnoremap <silent> <localleader>dg :GdbGen<cr>
   nnoremap <silent> <localleader>dv :VsdebugGen<cr>
