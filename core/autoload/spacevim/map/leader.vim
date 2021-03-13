@@ -44,9 +44,6 @@ let g:spacevim#map#leader#desc['v'] = {
 " better-motion layer
 let g:spacevim#map#leader#desc['a'] = {
       \ 'name' : 'motion/textalign',
-      \ 'j' : ['HopWord','HopWord'],
-      \ 'k' : ['HopPattern','HopPattern'],
-      \ 'l' : ['HopLine','HopLine'],
       \ 't' : ['call feedkeys("\<Plug>(EasyAlign)")', 'easy-align'],
       \ }
 
