@@ -1,1 +1,1 @@
-MP 'justinmk/vim-sneak'
+MP 'rhysd/clever-f.vim'

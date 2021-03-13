@@ -1,5 +1,2 @@
-"{justinmk/vim-sneak
-nmap s <Plug>Sneak_s
-nmap S <Plug>Sneak_S
-"}
-
+nmap ; <Plug>(clever-f-repeat-forward)
+nmap \ <Plug>(clever-f-repeat-back)

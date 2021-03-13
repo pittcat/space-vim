@@ -53,7 +53,7 @@ let g:spacevim#map#localleader#desc['p']={
 
 " windows layer
 let g:spacevim#map#localleader#desc['w']={
-  \ 'name'  : '+windows/quickscope',
+  \ 'name'  : '+windows',
   \}
 
 " coc layer

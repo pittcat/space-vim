@@ -92,9 +92,6 @@ nnoremap <silent> <localleader>jD :bd!<cr>
 "}
 "
 
-"{remap “\” as “,” for repeat search in opposite direction
-nnoremap \ ,
-"}
 "{self command
 command! Copybuffer execute "%y+"
 "}

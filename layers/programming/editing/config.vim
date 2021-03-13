@@ -23,14 +23,3 @@ let g:VM_theme = 'ocean'
 " {brooth/far.vim
   " nnoremap <silent> <localleader>fd :Fardo<cr>
 " }
-" {unblevable/quick-scope
-  nmap <localleader>ws <plug>(QuickScopeToggle)
-  xmap <localleader>ws <plug>(QuickScopeToggle)
-  let g:qs_highlight_on_keys = ['t', 'T']
-  augroup qs_colors
-    autocmd!
-    autocmd ColorScheme * highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline
-    autocmd ColorScheme * highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
-  augroup END
-
-" }
