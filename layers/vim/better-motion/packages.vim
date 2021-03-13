@@ -1,2 +1,2 @@
-MP 'justinmk/vim-sneak'                  , { 'on': [] }
+MP 'justinmk/vim-sneak'
 MP 'phaazon/hop.nvim'
