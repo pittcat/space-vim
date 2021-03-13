@@ -43,11 +43,10 @@ let g:spacevim#map#leader#desc['v'] = {
 
 " better-motion layer
 let g:spacevim#map#leader#desc['a'] = {
-      \ 'name' : '+aeromotion/textalign',
-      \ 's' : ['<Plug>(AerojumpSpace)','AerojumpSpace'],
-      \ 'j' : ['<Plug>(AerojumpBolt)','AerojumpBolt'],
-      \ 'a' : ['<Plug>(AerojumpFromCursorBolt)','AerojumpFromCursorBolt'],
-      \ 'd' : ['<Plug>(AerojumpDefault)','AerojumpDefault'],
+      \ 'name' : 'motion/textalign',
+      \ 'j' : ['HopWord','HopWord'],
+      \ 'k' : ['HopPattern','HopPattern'],
+      \ 'l' : ['HopLine','HopLine'],
       \ 't' : ['call feedkeys("\<Plug>(EasyAlign)")', 'easy-align'],
       \ }
 
