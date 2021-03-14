@@ -1,9 +1,9 @@
 let g:sidebars = {
-  \ 'coc-explorer': {
+  \ 'filemanager': {
   \     'position': 'left',
-  \     'check_win': {nr -> getwinvar(nr, '&filetype') ==# 'coc-explorer'},
-  \     'open': 'CocCommand explorer --preset floating --no-toggle',
-  \     'close': 'CocCommand explorer --preset floating --toggle'
+  \     'check_win': {nr -> getwinvar(nr, '&filetype') ==# 'rnvimr'},
+  \     'open': 'RnvimrToggle',
+  \     'close': 'RnvimrToggle'
   \ },
   \ 'undotree': {
   \     'position': 'left',
@@ -13,5 +13,5 @@ let g:sidebars = {
   \ },
   \ }
 
-noremap <silent> <M-1> :call sidebar#toggle('coc-explorer')<CR>
+noremap <silent> <M-1> :call sidebar#toggle('filemanager')<CR>
 noremap <silent> <M-2> :call sidebar#toggle('undotree')<CR>

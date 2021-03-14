@@ -15,7 +15,7 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 let g:coc_global_extensions=['coc-snippets','coc-pairs','coc-yank','coc-word','coc-texlab',
       \'coc-pyright','coc-clangd','coc-sh','coc-json','coc-cmake','coc-tsserver','coc-css',
       \ 'coc-html','coc-go',
-      \'coc-vimlsp','coc-explorer','coc-emoji','coc-markmap']
+      \'coc-vimlsp','coc-emoji','coc-markmap']
 let g:coc_snippet_next = '<C-j>'
 let g:coc_snippet_prev = '<C-k>'
 imap <C-l> <Plug>(coc-snippets-expand)
@@ -51,16 +51,16 @@ nmap <silent> gy <Plug>(coc-type-definition)
 
 " coc-explorer
 
-let g:coc_explorer_global_presets = {
-\   'floating': {
-\     'position': 'floating',
-\     'open-action-strategy': 'sourceWindow',
-\   },
-\   'buffer': {
-\     'sources': [{'name': 'buffer', 'expand': v:true}]
-\   },
-\ }
-nnoremap <silent> <F6> :CocCommand explorer --preset floating<CR>
+" let g:coc_explorer_global_presets = {
+" \   'floating': {
+" \     'position': 'floating',
+" \     'open-action-strategy': 'sourceWindow',
+" \   },
+" \   'buffer': {
+" \     'sources': [{'name': 'buffer', 'expand': v:true}]
+" \   },
+" \ }
+" nnoremap <silent> <F6> :CocCommand explorer --preset floating<CR>
 " vim-snippets
 let g:snips_author = ''
 let g:snips_email = ''
