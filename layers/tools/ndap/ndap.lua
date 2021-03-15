@@ -16,10 +16,18 @@ dap.adapters.cpp = {
 }
 
 vim.cmd [[
-    command! -complete=file -nargs=* DebugC lua require "ndap_debug".start_c_debugger({<f-args>}, "gdb")
+    command! -complete=file -nargs=* DebugC lua require "ndap_debug".start_c_debugger_interminal({<f-args>}, "gdb")
 ]]
 vim.cmd [[
-    command! -complete=file -nargs=* DebugRust lua require "ndap_debug".start_c_debugger({<f-args>}, "gdb", "rust-gdb")
+    command! -complete=file -nargs=* DebugRust lua require "ndap_debug".start_c_debugger_interminal({<f-args>}, "gdb", "rust-gdb")
+]]
+
+vim.cmd [[
+    command! -complete=file -nargs=* ExDebugC lua require "ndap_debug".start_c_debugger_external_terminal({<f-args>}, "gdb")
+]]
+
+vim.cmd [[
+    command! -complete=file -nargs=* ExDebugRust lua require "ndap_debug".start_c_debugger_external_terminal({<f-args>}, "gdb", "rust-gdb")
 ]]
 
 -- python
