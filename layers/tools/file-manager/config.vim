@@ -1,5 +1,6 @@
-nnoremap <silent> <F6> :RnvimrToggle<CR>
-tnoremap <silent> <F6> <C-\><C-n>:RnvimrToggle<CR>
+" map exists in sidebar layer
+nnoremap <silent> <F10> :RnvimrToggle<CR>
+tnoremap <silent> <F10> <C-\><C-n>:RnvimrToggle<CR>
 
 " Make Ranger replace Netrw and be the file explorer
 let g:rnvimr_enable_ex = 1

@@ -3,6 +3,25 @@ local api = vim.api
 
 vim.fn.sign_define('DapBreakpoint', {text='🛑', texthl='', linehl='', numhl=''})
 
+-- cpp
+dap.adapters.cpp = {
+    type = 'executable',
+    name = "cppdbg",
+    command = os.getenv('HOME') .. '/.ndap_debugger/ms-vscode.cpptools-1.2.2/debugAdapters/OpenDebugAD7',
+    args = {},
+    attach = {
+        pidProperty = "processId",
+        pidSelect = "ask"
+    }
+}
+
+vim.cmd [[
+    command! -complete=file -nargs=* DebugC lua require "ndap_debug".start_c_debugger({<f-args>}, "gdb")
+]]
+vim.cmd [[
+    command! -complete=file -nargs=* DebugRust lua require "ndap_debug".start_c_debugger({<f-args>}, "gdb", "rust-gdb")
+]]
+
 -- python
 require('dap-python').test_runner = 'pytest'
 table.insert(dap.configurations.python, {
@@ -31,8 +50,7 @@ dap.adapters.go = function(callback, config)
     end
   )
    ----should we wait for delve to start???
-  vim.defer_fn(
-  function()
+  vim.defer_fn( function()
     dap.repl.open()
     callback({type = "server", host = "127.0.0.1", port = port})
   end,
