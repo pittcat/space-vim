@@ -2,9 +2,8 @@ let g:asyncrun_shell = '/usr/bin/zsh'
 let g:asyncrun_shellflag = '-c'
 let $PYTHONUNBUFFERED=1
 
-augroup AsyncrunGroup
-    autocmd User AsyncRunStart call asyncrun#quickfix_toggle(14, 1)
-augroup END
+
+" all function rely on term layer(vim-floaterm)
 
 function! spacevim#plug#asyncrun#CompileAndRun()
   let l:cmd = {
@@ -25,7 +24,7 @@ function! spacevim#plug#asyncrun#CompileAndRun()
   let l:ft = &filetype
   if has_key(l:cmd, l:ft)
     exec 'w'
-    exec "AsyncRun! ".l:cmd[l:ft]
+    exec "AsyncRun -mode=term -pos=floaterm_reuse -position=right -width=0.5 ".l:cmd[l:ft]
   else
     call spacevim#util#err("spacevim#util#CompileAndRun not supported in current filetype!")
   endif
@@ -42,7 +41,7 @@ function! spacevim#plug#asyncrun#Compile()
   let l:ft = &filetype
   if has_key(l:cmd, l:ft)
     exec 'w'
-    exec "AsyncRun! ".l:cmd[l:ft]
+    exec "AsyncRun -mode=term -pos=floaterm_reuse -position=right -width=0.5 ".l:cmd[l:ft]
   else
     call spacevim#util#err("spacevim#util#Compile not supported in current filetype!")
   endif
@@ -56,7 +55,7 @@ function! spacevim#plug#asyncrun#Gdb()
   let l:ft = &filetype
   if has_key(l:cmd, l:ft)
     exec 'w'
-    exec "AsyncRun! ".l:cmd[l:ft]
+    exec "AsyncRun -mode=term -pos=floaterm_reuse -position=right -width=0.5 ".l:cmd[l:ft]
   else
     call spacevim#util#err("spacevim#util#Gdb not supported in current filetype!")
   endif
@@ -71,7 +70,7 @@ function! spacevim#plug#asyncrun#Vsdebug()
   let l:ft = &filetype
   if has_key(l:cmd, l:ft)
     exec 'w'
-    exec "AsyncRun! ".l:cmd[l:ft]
+    exec "AsyncRun -mode=term -pos=floaterm_reuse -position=right -width=0.5 ".l:cmd[l:ft]
   else
     call spacevim#util#err("spacevim#util#Gdb not supported in current filetype!")
   endif

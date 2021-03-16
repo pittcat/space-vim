@@ -65,9 +65,6 @@ nmap <silent> gy <Plug>(coc-type-definition)
 let g:snips_author = ''
 let g:snips_email = ''
 
-" vim-template
-let g:templates_directory = '~/.space-vim/templates'
-
 " coc-fzf
 nnoremap <silent> <localleader>co :CocFzfList outline<cr>
 command! -nargs=0 CoCListError execute 'CocFzfList diagnostics'

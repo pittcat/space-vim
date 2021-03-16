@@ -14,3 +14,4 @@ MP 'Yggdroot/indentLine',             { 'on': 'IndentLinesToggle' }
 autocmd! User indentLine call spacevim#autocmd#indent#Init()
 
 MP 'skywind3000/asyncrun.vim',        { 'on': ['AsyncRun!'] }
+MP 'skywind3000/asyncrun.extra'

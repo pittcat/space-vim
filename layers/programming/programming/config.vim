@@ -8,16 +8,10 @@ scriptencoding utf-8
   command! GdbGen execute spacevim#plug#asyncrun#Gdb()
   command! VsdebugGen execute spacevim#plug#asyncrun#Vsdebug()
   command! AsyCompile execute spacevim#plug#asyncrun#Compile()
-  nnoremap <silent> <F9> :AsyncStop<cr>
-  noremap <silent> <F8> :call asyncrun#quickfix_toggle(14)<cr>
   nnoremap <silent> <F7> :call spacevim#plug#asyncrun#CompileAndRun()<CR>
   nnoremap <leader>cp :AsyCompile<CR>
   nnoremap <silent> <localleader>dg :GdbGen<cr>
   nnoremap <silent> <localleader>dv :VsdebugGen<cr>
-
-  command! GitPush AsyncRun -cwd=$VIM_ROOT git push
-  nnoremap <silent> <leader>gp :GitPush<cr>
-
 
   function! s:CorrectCloseBuffer()
     let qf_exist_num=filter(range(1, winnr('$')), 'getwinvar(v:val, "&ft") == "qf"')

@@ -39,6 +39,3 @@ xtal8/traces.vim
 phaazon/hop.nvim
 2021-03-13 14:04
 一年以后再看
-
-#### 删除vim-template
-

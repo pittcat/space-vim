@@ -3,7 +3,7 @@ nnoremap <silent> <F2> :NdapStOver<CR>
 nnoremap <silent> <F3> :NdapStInto<CR>
 nnoremap <silent> <F4> :NdapExit<CR>
 nnoremap <silent> <F5> :NdapToggleBt<CR>
-nnoremap <silent> <F6> :NdapRlast<CR>
+nnoremap <silent> <F6> :NdapRstart<CR>
 nnoremap <silent> <localleader>do :NdapStOut<CR>
 nnoremap <silent> <localleader>dt :NdapToggleBt<CR>
 nnoremap <silent> <localleader>dl :NdapListBt<CR>
