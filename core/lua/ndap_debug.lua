@@ -64,4 +64,14 @@ M.start_c_debugger_external_terminal = function(args, mi_mode, mi_debugger_path)
     dap.run(last_gdb_config)
 end
 
+M.restart_ndap_debugger = function()
+  local dap = require('dap') 
+  local ndap_state= dap.session()
+  if ndap_state==nil then
+    dap.run_last()
+  else 
+    dap.disconnect()
+    dap.run_last()
+  end
+end
 return M

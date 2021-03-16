@@ -1,7 +1,6 @@
 # How to config nvim-dap for cfamily ?
 
 - 将vscode cpptools (一般位于HOME/.vscode/extensions)移动到一个文件夹里面,并且mv cppdbg.ad7Engine.json  nvim-dap.ad7Engine.json
-- 将ndap_debug.lua 移动到.config/nvim/lua文件夹里面
 - 配置adapter
 ```lua
 dap.adapters.cpp = {
@@ -17,4 +16,4 @@ dap.adapters.cpp = {
     }
 }
 ```
-
+- 可能需要配置/.space-vim/core/lua/ndap_debug.lua
