@@ -17,3 +17,5 @@ augroup END
   let g:barbaric_timeout = -1
   let g:barbaric_fcitx_cmd = 'fcitx5-remote'
 ```
+
+- 如果只有一个窗口，然后同时打开了一个quickfix 的话bd会退出vim，这个时候的bd相当于q,这个问题是nvim-bqf当中引入的

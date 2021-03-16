@@ -14,7 +14,7 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 let g:coc_global_extensions=['coc-snippets','coc-pairs','coc-yank','coc-word','coc-texlab',
       \'coc-pyright','coc-clangd','coc-sh','coc-json','coc-cmake','coc-tsserver','coc-css',
-      \ 'coc-html','coc-go',
+      \ 'coc-html','coc-go','coc-lists',
       \'coc-vimlsp','coc-emoji','coc-markmap']
 let g:coc_snippet_next = '<C-j>'
 let g:coc_snippet_prev = '<C-k>'
@@ -65,9 +65,7 @@ nmap <silent> gy <Plug>(coc-type-definition)
 let g:snips_author = ''
 let g:snips_email = ''
 
-" coc-fzf
-nnoremap <silent> <localleader>co :CocFzfList outline<cr>
-command! -nargs=0 CoCListError execute 'CocFzfList diagnostics'
-command! -nargs=0 CoCListCurError execute 'CocFzfList diagnostics --current-buf'
-let g:coc_fzf_preview = ''
-let g:coc_fzf_opts = []
+" 
+nnoremap <silent> <localleader>co :CocList outline<cr>
+command! -nargs=0 CoCListError execute 'CocList diagnostics'
+command! -nargs=0 CoCListCurError execute 'CocList diagnostics --current-buf'

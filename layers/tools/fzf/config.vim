@@ -26,14 +26,5 @@
   imap <c-s> <plug>(fzf-complete-word)
 
   " }
-  " coc-fzf
-  " if spacevim#load('coc')
-    " nnoremap <silent> <leader>fd  :<C-u>CocFzfList diagnostics<CR>
-    " nnoremap <silent> <leader>fb  :<C-u>CocFzfList diagnostics --current-buf<CR>
-    " nnoremap <silent> <leader>fc  :<C-u>CocFzfList commands<CR>
-    " nnoremap <silent> <leader>fo  :<C-u>CocFzfList outline<CR>
-    " nnoremap <silent> <leader>fy  :<C-u>CocFzfList symbols<CR>
-    " nnoremap <silent> <leader>fv  :<C-u>CocFzfList services<CR>
-  " endif
 
 let g:fzf_preview_window = ['right:50%:hidden', 'ctrl-/']

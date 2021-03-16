@@ -16,4 +16,4 @@ command!  VistaNS call VistaNS()
 autocmd FileType markdown nnoremap <buffer> <leader>vf :VistaNS<CR>
 autocmd FileType markdown nnoremap <buffer> <leader>vs :VistaNS<CR>
 
-### asyncrun.vim 
+### asyncrun.vim
