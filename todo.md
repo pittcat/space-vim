@@ -1,4 +1,4 @@
-### 一个月做一次大的更新，添加新的特性的插件等等
+### 2个月做一次大的更新，添加新的特性的插件等等,测试修改调试时间为一周
 
 
 #### https://github.com/skywind3000/asynctasks.vim(M)
@@ -38,3 +38,6 @@ xtal8/traces.vim
 phaazon/hop.nvim
 2021-03-13 14:04
 一年以后再看
+#### 半年后查看是否替换far.vim
+- https://github.com/eugen0329/vim-esearch
+- https://github.com/romgrk/searchReplace.vim
