@@ -1,4 +1,5 @@
-nnoremap <leader>lr <Plug>(Luadev-RunLine)
-vnoremap <leader>lr <Plug>(Luadev-Run)
 
-luafile ~/.space-vim/layers/lang/lua/lua_debug.lua
+luafile ~/.space-vim/layers/lang/lua/lua-config.lua
+
+nmap <leader>lr <Plug>(Luadev-RunLine)
+vmap <leader>lr <Plug>(Luadev-Run)
