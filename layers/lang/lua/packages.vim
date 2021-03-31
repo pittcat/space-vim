@@ -1,1 +1,5 @@
-MP 'tbastos/vim-lua',{'for':'lua'}
+MP 'euclidianAce/BetterLua.vim'
+MP 'rafcamlet/coc-nvim-lua'
+MP 'rafcamlet/nvim-luapad'
+MP 'notomo/lreload.nvim'
+MP 'jbyuki/lua-debug.nvim'
