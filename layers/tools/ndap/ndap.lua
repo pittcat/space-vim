@@ -4,8 +4,7 @@ local api = vim.api
 vim.fn.sign_define('DapBreakpoint', {text='🛑', texthl='', linehl='', numhl=''})
 
 -- cpp
-dap.adapters.cpp = {
-    type = 'executable',
+dap.adapters.cpp = { type = 'executable',
     name = "cppdbg",
     command = os.getenv('HOME') .. '/.ndap_debugger/ms-vscode.cpptools-1.2.2/debugAdapters/OpenDebugAD7',
     args = {},

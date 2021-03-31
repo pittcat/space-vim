@@ -41,3 +41,5 @@ phaazon/hop.nvim
 #### 半年后查看是否替换far.vim
 - https://github.com/eugen0329/vim-esearch
 - https://github.com/romgrk/searchReplace.vim
+#### 
+https://github.com/gelguy/wilder.nvim

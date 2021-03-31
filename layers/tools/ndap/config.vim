@@ -32,3 +32,6 @@ luafile ~/.space-vim/layers/tools/ndap/ndap.lua
 " python
 command! -nargs=0  NdapPyTest :lua require('dap-python').test_method()
 autocmd FileType python nnoremap <buffer> <localleader>dn :NdapPyTest<cr>
+
+" -- rcarriga/nvim-dap-ui
+autocmd FileType python,cpp,c,go,javascript lua require("dapui").setup()
