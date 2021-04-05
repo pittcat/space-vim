@@ -1,14 +1,14 @@
-let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', 'CodeLLDB' ]
+let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', ]
 function VimspertorDrop() abort
   if exists("g:vimspector_session_windows") " judge whether in vimspector buffers
-    call CleanVpectorEmptyTerminal()
+    call s:CleanVpectorEmptyTerminal()
     call vimspector#Reset()
   else
     echo "Out of Vimspector"
   endif
 endfunction
 
-function CleanVpectorEmptyTerminal() abort
+function s:CleanVpectorEmptyTerminal() abort
   for i in filter(range(1, bufnr('$')), 'buflisted(v:val)')
       if getbufvar(i, '&buftype', '')==#'terminal'
       " if (jobwait([getbufvar(bufname(i), '&channel')], 0)[0]==#-3) && getbufvar(i, '&buftype', '')==#'terminal'
@@ -19,7 +19,6 @@ function CleanVpectorEmptyTerminal() abort
   endfor
 endfunction
 
-nnoremap <silent> <F8> :call CleanVpectorEmptyTerminal()<cr>
 nmap <F1> <Plug>VimspectorContinue
 nmap <F2> <Plug>VimspectorStepOver
 nmap <F3> <Plug>VimspectorStepInto
@@ -27,6 +26,7 @@ nmap <F4> <Plug>VimspectorStop
 nmap <F5> <Plug>VimspectorRestart
 nmap <F6> <Plug>VimspectorToggleBreakpoint
 nmap <F7> <Plug>VimspectorStepOut
+nmap <F12> call s:CleanVpectorEmptyTerminal()
 command! VimspectorBalloonEval call feedkeys("\<Plug>VimspectorBalloonEval")
 xmap <Leader>de <Plug>VimspectorBalloonEval
 command! VimspectorToggleConditionalBreakpoint call feedkeys("\<Plug>VimspectorToggleConditionalBreakpoint") 
