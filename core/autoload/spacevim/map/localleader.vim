@@ -25,15 +25,11 @@ let g:spacevim#map#localleader#desc['j']={
 if spacevim#load('debugger')
   let g:spacevim#map#localleader#desc['d']={
     \ 'name'  : '+debug/linediff',
-    \ 'c':['vimspector#Continue()','Vcontinue'],
-    \ 's':['vimspector#Stop()','Vstop'],
-    \ 'r':['vimspector#Restart()','Vrestart'],
-    \ 'p':['vimspector#Pause()','Vpause'],
-    \ 't':['vimspector#ToggleBreakpoint()','Vtogglebt'],
-    \ 'e':['vimspector#RunToCursor()','Vruntocursor'],
-    \ 'n':['vimspector#StepOver()','Vstepover'],
-    \ 'i':['vimspector#StepInto()','Vstepinto'],
-    \ 'k':['vimspector#StepOut()','Vstepout'],
+    \ 't':['VimspectorToggleConditionalBreakpoint','VTCBreakpoint'],
+    \ 'c':['vimspector#RunToCursor()','Vruntocursor'],
+    \ 'n':["VimspectorAddFunctionBreakpoint",'VAFBreakpoint'],
+    \ 'e':['VimspectorBalloonEval','VEval'],
+    \ 'p':['vimspector#Pause()','VPause'],
     \ 'q':['VimspertorDrop()','Vreset'],
     \ 'l':['vimspector#ListBreakpoints()','Vlistbt'],
     \ 'w':['vimspector#ClearBreakpoints()','Vclearbt']

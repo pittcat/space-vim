@@ -8,7 +8,7 @@ scriptencoding utf-8
   command! GdbGen execute spacevim#plug#asyncrun#Gdb()
   command! VsdebugGen execute spacevim#plug#asyncrun#Vsdebug()
   command! AsyCompile execute spacevim#plug#asyncrun#Compile()
-  nnoremap <silent> <F7> :call spacevim#plug#asyncrun#CompileAndRun()<CR>
+  nnoremap <silent> <F8> :call spacevim#plug#asyncrun#CompileAndRun()<CR>
   nnoremap <leader>cp :AsyCompile<CR>
   nnoremap <silent> <localleader>dg :GdbGen<cr>
   nnoremap <silent> <localleader>dv :VsdebugGen<cr>
