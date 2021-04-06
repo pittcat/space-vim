@@ -2,7 +2,7 @@ let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', ]
 function VimspertorDrop() abort
   if exists("g:vimspector_session_windows") " judge whether in vimspector buffers
     call s:CleanVpectorEmptyTerminal()
-    call vimspector#Reset()
+    silent call vimspector#Reset()
   else
     echo "Out of Vimspector"
   endif
