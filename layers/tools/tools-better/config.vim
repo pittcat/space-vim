@@ -1,6 +1,7 @@
 "
 "{undotree
 "map in sidebar layer
+  let g:undotree_SetFocusWhenToggle = 1
   let g:undotree_SplitWidth = 40
   let g:undotree_DiffpanelHeight = 20
   if !isdirectory($HOME."/.vim/undo")

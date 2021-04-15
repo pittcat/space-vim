@@ -20,3 +20,4 @@ augroup END
 
 - 如果只有一个窗口，然后同时打开了一个quickfix 的话bd会退出vim，这个时候的bd相当于q,这个问题是nvim-bqf当中引入的
 
+- vimspetor.vim 或者 nvim-dap 的repl console 不能attach program ，一些调试场景下面应当选取vscode来作为调试工具。 

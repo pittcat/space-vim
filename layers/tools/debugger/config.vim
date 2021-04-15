@@ -30,6 +30,7 @@ nmap <F4> <Plug>VimspectorStop
 nmap <F5> <Plug>VimspectorRestart
 nmap <F6> <Plug>VimspectorToggleBreakpoint
 nmap <F7> <Plug>VimspectorStepOut
+nmap <F12> :execute VimspertorDrop()<cr>
 command! VimspectorBalloonEval call feedkeys("\<Plug>VimspectorBalloonEval")
 xmap <Leader>de <Plug>VimspectorBalloonEval
 command! VimspectorToggleConditionalBreakpoint call feedkeys("\<Plug>VimspectorToggleConditionalBreakpoint") 
