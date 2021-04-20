@@ -1,4 +1,4 @@
-let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', ]
+let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', 'vscode-go']
 function VimspertorDrop() abort
   if exists("g:vimspector_session_windows") " judge whether in vimspector buffers
     call s:CleanVpectorEmptyTerminal()
@@ -35,3 +35,6 @@ command! VimspectorBalloonEval call feedkeys("\<Plug>VimspectorBalloonEval")
 xmap <Leader>de <Plug>VimspectorBalloonEval
 command! VimspectorToggleConditionalBreakpoint call feedkeys("\<Plug>VimspectorToggleConditionalBreakpoint") 
 command! VimspectorAddFunctionBreakpoint call feedkeys("\<Plug>VimspectorAddFunctionBreakpoint")
+
+" coc-pair
+autocmd FileType VimspectorPrompt let b:coc_pairs_disabled = ["(", "[", "{", "<", "'", "\"", "`"]

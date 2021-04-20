@@ -44,3 +44,8 @@ phaazon/hop.nvim
 - https://github.com/windwp/nvim-spectre
 #### 
 https://github.com/gelguy/wilder.nvim
+
+#### 删除插件
+
+latex preview
+
