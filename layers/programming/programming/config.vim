@@ -1,9 +1,5 @@
 scriptencoding utf-8
 
-" rainbow {
-  let g:rainbow_active = 1
-" }
-
 " asyncrun.vim {
   command! GdbGen execute spacevim#plug#asyncrun#Gdb()
   command! VsdebugGen execute spacevim#plug#asyncrun#Vsdebug()

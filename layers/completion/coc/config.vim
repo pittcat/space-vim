@@ -57,5 +57,7 @@ let g:snips_email = ''
 
 " 
 nnoremap <silent> <localleader>co :CocList outline<cr>
+nnoremap <silent> <localleader>cp :CoCListGrep<cr>
 command! -nargs=0 CoCListError execute 'CocList diagnostics'
 command! -nargs=0 CoCListCurError execute 'CocList diagnostics --current-buf'
+command! -nargs=0 CoCListGrep execute 'CocList grep'
