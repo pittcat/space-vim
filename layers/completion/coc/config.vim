@@ -61,3 +61,6 @@ nnoremap <silent> <localleader>cp :CoCListGrep<cr>
 command! -nargs=0 CoCListError execute 'CocList diagnostics'
 command! -nargs=0 CoCListCurError execute 'CocList diagnostics --current-buf'
 command! -nargs=0 CoCListGrep execute 'CocList grep'
+
+" workspaceFolders workarround
+autocmd FileType python let b:coc_root_patterns =  [".python-root",".git",".hg",".projections.json"]

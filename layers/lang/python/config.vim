@@ -4,8 +4,7 @@ let g:python_highlight_class_vars = 1
 " }
 " pdb-web
 autocmd FileType python nnoremap <buffer> <leader>dp :OpenBrowser http://localhost:5555/<cr>
-autocmd FileType python vnoremap <buffer> <leader>op <nop>
-"}
+autocmd FileType python vnoremap <buffer> <leader>op <nop> "}
 
 " bfredl/nvim-ipy
 let g:nvim_ipy_perform_mappings = 0

@@ -11,4 +11,6 @@ hi FloatermBorder guibg=orange guifg=cyan
 
 nnoremap   <silent>   <F9>     :FloatermToggle!<CR>
 tnoremap   <silent>   <F9>    <C-\><C-n> :FloatermToggle!<CR>
+nnoremap   <silent>   <A-3>     :FloatermToggle!<CR>
+tnoremap   <silent>   <A-3>    <C-\><C-n> :FloatermToggle!<CR>
 tnoremap <silent> <A-\> <C-\><C-n>

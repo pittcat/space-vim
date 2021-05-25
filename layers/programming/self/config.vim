@@ -108,7 +108,7 @@ function FileAutoSave()
     return
   endif
   let g:file_autosave_async = 1
-  call timer_start(300, 'FileAutoSaveAsync', {'repeat': 1})
+  call timer_start(1000, 'FileAutoSaveAsync', {'repeat': 1})
 endfunction
 
 function FileAutoSaveAsync(timer)

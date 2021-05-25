@@ -19,10 +19,10 @@ endif
 " vim-illuminate
 " {
 let g:Illuminate_highlightUnderCursor = 1
-let g:Illuminate_delay = 250
+let g:Illuminate_delay = 1000
 augroup illuminate_augroup
     autocmd!
-    autocmd VimEnter * hi illuminatedWord cterm=underline gui=underline
+    autocmd VimEnter * hi link illuminatedWord Visual
 augroup END
 " }
 
