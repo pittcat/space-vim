@@ -22,7 +22,7 @@ let g:Illuminate_highlightUnderCursor = 1
 let g:Illuminate_delay = 1000
 augroup illuminate_augroup
     autocmd!
-    autocmd VimEnter * hi link illuminatedWord Visual
+    autocmd VimEnter * hi illuminatedWord cterm=underline gui=underline
 augroup END
 " }
 

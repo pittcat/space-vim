@@ -1,3 +1,5 @@
+luafile ~/.space-vim/layers/tools/ndap/ndap.lua
+
 nnoremap <silent> <F1> :NdapContinue<CR>
 nnoremap <silent> <F2> :NdapStOver<CR>
 nnoremap <silent> <F3> :NdapStInto<CR>
@@ -13,7 +15,6 @@ nnoremap <silent> <localleader>dr :NdapORepl<CR>
 nnoremap <silent> <localleader>di :NdapTRepl<CR>
 nnoremap <silent> <localleader>dp :NdapRstart<CR>
 
-lua require('dap-python').setup('/usr/bin/python')
 command! -nargs=0  NdapContinue :lua require'dap'.continue()
 command! -nargs=0  NdapStOver :lua require'dap'.step_over()
 command! -nargs=0  NdapStInto :lua require'dap'.step_into()
@@ -24,14 +25,48 @@ command! -nargs=0  NdapConBt :lua require'dap'.set_breakpoint(vim.fn.input('Brea
 command! -nargs=0  NdapLogBt :lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))
 command! -nargs=0  NdapORepl :lua require'dap'.repl.open({}, 'vsplit')
 command! -nargs=0  NdapTRepl :lua require'dap'.repl.toggle()
-command! -nargs=0  NdapExit :lua require'dap'.disconnect()
+command! -nargs=0  NdapExit  :lua require'ndap_debug'.kill_current_debug()
 command! -nargs=0  NdapRstart :lua require'ndap_debug'.restart_ndap_debugger()
-
-luafile ~/.space-vim/layers/tools/ndap/ndap.lua
+" nvim-dap-ui
+command! -nargs=0  NdapUiShow :lua require("dapui").toggle()
+nnoremap <silent> <localleader>ds :NdapUiShow<CR>
 
 " python
 command! -nargs=0  NdapPyTest :lua require('dap-python').test_method()
 autocmd FileType python nnoremap <buffer> <localleader>dn :NdapPyTest<cr>
 
 " -- rcarriga/nvim-dap-ui
-autocmd FileType python,cpp,c,go,javascript lua require("dapui").setup()
+function s:InitNvimDapUi() abort
+  lua << EOF
+  require("dapui").setup({
+  icons = {
+    expanded = "⯆",
+    collapsed = "⯈"
+  },
+  mappings = {
+    -- Use a table to apply multiple mappings
+    expand = {"<CR>", "<2-LeftMouse>"},
+    open = "o",
+    remove = "d",
+    edit = "e",
+  },
+  sidebar = {
+    elements = {
+      -- You can change the order of elements in the sidebar
+      "scopes",
+      "breakpoints",
+      "stacks",
+      "watches"
+    },
+    width = 40,
+    position = "left" -- Can be "left" or "right"
+  },
+  floating = {
+    max_height = nil, -- These can be integers or a float between 0 and 1.
+    max_width = nil   -- Floats will be treated as percentage of your screen.
+  }
+})
+EOF
+endfunction
+
+autocmd FileType python,cpp,c,go,javascript  call s:InitNvimDapUi()
