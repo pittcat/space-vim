@@ -61,6 +61,9 @@ function s:InitNvimDapUi() abort
     width = 40,
     position = "left" -- Can be "left" or "right"
   },
+    tray = {
+    elements = {},
+      },
   floating = {
     max_height = nil, -- These can be integers or a float between 0 and 1.
     max_width = nil   -- Floats will be treated as percentage of your screen.
