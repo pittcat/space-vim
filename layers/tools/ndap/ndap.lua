@@ -14,6 +14,25 @@ table.insert(dap.configurations.python, {
   console = 'externalTerminal';
 })
 
+-- cpp c rust
+dap.adapters.cpp = {
+  type = 'executable',
+  name = "cppdbg",
+  command = os.getenv('HOME') ..  '/.ndap_debugger/cpptools-linux/extension/debugAdapters/OpenDebugAD7',
+  args = {},
+  attach = {
+      pidProperty = "processId",
+      pidSelect = "ask"
+  }
+}
+
+vim.cmd [[
+    command! -complete=file -nargs=* DebugInTerm lua require "ndap_debug".start_c_internal_debugger({<f-args>}, "gdb")
+]]
+vim.cmd [[
+    command! -complete=file -nargs=* DebugExTerm lua require "ndap_debug".start_c_external_debugger({<f-args>}, "gdb")
+]]
+
 -- go
 dap.adapters.go = function(callback, config)
     local handle

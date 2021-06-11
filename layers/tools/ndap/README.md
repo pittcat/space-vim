@@ -17,3 +17,5 @@ dap.adapters.cpp = {
 }
 ```
 - 可能需要配置/.space-vim/core/lua/ndap_debug.lua
+
+参考：https://github.com/Pocco81/DAPInstall.nvim/issues/4#issuecomment-859494997
