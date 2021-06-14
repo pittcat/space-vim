@@ -6,8 +6,3 @@
   let g:vimtex_compiler_progname = 'nvr'
   let g:vimtex_quickfix_mode = 0
 " }
-"
-"{
-  let g:livepreview_previewer = 'evince'
-  let g:livepreview_cursorhold_recompile = 0
-"}

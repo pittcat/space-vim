@@ -29,11 +29,6 @@ endif
 
 xtal8/traces.vim
 
-#### treesitter 
-
-半年后切换到nvim-treesitter---2020-12-17
-#### vista.vim
-等待bug解决得差不多了再行添加
 #### htop.nvim
 phaazon/hop.nvim
 2021-03-13 14:04
@@ -42,10 +37,6 @@ phaazon/hop.nvim
 - https://github.com/eugen0329/vim-esearch
 - https://github.com/romgrk/searchReplace.vim
 - https://github.com/windwp/nvim-spectre
-#### 
-https://github.com/gelguy/wilder.nvim
 
-#### 删除插件
-
-latex preview
-
+#### nvim-dap 
+一年之后再看
