@@ -38,6 +38,10 @@ phaazon/hop.nvim
 - https://github.com/romgrk/searchReplace.vim
 - https://github.com/windwp/nvim-spectre
 
+#### treesitter
+1年之后再看
+2021-06-14 09:08
+
 #### nvim-dap 
-一年之后再看
+1年之后再看
 2021-06-14 09:08
