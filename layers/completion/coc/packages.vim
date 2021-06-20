@@ -2,4 +2,4 @@ MP 'neoclide/coc.nvim', {'master': 'release','on_event': ['CursorHold', 'CursorH
 MP 'tjdevries/coc-zsh',{'for':'zsh'}
 "
 " snippets
-MP 'honza/vim-snippets'
+MP 'rafamadriz/friendly-snippets'
