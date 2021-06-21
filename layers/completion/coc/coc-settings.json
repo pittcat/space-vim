@@ -40,18 +40,13 @@
   "pairs.enableCharacters": ["(", "[", "{", "'", "\"", "`"],
   "yank.enableCompletion": false,
   "coc.source.word.filetypes": ["markdown", "latex"],
-  "clangd.semanticHighlighting": true,
   "pyright.disableDiagnostics": true,
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Args": [
     "--ignore=W,E501,E231,E225,E741,E116,E3,E226,E121,E266"
   ],
-  "sh.highlightParsingErrors": true,
-  "languageserver": {
-    "racket": {
-      "command": "racket",
-      "args": ["--lib", "racket-langserver"],
-      "filetypes": ["scheme"]
-    }
-  }
+  "python.analysis.autoImportCompletions": false,
+  "pyright.organizeimports.provider": "isort",
+  "clangd.semanticHighlighting": true,
+  "sh.highlightParsingErrors": true
 }
