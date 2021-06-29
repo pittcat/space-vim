@@ -2,6 +2,8 @@
     " Plug 'ybian/smartim'
 " endif
 
+MP 'luochen1990/rainbow'
+
 MP 'kshenoy/vim-signature'        , { 'on': [] }
 MP 'tpope/vim-rsi'                , { 'on': [] }
 MP 'xtal8/traces.vim'             , { 'on': [] }

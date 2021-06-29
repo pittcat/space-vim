@@ -16,6 +16,10 @@ if g:spacevim.gui
   noremap - :Smaller<CR>
 endif
 
+"{luochen1990/rainbow
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
+"}
+
 " vim-illuminate
 " {
 let g:Illuminate_highlightUnderCursor = 1
