@@ -8,8 +8,6 @@ MP 'xtal8/traces.vim'             , { 'on': [] }
 MP 'RRethy/vim-illuminate'
 call timer_start(500, 'spacevim#defer#defaults')
 
-MP 'luochen1990/rainbow'
-
 MP 'mhinz/vim-startify', { 'on': 'Startify' }
 autocmd! User vim-startify call spacevim#autocmd#startify#Init()
 augroup spacevimStart
@@ -20,7 +18,3 @@ augroup spacevimStart
               \|    silent! Startify
               \|  endif
 augroup END
-
-" Bug here.
-" MP 'kana/vim-operator-user',         { 'on': '<Plug>(operator-flashy)' }
-" MP 'haya14busa/vim-operator-flashy', { 'on': '<Plug>(operator-flashy)' }
