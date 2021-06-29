@@ -15,5 +15,3 @@ endfunction
 command!  VistaNS call VistaNS()
 autocmd FileType markdown nnoremap <buffer> <leader>vf :VistaNS<CR>
 autocmd FileType markdown nnoremap <buffer> <leader>vs :VistaNS<CR>
-
-### 在使用vimspector的时候，不能关闭代码窗口，不然会报错

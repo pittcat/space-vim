@@ -1,4 +1,3 @@
-
 function! CbinPath()
   call spacevim#plug#asyncrun#Gdb()
   call system('xclip -i -selection clipboard', expand('%:p:h').'/exec/'.expand('%:t:r'))
