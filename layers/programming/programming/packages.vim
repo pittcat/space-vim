@@ -8,7 +8,7 @@ else
 endif
 
 
-MP 'Yggdroot/indentLine',             { 'on': 'IndentLinesToggle' }
+MP 'lukas-reineke/indent-blankline.nvim', {'branch':'lua'}
 
 MP 'skywind3000/asyncrun.vim',        { 'on': ['AsyncRun!'] }
 MP 'skywind3000/asyncrun.extra'
