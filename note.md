@@ -13,10 +13,6 @@ augroup END
   Plug 'rlue/vim-barbaric',{'for':'markdown'}
   set ttimeoutlen=0
   let g:barbaric_ime = 'fcitx'
-  let g:barbaric_scope = 'buffer'
-  let g:barbaric_timeout = -1
+  let g:barbaric_scope = 'buffer' let g:barbaric_timeout = -1
   let g:barbaric_fcitx_cmd = 'fcitx5-remote'
 ```
-
-- syntax highlight
-目前全部使用treesitter
