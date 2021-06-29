@@ -21,10 +21,16 @@
   nnoremap <leader>fr :Rg <cr>
 
   nnoremap <leader>fh :History<cr>
+
+  tnoremap <A-a> <esc>a
+  tnoremap <A-b> <esc>b
+  tnoremap <A-d> <esc>d
+  tnoremap <A-f> <esc>f
   
   "words path /usr/share/dict/words
   imap <c-s> <plug>(fzf-complete-word)
 
   " }
+
 
 let g:fzf_preview_window = ['right:50%:hidden', 'ctrl-/']

@@ -1,9 +1,8 @@
 ### 3个月做一次大的更新，添加新的特性的插件等等,测试修改调试时间为一周
 ### 添加插件原则
-- 稳定实用第一
 - 是否维护时间长
-- star是否多(侧面反映用户多不多?,重要组成部分插件[completion,lint,formater,debugger]>1000 stars，普通部分插件>400),issue是否多，bug是否多(尤其是影响使用的大型bug)
-- 作者是否robust(查看作者是否写过其他插件，作者的dotfile是否长时间更新nvim配置)
+- star是否多(侧面反映用户多不多?重要组成部分插件[completion,lint,formater,debugger]>1000 stars，普通部分插件>400),issue是否多，bug是否多(尤其是影响使用的大型bug)
+- 作者是否robust(查看作者是否写过其他著名插件，作者的dotfile是否长时间更新nvim配置)
 
 #### ludovicchabant/vim-gutentags(S)
 
