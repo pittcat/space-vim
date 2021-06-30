@@ -11,7 +11,14 @@ let g:sidebars = {
   \     'open': 'UndotreeShow',
   \     'close': 'UndotreeHide'
   \ },
+  \ 'vista': {
+  \     'position': 'left',
+  \     'check_win': {nr -> bufname(winbufnr(nr)) =~ '__vista__'},
+  \     'open': 'Vista',
+  \     'close': 'Vista!'
+  \ },
   \ }
 
 noremap <silent> <M-1> :call sidebar#toggle('coc-explorer')<CR>
 noremap <silent> <M-2> :call sidebar#toggle('undotree')<CR>
+noremap <silent> <M-4> :call sidebar#toggle('vista')<CR>
