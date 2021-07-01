@@ -1,8 +1,10 @@
-### 3个月做一次大的更新，添加新的特性的插件等等,测试修改调试时间为一周
+### 3 个月做一次大的更新，添加新的特性的插件等等，测试修改调试时间为一周
+
 ### 添加插件原则
+
 - 是否维护时间长
-- star是否多(侧面反映用户多不多?重要组成部分插件[completion,lint,formater,debugger]>1000 stars，普通部分插件>400),issue是否多，bug是否多(尤其是影响使用的大型bug)
-- 作者是否robust(查看作者是否写过其他著名插件，作者的dotfile是否长时间更新nvim配置)
+- star 是否多（侧面反映用户多不多？重要组成部分插件 [completion,lint,formater,debugger]>1000 stars，普通部分插件》400),issue 是否多，bug 是否多（尤其是影响使用的大型 bug)
+- 作者是否 robust（查看作者是否写过其他著名插件，作者的 dotfile 是否长时间更新 nvim 配置）
 
 #### ludovicchabant/vim-gutentags(S)
 
@@ -31,23 +33,29 @@ endif
 
 xtal8/traces.vim
 
-#### 增强char word 跳转功能？
+#### 增强 char word 跳转功能？
+
 phaazon/hop.nvim
 ggandor/lightspeed.nvim
 2021-03-13 14:04
 半年以后再看
-#### 半年后查看是否替换far.vim
+
+#### 半年后查看是否替换 far.vim
+
 - https://github.com/eugen0329/vim-esearch
 - https://github.com/romgrk/searchReplace.vim
 - https://github.com/windwp/nvim-spectre
 - https://github.com/dyng/ctrlsf.vim
-2021-06-29 14:36
+  2021-06-29 14:36
 
 #### nvim-treesitter
-一年以后等到nvim 0.6 再添加(2021-06-29 14:41)
+
+一年以后等到 nvim 0.6 再添加 (2021-06-29 14:41)
 
 #### nvim-dap
-一年以后尝试添加(2021-06-29 14:41)
+
+一年以后尝试添加 (2021-06-29 14:41)
 
 #### skywind3000/asynctasks.vim
-一年以内尝试添加(2021-06-29 14:41)
+
+一年以内尝试添加 (2021-06-29 14:41)

@@ -16,7 +16,6 @@ let g:VM_maps['Find Under']         = '<C-d>'           " replace C-n
 let g:VM_maps['Find Subword Under'] = '<C-d>'           " replace visual C-n
 let g:VM_maps["Mouse Cursor"]                = '<M-LeftMouse>'
 let g:VM_mouse_mappings = 0
-let g:VM_theme = 'ocean'
 " }
 
 
