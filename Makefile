@@ -9,17 +9,10 @@ DOT_SPACEVIM  := ~/.spacevim
 help:
 	@echo "usage: make [OPTIONS]"
 	@echo "    help        Show this message"
-	@echo "    vim         Install space-vim for Vim"
 	@echo "    neovim      Install space-vim for NeoVim"
 	@echo "    update      Update space-vim"
 	@echo "    uninstall   Uninstall space-vim"
 
-vim:
-	@echo "\033[1;34m==>\033[0m Trying to install space-vim for Vim"; \
-	[ ! -f $(VIMRC) ]        && ln -sf $(INIT_VIM) $(VIMRC)         && echo "    - Created $(VIMRC) "; \
-	[ ! -f $(DOT_SPACEVIM) ] && cp $(INIT_SPACEVIM) $(DOT_SPACEVIM) && echo "    - Created $(DOT_SPACEVIM) "; \
-	vim  +'PlugInstall' +qall; \
-	echo "\033[32m[✔]\033[0m Successfully installed $(APP) for Vim!"
 
 neovim:
 	@echo "\033[1;34m==>\033[0m Trying to install space-vim for NeoVim"; \
@@ -42,4 +35,4 @@ uninstall:
 	rm -rf ~/.$(APP)           && echo "    - Removed ~/.$(APP)"; \
 	echo "\033[32m[✔]\033[0m Successfully uninstalled $(APP)"
 
-.PHONY: help vim neovim update uninstall
+.PHONY: help vima neovim update uninstall
