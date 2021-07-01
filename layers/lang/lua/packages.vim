@@ -1,5 +1,3 @@
 MP 'euclidianAce/BetterLua.vim'
-MP 'rafcamlet/coc-nvim-lua'
 MP 'rafcamlet/nvim-luapad'
-MP 'notomo/lreload.nvim'
 MP 'bfredl/nvim-luadev'

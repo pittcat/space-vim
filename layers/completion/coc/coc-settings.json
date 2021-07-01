@@ -48,5 +48,13 @@
   "python.analysis.autoImportCompletions": false,
   "pyright.organizeimports.provider": "isort",
   "clangd.semanticHighlighting": true,
-  "sh.highlightParsingErrors": true
+  "sh.highlightParsingErrors": true,
+  "Lua.runtime.version":"Lua 5.1",
+  "Lua.workspace.library": {
+      "/usr/local/share/nvim/runtime/lua": true,
+      "/usr/local/share/nvim/runtime/lua/vim": true,
+      "/usr/local/share/nvim/runtime/lua/vim/lsp": true
+  },
+  "Lua.diagnostics.globals": ["vim"],
+  "explorer.icon.enableNerdfont": true
 }
