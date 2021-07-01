@@ -14,7 +14,7 @@ function! spacevim#plug#asyncrun#CompileAndRun()
         \ 'ruby'   : "ruby %",
         \ 'rust'   : "rustc '%:p' -o  './exec/%:t:r';%:p:h/exec/%:t:r",
         \ 'python' : "python %",
-        \ 'lua' : "lua %",
+        \ 'lua' : "lua5.1 %",
         \ 'haskell': "ghc %:p -o %< && %:p:h/%:t:r<",
         \ 'javascript': "node %<",
         \ 'java'   : "javac %;cd %:p:h;java %:t:r;rm %:t:r.'class'",
