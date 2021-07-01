@@ -60,9 +60,6 @@ augroup spacevimBasic
     source $VIMRUNTIME/delmenu.vim
     source $VIMRUNTIME/menu.vim
 
-  if g:spacevim.os.windows
-      set guifont=Consolas:h13
-    endif
   endif
 augroup END
 
