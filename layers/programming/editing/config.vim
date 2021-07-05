@@ -21,4 +21,5 @@ let g:VM_mouse_mappings = 0
 
 " {brooth/far.vim
   " nnoremap <silent> <localleader>fd :Fardo<cr>
+  let g:far#enable_undo=1
 " }

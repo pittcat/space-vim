@@ -15,7 +15,7 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 let g:coc_global_extensions=['coc-snippets','coc-pairs','coc-yank','coc-word','coc-texlab',
       \'coc-pyright','coc-clangd','coc-sh','coc-json','coc-cmake','coc-tsserver','coc-css',
-      \ 'coc-html','coc-lists','coc-explorer','coc-lua','coc-go',
+      \ 'coc-html','coc-lists','coc-explorer','coc-lua','coc-go','coc-floaterm',
       \'coc-vimlsp','coc-emoji','coc-markmap']
 let g:coc_snippet_next = '<C-j>'
 let g:coc_snippet_prev = '<C-k>'

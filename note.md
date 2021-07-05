@@ -1,4 +1,14 @@
-#### 更换 colortheme 之后需要对
+#### colorscheme 选取问题
+1. 看top的tabline color是否正常
+```
+highlight VemTablineSelected         term=bold    cterm=bold ctermfg=0   ctermbg=255 guifg=#242424 guibg=#ffffff gui=bold
+
+```
+2. 看fzf，fzf-preview color
+3. 看mg979/vim-visual-multi 的color
+4. 看visiual，comment的color
+5. 看coc-list 的color
+6. 更换 colortheme 之后可能需要对
 
 ```
 augroup illuminate_augroup
@@ -6,18 +16,9 @@ augroup illuminate_augroup
     autocmd VimEnter * hi illuminatedWord cterm=NONE ctermbg=0 ctermfg=NONE guibg=Gray35
 augroup END
 ```
-
 调整
 
-#### 切换输入法
-
-```
-  Plug 'rlue/vim-barbaric',{'for':'markdown'}
-  set ttimeoutlen=0
-  let g:barbaric_ime = 'fcitx'
-  let g:barbaric_scope = 'buffer' let g:barbaric_timeout = -1
-  let g:barbaric_fcitx_cmd = 'fcitx5-remote'
-```
+7. 启动速度，包括再tmux下面的
 
 #### 切换 color theme 注意事项
 
@@ -32,6 +33,18 @@ highlight Visual cterm=NONE ctermbg=0 ctermfg=NONE guibg=Grey40
 ```
 let g:lightline.colorscheme = 'color'
 ```
+
+#### 切换输入法
+
+```
+  Plug 'rlue/vim-barbaric',{'for':'markdown'}
+  set ttimeoutlen=0
+  let g:barbaric_ime = 'fcitx'
+  let g:barbaric_scope = 'buffer' let g:barbaric_timeout = -1
+  let g:barbaric_fcitx_cmd = 'fcitx5-remote'
+```
+
+
 
 #### Finding and replacing text without other plugin
 

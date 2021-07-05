@@ -40,12 +40,13 @@ ggandor/lightspeed.nvim
 2021-03-13 14:04
 半年以后再看
 
-#### 半年后查看是否替换 far.vim
+#### 半年后查看是否替换find and repalce 方案
 
+- https://github.com/dyng/ctrlsf.vim
 - https://github.com/eugen0329/vim-esearch
 - https://github.com/romgrk/searchReplace.vim
 - https://github.com/windwp/nvim-spectre
-- https://github.com/dyng/ctrlsf.vim
+- 不用任何插件，选取fzf.vim 作为find and replace方案
   2021-06-29 14:36
 
 #### nvim-treesitter
@@ -59,3 +60,4 @@ ggandor/lightspeed.nvim
 #### skywind3000/asynctasks.vim
 
 一年以内尝试添加 (2021-06-29 14:41)
+
