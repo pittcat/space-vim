@@ -49,12 +49,22 @@
   "pyright.organizeimports.provider": "isort",
   "clangd.semanticHighlighting": true,
   "sh.highlightParsingErrors": true,
-  "Lua.runtime.version":"Lua 5.1",
+  "Lua.runtime.version": "LuaJIT",
   "Lua.workspace.library": {
-      "/usr/local/share/nvim/runtime/lua": true,
-      "/usr/local/share/nvim/runtime/lua/vim": true,
-      "/usr/local/share/nvim/runtime/lua/vim/lsp": true
+    "/usr/local/share/nvim/runtime/lua": true,
+    "/usr/local/share/nvim/runtime/lua/vim": true,
+    "/usr/local/share/nvim/runtime/lua/vim/lsp": true,
+    "/home/pittcat/.luarocks/share/lua": true,
+    "/home/pittcat/.luarocks/lib/lua": true,
+    "/home/pittcat/Projects/Package/neovim/.deps/usr/share/luajit-2.1.0-beta3": true,
+    "/usr/local/share/lua": true,
+    "/usr/local/lib/lua": true,
+    "/home/pittcat/Projects/Package/neovim/.deps/usr/share/lua": true,
+    "/home/pittcat/Projects/Package/neovim/.deps/usr/lib/lua": true
   },
+  "Lua.completion.callSnippet": "Replace",
   "Lua.diagnostics.globals": ["vim"],
-  "explorer.icon.enableNerdfont": true
+  "explorer.icon.enableNerdfont": true,
+  "snippets.ultisnips.enable": false,
+  "snippets.textmateSnippetsRoots":["/home/pittcat/.vim/plugged/code-snippets"]
 }

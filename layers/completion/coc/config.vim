@@ -67,3 +67,8 @@ command! -nargs=0 CoCListGrep execute 'CocList grep'
 
 " workspaceFolders workarround
 autocmd FileType python let b:coc_root_patterns =  [".python-root",".git",".hg",".projections.json"]
+
+" coc-snippets
+command! -nargs=0 Fesnippets execute 'FZF ~/.vim/plugged/code-snippets'
+nnoremap <silent> <localleader>cs :CocList snippets<cr>
+nnoremap <silent> <localleader>cc :Fesnippets<cr>
