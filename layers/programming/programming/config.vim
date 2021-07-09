@@ -35,3 +35,12 @@ scriptencoding utf-8
   let g:rooter_change_directory_for_non_project_files = ''
   let g:rooter_manual_only = 1
 " }
+"{embear/vim-localvimrc
+  let g:localvimrc_ask = 0
+"}
+"{wakatime
+  augroup load_wakatime
+      autocmd!
+      autocmd InsertEnter * call plug#load('vim-wakatime') | autocmd! load_wakatime
+  augroup END
+"}

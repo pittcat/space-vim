@@ -61,3 +61,17 @@ ggandor/lightspeed.nvim
 
 一年以内尝试添加 (2021-06-29 14:41)
 
+#### 将.spacevim里面的代码片段迁移到layer里面
+周末吧
+
+
+
+#### 关于是否切换packer.vim 作为插件管理器
+1. 如果plug.vim 停止维护
+2. packer.vim 过10k star
+
+满足以上条件过后可以考虑切换
+
+#### 将nvim config 迁移到lua 
+packer.vim 作为插件管理器之后，可以考虑是否迁移问题，大致时间三年以后。
+2021-07-09 21:33
