@@ -37,6 +37,7 @@ scriptencoding utf-8
 " }
 "{embear/vim-localvimrc
   let g:localvimrc_ask = 0
+  let g:localvimrc_sandbox = 0
 "}
 "{wakatime
   augroup load_wakatime
