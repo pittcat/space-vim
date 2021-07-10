@@ -40,7 +40,7 @@ ggandor/lightspeed.nvim
 2021-03-13 14:04
 半年以后再看
 
-#### 半年后查看是否替换find and repalce 方案
+#### 一年后查看是否替换find and repalce 方案
 
 - https://github.com/dyng/ctrlsf.vim
 - https://github.com/eugen0329/vim-esearch
@@ -60,10 +60,6 @@ ggandor/lightspeed.nvim
 #### skywind3000/asynctasks.vim
 
 一年以内尝试添加 (2021-06-29 14:41)
-
-#### 将.spacevim里面的代码片段迁移到layer里面
-周末吧
-
 
 
 #### 关于是否切换packer.vim 作为插件管理器

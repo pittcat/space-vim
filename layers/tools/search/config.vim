@@ -11,6 +11,9 @@ let g:zv_file_types = {
 
 "{tyru/open-browser.vim
 let g:vsm_default_mappings=0
+let g:netrw_nogx = 1 " disable netrw's gx mapping.
+nmap gx <Plug>(openbrowser-smart-search)
+vmap gx <Plug>(openbrowser-smart-search)
 "}
 "{voldikss/vim-browser-search
 nmap <leader>so <Plug>SearchNormal
