@@ -33,7 +33,8 @@
   "suggest.acceptSuggestionOnCommitCharacter": true,
   "suggest.snippetIndicator": "►",
   "suggest.minTriggerInputLength": 1,
-  "diagnostic.level": "information",
+  "coc.preferences.semanticTokensHighlights": false,
+  "diagnostic.level": "hint",
   "codeLens.enable": false,
   "diagnostic.enable": true,
   "dialog.pickerButtons": false,
@@ -47,7 +48,6 @@
   ],
   "python.analysis.autoImportCompletions": false,
   "pyright.organizeimports.provider": "isort",
-  "clangd.semanticHighlighting": true,
   "sh.highlightParsingErrors": true,
   "Lua.runtime.version": "LuaJIT",
   "Lua.workspace.library": {
@@ -66,5 +66,5 @@
   "Lua.diagnostics.globals": ["vim"],
   "explorer.icon.enableNerdfont": true,
   "snippets.ultisnips.enable": false,
-  "snippets.textmateSnippetsRoots":["/home/pittcat/.vim/plugged/code-snippets"]
+  "snippets.textmateSnippetsRoots": ["/home/pittcat/.vim/plugged/code-snippets"]
 }
