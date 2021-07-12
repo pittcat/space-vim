@@ -1,5 +1,4 @@
 local dap = require("dap")
-local api = vim.api
 
 vim.fn.sign_define("DapBreakpoint", { text = "🛑", texthl = "", linehl = "", numhl = "" })
 
@@ -101,7 +100,3 @@ dap.defaults.fallback.external_terminal = {
 	command = "/usr/bin/alacritty",
 	args = { "-e" },
 }
-
--- ndap variable show
-api.nvim_set_keymap("n", "<A-p>", '<Cmd>lua require("dap.ui.variables").hover()<CR>', { silent = true })
-api.nvim_set_keymap("v", "<A-v>", '<Cmd>lua require("dap.ui.variables").visual_hover()<CR>', { silent = true })
