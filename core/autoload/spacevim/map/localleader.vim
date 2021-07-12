@@ -21,24 +21,10 @@ let g:spacevim#map#localleader#desc['j']={
   \}
 
 
-" programming tools-better debugger layer
-if spacevim#load('debugger')
-  let g:spacevim#map#localleader#desc['d']={
-    \ 'name'  : '+debug/linediff',
-    \ 't':['VimspectorToggleConditionalBreakpoint','VTCBreakpoint'],
-    \ 'c':['vimspector#RunToCursor()','Vruntocursor'],
-    \ 'n':["VimspectorAddFunctionBreakpoint",'VAFBreakpoint'],
-    \ 'e':['VimspectorBalloonEval','VEval'],
-    \ 'p':['vimspector#Pause()','VPause'],
-    \ 'q':['VimspertorDrop()','Vreset'],
-    \ 'l':['vimspector#ListBreakpoints()','Vlistbt'],
-    \ 'w':['vimspector#ClearBreakpoints()','Vclearbt']
-    \}
-else
-  let g:spacevim#map#localleader#desc['d']={
-    \ 'name'  : '+debug/linediff',
-    \}
-endif
+
+let g:spacevim#map#localleader#desc['d']={
+  \ 'name'  : '+debug/linediff',
+  \}
 
 
 

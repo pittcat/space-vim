@@ -53,10 +53,6 @@ ggandor/lightspeed.nvim
 
 一年以后等到 nvim 0.6 再添加 (2021-06-29 14:41)
 
-#### nvim-dap
-
-一年以后尝试添加 (2021-06-29 14:41)
-
 #### skywind3000/asynctasks.vim
 
 一年以内尝试添加 (2021-06-29 14:41)

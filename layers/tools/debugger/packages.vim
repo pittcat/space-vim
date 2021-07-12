@@ -1,1 +1,0 @@
-MP 'puremourning/vimspector'

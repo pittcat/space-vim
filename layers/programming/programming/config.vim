@@ -2,12 +2,10 @@ scriptencoding utf-8
 
 " asyncrun.vim {
   command! GdbGen execute spacevim#plug#asyncrun#Gdb()
-  command! VsdebugGen execute spacevim#plug#asyncrun#Vsdebug()
   command! AsyCompile execute spacevim#plug#asyncrun#Compile()
   nnoremap <silent> <F8> :call spacevim#plug#asyncrun#CompileAndRun()<CR>
   nnoremap <leader>cp :AsyCompile<CR>
   nnoremap <silent> <localleader>dg :GdbGen<cr>
-  nnoremap <silent> <localleader>dv :VsdebugGen<cr>
 
   function! s:CorrectCloseBuffer()
     let qf_exist_num=filter(range(1, winnr('$')), 'getwinvar(v:val, "&ft") == "qf"')
