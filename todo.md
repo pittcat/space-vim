@@ -67,3 +67,10 @@ ggandor/lightspeed.nvim
 #### 将nvim config 迁移到lua 
 packer.vim 作为插件管理器之后，可以考虑是否迁移问题，大致时间三年以后。
 2021-07-09 21:33
+
+#### textobj edit mode improve
+
+https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+https://github.com/mfussenegger/nvim-ts-hint-textobject
+
+等待treesitter 成熟以后吧
