@@ -15,7 +15,7 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 let g:coc_global_extensions=['coc-snippets','coc-pairs','coc-yank','coc-word','coc-texlab',
       \'coc-pyright','coc-clangd','coc-sh','coc-json','coc-cmake','coc-tsserver','coc-css',
-      \ 'coc-html','coc-lists','coc-explorer','coc-lua','coc-go','coc-floaterm',
+      \ 'coc-html','coc-lists','coc-explorer','coc-lua','coc-go','coc-floaterm','coc-translator',
       \'coc-vimlsp','coc-emoji','coc-markmap']
 let g:coc_snippet_next = '<C-j>'
 let g:coc_snippet_prev = '<C-k>'
@@ -70,3 +70,7 @@ autocmd FileType python let b:coc_root_patterns =  [".python-root",".git",".hg",
 command! -nargs=0 Fesnippets execute 'FZF ~/.vim/plugged/code-snippets'
 nnoremap <silent> <localleader>cs :CocList snippets<cr>
 nnoremap <silent> <localleader>cc :Fesnippets<cr>
+
+" coc-translator
+nmap <Leader>di <Plug>(coc-translator-p)
+vmap <Leader>di <Plug>(coc-translator-pv)

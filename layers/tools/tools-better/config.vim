@@ -62,14 +62,6 @@
   vnoremap <leader>ji :Tableize<cr>
   " }
 
-  " voldikss/vim-translate-me
-  " {
-  nmap <silent> <leader>di <Plug>TranslateW
-  vmap <silent> <leader>di <Plug>TranslateWV
-  nmap <silent> <leader>do <Plug>TranslateR
-  vmap <silent> <leader>do <Plug>TranslateRV
-  let g:vtm_default_mapping=0
-  " }
   " {voldikss/vim-codelf
   nnoremap <localleader>cd :Codelf 
   " }

@@ -45,9 +45,6 @@ if g:spacevim.timer
   "{voldikss/vim-codelf
   MP 'voldikss/vim-codelf'
   "}
-  "{voldikss/vim-translate-me
-  MP 'voldikss/vim-translate-me'
-  "}
   "hotoo/pangu.vim
   MP 'hotoo/pangu.vim'
 
