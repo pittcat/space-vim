@@ -25,28 +25,28 @@ dap.adapters.cpp = {
 }
 
 dap.configurations.cpp = {
-  {
-    name = "CppExtermDebug",
-    type = "cpp",
-    request = "launch",
-    program = function()
-      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
-    end,
-    cwd = '${workspaceFolder}',
-    stopOnEntry = true,
-    externalConsole = true
-  },
-  {
-    name = "CppIntermDebug",
-    type = "cpp",
-    request = "launch",
-    program = function()
-      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
-    end,
-    cwd = '${workspaceFolder}',
-    stopOnEntry = true,
-    externalConsole = false
-  },
+	{
+		name = "CppExtermDebug",
+		type = "cpp",
+		request = "launch",
+		program = function()
+			return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+		end,
+		cwd = "${workspaceFolder}",
+		stopOnEntry = true,
+		externalConsole = true,
+	},
+	{
+		name = "CppIntermDebug",
+		type = "cpp",
+		request = "launch",
+		program = function()
+			return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+		end,
+		cwd = "${workspaceFolder}",
+		stopOnEntry = true,
+		externalConsole = false,
+	},
 }
 
 dap.configurations.c = dap.configurations.cpp
@@ -114,6 +114,30 @@ dap.configurations.javascript = {
 		console = "externalTerminal",
 	},
 }
+
+dap.configurations.lua = {
+	{
+		type = "nlua",
+		request = "attach",
+		name = "Attach to running Neovim instance",
+		host = function()
+			local value = vim.fn.input("Host [127.0.0.1]: ")
+			if value ~= "" then
+				return value
+			end
+			return "127.0.0.1"
+		end,
+		port = function()
+			local val = tonumber(vim.fn.input("Port: "))
+			assert(val, "Please provide a port number")
+			return val
+		end,
+	},
+}
+
+dap.adapters.nlua = function(callback, config)
+	callback({ type = "server", host = config.host, port = config.port })
+end
 
 -- external terminal
 dap.defaults.fallback.external_terminal = {
