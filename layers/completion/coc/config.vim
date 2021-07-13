@@ -52,8 +52,6 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-" coc-explorer
-nnoremap <silent> <F10> :CoCExplore<CR>
 " vim-snippets
 let g:snips_author = ''
 let g:snips_email = ''

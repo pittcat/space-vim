@@ -24,12 +24,32 @@ dap.adapters.cpp = {
 	},
 }
 
-vim.cmd([[
-    command! -complete=file -nargs=* DebugInTerm lua require "ndap_debug".start_c_internal_debugger({<f-args>}, "gdb")
-]])
-vim.cmd([[
-    command! -complete=file -nargs=* DebugExTerm lua require "ndap_debug".start_c_external_debugger({<f-args>}, "gdb")
-]])
+dap.configurations.cpp = {
+  {
+    name = "CppExtermDebug",
+    type = "cpp",
+    request = "launch",
+    program = function()
+      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+    end,
+    cwd = '${workspaceFolder}',
+    stopOnEntry = true,
+    externalConsole = true
+  },
+  {
+    name = "CppIntermDebug",
+    type = "cpp",
+    request = "launch",
+    program = function()
+      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+    end,
+    cwd = '${workspaceFolder}',
+    stopOnEntry = true,
+    externalConsole = false
+  },
+}
+
+dap.configurations.c = dap.configurations.cpp
 
 -- go
 dap.adapters.go = function(callback, config)

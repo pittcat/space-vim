@@ -67,4 +67,9 @@ M.start_c_external_debugger = function(args, mi_mode, mi_debugger_path)
 	dap.run(last_gdb_config)
 end
 
+M.dap_center_show_scopes = function()
+  local widgets = require('dap.ui.widgets')
+  widgets.centered_float(widgets.scopes)
+end
+
 return M
